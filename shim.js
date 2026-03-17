@@ -333,7 +333,7 @@ const ipcShim = {
       case "trash":          return null;
       case "update":         return null;
       case "check-update":   return null;
-      case "disable-update": return null;
+      case "disable-update": return true;
       case "relaunch":       return null;
       default:
         console.warn("[shim] ipcRenderer.sendSync: unhandled channel:", channel, arg);
