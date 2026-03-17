@@ -569,10 +569,12 @@ let _suppressBackendFlush = false;
 const _pendingWrites  = new Map();  // normalised path → content
 const _pendingDeletes = new Set();
 const _pendingRenames = [];         // [{from, to}]
-let   _flushTimer     = null;
+let   _flushDebounce  = null;       // fires 1 s after last write
+let   _flushMaxWait   = null;       // fires 10 s after first write in burst
 
 async function _flush() {
-  _flushTimer = null;
+  clearTimeout(_flushDebounce); _flushDebounce = null;
+  clearTimeout(_flushMaxWait);  _flushMaxWait  = null;
   if (!activeBackend) return;
   const writes  = new Map(_pendingWrites);
   const deletes = new Set(_pendingDeletes);
@@ -587,8 +589,10 @@ async function _flush() {
 }
 
 function _scheduleFlush() {
-  if (_flushTimer) return;
-  _flushTimer = setTimeout(_flush, 300);
+  clearTimeout(_flushDebounce);
+  _flushDebounce = setTimeout(_flush, 1000);
+  if (!_flushMaxWait)
+    _flushMaxWait = setTimeout(_flush, 10000);
 }
 
 // Patch VFS write methods to queue backend flushes
