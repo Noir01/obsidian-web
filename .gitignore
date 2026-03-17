@@ -1,2 +1,4 @@
 .wrangler/
 vault-data/
+.claude/
+node_modules/
