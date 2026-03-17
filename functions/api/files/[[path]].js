@@ -5,7 +5,8 @@ const CORS = {
 };
 
 function r2Key(params) {
-  return Array.isArray(params.path) ? params.path.join("/") : params.path;
+  const arr = Array.isArray(params.path) ? params.path : [params.path];
+  return arr.map(decodeURIComponent).join("/");
 }
 
 export async function onRequestPut({ env, params, request }) {

@@ -11,7 +11,7 @@ export async function onRequestGet({ env }) {
     const listing = await env.VAULT.list({ cursor, limit: 1000 });
     await Promise.all(listing.objects.map(async obj => {
       const file = await env.VAULT.get(obj.key);
-      if (file) result["/" + obj.key] = await file.text();
+      if (file) result["/" + obj.key.split("/").map(decodeURIComponent).join("/")] = await file.text();
     }));
     cursor = listing.truncated ? listing.cursor : undefined;
   } while (cursor);
