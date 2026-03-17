@@ -778,6 +778,12 @@ const HTTPBackend = {
       const resp = await fetch(this.baseURL + "/api/vault");
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       const data = await resp.json();
+      if (Object.keys(data).length === 0) {
+        console.log("[shim] HTTP backend empty — seeding from sandbox");
+        for (const [p, content] of Object.entries(_sandboxSeed))
+          await this.writeFile(p, content);
+        return { ..._sandboxSeed };
+      }
       console.log("[shim] HTTP backend loaded " + Object.keys(data).length + " files");
       return data;
     } catch(e) {
@@ -824,9 +830,11 @@ const HTTPBackend = {
 // ─── Backend selection ──────────────────────────────────────────
 function _detectBackend() {
   const params = new URLSearchParams(window.location.search);
+  const isRemote = location.protocol === "https:" &&
+    !["localhost", "127.0.0.1"].includes(location.hostname);
   const type = params.get("backend")
     ?? localStorage.getItem("obsidian-web-backend")
-    ?? "opfs";
+    ?? (isRemote ? "http" : "opfs");
 
   if (type === "opfs") {
     localStorage.setItem("obsidian-web-backend", "opfs");
