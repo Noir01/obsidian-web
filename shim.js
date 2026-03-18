@@ -890,4 +890,18 @@ Object.defineProperty(window, "ready", {
   },
 });
 
+// Inject app.js only after VFS is populated AND all deferred lib scripts have
+// loaded (DOMContentLoaded). This ensures app.js sees a non-empty VFS and
+// won't write its bundled default vault content on top of the user's vault.
+const _domReady = new Promise(resolve =>
+  document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", resolve)
+    : resolve());
+
+Promise.all([_backendReady, _domReady]).then(() => {
+  const s = document.createElement("script");
+  s.src = "app.js";
+  document.head.appendChild(s);
+});
+
 console.log("[shim] Obsidian web shim loaded. Vault: " + VAULT_PATH);
