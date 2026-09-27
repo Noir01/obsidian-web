@@ -365,6 +365,7 @@ const ipcShim = {
       case "is-quitting":    return false;
       case "is-closing":     return false;
       case "frame":          return "hidden";
+      case "get-icon":       return null;  // browser tab has no native window icon
       case "version":        return OBSIDIAN_APP_VERSION;
       case "policy":         return { plugins: true, themes: true, snippets: true, sync: true, publish: true, webViewer: true, devTools: true, insider: true };
       // The project owner confirmed explicit approval from the Obsidian team.
@@ -429,12 +430,53 @@ const ipcShim = {
 // ────────────────────────────────────────────────────────────
 // 5. Electron shim
 // ────────────────────────────────────────────────────────────
+const ZOOM_STORAGE_KEY = "obsidian-web-zoom-level";
+let zoomLevel = Number(localStorage.getItem(ZOOM_STORAGE_KEY)) || 0;
+
+function setZoomLevel(level) {
+  if (!Number.isFinite(level)) return;
+  zoomLevel = level;
+  document.documentElement.style.zoom = level === 0 ? "" : String(Math.pow(1.2, level));
+  localStorage.setItem(ZOOM_STORAGE_KEY, String(level));
+}
+
+setZoomLevel(zoomLevel);
+
+const webFrameShim = {
+  getZoomLevel: () => zoomLevel,
+  setZoomLevel,
+  getZoomFactor: () => Math.pow(1.2, zoomLevel),
+  setZoomFactor: factor => setZoomLevel(Math.log(factor) / Math.log(1.2)),
+};
+
+// A web page cannot inspect the browser's installed dictionaries. Expose the
+// browser's preferred languages and let its built-in spellchecker do the work.
+const spellcheckerLanguages = [...new Set(navigator.languages?.length
+  ? navigator.languages : [navigator.language || "en-US"])];
+const spellcheckerSession = {
+  availableSpellCheckerLanguages: spellcheckerLanguages,
+  setSpellCheckerLanguages(languages) {
+    document.documentElement.lang = languages[0] || navigator.language || "en-US";
+  },
+};
+
+const webContentsShim = {
+  session: spellcheckerSession,
+  getZoomLevel: () => zoomLevel,
+  setZoomLevel,
+  getZoomFactor: () => Math.pow(1.2, zoomLevel),
+  setZoomFactor: webFrameShim.setZoomFactor,
+  openDevTools: () => {},
+};
+
 const electronShim = {
   ipcRenderer: ipcShim,
+  webFrame: webFrameShim,
   remote: {
     app: {
       getVersion: () => OBSIDIAN_APP_VERSION,
       getName: () => "Obsidian",
+      getLocale: () => navigator.language || "en-US",
       getPath: (name) => {
         const map = { userData: "/userdata", appData: "/appdata", temp: "/tmp", documents: "/documents", desktop: "/desktop" };
         return map[name] || "/";
@@ -501,15 +543,12 @@ const electronShim = {
       setMaximizable: () => {},
       setClosable: () => {},
       setSkipTaskbar: () => {},
-      webContents: { setZoomFactor: () => {}, getZoomFactor: () => 1, openDevTools: () => {} },
+      setFrameZoomLevel: setZoomLevel,
+      webContents: webContentsShim,
       getBounds: () => ({ x: 0, y: 0, width: window.innerWidth, height: window.innerHeight }),
       setBounds: () => {},
     }),
-    getCurrentWebContents: () => ({
-      setZoomFactor: () => {},
-      getZoomFactor: () => 1,
-      openDevTools: () => {},
-    }),
+    getCurrentWebContents: () => webContentsShim,
   },
   shell: {
     openExternal: (url) => { window.open(url, "_blank"); return Promise.resolve(); },
