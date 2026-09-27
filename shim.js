@@ -367,7 +367,7 @@ const ipcShim = {
       case "frame":          return "hidden";
       case "get-icon":       return null;  // browser tab has no native window icon
       case "version":        return OBSIDIAN_APP_VERSION;
-      case "policy":         return { plugins: true, themes: true, snippets: true, sync: true, publish: true, webViewer: true, devTools: true, insider: true };
+      case "policy":         return { plugins: true, themes: true, snippets: true, sync: true, publish: true, webViewer: false, devTools: true, insider: true };
       // The project owner confirmed explicit approval from the Obsidian team.
       case "terms":          return "I understand and agree that I am not allowed to distribute the Obsidian application, in any form, without explicit approval from the Obsidian team. I also understand that Obsidian is a registered trademark, and I cannot use it without explicit permission granted by the Obsidian team.";
       case "set-language":   return null;
@@ -912,6 +912,11 @@ const OPFSBackend = {
 const HTTPBackend = {
   baseURL: "",
 
+  fileURL(absPath) {
+    // Encode each path component while keeping the directory separators.
+    return this.baseURL + "/api/files" + absPath.split("/").map(encodeURIComponent).join("/");
+  },
+
   async loadAll() {
     try {
       const resp = await fetch(this.baseURL + "/api/vault");
@@ -933,11 +938,12 @@ const HTTPBackend = {
 
   async writeFile(absPath, content) {
     try {
-      await fetch(this.baseURL + "/api/files" + absPath, {
+      const resp = await fetch(this.fileURL(absPath), {
         method: "PUT",
         headers: { "Content-Type": "text/plain; charset=utf-8" },
         body: content,
       });
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
     } catch(e) {
       console.warn("[shim] HTTP writeFile failed:", absPath, e);
     }
@@ -945,7 +951,8 @@ const HTTPBackend = {
 
   async unlink(absPath) {
     try {
-      await fetch(this.baseURL + "/api/files" + absPath, { method: "DELETE" });
+      const resp = await fetch(this.fileURL(absPath), { method: "DELETE" });
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
     } catch(e) {
       console.warn("[shim] HTTP unlink failed:", absPath, e);
     }
