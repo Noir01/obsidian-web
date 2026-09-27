@@ -1,10 +1,19 @@
 Opties
 Plug-in
 Ingebouwde plug-ins
+Weergeven in plug-inlijst
 Plug-inopties
 Voorbeeld: map 1/map 2
 Voorbeeld: map/notitie
+Geen bestand geselecteerd
 Deze optie aanpassen vereist een herstart om effect te hebben..
+Ongeldig getal
+Waarde moet minimaal {{min}} zijn
+Waarde mag maximaal {{max}} zijn
+Bestand niet gevonden.
+Instellingen zoeken...
+Geen instellingen gevonden.
+Nog {{count}}
 
 Gedrag
 Scherm
@@ -56,6 +65,8 @@ Tab-breedte
 Het aantal spaties dat een tab breed is.
 Rechts-naar-links
 Stelt de tekstrichting van de te tonen notities in van rechts naar links.
+Mermaid-diagrammen in notities tonen
+Render stroomdiagrammen, sequentiediagrammen en andere diagrammen uit “mermaid”-codeblokken.
 Automatisch HTML omzetten
 Zet automatisch HTML om naar Markdown wanneer de inhoud van een website via drag-and-drop wordt ingevoegd. Gebruik Ctrl/Cmd+Shift+V om te plakken zonder het om te zetten.
 Vim-sneltoetsen
@@ -124,18 +135,26 @@ Naam van submap
 Als je bestand in "vault/folder" staat, en je submapnaam is "attachments", dan worden bijlagen opgeslagen in "vault/folder/attachments".
 Uitgesloten bestanden
 Uitgesloten bestanden worden verborgen of zijn minder opvallend op verschillende plekken, zoals in snel wisselen, linksuggesties en grafiekweergave.
-Op het moment wordt er geen uitsluitingsfilter toegepast. Voeg er beneden één toe.
-Bestanden die onder de volgende mappen vallen worden uitgesloten:
-
+Uitsluiting toevoegen...
+Geen uitsluitingen toegevoegd.
+{{count}} regel
+{{count}} regels
+Uitsluiting toevoegen
+Voer een pad of een reguliere expressie in, bijv. /daily-.*/
 Filter mag niet leeg zijn
-Voer pad of "/regex/" in ...
 URI-callbacks toestaan
 Sta het gebruik van x-callback-url toe via x-success of x-error bij het afhandelen van Obsidian-URI’s.
+
+Beheer vertrouwde acties en configureer URI-gedrag.
+Vertrouwde acties
+Nog geen vertrouwde acties. Goedgekeurde URI-acties verschijnen hier.
 Uiterlijk
 Basisthema
 Kies het standaard kleurenschema voor Obsidian.
+donker licht systeem nachtmodus kleurenschema
 Accentkleur
 Kies de accentkleur die de app gebruikt.
+markeren merk primaire kleur
 Donker
 Licht
 Aan systeem aanpassen
@@ -150,8 +169,8 @@ Lettertype voor tekst
 Stel het lettertype in voor de bewerkings–/ en leesweergave.
 Monospacelettertype
 Stel het lettertype in voor codesecties en voorwerk.
- Huidig gebruikt lettertype: 
- De volgende lettertypes worden gebruikt:
+{{count}} lettertype
+{{count}} lettertypen
 Voer lettertypenaam in...
 Geen eigen lettertype in gebruik. Voeg hier beneden één toe.
 Het eerste lettertype van deze lijst dat beschikbaar is op je systeem wordt gebruikt.
@@ -163,24 +182,26 @@ Bekijk en gebruik geweldige thema's die door de community zijn gemaakt.
 Bladeren
 Lettertypegrootte
 Lettertypegrootte in pixels voor de bewerk- en voorbeeldmodus.
+tekstgrootte zoom
 Snelle lettertypegrootte aanpassing
 Pas de lettertypegrootte aan met Ctrl + Scroll, or door de trackpad zoombeweging
 Thema's
 Beheer geïnstalleerde thema's en doorzoek cummunitythema's.
+community bladeren installeren downloaden
 Beheer
 Geen
 Systeemmenu's
 Appmenu's worden aangepast aan het besturingssysteem. Ze worden niet aangepast door het thema dat je selecteert.
-Laad thema's opnieuw
-Aangepaste CSS-thema's opnieuw geladen.
 Open de themamap
 CSS-fragmenten
+Beheer je verzameling CSS-bestanden om de vormgeving van de app aan te passen.
 Geen CSS-fragmenten gevonden in de fragmentenmap.
-CSS-fragmenten worden opgeslagen in "{{path}}".
+{{count}} ingeschakeld
+Met CSS-snippets kun je de vormgeving van Obsidian aanpassen. Plaats CSS-bestanden in “{{path}}” zodat ze hier verschijnen.
 Herlaad fragmenten
 Open de map met fragmenten
 Herladen CSS-fragmenten.
-Pas het CSS-fragment toe op "{{path}}".
+Snippets zoeken...
 Geïnstalleerde thema's
 Schermopname niet beschikbaar
 Standaard
@@ -222,19 +243,24 @@ Update alles
 Huidige community thema's
 U hebt momenteel {{count}} thema geinstalleerd.
 U hebt momenteel {{count}} thema's geinstalleerd.
+Instellingen openen in nieuw venster
+Open instellingen in een eigen venster in plaats van ingebed in de app.
+
+Mobiel
+Geavanceerd
 Sneltoetsen
 Zoek sneltoetsen
 Toon {{count}} sneltoets. 
 Toon {{count}} sneltoetsen. 
-{{count}} opdracht met conflicten.
-{{count}} opdracht met conflicten.
 
 Sneltoets wissen
 Druk sneltoets in...
 Allemaal
+Conflicten ({{count}})
 Niet toegewezen
 Toegewezen
 Door mij toegewezen
+Geen resultaten gevonden.
 Herstel standaard
 Pas deze opdracht aan
 Deze sneltoets conflicteert met "{{command}}"
@@ -352,28 +378,34 @@ Filter plug-ins op naam of beschrijving.
 Doorzoek plug-ins...
 Externe plug-in
 Beperkte modus
-Beperkte Modus staat uit. Zet deze aan om het gebruik van communityplug-ins uit te schakelen.
+Schakel beperkte modus in om de app zonder community-plug-ins te gebruiken.
 Aanzetten
 Automatisch controleren op plug-inupdates
 Controleer periodiek op updates voor plug-ins.
 Communityplug-ins
-Blader door en installeer plug-ins van derden die zijn gemaakt door onze geweldige community.
+Blader door en installeer community-plug-ins die door de community zijn gemaakt.
 Doorbladeren
-Verlaat beperkte modus
+Beperkte modus verlaten
 Communityplug-ins, zoals elke andere software die u installeert, kan mogelijk gegevensintegriteit en beveiligingsproblemen veroorzaken.
 Beveiliging van plug-ins is belangrijk voor ons. Dit is wat we doen:
 Ondanks onze inspanningen is er nog steeds een kleine kans dat een communityplug-in zich misdraagt.
-Eerste codebeoordeling
-Plugins ondergaan een eerste codebeoordeling door ons team voordat ze in de winkel verschijnen..
+Codebeoordeling
+Plug-ins in de officiële community-directory worden na elke update automatisch beoordeeld.
 
 De meeste plug-ins zijn open source op GitHub, dus kunt u de code zelf op GitHub inspecteren.
 Peer-audit
 We hebben een grote gemeenschap van ontwikkelaars die op elkaar letten.
 Meldingsmechanisme
 We volgen en verwijderen defecte plug-ins na gebruikersmelding.
-Wilt u de beperkte modus afsluiten om communityplug-ins in te schakelen? We raden ten zeerste aan om back-ups van uw gegevens te maken voordat u dit doet.
 Meer informatie over plug-inbeveiliging
-Schakel communityplug-ins in
+Community-plug-ins toestaan
+Plug-ins kunnen willekeurige code uitvoeren op je apparaat. We raden aan een back-up van je gegevens te maken voordat je ze inschakelt.
+Geïnstalleerde plug-ins opnieuw inschakelen
+Herstel {{count}} eerder geïnstalleerde plug-in.
+Herstel {{count}} eerder geïnstalleerde plug-ins.
+Plug-ininformatie tonen
+Ingeschakelde plug-ins
+Deze plug-ins worden ingeschakeld wanneer je de beperkte modus verlaat.
 Vertrouw je de auteur van deze kluis?
 Je opent deze kluis voor de eerste keer en er worden enkele plug-ins meegeleverd.
 Als u deze kluis van iemand anders heeft verkregen, houd er dan rekening mee dat plug-ins van onbekende oorsprong beveiligingsrisico's kunnen vormen.
@@ -387,6 +419,9 @@ Installeren
 Activeer
 Deactiveer
 Kopieer link om te delen
+Details bekijken
+Communitypagina openen
+Instellingen
 Doneer
 Geen resultaten gevonden.
 Geen recente bestanden gevonden. Typ om te zoeken...
@@ -426,6 +461,7 @@ Doorzoek geïnstalleerde plug-ins
 Filter geïnstalleerde plug-ins op naam of beschrijving.
 Doorzoek geïnstalleerde plug-ins...
 Toon alleen geïnstalleerde
+Geen plug-ins geïnstalleerd.
 Doneer om {{name}} te ondersteunen
 Plug-inontwikkelaars zijn vrijwilligers uit de gemeenschap die geweldige dingen maken uit passie. Als u deze plug-in nuttig vindt, overweeg dan om de ontwikkeling ervan te financieel te ondersteunen.
 100% van uw bijdrage gaat naar de ontwikkelaar van de plug-in; Obsidian krijgt er niets van. Het financieringsplatform dat de ontwikkelaar kiest, kan kosten in rekening brengen.
@@ -526,11 +562,14 @@ Inklappen
 Bestand opslaan mislukt "{{filepath}}". {{message}}.
 Laden van plug-in “{{plugin}}” mislukt
 Plug-in “{{plugin}}” heeft een fout veroorzaakt tijdens het laden
+{{plugin}} is niet geladen. Deze plug-in is niet compatibel met Obsidian v{{version}}.
+{{plugin}} werkt niet meer. We raden aan deze plug-in te verwijderen.
+Kan plug-in {{plugin}} v{{version}} niet laden. Er zijn problemen gemeld met deze versie. Controleer of er een nieuwere versie van de plug-in beschikbaar is.
 Kan “{{filepath}}” niet openen
 Kan locatie “{{href}}” niet openen
 Geen bestand
 "{{file}}" is ergens anders gewijzigd, automatisch veranderingen samenvoegen.
-Kluisen beheren...
+Kluizen beheren...
 Hulp
 Instellingen
 Sleep om te herschikken
@@ -636,6 +675,7 @@ Linken met tabblad...
 Bronweergave
 Leesweergave
 Voeg bestandseigenschap toe
+Verwijderen
 Verwijder bestand
 Maak dit bestand aan
 Link openen
@@ -983,6 +1023,10 @@ Niet opnieuw vragen
 Er is momenteel {{count}} link die naar dit bestand verwijst.
 Er zijn momenteel {{count}} links die naar dit bestand verwijzen.
 Bestand verwijderen
+Actie uitvoeren via externe koppeling?
+De actie “{{action}}” wordt uitgevoerd. Ga alleen door als je de bron van de koppeling vertrouwt.
+De plug-in “{{source}}” staat op het punt de actie “{{action}}” uit te voeren. Ga alleen door als je de bron van de koppeling vertrouwt.
+Niet opnieuw vragen voor “{{action}}”
 Bijlagen downloaden
 Er zijn geen externe bijlagen in deze notitie.
 {{count}} bijlage gedownload.
@@ -997,6 +1041,9 @@ Beheren
 Weergeven
 Bevestigen
 Annuleren
+Toestaan
+Eenmalig toestaan
+Altijd toestaan
 Overslaan
 Downloaden
 Voltooid
@@ -1224,6 +1271,7 @@ Toon bijlagebestanden als afbeeldingen, video's en PDF's.
 Toon alle bestandsextenties
 Toon alle bestanden, inclusief degene die Obsidian niet kan openen. Het bestand wordt geopend in de standaard applicatie voor de bestandsextensie.
 Grafiek weergave
+Lokale grafiek
 Zie een grafische weergave van de links tussen de notities.
 Open grafiek weergave
 Open locale grafiek
@@ -1420,7 +1468,8 @@ navigeren
 gebruiken
 afwijzen
 Geen opdrachten gevonden.
-Typ een opdracht...
+Een opdracht toevoegen...
+Selecteer een opdracht...
 Bewaarde opdrachten
 Markdown-indeling importeren
 Converteer Markdown van andere apps naar de Obsidian-indeling.
@@ -1507,6 +1556,8 @@ Geen koppen gevonden.
 Automatisch scrollen naar huidige sectie
 Woordenaantal
 Toon woordenaantal in de statusbalk
+Mermaid-diagrammen in deze kluis weergeven?
+Sta dit alleen toe als je de inhoud van deze kluis vertrouwt.
 Dia's
 Presenteer vanuit Markdown. Gebruik "---" om dia's te onderscheiden.
 Start presentatie
@@ -1710,7 +1761,6 @@ Verwijder gebruiker
 Gebruiker uitnodigen
 Voer hun e-mail in...
 Voer alstublieft een geldig e-mailadres in om iemand uit te nodigen.
-Activeer de Publish kernplug-in in Instellingen -> Kernplug-ins om sites the zien..
 Jouw sites
 Sites gedeeld met u
 Stop samenwerking voor deze site
@@ -1914,6 +1964,10 @@ Actieve communityplug-in-lijst
 Synchroniseer welke communityplug-ins ingeschakeld zijn.
 Geïnstalleerde comminityplug-ins
 Synchroniseer geïnstalleerde communityplug-ins (.js, .css, en manifest.json bestanden) en bijbehorende instellingen.
+Toestaan dat gesynchroniseerde plug-ins op dit apparaat worden uitgevoerd?
+Obsidian Sync kan de inhoud van plug-ins die naar dit apparaat zijn gesynchroniseerd niet verifiëren, en ze kunnen verschillen van plug-ins die in de community-directory zijn gepubliceerd.
+Schakel dit alleen in als de kluis en verbonden apparaten vertrouwd zijn.
+Ja, plug-insynchronisatie inschakelen
 Sync is nog aan het laden; vernieuw deze pagina later.
 Obsidian Sync is Obsidians uitbereidende synchronisatieservice met end-to-end-versleuteling en versiegeschiedenis.
 Log in of maak een nieuw Obsidian-account aan om te beginnen met synchroniseren.
@@ -2068,6 +2122,7 @@ Verwijdert al het bovenstaande, evenals lokale opslag en actieve sessies.
 Nieuwe webviewer
 Unable to load that site.
 Please make sure you have the correct address.
+Leesweergave
 Zoeken op het web
 Webviewer-gegevens
 Webviewer-gegevens wissen
@@ -2372,6 +2427,9 @@ Hoog
 Extra hoog
 Samenvatten...
 Groeperen op deze eigenschap
+Kolomgrootte wijzigen...
+Kolomgrootte herstellen
+Sleep om de grootte te wijzigen
 Waarden wissen
 Samenvatting
 Kan formule "{{ formula }}" niet parseren
@@ -2515,3 +2573,24 @@ Berichttype...
 
 {{count}} thema
 {{count}} thema's
+Annuleren
+
+Kopiëren
+Koppeling openen
+Dit bestand openen
+Bestand uitvoeren
+Externe koppeling openen?
+Deze koppeling opent een externe app buiten Obsidian. Ga alleen verder als u de bron van deze koppeling vertrouwt.
+{{scheme}}://-koppelingen altijd openen
+Waarschuwing voor bestand op afstand
+Dit bestand bevindt zich op een externe server en kan gevaarlijk zijn.\nWeet u zeker dat u het wilt openen?
+Locatie: {{location}}
+Toegang tot netwerkstation
+Deze inhoud vraagt gegevens op van een netwerkstation. Als u dit toestaat, kunnen uw inloggegevens of andere gevoelige informatie worden blootgesteld aan de externe host.
+
+Toestaan
+Uitvoerbaar bestand uitvoeren?
+Deze koppeling verwijst naar een uitvoerbaar bestand. Het uitvoeren ervan kan uw computer schade toebrengen.
+Bestand: {{path}}
+Kluis niet gevonden.
+Kan geen kluis vinden voor de URL {{url}}

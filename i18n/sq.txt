@@ -1,10 +1,19 @@
 Preferenca
 Shtojcë
 Shtojca të integruara
+Shfaq në listën e shtojcave
 Preferenca për shtojcat
 Shembull: dosja 1/dosja 2
 Shembull: dosja/faqja-me-shënime
+Nuk është zgjedhur asnjë skedar
 Ndryshimi i këtij opsioni kërkon rindezje që të hyjë në fuqi.
+Numër i pavlefshëm
+Vlera duhet të jetë të paktën {{min}}
+Vlera duhet të jetë jo më shumë se {{max}}
+Skedari nuk u gjet.
+Kërko te cilësimet...
+Nuk u gjetën cilësime.
+{{count}} të tjera
 Përpunimi i tekstit
 Sjellja
 Shfaqja
@@ -56,6 +65,8 @@ Përmasa e "Tab"
 Numri i hapësirave të cilat përbëjnë një "tab".
 Nga e djathta në të majtë (RTL)
 Sets the text direction of notes to display in right-to-left.
+Shfaq diagramet Mermaid në shënime
+Rendero diagrame rrjedhe, diagrame sekuence dhe diagrame të tjera nga blloqet e kodit “mermaid”.
 Konvertim automatik i HTML
 Konverton automatikisht HTML në Markdown në çastin e kopjimit apo "drag-and-drop" nga faqe Web-i. Përdorni Ctrl/Cmd+Shift+V për të kopjuar pa këtë konvertim.
 Lidhjet e tastierës për Vim
@@ -124,18 +135,26 @@ Emri i nëndosjes
 Nëse faqja juaj është në "vault/folder", dhe nëndosja juaj quhet "attachments", materialet e bashkangjitura do të ruhen në "vault/folder/attachments".
 Skedarë të përjashtuar
 Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
-Nuk është zbatuar asnjë filtër përjashtimi tani. Shtoni një më poshtë.
-Skedarët që përputhen me filtrat e mëposhtëm aktualisht janë të përjashtuar:
-Filtër
+Shto përjashtim...
+Nuk është shtuar asnjë përjashtim.
+{{count}} rregull
+{{count}} rregulla
+Shto përjashtim
+Fut një shteg ose një shprehje të rregullt, p.sh. /daily-.*/
 Filtri nuk mund të jetë bosh
-Enter path or "/regex/"...
 Lejo callback-e URI
 Aktivizo përdorimin e x-callback-url përmes x-success ose x-error gjatë trajtimit të URI-ve të Obsidian.
+
+Menaxho veprimet e besuara dhe konfiguro sjelljen e URI-së.
+Veprime të besuara
+Ende asnjë veprim i besuar. Veprimet URI të miratuara do të shfaqen këtu.
 Pamja
 Motivi bazë
 Përzgjedh skemën "default" të ngjyrave Obisidian.
+errët dritë sistem modalitet nate skemë ngjyrash
 Ngjyra e theksit
 Zgjidhni ngjyrën e theksit që përdoret në të gjithë aplikacionin.
+theksim markë ngjyrë kryesore
 I errët
 I ndritur
 Përshtatu me sistemin
@@ -150,8 +169,8 @@ Fonti i tekstit
 Cakto fontin për pamjen e redaktimit dhe pamjen e leximit.
 Font monospace
 Cakto fontin për vende si blloqet e kodit dhe metadata e fillimit.
- Fonti aktualisht i aplikuar: 
- Fontet e mëposhtme janë aktualisht të aplikuara:
+
+{{count}} fonte
 Shkruaj emrin e fontit...
 Aktualisht nuk është aplikuar asnjë font i personalizuar. Shto një më poshtë.
 Do të aplikohet fonti i parë nga kjo listë që është i disponueshëm në sistemin tënd.
@@ -163,24 +182,26 @@ Shfaq dhe përdor motife mbresëlënëse nga komuniteti.
 Kërko
 Përmasa e gërmave
 Përmasa në piksela që ndikon pamjet e përpunimit dhe afishimit.
+madhësi teksti zmadho
 Përshtatje e shpejtë e përmasës së gërmave
 Përshtat përmasën e gërmave duke përdorur Ctrl + Scroll, ose duke përdorur gjestet `trackpad pinch-zoom`.
 Motifet
 Menaxho temat e instaluara dhe shfleto temat e komunitetit.
+komunitet shfleto instalo shkarko
 Menaxho
 Asnjë
 Menu vendase
 Menutë në të gjithë aplikacionin do të përputhen me sistemin operativ. Ato nuk do të ndikohen nga tema jote.
-Ringarko motifet
-Motifet CSS u ringarkuan.
 Hap dosjen e motifeve
 Copëza CSS
+Menaxho koleksionin tënd të skedarëve CSS për të përshtatur pamjen e aplikacionit.
 Në dosjen përkatëse nuk gjendet asnjë copëz CSS-je
-Copëzat CSS ruhen në "{{path}}".
+{{count}} të aktivizuara
+Copëzat CSS ju lejojnë të personalizoni pamjen e Obsidian. Vendosni skedarët CSS në “{{path}}” që të shfaqen këtu.
 Ringarko copëzat
 Hap dosjen e copëzave
 Ringarko copëzat CSS.
-Apliko copëzat CSS nga "{{path}}".
+Kërko copëza...
 Temat e instaluara
 Pamja e ekranit nuk është e disponueshme
 Parazgjedhur
@@ -222,19 +243,24 @@ Përditëso të gjitha
 Temat aktuale të komunitetit
 Aktualisht keni të instaluar {{count}} temë.
 Aktualisht keni të instaluara {{count}} tema.
+Hap cilësimet në dritare të re
+Hap cilësimet në një dritare më vete në vend që të jenë të ngulitura në aplikacion.
+Ndërfaqja
+Celular
+Të avancuara
 Shkurtime komandash
 Kërko shkurtore tastiere
 Po shfaqet {{count}} shkurtore tastiere. 
 Po shfaqen {{count}} shkurtore tastiere. 
-{{count}} komandë me konflikte.
-{{count}} komanda me konflikte.
 Filtro...
 Hiq kombinimin
 Shtyp një kombinim...
 Të gjitha
+Konflikte ({{count}})
 Të pacaktuara
 Të caktuara
 Të caktuara nga unë
+Nuk u gjetën rezultate.
 Rikthe gjëndjen fillestare
 Modifiko këtë komandë
 Ky kombinim është në konflikt me "{{command}}"
@@ -352,28 +378,34 @@ Filtro shtojcat sipas emrit ose përshkrimit.
 Kërko shtojca...
 Shtojca të treta
 Modalitet i kufizuar
-Restricted Mode is off. Turn on to disable community plugins.
+Aktivizo modalitetin e kufizuar për të përdorur aplikacionin pa shtojca të komunitetit.
 Turn on
 Kontrollo automatikisht për përditësime të shtojcave
 Kontrollo periodikisht për përditësime të shtojcave.
 Shtojcat e komunitetit
-Kërko dhe instalo shtojca të treta të krijuara nga komuniteti ynë i mrekullueshëm.
+Shfleto dhe instalo shtojca të komunitetit të krijuara nga komuniteti.
 Kërko
-Dil nga Modaliteti i kufizuar
+Dil nga modaliteti i kufizuar
 Shtojcat e komunitetit, si çdo program tjetër që instaloni, mund të shkaktojnë potencialisht probleme me integritetin e të dhënave dhe sigurinë.
 Siguria e shtojcave është e rëndësishme për ne. Ja çfarë bëjmë:
 Pavarësisht përpjekjeve tona, ekziston ende një mundësi e vogël që një shtojcë e komunitetit të mos sillet siç duhet.
-Rishikim fillestar i kodit
-Plugins undergo an initial code review by our team before they appear in the store.
+Rishikim i kodit
+Shtojcat në katalogun zyrtar të komunitetit rishikohen automatikisht pas çdo përditësimi.
 Me kod të hapur
 Shumica e shtojcave janë me kod të hapur në GitHub, kështu që mund ta inspektoni kodin vetë.
 Auditim nga kolegët
 Kemi një komunitet të madh zhvilluesish që kujdesen për njëri-tjetrin.
 Mekanizëm raportimi
 Ne i ndjekim raportimet dhe i heqim shtojcat me probleme pas raportimit nga përdoruesit.
-Dëshironi të dilni nga Modaliteti i kufizuar për të aktivizuar shtojcat e komunitetit? Ne rekomandojmë fuqishëm të bëni kopje rezervë të të dhënave tuaja para se ta bëni këtë.
 Mësoni më shumë rreth sigurisë së shtojcave
-Aktivizo shtojcat e komunitetit
+Lejo shtojcat e komunitetit
+Shtojcat mund të ekzekutojnë kod arbitrar në pajisjen tënde. Rekomandojmë të bësh kopje rezervë të të dhënave para se t’i aktivizosh.
+Riaktivizo shtojcat e instaluara
+Rikthe {{count}} shtojcë të instaluar më parë.
+Rikthe {{count}} shtojca të instaluara më parë.
+Shfaq informacionin e shtojcës
+Shtojcat e aktivizuara
+Këto shtojca do të aktivizohen kur të dilni nga modaliteti i kufizuar.
 A i besoni autorit të kësaj kasaforte?
 Po e hapni këtë kasafortë për herë të parë dhe ajo vjen me disa shtojca.
 Nëse e keni marrë këtë kasafortë nga dikush tjetër, ju lutem kini parasysh që shtojcat me origjinë të panjohur mund të paraqesin rreziqe sigurie.
@@ -387,6 +419,9 @@ Instalo
 Aktivizo
 Çaktivizo
 Kopjo lidhjen e ndarjes
+Shiko hollësitë
+Hap faqen e komunitetit
+Cilësimet
 Dhuro
 Nuk ka rezultate.
 Nuk u gjetën skedarë të fundit. Shkruani për të kërkuar...
@@ -426,6 +461,7 @@ Kërko në shtojcat e instaluara
 Filtro shtojcat e instaluara sipas emrit ose përshkrimit.
 Kërko në shtojcat e instaluara...
 Shfaq vetëm të instaluarat
+Nuk ka shtojca të instaluara.
 Dhuro për të mbështetur {{name}}
 Zhvilluesit e shtojcave janë vullnetarë të komunitetit që krijojnë gjëra të mrekullueshme nga pasioni. Nëse kjo shtojcë ju duket e dobishme, ju lutem merrni në konsideratë financimin e zhvillimit të saj.
 100% e kontributit tuaj do të shkojë te zhvilluesi i shtojcës; Obsidian nuk merr përqindje. Platforma e financimit që ata zgjedhin mund të aplikojë një tarifë.
@@ -526,6 +562,9 @@ Palos
 Ruajtja e dokumentit me shënime "{{filepath}}" dështoi. {{message}}.
 Dështoi ngarkimi i shtojcës “{{plugin}}”
 Shtojca “{{plugin}}” hasi një gabim gjatë ngarkimit
+{{plugin}} nuk u ngarkua. Kjo shtojcë nuk është e përputhshme me Obsidian v{{version}}.
+{{plugin}} nuk funksionon më. Rekomandojmë ta çinstaloni.
+Shtojca {{plugin}} v{{version}} nuk mund të ngarkohet. Është raportuar se ky version shkakton probleme. Ju lutemi, kontrolloni nëse ka një version më të ri të shtojcës.
 Dështoi hapja e “{{filepath}}”
 Nuk mund të hapet vendndodhja “{{href}}”
 Nuk ka dokumenta shënimesh
@@ -636,6 +675,7 @@ Lidh me skedën...
 Modaliteti i burimit
 Pamja e leximit
 Shto veti skedari
+Fshi
 Fshi një dokument
 Krijo këtë skedar
 Hap lidhjen
@@ -983,6 +1023,10 @@ Mos pyet më
 Aktualisht ka {{count}} lidhje që tregon drejt këtij skedari.
 Aktualisht ka {{count}} lidhje që tregojnë drejt këtij skedari.
 Fshi dokumentin
+Të ekzekutohet veprimi nga lidhja e jashtme?
+Veprimi “{{action}}” është gati të ekzekutohet. Vazhdo vetëm nëse i beson burimit të lidhjes.
+Shtojca “{{source}}” është gati të ekzekutojë veprimin “{{action}}”. Vazhdo vetëm nëse i beson burimit të lidhjes.
+Mos pyet përsëri për “{{action}}”
 Shkarko bashkëngjitjet
 Nuk ka bashkëngjitje të jashtme në këtë shënim.
 U shkarkua {{count}} bashkëngjitje.
@@ -997,6 +1041,9 @@ Menaxho
 Shiko
 Konfirmo
 Anullo
+Lejo
+Lejo një herë
+Lejo gjithmonë
 Kalo
 Shkarko
 Kryer
@@ -1224,6 +1271,7 @@ Shfaq materiale të bashkangjitura si foto, video dhe PDF.
 Shfaq të gjitha llojet e materialeve
 Shfaq të gjitha dokumentet, përfshirë ata të cilat Obsidian nuk i hap dot. Dokumenti do hapet me aplikacionin përkatës për llojin e tij.
 Pamja me grafik
+Graf lokal
 Shiko në një rrjetë grafike një përmbledhje se me cilët dokumenta lidhet secili dokument
 Hap rrjetën grafike
 Hap grafikun aktual
@@ -1420,7 +1468,8 @@ për të naviguar
 për të përdorur
 për të anulluar
 Nuk ka komanda.
-Shtyp një komandë...
+Shto një komandë...
+Zgjidh një komandë...
 Komanda të ngulitura
 Importuesi për formatin Markdown
 Konverto Markdown nga aplikacione të tjera në formatin e Obsidian.
@@ -1507,6 +1556,8 @@ Nuk ka tituj.
 Lëviz automatikisht te seksioni aktual
 Numri i fjalëve
 Shfaq numrin e fjalëve ne shiritin e gjendjes.
+Të shfaqen diagramet Mermaid në këtë kasafortë?
+Lejo vetëm nëse i beson përmbajtjes së kësaj kasaforte.
 Slide-t
 Prezanto me Markdown. Përdor "---" për të veçuar slide-t.
 Nis prezantimin
@@ -1710,7 +1761,6 @@ Hiq përdoruesin
 Fto përdorues
 Shkruaj email-in e tij/saj...
 Ju lutem vendosni një email të vlefshëm për të ftuar dikë.
-Ju lutem aktivizoni shtojcën bazë Publish te Cilësimet -> Shtojcat bazë për të parë faqet.
 Faqet e tua
 Faqe të ndara me ty
 Ndal bashkëpunimin në këtë faqe
@@ -1914,6 +1964,10 @@ Lista e shtojcave aktive të komunitetit
 Sinkronizo cilat shtojca të komunitetit janë aktive
 Shtojcat e instaluara të komunitetit
 Sinkronizo shtojcat e instaluara të komunitetit (dokumenta .js, .css, dhe manifest.json) dhe konfigurimet e tyre.
+Të lejohet ekzekutimi i shtojcave të sinkronizuara në këtë pajisje?
+Obsidian Sync nuk mund të verifikojë përmbajtjen e shtojcave të sinkronizuara në këtë pajisje dhe ato mund të ndryshojnë nga shtojcat e publikuara në drejtorinë e komunitetit.
+Aktivizoje këtë vetëm nëse kasaforta dhe pajisjet e lidhura janë të besuara.
+Po, aktivizo sinkronizimin e shtojcave
 Sync ende po ngarkohet, ju lutemi rifreskoni këtë faqe më vonë.
 Obsidian Sync është shërbimi shtojcë i sinkronizimit në Obsidian me enkriptim fund-më-fund dhe historik versionesh.
 Për të nisur sinkronizimin, ju lutemi të kyçeni ose të krijoni një llogari Obsidian.
@@ -2068,6 +2122,7 @@ Heq të gjitha sa më sipër, si edhe ruajtjen lokale dhe sesionet aktive.
 Shikues uebi i ri
 Unable to load that site.
 Please make sure you have the correct address.
+Pamja e leximit
 Kërko në ueb
 Të dhënat e shikuesit uebi
 Pastro të dhënat e shikuesit uebi
@@ -2372,6 +2427,9 @@ E lartë
 Shumë e lartë
 Përmblidh...
 Grupo sipas kësaj vetie
+Ndrysho madhësinë e kolonës...
+Rivendos madhësinë e kolonës
+Zvarrit për të ndryshuar madhësinë
 Pastro vlerat
 Përmbledhje
 Dështoi analizimi i formulës "{{ formula }}"
@@ -2515,3 +2573,24 @@ Lloji i bllokut të theksimit...
 {{count}} copëza
 {{count}} temë
 {{count}} tema
+Anulo
+
+Kopjo
+Hap lidhjen
+Hap këtë skedar
+Ekzekuto skedarin
+Të hapet lidhja e jashtme?
+Kjo lidhje do të hapë një aplikacion të jashtëm jashtë Obsidian. Vazhdo vetëm nëse i beson burimit të kësaj lidhjeje.
+Hap gjithmonë lidhjet {{scheme}}://
+Paralajmërim për skedar në distancë
+Ky skedar ndodhet në një server në distancë dhe mund të jetë i rrezikshëm.\nJeni të sigurt që dëshironi ta hapni?
+Vendndodhja: {{location}}
+Qasje në disk rrjeti
+Kjo përmbajtje po kërkon të dhëna nga një disk rrjeti. Lejimi i kësaj mund të ekspozojë kredencialet e hyrjes ose informacione të tjera të ndjeshme te hosti në distancë.
+Hosti: {{host}}
+Lejo
+Të ekzekutohet skedari i ekzekutueshëm?
+Kjo lidhje tregon te një skedar i ekzekutueshëm. Ekzekutimi i tij mund të dëmtojë kompjuterin tuaj.
+Skedari: {{path}}
+Kasaforta nuk u gjet.
+Nuk mund të gjendet një kasafortë për URL-në {{url}}

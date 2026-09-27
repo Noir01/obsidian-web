@@ -1,10 +1,19 @@
 Sozlamalar
 Plaginlar
 O'rnatilgan plaginlar
+Plaginlar roʻyxatida ko‘rsatish
 Plaginlar
 Misol: papka 1/papka 2
 Misol: papka/izoh
+Fayl tanlanmagan
 Bu parametrni o'zgartirish uchun dasturni qayta ishga tushirish talab etiladi.
+Noto‘g‘ri raqam
+Qiymat kamida {{min}} bo‘lishi kerak
+Qiymat ko‘pi bilan {{max}} bo‘lishi kerak
+Fayl topilmadi.
+Sozlamalarni qidirish...
+Sozlamalar topilmadi.
+Yana {{count}} ta
 Tahrirlovchi
 Ishlash rejimi
 Ko'rsatish
@@ -56,6 +65,8 @@ Tabulatsiya kengligi
 Tab belgisiga mos keladigan bo'sh joylar soni.
 O'ngdan chapga yo'nalish (RTL)
 Esdaliklarning matn yo'nalishini o'ngdan chapga belgilash.
+Eslatmalarda Mermaid diagrammalarini ko‘rsatish
+“mermaid” kod bloklaridan blok-sxemalar, ketma-ketlik diagrammalari va boshqa diagrammalarni ko‘rsatish.
 HTML-ni avtomatik konvertatsiya qilish
 Veb-havolalarni qo'lda kiritishda va ko'chirishda HTML-ni avtomatik ravishda Markdown ga aylantirish. Konvertatsiyasiz qo'shish uchun Ctrl/Cmd+Shift+V ni ishlating.
 Vim tugmachalarini ishlatish
@@ -124,18 +135,26 @@ Ichki papka nomi
 Agar eslatma "vault/papka" da bo'lsa va ichki papka nomi "attachments" bo'lsa, qo'shimcha fayllar "vault/papka/attachments" ga saqlanadi.
 Chiqindiga chiqarilgan fayllar va papkalar
 Chiqindiga chiqarilgan fayllar va papkalar qidiruv natijalarida, havolalarni avtomatik to'ldirishda, Tez o'tishda va Grafikda kamroq ko'rinadigan bo'ladi.
-Hozirgi vaqtda hech qanday filtrlash qo'llanilmayapti. Quyida filtr qo'shing.
-Quyidagi filtrlarga mos keladigan fayllar va papkalar hozirgi vaqtda chiqindiga chiqarilgan:
-Filtr
+Istisno qo‘shish...
+Istisnolar qo‘shilmagan.
+{{count}} ta qoida
+{{count}} ta qoida
+Istisno qo‘shish
+Yo‘l yoki muntazam ifoda kiriting, masalan: /daily-.*/
 Filtr bo'sh bo'lishi mumkin emas
-Ismni, yo'lni yoki "/regex/" kiriting...
 URI callbacklariga ruxsat berish
 Obsidian URI’lari bilan ishlaganda x-success yoki x-error orqali x-callback-url’dan foydalanishni yoqing.
+
+Ishonchli amallarni boshqaring va URI xatti-harakatini sozlang.
+Ishonchli amallar
+Hali ishonchli amallar yo‘q. Tasdiqlangan URI amallari shu yerda ko‘rinadi.
 Tashqi ko'rinishi
 Asosiy tema
 Obsidian asosiy rang sxemasini tanlash.
+qorong‘i yorug‘ tizim tungi rejim rang sxemasi
 Aksent rangi
 Butun dasturda ishlatiladigan aksent rangini tanlash.
+ajratib ko‘rsatish brend asosiy rang
 Qorong'i
 Yorug'
 Tizim
@@ -150,8 +169,8 @@ Matn shrift
 Tahrirlash va ko'rish maydonlari uchun shriftni tanlash.
 Monospace shrift
 Kod bloklari va frontmatter uchun shriftni tanlash.
-Hozirda quyidagi shrift ishlatilmoqda:
-Hozirda quyidagi shriftlar ishlatilmoqda:
+{{count}} ta shrift
+{{count}} ta shrift
 Shrift nomini kiriting...
 Hozirda hech qanday maxsus shrift qo'llanilmayapti. Uni quyida qo'shing.
 Ushbu ro'yxatdagi birinchi shrift tizimingizda mavjud bo'lsa, ishlatiladi.
@@ -163,24 +182,26 @@ Hamjamiyat tomonidan yaratilgan mavzularni ko'rib chiqish va foydalanish.
 Ko'rib chiqish
 Shrift hajmi
 Tahrirlash va oldindan ko'rish maydonidagi shrift hajmi pikselda.
+matn o‘lchami kattalashtirish
 Shrift hajmini tez o'zgartirish
 Ctrl + sichqoncha aylantirish yoki trackpad kattalashtirish ishorasi yordamida shrift hajmini o'zgartirish imkonini beradi.
 Mavzular
 O'rnatilgan mavzularni boshqarish va hamjamiyat mavzularini ko'rish.
+hamjamiyat ko‘rib chiqish o‘rnatish yuklab olish
 Sozlash
 Standart
 Tizim kontekst menyusi
 Ilovaning kontekst menyularini tanlangan mavzudan qat'iy nazar operatsion tizimga mos ravishda ko'rsatish.
-Mavzularni yangilash
-CSS mavzular ro'yxati yangilandi.
 Mavzular papkasini ochish
 CSS kod parchalari
+Ilova ko‘rinishini sozlash uchun CSS fayllari to‘plamingizni boshqaring.
 CSS kod parchalari papkasida hech narsa topilmadi.
-CSS kod parchalari "{{path}}" papkasida saqlanadi.
+{{count}} ta yoqilgan
+CSS parchalari Obsidian ko‘rinishini moslashtirish imkonini beradi. Bu yerda ko‘rinishi uchun CSS fayllarini “{{path}}” jildiga joylashtiring.
 Parchalar ro'yxatini yangilash
 Parchalar papkasini ochish
 CSS parchalar ro'yxati yangilandi.
-"{{path}}" uchun CSS parchasini qo'llash.
+Parchalarni qidirish...
 O'rnatilgan mavzular
 Skrinshot mavjud emas
 Standart tema
@@ -222,19 +243,24 @@ Barchasini yangilash
 Joriy hamjamiyat mavzulari
 O'rnatilgan mavzular: {{count}}
 O'rnatilgan mavzular: {{count}}
+Sozlamalarni yangi oynada ochish
+Sozlamalarni ilova ichiga joylashtirish o‘rniga alohida oynada ochish.
+Interfeys
+Mobil
+Kengaytirilgan
 Klaviatura yorliqlari
 Klaviatura yorliqlarini qidirish
 Klaviatura yorliqlari: {{count}}.
 Klaviatura yorliqlari: {{count}}.
-To'qnashuvli buyruqlar: {{count}}
-To'qnashuvli buyruqlar: {{count}}
 Filtr...
 Klaviatura yorliqini o'chirish
 Klaviatura yorliqini bosing...
 Hammasi
+Ziddiyatlar ({{count}})
 Tayinlanmagan
 Tayinlangan
 Mening tayinlanganlarim
+Natijalar topilmadi.
 Standart qiymatni tiklash
 Ushbu buyruqni sozlash
 Ushbu klaviatura yorliqi "{{command}}" buyrug'i bilan to'qnashadi
@@ -352,28 +378,34 @@ O'rnatilgan plaginlarni nomi yoki tavsifi bo'yicha qidirish.
 O'rnatilgan plaginlarni qidirish...
 Tashqi plaginlar
 Xavfsiz rejim
-Xavfsiz rejim o'chirilgan. Hamjamiyat plaginlarini o'chirish uchun yoqing.
+Ilovadan hamjamiyat plaginlarisiz foydalanish uchun Cheklangan rejimni yoqing.
 Yoqing
 Plagin yangilanishlarini avtomatik tekshirish
 Plagin yangilanishlarini vaqti-vaqti bilan tekshirib turing.
 Hamjamiyat plaginlari
-Bizning ajoyib hamjamiyatimiz tomonidan yaratilgan tashqi plaginlarni ko'rish va o'rnatish.
+Hamjamiyat tomonidan yaratilgan hamjamiyat plaginlarini ko‘rib chiqing va o‘rnating.
 Ko'rish
-Xavfsiz rejimdan chiqish
+Cheklangan rejimdan chiqish
 Hamjamiyat plaginlari, boshqa o'rnatilgan dasturlaringiz kabi, ma'lumotlaringizning xavfsizligi va saqlanishiga muammolar tug'dirishi mumkin.
 Plaginlarning xavfsizligi biz uchun juda muhim. Biz nima qilamiz:
 Bizning sa'y-harakatlarimizga qaramay, hamjamiyat plaginlari noto'g'ri ishlash ehtimoli hali ham mavjud.
-Kodning dastlabki tekshiruvi
-Plaginlar katalogga qo'shilishidan oldin bizning jamoamiz tomonidan dastlabki kod tekshiruvidan o'tadi.
+Kodni tekshirish
+Rasmiy hamjamiyat katalogidagi plaginlar har bir yangilanishdan keyin avtomatik kod tekshiruvidan o‘tadi.
 Ochiq manba kodi
 Ko'pchilik plaginlar GitHub'da ochiq manba kodi bilan mavjud, shuning uchun siz kodni o'zingiz tekshirishingiz mumkin.
 Hamkorlar auditi
 Bizda bir-birini tekshiradigan katta dasturchilar hamjamiyati mavjud.
 Hisobot mexanizmi
 Biz foydalanuvchi fikr-mulohazalari asosida ishlamayotgan plaginlarni kuzatamiz va o'chiramiz.
-Hamjamiyat plaginlarini yoqish uchun Xavfsiz rejimdan chiqishni xohlaysizmi? Ma'lumotlaringizni zaxiralashni tavsiya qilamiz.
 Plaginlarning xavfsizligi haqida ko'proq ma'lumot oling
-Hamjamiyat plaginlarini yoqing
+Hamjamiyat plaginlariga ruxsat berish
+Plaginlar qurilmangizda ixtiyoriy kodni bajarishi mumkin. Ularni yoqishdan oldin ma’lumotlaringizning zaxira nusxasini yaratishni tavsiya qilamiz.
+O‘rnatilgan plaginlarni qayta yoqish
+Avval o‘rnatilgan {{count}} ta plaginni tiklash.
+Avval o‘rnatilgan {{count}} ta plaginni tiklash.
+Plagin ma’lumotini ko‘rsatish
+Yoqilgan plaginlar
+Cheklangan rejimdan chiqilganda bu plaginlar yoqiladi.
 Ushbu saqlash joyining muallifiga ishonasizmi?
 Siz ushbu saqlash joyini birinchi marta ochyapsiz va u bir nechta plaginlarni o'z ichiga oladi.
 Agar siz ushbu saqlash joyini boshqalardan olgan bo'lsangiz, noma'lum manbadan bo'lgan plaginlar xavfsizlik tahdidini keltirib chiqarishi mumkinligini hisobga oling.
@@ -387,6 +419,9 @@ O'rnatish
 Yoqish
 O'chirish
 Havolani nusxalash
+Tafsilotlarni ko‘rish
+Hamjamiyat sahifasini ochish
+Sozlamalar
 Rahmat aytish
 Hech narsa topilmadi.
 Yaqindagi fayllar topilmadi. Qidiruv so'zini kiriting...
@@ -426,6 +461,7 @@ O'rnatilgan plaginlarni qidirish
 O'rnatilgan plaginlarni nomi yoki tavsifi bo'yicha qidirish.
 O'rnatilgan plaginlarni qidirish...
 Faqat o'rnatilganlarni ko'rsatish
+O‘rnatilgan plaginlar yo‘q.
 Plagin {{name}} ni rivojlantirishni qo'llab-quvvatlash
 Plaginni ishlab chiqish ko'ngillilik asosida amalga oshiriladi. Agar siz ushbu plagin foydali deb hisoblasangiz, uning rivojlanishini moliyaviy qo'llab-quvvatlashni ko'rib chiqing.
 Hissa 100% plaginni ishlab chiquvchiga o'tadi. Ishlab chiquvchi tomonidan tanlangan mablag' yig'ish platformasi qo'shimcha to'lovlarni olishishi mumkin.
@@ -526,6 +562,9 @@ Yig‘ish
 Faylni "{{filepath}}" saqlashda xatolik yuz berdi. {{message}}.
 Plaginni “{{plugin}}” yuklab bo‘lmadi
 “{{plugin}}” plagini yuklanish vaqtida xatolikka uchradi
+{{plugin}} yuklanmadi. Bu plagin Obsidian v{{version}} bilan mos kelmaydi.
+{{plugin}} endi ishlamaydi. Uni o‘chirib tashlashni tavsiya qilamiz.
+{{plugin}} plaginining v{{version}} versiyasini yuklab bo‘lmadi. Bu versiya muammolarga sabab bo‘lishi haqida xabar berilgan. Plaginning yangiroq versiyasi mavjudligini tekshiring.
 Faylni “{{filepath}}” ochib bo‘lmadi
 Manzilni “{{href}}” ochib bo‘lmadi
 Fayl mavjud emas
@@ -636,6 +675,7 @@ Tab bilan bog'lash...
 Manba kodini ko'rish
 Ko'rish
 Fayl xususiyatini qo'shish
+O‘chirish
 Faylni o'chirish
 Ushbu faylni yaratish
 Havolani ochish
@@ -983,6 +1023,10 @@ Yana so'ramaslik
 Hozirda ushbu faylga ishora qiluvchi {{count}} havola mavjud.
 Hozirda ushbu faylga ishora qiluvchi {{count}} havolalar mavjud.
 Faylni o'chirish
+Tashqi havoladan amal ishga tushirilsinmi?
+“{{action}}” amali ishga tushirilmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
+“{{source}}” plagini “{{action}}” amalini ishga tushirmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
+“{{action}}” uchun boshqa so‘ralmasin
 Ilovalarni yuklab olish
 Ushbu eslatmada tashqi ilovalar yo‘q.
 {{count}} ta ilova yuklab olindi.
@@ -997,6 +1041,9 @@ Boshqarish
 Ko‘rish
 Tasdiqlash
 Bekor qilish
+Ruxsat berish
+Bir marta ruxsat berish
+Har doim ruxsat berish
 O‘tkazib yuborish
 Yuklab olish
 Tugadi
@@ -1224,6 +1271,7 @@ Rasm, video va PDF kabi ilova fayllarini ko'rsatish.
 Barcha fayl turlarini ko'rsatish
 Obsidian tomonidan o'zini ocholmaydigan har qanday kengaytmali fayllarni ko'rsatish. Fayl tegishli dasturda ochiladi.
 Graf
+Mahalliy graf
 Grafik ko'rsatishda eslatmalar o'rtasidagi bog'lanishlar.
 Graf
 Mahalliy grafni ochish
@@ -1420,7 +1468,8 @@ naviqatsiya
 foydalanish
 bekor qilish
 Buyruq topilmadi.
-Buyruq nomini kiriting...
+Buyruq qo‘shish...
+Buyruqni tanlang...
 Qo'shilgan buyruqlar
 Markdown-fayllarni import qilish
 Boshqa dasturlardan Markdown-fayllarni Obsidian formatiga konvertatsiya qiladi.
@@ -1507,6 +1556,8 @@ Boshliqlar topilmadi.
 Joriy bo‘limga avtomatik aylantirish
 So'zlar hisoblagichi
 Holat satrida so'zlar sonini ko'rsatadi.
+Bu omborda Mermaid diagrammalari ko‘rsatilsinmi?
+Faqat bu ombor mazmuniga ishonsangiz ruxsat bering.
 Slaydlar
 Markdown’dan yoqimli kutilmagan sovg'a. Slaydlarni ajratish uchun "---" dan foydalaning.
 Prezentatsiyani boshlash
@@ -1710,7 +1761,6 @@ Foydalanuvchini o'chirish
 Foydalanuvchini taklif qilish
 Taklif yuborish uchun elektron pochta manzilini kiriting...
 Kimnidir taklif qilish uchun haqiqiy elektron pochta manzilini kiriting.
-Saytlarni ko'rish uchun Ixtiyoriy plaginlar bo'limida Nashr qilish plaginini yoqing.
 Sizning saytlaringiz
 Siz bilan umumiy foydalanishdagi saytlar
 Bu saytni umumiy foydalanishdan chiqish
@@ -1914,6 +1964,10 @@ Joriy faol uchinchi tomon plaginlari ro'yxati
 Faol bo'lgan uchinchi tomon plaginlarini sinxronizatsiya qilish.
 O'rnatilgan uchinchi tomon plaginlari
 O'rnatilgan uchinchi tomon plaginlarini (fayllar .js, .css va manifest.json) va ularning sozlamalarini sinxronizatsiya qilish.
+Sinxronlangan plaginlarga bu qurilmada ishlashga ruxsat berilsinmi?
+Obsidian Sync bu qurilmaga sinxronlangan plaginlar tarkibini tekshira olmaydi va ular hamjamiyat katalogida e’lon qilingan plaginlardan farq qilishi mumkin.
+Buni faqat ombor va ulangan qurilmalarga ishonsangiz yoqing.
+Ha, plagin sinxronlashni yoqish
 Sync hali ham yuklanmoqda, iltimos keyinroq ushbu sahifani yangilang.
 Obsidian Sync — xazinani sinxronizatsiya qilish uchun, oxirgi shifrlash va versiyalashni qo'llab-quvvatlovchi xizmat.
 Sinxronizatsiya qilishni boshlash uchun kirishingiz yoki hisob ochishingiz kerak.
@@ -2068,6 +2122,7 @@ Yuqoridagilarning barchasini, shuningdek local storage va faol sessiyalarni ham 
 Yangi veb ko‘ruvchi
 Unable to load that site.
 Please make sure you have the correct address.
+O‘qish ko‘rinishi
 Internetda qidirish
 Veb ko‘ruvchi ma’lumotlari
 Veb ko‘ruvchi ma’lumotlarini tozalash
@@ -2372,6 +2427,9 @@ Baland
 Juda baland
 Xulosa chiqarish...
 Ushbu xususiyat bo‘yicha guruhlash
+Ustun o‘lchamini o‘zgartirish...
+Ustun o‘lchamini tiklash
+O‘lchamini o‘zgartirish uchun sudrang
 Qiymatlarni tozalash
 Xulosa
 "{{ formula }}" formulasi tahlil qilinmadi
@@ -2515,3 +2573,24 @@ plaginlar: {{count}}
 {{count}} parcha
 mavzular: {{count}}
 mavzular: {{count}}
+Bekor qilish
+
+Nusxa olish
+Havolani ochish
+Bu faylni ochish
+Faylni ishga tushirish
+Tashqi havola ochilsinmi?
+Bu havola Obsidian tashqarisidagi tashqi ilovani ochadi. Faqat bu havola manbasiga ishonsangiz davom eting.
+{{scheme}}:// havolalarini har doim ochish
+Masofaviy fayl ogohlantirishi
+Bu fayl masofaviy serverda joylashgan va xavfli bo‘lishi mumkin.\nUni ochishni xohlaysizmi?
+Joylashuv: {{location}}
+Tarmoq diskiga kirish
+Bu kontent tarmoq diskidan ma’lumot so‘ramoqda. Bunga ruxsat berish kirish ma’lumotlaringiz yoki boshqa maxfiy ma’lumotlarni masofaviy hostga oshkor qilishi mumkin.
+
+Ruxsat berish
+Bajariladigan fayl ishga tushirilsinmi?
+Bu havola bajariladigan faylga ishora qiladi. Uni ishga tushirish kompyuteringizga zarar yetkazishi mumkin.
+Fayl: {{path}}
+Ombor topilmadi.
+{{url}} URL manzili uchun ombor topilmadi

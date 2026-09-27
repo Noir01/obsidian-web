@@ -146,8 +146,8 @@ const server = http.createServer(async (req, res) => {
 
   // ── PUT /api/files/* ──────────────────────────────────────
   if (req.method === "PUT" && pathname.startsWith("/api/files/")) {
-    const virtualPath = pathname.slice("/api/files".length);
     try {
+      const virtualPath = decodeURIComponent(pathname.slice("/api/files".length));
       const realPath = virtualToReal(virtualPath);
       const body = await readBody(req);
       fs.mkdirSync(path.dirname(realPath), { recursive: true });
@@ -161,8 +161,8 @@ const server = http.createServer(async (req, res) => {
 
   // ── DELETE /api/files/* ───────────────────────────────────
   if (req.method === "DELETE" && pathname.startsWith("/api/files/")) {
-    const virtualPath = pathname.slice("/api/files".length);
     try {
+      const virtualPath = decodeURIComponent(pathname.slice("/api/files".length));
       const realPath = virtualToReal(virtualPath);
       fs.unlinkSync(realPath);
       res.writeHead(204); res.end();

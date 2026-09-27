@@ -1,10 +1,19 @@
 Asetukset
 Lisäosa
 Sisäänrakennetut lisäosat
+Näytä lisäosalistassa
 Lisäosan asetukset
 esim. kansio 1/kansio 2
 esim. kansio/muistiinpano
+Tiedostoa ei ole valittu
 Tämän asetuksen vaihtaminen vaatii ohjelman uudelleenkäynnistyksen.
+Virheellinen luku
+Arvon on oltava vähintään {{min}}
+Arvon on oltava enintään {{max}}
+Tiedostoa ei löytynyt.
+Hae asetuksista...
+Asetuksia ei löytynyt.
+{{count}} lisää
 Muokkain
 Toiminnot
 Näkymä
@@ -56,6 +65,8 @@ Sarkainväli
 Välilyöntien määrä, jota sarkain vastaa.
 Oikealta vasemmalle (RTL)
 Asettaa muistiinpanojen tekstin suunnan näyttämään oikealta vasemmalle.
+Näytä Mermaid-kaaviot muistiinpanoissa
+Näytä vuokaaviot, sekvenssikaaviot ja muut kaaviot “mermaid”-koodilohkoista.
 Muunna HTML automaattisesti
 Muuntaa HTML:n automaattisesti Markdowniksi, kun liität verkkosivuilta. Pikanäppäin Ctrl/Cmd+Shift+V liittää muuntamatta.
 Vim-näppäinyhdistelmät
@@ -124,18 +135,26 @@ Alikansion nimi
 Jos tiedostosi on kansiossa ”vault/kansio”, ja alikansiosi nimi on ”liitteet”, liitteet tallennetaan kansioon ”vault/kansio/liitteet”.
 Pois jätettävät tiedostot
 Pois jätettävät tiedostot ovat joko piilotettuja tai vähemmän esillä eri paikoissa, kuten pikavaihtimessa, linkkiehdotuksissa, haussa ja verkkonäkymässä.
-Poisjättösuodattimia ei ole käytössä. Lisää suodatin alta.
-Alla olevia suodattimia vastaavat tiedostot jätetään tällä hetkellä pois:
-Suodatin
+Lisää poissulku...
+Poissulkuja ei ole lisätty.
+{{count}} sääntö
+{{count}} sääntöä
+Lisää poissulku
+Anna polku tai säännöllinen lauseke, esim. /daily-.*/
 Suodatin ei voi olla tyhjä
-Syötä polku tai ”/regex/”...
 Salli takaisinkutsuosoitteet
 Sallii x-callback-url-osoitteiden käytön (x-success tai x-error) Obsidian-URI-osoitetta käytettäessä.
+
+Hallitse luotettuja toimintoja ja määritä URI-käyttäytyminen.
+Luotetut toiminnot
+Luotettuja toimintoja ei vielä ole. Hyväksytyt URI-toiminnot näkyvät tässä.
 Ulkoasu
 Pohjateema
 Valitse oletuksena käytettävä Obsidian-väriteema.
+tumma vaalea järjestelmä yötila värimalli
 Korostusväri
 Valitse sovelluksessa käytettävä korostusväri.
+korostus brändi ensisijainen väri
 Tumma
 Vaalea
 Järjestelmän mukainen
@@ -150,8 +169,8 @@ Tekstin kirjasin
 Aseta kirjasin muokkaus- ja lukunäkymiin.
 Tasalevyinen kirjasin
 Aseta kirjasin tasalevyiselle sisällölle, kuten koodilohkoille ja alkulehdille.
- Tällä hetkellä käytössä oleva kirjasin: 
- Seuraavat kirjasimet ovat tällä hetkellä käytössä:
+{{count}} fontti
+{{count}} fonttia
 Syötä kirjasimen nimi...
 Mitään mukautettua kirjasinta ei ole käytössä tällä hetkellä. Lisää kirjasin alta.
 Sovellus käyttää tästä luettelosta ensimmäistä kirjasinta, joka on järjestelmässä saatavilla.
@@ -163,24 +182,26 @@ Esikatsele ja käytä mahtavia yhteisön luomia teemoja.
 Selaa
 Kirjasinkoko
 Kirjasimen koko pikseleissä. Vaikuttaa muokkaus- ja lukunäkymiin.
+tekstin koko suurenna/pienennä zoomaa
 Nopea kirjasinkoon säätö
 Säädä kirjasinkokoa Ctrl:lla ja hiiren rullalla tai kosketuslevyn nipistyseleellä.
 Teemat
 Hallinnoi asennettuja teemoja ja selaa yhteisön teemoja.
+yhteisö selaa asenna lataa
 Hallinnoi
 Ei mitään
 Natiivivalikot
 Sovelluksen valikot tulevat käyttöjärjestelmältä, jolloin teemat eivät vaikuta niihin.
-Lataa teemat uudelleen
-Mukautetut CSS-teemat ladattiin uudelleen.
 Avaa teemakansio
 CSS-pätkät
+Hallitse CSS-tiedostojen kokoelmaa, jolla voit mukauttaa sovelluksen ulkoasua.
 CSS-pätkiä ei löytynyt pätkäkansiosta.
-CSS-pätkät ovat kansiossa ”{{path}}”.
+{{count}} käytössä
+CSS-pätkien avulla voit mukauttaa Obsidian-sovelluksen ulkoasua. Sijoita CSS-tiedostot kansioon ”{{path}}”, jotta ne näkyvät täällä.
 Lataa pätkät uudelleen
 Avaa pätkäkansio
 CSS-pätkät ladattiin uudelleen.
-Käytä CSS-pätkää polussa ”{{path}}”.
+Hae pätkiä...
 Asennetut teemat
 Kuvaa ei saatavilla
 Oletus
@@ -222,19 +243,24 @@ Päivitä kaikki
 Nykyiset yhteisön teemat
 Sinulla on {{count}} teema asennettuna.
 Sinulla on {{count}} teemaa asennettuna.
+Avaa asetukset uudessa ikkunassa
+Avaa asetukset omassa ikkunassaan sovellukseen upottamisen sijaan.
+Käyttöliittymä
+Mobiili
+Lisäasetukset
 Pikanäppäimet
 Etsi pikanäppäimistä
 Näytetään {{count}} pikanäppäin. 
 Näytetään {{count}} pikanäppäintä. 
-{{count}} komento, jolla on ristiriitoja.
-{{count}} komentoa, joilla on ristiriitoja.
 Suodata...
 Poista pikanäppäin
 Paina pikanäppäintä...
 Kaikki
+Ristiriidat ({{count}})
 Asettamatta
 Asetettu
 Minun asettamani
+Tuloksia ei löytynyt.
 Palauta oletus
 Mukauta tätä komentoa
 Tämä pikanäppäin on ristiriidassa komennon ”{{command}}” kanssa.
@@ -352,28 +378,34 @@ Suodata lisäosia nimen tai kuvauksen perustella.
 Hae lisäosia...
 Yhteisön lisäosat
 Rajoitettu tila
-Rajoitettu tila on pois päältä. Laita päälle poistaaksesi yhteisön lisäosat käytöstä.
+Ota rajoitettu tila käyttöön käyttääksesi sovellusta ilman yhteisön lisäosia.
 Ota käyttöön ja lataa uudelleen
 Tarkista lisäosien päivitykset automaattisesti
 Tarkistaa väliajoin, onko lisäosiin tullut päivityksiä.
 Yhteisön lisäosat
-Selaa ja asenna yhteisön lisäosia, joita meidän mahtava yhteisömme on tehnyt.
+Selaa ja asenna yhteisön tekemiä lisäosia.
 Selaa
 Poistu rajoitetusta tilasta
 Yhteisön lisäosat voivat tavallisten ohjelmistojen tavoin aiheuttaa eheys- ja tietoturvaongelmia, jos asennat niitä.
 Lisäosien turvallisuus on meille tärkeää. Toimimme siksi näin:
 Ponnisteluistamme huolimatta on aina pieni mahdollisuus, että yhteisön lisäosa voi tehdä jotain sopimatonta.
-Alustava koodin tarkastus
-Tiimimme tarkastaa lisäosan koodin ennen kuin lisäosa lisätään viralliselle yhteisön lisäosalistalle.
+Koodin tarkastus
+Virallisen yhteisön lisäosakirjaston lisäosat tarkastetaan automaattisesti joka päivityksen jälkeen.
 Avoin lähdekoodi
 Suurin osa lisäosista ovat avointa lähdekoodia GitHubissa, joten voit tarkastella koodia itsekin.
 Vertaisarviointi
 Meillä on suuri yhteisö ohjelmistokehittäjiä, jotka huolehtivat toisistaan.
 Ilmoitusjärjestelmä
 Käyttäjäraporttien pohjalta voimme poistaa väärin toimivia lisäosia.
-Haluatko poistua rajoitetusta tilasta ja ottaa käyttöön yhteisön lisäosat? Suosittelemme vahvasti sinua ottamaan varmuuskopion tiedoistasi ennen sitä.
 Lue lisää lisäosien turvallisuudesta
-Ota yhteisön lisäosat käyttöön
+Salli yhteisön lisäosat
+Lisäosat voivat suorittaa mielivaltaista koodia laitteellasi. Suosittelemme varmuuskopioimaan tietosi ennen niiden käyttöönottoa.
+Ota asennetut lisäosat uudelleen käyttöön
+Palauta {{count}} aiemmin asennettu lisäosa.
+Palauta {{count}} aiemmin asennettua lisäosaa.
+Näytä lisäosan tiedot
+Käytössä olevat lisäosat
+Nämä lisäosat otetaan käyttöön, kun poistut rajoitetusta tilasta.
 Luotatko tämän holvin tekijään?
 Olet avaamassa tämän holvin ensimmäistä kertaa, ja se sisältää joitain lisäosia.
 Jos sait tämän holvin joltain muulta, huomaa että tuntemattomasta lähteestä tulevat lisäosat voivat aiheuttaa tietoturvariskejä.
@@ -387,6 +419,9 @@ Asenna
 Ota käyttöön
 Poista käytöstä
 Kopioi jakamislinkki
+Näytä tiedot
+Avaa yhteisösivu
+Asetukset
 Lahjoita
 Ei tuloksia.
 Ei äskettäin avattuja tiedostoja. Kirjoita hakeaksesi...
@@ -426,6 +461,7 @@ Etsi asennetuista lisäosista
 Suodata asennettuja lisäosia nimen tai kuvauksen perusteella.
 Hae asennetuista lisäosista...
 Näytä vain asennetut
+Lisäosia ei ole asennettu.
 Tue lisäosaa {{name}} lahjoittamalla
 Lisäosien kehittäjät ovat vapaaehtoisia yhteisön jäseniä, jotka tekevät mahtavia asioita intohimostaan. Jos tämä lisäosa on mielestäsi hyödyllinen, harkitse sen kehityksen rahoittamista.
 100% tuestasi menee lisäosan kehittäjälle; Obsidian ei ota osuutta. Rahoitusalusta saattaa kuitenkin periä maksun.
@@ -526,6 +562,9 @@ Kutista
 Tiedoston ”{{filepath}}” tallennus epäonnistui. {{message}}. Tee varmuuskopio tämän tiedoston sisällöstä välittömästi, tai saatat menettää tietoja.
 Lisäosan “{{plugin}}” lataus epäonnistui
 Lisäosaa ”{{plugin}}” ladattaessa tapahtui virhe
+Lisäosaa {{plugin}} ei ladattu. Tämä lisäosa ei ole yhteensopiva Obsidianin version v{{version}} kanssa.
+Lisäosa {{plugin}} ei enää toimi. Suosittelemme poistamaan sen.
+Lisäosan {{plugin}} versiota v{{version}} ei voitu ladata. Tämän version on ilmoitettu aiheuttavan ongelmia. Tarkista, onko lisäosasta saatavilla uudempi versio.
 Tiedoston “{{filepath}}” avaus epäonnistui
 Kohdetta “{{href}}” ei voitu avata
 Ei tiedostoa
@@ -636,6 +675,7 @@ Kytke vieritys välilehteen...
 Lähdekooditila
 Lukunäkymä
 Lisää tiedostolle määre
+Poista
 Poista tiedosto
 Luo tämä tiedosto
 Avaa linkki
@@ -983,6 +1023,10 @@ Poista
 Tällä hetkellä {{count}} linkki osoittaa tähän tiedostoon.
 Tällä hetkellä {{count}} linkkiä osoittaa tähän tiedostoon.
 Poista tiedosto
+Suoritetaanko toiminto ulkoisesta linkistä?
+Toimintoa “{{action}}” ollaan suorittamassa. Jatka vain, jos luotat linkin lähteeseen.
+Lisäosa “{{source}}” on suorittamassa toimintoa “{{action}}”. Jatka vain, jos luotat linkin lähteeseen.
+Älä kysy uudelleen toiminnosta “{{action}}”
 Lataa liitteet
 Tässä muistiinpanossa ei ole liitteitä.
 {{count}} liite ladattiin.
@@ -997,6 +1041,9 @@ Hallinnoi
 Näytä
 Vahvista
 Peruuta
+Salli
+Salli kerran
+Salli aina
 Ohita
 Lataa
 Valmis
@@ -1224,6 +1271,7 @@ Näyttää liitetiedostot kuten kuvat, videot, ja PDF:t.
 Näytä kaikki tiedostotyypit
 Näyttää kaikki tiedostot, vaikka Obsidian ei osaisi itse avata niitä. Tiedosto avataan tyypille määritetyssä oletussovelluksessa.
 Verkkonäkymä
+Lähiverkko
 Näe muistiinpanosi väliset suhteet helposti.
 Avaa verkkonäkymä
 Avaa lähiverkko
@@ -1420,7 +1468,8 @@ siirtyy
 suorittaa
 sulkee
 Komentoja ei löytynyt.
-Kirjoita komento...
+Lisää komento...
+Valitse komento...
 Kiinnitetyt komennot
 Muotoilumuunnin
 Muuntaa muiden sovellusten Markdown-tekstiä Obsidian-sovelluksen käyttämään muotoon.
@@ -1507,6 +1556,8 @@ Otsikoita ei löytynyt.
 Kohdista nykyinen kohta automaattisesti
 Sanamäärä
 Näyttää sanamäärän tilarivillä.
+Näytetäänkö Mermaid-kaaviot tässä holvissa?
+Salli vain, jos luotat tämän holvin sisältöön.
 Diaesitys
 Luo diaesityksiä, jossa dioja erottaa ”---”-erotin.
 Aloita diaesitys
@@ -1710,7 +1761,6 @@ Poista käyttäjä
 Kutsu käyttäjä
 Syötä sähköpostiosoite...
 Syötä kutsuttavan henkilön sähköpostiosoite.
-Ota julkaisulisäosa käyttöön asetuksista -> Sisäänrakennetut lisäosat katsellaksesi sivustojen sisältöä.
 Sivustosi
 Sinulle jaetut sivustot
 Eroa sivun toimittajan tehtävästä
@@ -1914,6 +1964,10 @@ Käytössä olevat yhteisön lisäosat
 Synkronoi käytössä olevat yhteisön lisäosat.
 Asennetut yhteisön lisäosat
 Synkronoi asennetut yhteisön lisäosat (.js-, .css-, ja manifest.json-tiedostot) ja niiden asetukset.
+Sallitaanko synkronoitujen lisäosien suorittaminen tällä laitteella?
+Obsidian Sync ei voi vahvistaa tälle laitteelle synkronoitujen lisäosien sisältöä, ja ne voivat poiketa yhteisökirjastolla julkaistuista lisäosista.
+Ota tämä käyttöön vain, jos luotat holviin ja yhdistettyihin laitteisiin.
+Kyllä, ota lisäosien synkronointi käyttöön
 Sync lataa vielä, päivitä sivu myöhemmin.
 Obsidian Sync on Obsidian-lisäpalvelu synkronointiin, joka salaa tiedot päästä päähän ja tukee versiohistoriaa.
 Kirjaudu Obsidian-tilillesi tai luo sellainen käyttääksesi Synciä.
@@ -2068,6 +2122,7 @@ Poistaa kaikki yllä mainitut tiedot, paikallisen tallennusdatan ja istunnot.
 Uusi selainpaneeli
 Sivustoa ei voitu ladata.
 Tarkista, että osoite on oikein.
+Lukunäkymä
 Hae verkosta
 Sisäisen selaimen tiedot
 Tyhjennä sisäisen selaimen tiedot
@@ -2372,6 +2427,9 @@ Korkea
 Hyvin korkea
 Yhteenveto...
 Ryhmitä määreen mukaan
+Muuta sarakkeen kokoa...
+Palauta sarakkeen koko
+Muuta kokoa raahaamalla
 Tyhjennä arvot
 Yhteenveto
 Kaavaa ”{{ formula }}” ei voitu jäsentää
@@ -2515,3 +2573,24 @@ Nostolaatikon tyyppi...
 {{count}} pätkää
 {{count}} teema
 {{count}} teemaa
+Peruuta
+
+Kopioi
+Avaa linkki
+Avaa tämä tiedosto
+Suorita tiedosto
+Avataanko ulkoinen linkki?
+Tämä linkki avaa ulkoisen sovelluksen Obsidian-sovelluksen ulkopuolella. Jatka vain, jos luotat tämän linkin lähteeseen.
+Avaa aina {{scheme}}://-linkit
+Etätiedostovaroitus
+Tämä tiedosto sijaitsee etäpalvelimella ja voi olla vaarallinen.\nHaluatko varmasti avata sen?
+Sijainti: {{location}}
+Verkkolevyn käyttö
+Tämä sisältö pyytää tietoja verkkolevyltä. Tämän salliminen voi paljastaa kirjautumistietosi tai muita arkaluonteisia tietoja ulkoiselle tietokoneelle.
+Isäntä: {{host}}
+Salli
+Suoritetaanko suoritettava tiedosto?
+Tämä linkki osoittaa suoritettavaan tiedostoon. Sen suorittaminen voi vahingoittaa tietokonettasi.
+Tiedosto: {{path}}
+Holvia ei löytynyt.
+URL-osoitteelle {{url}} ei löytynyt holvia

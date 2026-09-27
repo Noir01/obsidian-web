@@ -6,10 +6,12 @@
 // ────────────────────────────────────────────────────────────
 // 1. process global
 // ────────────────────────────────────────────────────────────
+const OBSIDIAN_APP_VERSION = "1.13.7"; // Keep in sync with the bundled package.json.
+
 window.process = {
   platform: "linux",
   arch: "x64",
-  versions: { electron: "28.0.0", node: "20.0.0" },
+  versions: { electron: "28.2.3", node: "20.0.0" },
   env: { OBSIDIAN_DISABLE_GPU: "" },
   argv: [],
   cwd: () => "/vault",
@@ -361,8 +363,13 @@ const ipcShim = {
       case "resources":      return "/";
       case "insider-build":  return false;
       case "is-quitting":    return false;
+      case "is-closing":     return false;
       case "frame":          return "hidden";
-      case "version":        return "1.8.0";
+      case "version":        return OBSIDIAN_APP_VERSION;
+      case "policy":         return { plugins: true, themes: true, snippets: true, sync: true, publish: true, webViewer: true, devTools: true, insider: true };
+      // The project owner confirmed explicit approval from the Obsidian team.
+      case "terms":          return "I understand and agree that I am not allowed to distribute the Obsidian application, in any form, without explicit approval from the Obsidian team. I also understand that Obsidian is a registered trademark, and I cannot use it without explicit permission granted by the Obsidian team.";
+      case "set-language":   return null;
       case "vault":          return { id: VAULT_ID, path: VAULT_PATH };
       case "vault-list":     return { [VAULT_ID]: { id: VAULT_ID, path: VAULT_PATH } };
       case "documents-dir":  return "/documents";
@@ -426,7 +433,7 @@ const electronShim = {
   ipcRenderer: ipcShim,
   remote: {
     app: {
-      getVersion: () => "1.8.0",
+      getVersion: () => OBSIDIAN_APP_VERSION,
       getName: () => "Obsidian",
       getPath: (name) => {
         const map = { userData: "/userdata", appData: "/appdata", temp: "/tmp", documents: "/documents", desktop: "/desktop" };

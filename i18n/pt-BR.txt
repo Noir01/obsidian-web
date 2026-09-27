@@ -1,10 +1,19 @@
 Configurações
 
 Plugins nativos
+Mostrar na lista de plugins
 Configurações de plugin
 Exemplo: pasta 1/pasta 2
 Exemplo: pasta/nota
+Nenhum arquivo selecionado
 É preciso reiniciar para que estas mudanças façam efeito.
+Número inválido
+O valor deve ser pelo menos {{min}}
+O valor deve ser no máximo {{max}}
+Arquivo não encontrado.
+Localizar configurações...
+Nenhuma configuração encontrada.
+mais {{count}}
 
 Funcionamento
 Exibição
@@ -56,6 +65,8 @@ Tamanho da tabulação
 O número de espaços ao qual uma tabulação é equivalente.
 Direita para esquerda (RTL)
 Define a direção do texto das notas a serem exibidas da direita para a esquerda.
+Mostrar diagramas Mermaid nas notas
+Renderize fluxogramas, diagramas de sequência e outros diagramas a partir de blocos de código “mermaid”.
 Conversor automático de HTML
 Automaticamente converte HTML para Markdown quando colado ou arrastado de páginas web. Use Ctrl/Cmd+Shift+V para colar sem conversão.
 Atalhos de teclado Vim
@@ -124,18 +135,26 @@ Nome da subpasta
 Se seus arquivos estiverem em "cofre/pasta", e você nomear a sua subpasta "anexos", seus anexos serão salvos em "cofre/pasta/anexos".
 Arquivos excluídos
 Os arquivos excluídos estarão ocultos ou menos perceptíveis em vários lugares como na Navegação Rápida, sugestões de link e Visualização em Gráfico.
-Nenhum filtro de exclusão aplicado. Adicione um abaixo.
-Os arquivos que correspondem aos seguintes filtros estão atualmente excluídos:
-Filtrar
+Adicionar exclusão...
+Nenhuma exclusão adicionada.
+{{count}} regra
+{{count}} regras
+Adicionar exclusão
+Digite um caminho ou uma expressão regular, por exemplo, /daily-.*/
 O filtro não pode estar vazio
-Digite um caminho ou "/regex/"...
 Permitir callbacks de URI
 Habilite o uso de x-callback-url por meio de x-success ou x-error ao lidar com URIs do Obsidian.
+URI do Obsidian
+Gerencie ações confiáveis e configure o comportamento de URIs.
+Ações confiáveis
+Ainda não há ações confiáveis. Ações de URI aprovadas aparecerão aqui.
 Aparência
 Tema base
 Escolha o esquema de cores padrão do Obsidian.
+escuro claro sistema modo noturno esquema de cores
 Cor de destaque
 Escolha a cor de destaque usada em todo o app.
+destaque marca cor primária
 Escuro
 Claro
 Adaptar ao sistema
@@ -150,8 +169,8 @@ Fonte do texto
 Definir fonte para os modos de edição e leitura.
 Fonte monoespaçada
 Definir fonte para lugares como blocos de código e pré-texto.
- Fonte atualmente aplicada: 
- As seguintes fontes estão atualmente aplicadas:
+{{count}} fonte
+{{count}} fontes
 Digite o nome da fonte...
 Nenhuma fonte personalizada aplicada no momento. Adicione uma abaixo.
 A primeira fonte desta lista que estiver disponível no seu sistema será aplicada.
@@ -163,24 +182,26 @@ Visualize e use os incríveis temas criados pela comunidade.
 Procurar
 Tamanho da fonte
 Tamanho da fonte em pixels que afeta o editor e a pré-visualização
+tamanho do texto zoom
 Ajuste rápido do tamanho da fonte
 Ajuste o tamanho da fonte utilizando o Ctrl + Scroll, ou usando o movimento de pinça no trackpad
 Temas
 Gerencie os temas instalados e navegue por temas da comunidade
+comunidade navegar instalar baixar
 Gerenciar
 Nenhum
 Menus nativos
 Menus em todo o app corresponderão ao sistema operacional. Eles não serão afetados pelo seu tema.
-Recarregar temas
-Temas CSS personalizados recarregados.
 Abrir pasta de temas
 Fragmentos CSS
+Gerencie sua coleção de arquivos CSS para ajustar a aparência do aplicativo.
 Nenhum fragmento CSS encontrado na pasta de fragmentos.
-Fragmentos CSS são guardados em "{{path}}".
+{{count}} ativado(s)
+Extratos CSS permitem personalizar a aparência do Obsidian. Coloque arquivos CSS em “{{path}}” para que eles apareçam aqui.
 Recarregar fragmentos
 Abrir pasta de fragmentos
 Fragmentos CSS recarregados.
-Aplica fragmento CSS em "{{path}}".
+Localizar extratos...
 Temas instalados
 Captura de tela indisponível
 Padrão
@@ -222,19 +243,24 @@ Atualizar tudo
 Temas da comunidade atuais
 Você atualmente tem {{count}} tema instalado.
 Você atualmente tem {{count}} temas instalados.
+Abrir configurações em nova janela
+Abra as configurações em sua própria janela em vez de incorporadas ao aplicativo.
+
+Celular
+Avançado
 Atalhos
 Procurar atalhos
 Apresentando {{count}} atalho. 
 Apresentando {{count}} atalhos. 
-{{count}} comando com conflitos.
-{{count}} comandos com conflitos.
 Filtrar
 Excluir atalho
 Pressione atalho
 Todos
+Conflitos ({{count}})
 Não atribuídos
 Atribuídos
 Atribuídos por mim
+Nenhum resultado encontrado.
 Restaurar ao padrão
 Personalizar esse comando
 Esse atalho já foi usado com o comando "{{command}}"
@@ -352,28 +378,34 @@ Filtre os plugins por nome ou descrição.
 Procurar plugins
 Plugins não oficiais
 Modo restrito
-O Modo Restrito está desligado. Ligue-o para desativar os plugins da comunidade.
+Ative o modo restrito para usar o aplicativo sem plugins da comunidade.
 Ligar
 Verificar automaticamente atualizações de plugins
 Verificar periodicamente atualizações de plugins.
 Plugins da comunidade
-Procure e instale plugins não oficiais feitos pela nossa incrível comunidade.
+Procure e instale plugins da comunidade criados pela comunidade.
 Procurar
-Sair do Modo Restrito
+Sair do modo restrito
 Os plugins da comunidade, como qualquer outro software, podem potencialmente causar problemas de integridade dos dados e segurança.
 A segurança do plugin é importante para nós. Eis o que fazemos:
 Apesar de nossos esforços ainda há uma pequena chance de um plugin da comunidade se comportar mal.
-Revisão inicial de código
-Plugins passam por uma revisão inicial de código feita pela nossa equipe antes de aparecerem na loja.
+Revisão de código
+Os plugins no diretório oficial da comunidade são revisados automaticamente após cada atualização.
 Código aberto
 A maioria dos plugins são de código aberto no GitHub e você pode inspecionar o código por si mesmo.
 Auditoria de colegas
 Temos uma ampla comunidade de desenvolvedores que cuidam uns dos outros.
 Mecanismo de denúncia
 Acompanhamos e removemos plugins defeituosos mediante denúncia do usuário.
-Gostaria de sair do Modo Restrito para habilitar plugins da comunidade? Recomendamos fortemente fazer uma cópia de segurança dos seus dados antes de fazer isso.
 Aprenda mais sobre segurança de plugins
-Ligar os plugins da comunidade
+Permitir plugins da comunidade
+Plugins podem executar código arbitrário no seu dispositivo. Recomendamos fazer backup dos seus dados antes de ativá-los.
+Reativar plugins instalados
+Restaurar {{count}} plugin instalado anteriormente.
+Restaurar {{count}} plugins instalados anteriormente.
+Mostrar informações do plugin
+Plugins ativados
+Esses plugins serão ativados ao sair do modo restrito.
 Você confia no autor deste cofre?
 Você está abrindo este cofre pela primeira vez e ele vem com alguns plugins.
 Se você obteve este cofre de outra pessoa, por favor, note que plugins de origem desconhecida podem trazer riscos à segurança.
@@ -387,6 +419,9 @@ Instalar
 Ativar
 Desativar
 Copiar link de compartilhamento
+Ver detalhes
+Abrir página da comunidade
+Configurações
 Doar
 Nenhum resultado encontrado.
 Nenhum arquivo recente encontrado. Digite para procurar...
@@ -426,6 +461,7 @@ Procurar nos plugins instalados
 Filtrar plugins instalados por nome ou descrição.
 Procurar plugins instalados
 Mostrar apenas instalados
+Nenhum plugin instalado.
 Doe para apoiar {{name}}
 Desenvolvedores de plugin são voluntários da comunidade que fazem coisas incríveis por amor. Se você achou esse plugin útil, por favor, considere financiar seu desenvolvimento.
 100% da sua contribuição irá para o desenvolvedor do plugin; Obsidian não pega uma parte. A plataforma de financiamento escolhida pode cobrar uma taxa.
@@ -526,6 +562,9 @@ Recolher
 Falha ao salvar o arquivo "{{filepath}}". {{message}}.
 Falha ao carregar o plugin “{{plugin}}”
 O plugin “{{plugin}}” encontrou um erro ao carregar
+{{plugin}} não foi carregado. Este plugin não é compatível com o Obsidian v{{version}}.
+{{plugin}} não funciona mais. Recomendamos desinstalá-lo.
+Não foi possível carregar o plugin {{plugin}} v{{version}}. Foi relatado que esta versão causa problemas. Verifique se há uma versão mais recente do plugin.
 Falha ao abrir “{{filepath}}”
 Não é possível abrir o local “{{href}}”
 Nenhum arquivo
@@ -636,6 +675,7 @@ Vincular aba...
 Modo de origem
 Visualização de leitura
 Adicionar propriedade
+Excluir
 Apagar arquivo
 Criar este arquivo
 Abrir link
@@ -983,6 +1023,10 @@ Não perguntar novamente
 Atualmente existe {{count}} link apontando para este arquivo.
 Atualmente existem {{count}} links apontando para este arquivo.
 Excluir arquivo
+Executar ação de um link externo?
+A ação “{{action}}” está prestes a ser executada. Continue somente se você confiar na origem do link.
+O plugin “{{source}}” está prestes a executar a ação “{{action}}”. Continue somente se você confiar na origem do link.
+Não perguntar novamente sobre “{{action}}”
 Baixar anexos
 Não há anexos externos nesta nota.
 {{count}} anexo baixado.
@@ -997,6 +1041,9 @@ Gerenciar
 Visualizar
 Confirmar
 Cancelar
+Permitir
+Permitir uma vez
+Sempre permitir
 Pular
 Baixar
 Pronto
@@ -1224,6 +1271,7 @@ Mostra arquivos de anexo como imagens, vídeos e PDFs.
 Mostrar todos os tipos de arquivos
 Mostrar todos os arquivos incluindo aqueles que o Obsidian não pode abrir. O arquivo será aberto com o app padrão para o tipo de arquivo.
 Visualização em gráfico
+Grafo local
 Veja um gráfico do panorama dos vínculos entre as notas.
 Abrir visualização em gráfico
 Abrir gráfico local
@@ -1420,7 +1468,8 @@ para navegar
 para usar
 para dispensar
 Nenhum comando encontrado.
-Digite um comando...
+Adicionar um comando...
+Selecione um comando...
 Comandos salvos
 Importador de formato Markdown
 Converte Markdown de outros aplicativos para o formato do Obsidian.
@@ -1507,6 +1556,8 @@ Nenhum sumário encontrado.
 Rolar automaticamente até a seção atual
 Contador de palavras
 Mostra a quantidade de palavras na barra de status.
+Exibir diagramas Mermaid neste cofre?
+Permita somente se você confiar no conteúdo deste cofre.
 
 Apresente a partir de Markdown. Use "---" para separar seus slides.
 Começar apresentação
@@ -1710,7 +1761,6 @@ Remover usuário
 Convidar usuário
 Digite o e-mail deles...
 Por favor, informe um e-mail válido para convidar alguém.
-Por favor, habilite o plugin nativo Publish em Configurações -> Plugins nativos para ver os sites.
 Seus sites
 Sites compartilhados com você
 Parar de colaborar neste site
@@ -1914,6 +1964,10 @@ Lista de plugins ativos da comunidade
 Sincronizar quais plugins da comunidade estão habilitados.
 Plugins da comunidade instalados
 Sincronizar plugins da comunidade instalados (arquivos .js, .css, e manifest.json) e suas configurações.
+Permitir que plugins sincronizados sejam executados neste dispositivo?
+O Obsidian Sync não pode verificar o conteúdo dos plugins sincronizados para este dispositivo, e eles podem ser diferentes dos plugins publicados no diretório da comunidade.
+Ative isso somente se o cofre e os dispositivos conectados forem confiáveis.
+Sim, ativar a sincronização de plugins
 A sincronização ainda está carregando, atualize esta página mais tarde.
 Obsidian Sync é o serviço de sincronização de complemento da Obsidian com criptografia ponta a ponta e histórico de versão.
 Para iniciar a sincronização, faça o login ou crie uma nova conta Obsidian.
@@ -2068,6 +2122,7 @@ Remove tudo acima, incluindo armazenamento local e sessões ativas.
 Novo visualizador web
 Não foi possível carregar esse site.
 Por favor, certifique-se de que o endereço está correto.
+Modo de leitura
 Procurar na web
 Dados do visualizador web
 Limpar dados do visualizador web
@@ -2372,6 +2427,9 @@ Alta
 Extra alta
 Resumir...
 Agrupar por esta propriedade
+Redimensionar coluna...
+Redefinir tamanho da coluna
+Arraste para redimensionar
 Limpar valores
 Resumo
 Falha ao analisar a fórmula "{{ formula }}"
@@ -2515,3 +2573,24 @@ Tipo de destaque...
 {{count}} extratos
 {{count}} tema
 {{count}} temas
+Cancelar
+
+Copiar
+Abrir link
+Abrir este arquivo
+Executar arquivo
+Abrir link externo?
+Este link abrirá um aplicativo externo fora do Obsidian. Prossiga somente se você confiar na origem deste link.
+Sempre abrir links {{scheme}}://
+Aviso de arquivo remoto
+Este arquivo está localizado em um servidor remoto e pode ser perigoso.\nTem certeza de que deseja abri-lo?
+Localização: {{location}}
+Acesso à unidade de rede
+Este conteúdo está solicitando dados de uma unidade de rede. Permitir isso pode expor suas credenciais de acesso ou outras informações sensíveis ao host remoto.
+
+Permitir
+Executar arquivo executável?
+Este link aponta para um arquivo executável. Executá-lo pode danificar seu computador.
+Arquivo: {{path}}
+Cofre não encontrado.
+Não foi possível encontrar um cofre para a URL {{url}}

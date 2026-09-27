@@ -1,10 +1,19 @@
 Opzioni
 
 Plugin principali
+Mostra nell'elenco dei plugin
 Opzioni plugin
 Esempio: cartella 1/cartella 2
 Esempio: cartella/nota
+Nessun file selezionato
 Per cambiare questa impostazione è necessario il riavvio.
+Numero non valido
+Il valore deve essere almeno {{min}}
+Il valore deve essere al massimo {{max}}
+File non trovato.
+Cerca nelle impostazioni...
+Nessuna impostazione trovata.
+Altri {{count}}
 
 Comportamento
 Visualizzazione
@@ -22,10 +31,10 @@ Limita la lunghezza massima delle righe. Mostra meno contenuti sullo schermo ma 
 Non mostrare interruzioni di riga singole
 In modalità Anteprima, ignora gli a capo singoli seguendo la specifica Markdown. Disattivare questa opzione per mostrare le interruzioni di riga nell'anteprima.
 Proprietà nel documento
-Scegli la modalità di visualizzazione delle proprietà nell'editor. Seleziona "Codice" per visualizzare le proprietà come YAML.
+Scegli come visualizzare le proprietà all'inizio delle note. Seleziona "Sorgente" per mostrarle come YAML grezzo.
 Nascoste
 Visibili
-Codice
+Sorgente
 Chiusura automatica delle parentesi
 Chiude le parentesi e le virgolette automaticamente
 Completamento automatico della sintassi Markdown
@@ -56,6 +65,8 @@ Dimensione tabulazione
 Numero di spazi da usare per la tabulazione.
 Da destra a sinistra (RTL)
 Imposta la direzione del testo delle note da destra a sinistra.
+Mostra i diagrammi Mermaid nelle note
+Esegui il rendering di diagrammi di flusso, diagrammi di sequenza e altri diagrammi dai blocchi di codice “mermaid”.
 Converti automaticamente HTML
 Converte automaticamente HTML in Markdown quando si usa copia/incolla o trascina e rilascia da pagine web. Usare Ctrl/Cmd+Shift+V per incollare senza convertire.
 Tasti di scelta rapida Vim
@@ -96,7 +107,7 @@ Nota quotidiana
 File da aprire
 Seleziona un file specifico da aprire per impostazione predefinita.
 Aggiorna sempre collegamenti interni
-Indica se aggiornare automaticamente i collegamenti dopo aver rinominato un file.
+Disattiva per ricevere un avviso per aggiornare i collegamenti dopo aver rinominato un file.
 Posizione predefinita delle note
 Indica dove inserire le note appena create. I plugin sovrascriveranno questa impostazione.
 Cartella principale del vault
@@ -104,10 +115,10 @@ Stessa cartella del file
 Cartella personalizzata
 Cartella personalizzata per le nuove note
 Le nuove note verranno inserite nella cartella specificata. I plugin sovrascriveranno questa impostazione.
-Usa [[Wikilink]]
-Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilitare questa opzione per utilizzare il formato Markdown.
-Rileva tutte le estensioni di file
-Mostra i file con qualsiasi estensione anche se Obsidian non può aprirli nativamente, in modo da poterli collegare o vedere in Esplora risorse e Selezione rapida.
+Usa [[collegamento wiki]]
+Crea automaticamente collegamento wiki per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilita questa opzione per generare collegamenti Markdown invece.
+Mostra tutti i tipi di file
+Mostra i file con qualsiasi estensione anche se Obsidian non può aprirli nativamente, in modo da poterli vedere e collegare in Esplora file e Selettore rapido.
 Collegamenti
 Formato dei nuovi collegamenti
 Formato dei collegamenti da utilizzare quando vengono generati automaticamente i collegamenti interni.
@@ -116,26 +127,34 @@ Percorso relativo al file
 Percorso assoluto nel vault
 Posizione predefinita dei nuovi allegati
 Indica dove inserire gli allegati appena aggiunti.
-allegati
+Allegati
 Sottocartella della cartella attuale
 Percorso cartella degli allegati
-I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio.
+I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite trascina e rilascia o copia/incolla e le registrazioni audio.
 Nome della sottocartella
 Se il file si trova in "vault/cartella", e il nome della sottocartella è "allegati", gli allegati verranno salvati in "vault/cartella/allegati".
 File esclusi
-I file esclusi verranno nascosti o saranno meno evidenti in alcuni posti come Selezione rapida, suggerimenti e Vista grafo.
-Non sono presenti filtri di esclusione. Aggiungerne uno qui sotto.
-I file che corrispondono ai seguenti filtri sono attualmente esclusi:
-Filtro
+I file esclusi verranno nascosti in Ricerca, Vista grafo e Menzioni non collegate, e saranno meno evidenti nel Selettore rapido e nei suggerimenti.
+Aggiungi esclusione...
+Nessuna esclusione aggiunta.
+{{count}} regola
+{{count}} regole
+Aggiungi esclusione
+Inserisci un percorso o un'espressione regolare, ad es. /daily-.*/
 Il filtro non può essere vuoto
-Inserisci percorso o "/regex/"...
 Abilita callback URI
 Abilita l'uso di x-callback-url attraverso x-success o x-error durante la gestione degli URI di Obsidian.
+URI Obsidian
+Gestisci le azioni attendibili e configura il comportamento degli URI.
+Azioni attendibili
+Ancora nessuna azione attendibile. Le azioni URI approvate appariranno qui.
 Aspetto
 Tema di base
 Combinazione di colori predefinita di Obsidian.
+scuro chiaro sistema modalità notte combinazione colori
 Colore d'accento
 Scegli un colore d'accento da utilizzare nell'app.
+evidenziazione brand colore primario
 Scuro
 Chiaro
 Adatta al sistema
@@ -150,8 +169,8 @@ Carattere testo
 Imposta il carattere per la vista Modifica e la vista Lettura.
 Carattere monospazio
 Imposta il carattere per posti come i blocchi di codice o il frontespizio.
- Carattere applicato: 
- Caratteri applicati:
+
+{{count}} font
 Inserisci nome carattere...
 Nessun carattere personalizzato. Aggiungerne uno qui sotto.
 Verrà applicato il primo carattere disponibile sul sistema da questo elenco.
@@ -163,24 +182,26 @@ Visualizza in anteprima e utilizza i temi creati dalla comunità.
 Sfoglia
 Dimensione carattere
 Dimensione del carattere in pixel che ha effetto su editor e anteprima.
+dimensione testo zoom
 Regolazione rapida carattere
 Regola la dimensione del carattere usando Ctrl + Scorr, o usando la modalità zoom indietro/avanti con le dita.
 Temi
 Gestisci i temi installati e sfoglia i temi della comunità.
+community sfoglia installa scarica
 Gestisci
 Nessuno
 Menu nativi
 Rende i menu nell'app come quelli del sistema operativo. Se attivo, i menu non saranno influenzati dal tema dell'app.
-Ricarica temi
-Temi CSS personalizzati ricaricati.
 Apri cartella dei temi
 Snippet CSS
+Gestisci la tua raccolta di file CSS per personalizzare l'aspetto dell'app.
 Nessuno snippet CSS trovato nella cartella degli snippet.
-Gli Snippet CSS sono archiviati in "{{path}}".
+{{count}} abilitati
+Gli snippet CSS consentono di personalizzare l'aspetto di Obsidian. Colloca i file CSS in “{{path}}” affinché vengano visualizzati qui.
 Ricarica snippet
 Apri cartella snippet
 Snippet CSS ricaricati.
-Applica snippet CSS a "{{path}}".
+Cerca snippet...
 Temi installati
 Screenshot non disponibile
 Predefinito
@@ -222,23 +243,28 @@ Aggiorna tutto
 Temi installati
 Hai {{count}} tema installato.
 Hai {{count}} temi installati.
+Apri le impostazioni in una nuova finestra
+Apri le impostazioni in una finestra separata invece che integrate nell'app.
+Interfaccia
+
+Avanzate
 Tasti di scelta rapida
-Cerca tasti di scelta rapida
-{{count}} tasto di scelta rapida. 
-{{count}} tasti di scelta rapida. 
-{{count}} comando con conflitti.
-{{count}} comandi con conflitti.
+Cerca scorciatoie da tastiera
+{{count}} scorciatoia da tastiera.
+{{count}} scorciatoie da tastiera.
 Filtra...
-Elimina combinazione di tasti
-Premi tasti di scelta rapida...
+Elimina scorciatoia da tastiera
+Premi scorciatoia da tastiera...
 Tutti
+Conflitti ({{count}})
 Non assegnati
 Assegnati
 Assegnati da me
+Nessun risultato trovato.
 Ripristina predefinito
 Personalizza comando
-Questa combinazione è in conflitto con "{{command}}"
-Questa combinazione è in conflitto con {{count}} altri comandi
+Questa scorciatoia è in conflitto con "{{command}}"
+Questa scorciatoia è in conflitto con {{count}} altri comandi
 Vuoto
 Portachiavi
 Segreti
@@ -352,28 +378,34 @@ Filtra i plugin per nome o descrizione.
 Cerca plugin...
 Plugin di terze parti
 Modalità limitata
-La modalità limitata non è attiva. Attivala per disabilitare i plugin della comunità.
+Attiva la modalità limitata per usare l'app senza plugin della community.
 Attiva
 Controlla automaticamente gli aggiornamenti dei plugin
 Controlla periodicamente la disponibilità di aggiornamenti dei plugin.
 Plugin della comunità
-Sfoglia e installa plugin di terze parti creati dalla nostra straordinaria comunità.
+Sfoglia e installa plugin realizzati dalla community.
 Sfoglia
 Esci dalla modalità limitata
 I plugin della comunità, come ogni altro software installato, potrebbero causare problemi di integrità e sicurezza dei dati.
 La sicurezza dei plugin è importante per noi. Ecco cosa facciamo:
 Nonostante i nostri sforzi, c'è sempre la possibilità che un plugin della comunità possa essere dannoso.
-Revisione iniziale del codice
-I plugin vengono sottoposti a una revisione del codice da parte del nostro team prima di essere mostrati nello store.
+Revisione del codice
+I plugin nella directory ufficiale della community vengono revisionati automaticamente dopo ogni aggiornamento.
 
 La maggior parte dei plugin sono open source su GitHub, quindi possono essere personalmente controllati.
 Revisione tra pari
 Abbiamo una vasta comunità di sviluppatori che controllano il lavoro degli altri.
 Meccanismo di segnalazione
 Controlliamo e rimuoviamo i plugin problematici su segnalazione dell'utente.
-Uscire dalla modalità limitata per abilitare i plugin della comunità? Consigliamo vivamente di eseguire un backup dei dati prima di procedere.
 Ulteriori informazioni sulla sicurezza dei plugin
-Attiva i plugin della comunità
+Consenti plugin della community
+I plugin possono eseguire codice arbitrario sul tuo dispositivo. Ti consigliamo di effettuare un backup dei dati prima di abilitarli.
+Riabilita i plugin installati
+Ripristina {{count}} plugin installato in precedenza.
+Ripristina {{count}} plugin installati in precedenza.
+Mostra informazioni sul plugin
+Plugin abilitati
+Questi plugin verranno abilitati quando uscirai dalla modalità limitata.
 Considerare attendibili gli autori di questo vault?
 Stai aprendo per la prima volta questo vault che contiene alcuni plugin.
 Se il vault è stato ottenuto da terzi, tenere presente che i plugin di origine sconosciuta possono comportare rischi per la sicurezza.
@@ -386,7 +418,10 @@ Installato
 Installa
 Abilita
 Disabilita
-Copia link di condivisione
+Copia collegamento di condivisione
+Visualizza dettagli
+Apri la pagina della community
+Impostazioni
 Dona
 nessun risultato trovato.
 Nessun file recente trovato. Digita per cercare...
@@ -426,6 +461,7 @@ Cerca plugin installato
 Filtra i plugin installati per nome o descrizione.
 Cerca plugin installato...
 Mostra solo installati
+Nessun plugin installato.
 Dona per sostenere {{name}}
 Gli sviluppatori di plugin sono volontari che creano tante cose incredibili per passione. Se trovi utile questo plugin, considera di finanziarne lo sviluppo.
 Il 100% del contributo andrà allo sviluppatore del plugin; Obsidian non trattiene alcuna percentuale. La piattaforma che gestisce il pagamento potrebbe addebitare una commissione.
@@ -452,9 +488,9 @@ Imposta intestazione
 Imposta barrato
 Imposta evidenziato
 Imposta codice
-Imposta citazione
-Imposta Math in linea
-Imposta blocco Math
+Imposta blocco citazione
+Imposta matematica in linea
+Imposta blocco matematica
 Aggiungi collegamento Markdown
 Imposta elenco puntato
 Imposta elenco numerato
@@ -526,6 +562,9 @@ Nascondi
 Impossibile salvare "{{filepath}}". {{message}}.
 Impossibile caricare il plugin “{{plugin}}”
 Errore durante il caricamento del plugin “{{plugin}}”
+{{plugin}} non è stato caricato. Questo plugin non è compatibile con Obsidian v{{version}}.
+{{plugin}} non è più funzionante. Ti consigliamo di disinstallarlo.
+Impossibile caricare il plugin {{plugin}} v{{version}}. È stato segnalato che questa versione causa problemi. Verifica se è disponibile una versione più recente del plugin.
 Impossibile aprire “{{filepath}}”
 Impossibile aprire “{{href}}”
 Nessun file
@@ -571,11 +610,11 @@ Formattazione
 Paragrafo
 Inserisci
 Aggiungi collegamento
-Aggiungi link
-Riquadro
+Aggiungi collegamento esterno
+
 Barra orizzontale
 Blocco di codice
-Blocco di matematica
+Blocco matematica
 Tabella
 Nota a piè di pagina
 Grassetto
@@ -629,13 +668,14 @@ Chiudi {{count}} scheda
 Chiudi {{count}} schede
 Chiudi le altre schede
 Chiudi schede a destra
-Blocca
-Sblocca
+Appunta
+Rilascia
 Scollega scheda
 Collega con scheda...
 Codice sorgente
 Lettura
 Aggiungi proprietà
+Elimina
 Elimina file
 Crea questo file
 Apri collegamento
@@ -875,7 +915,7 @@ Stato attivo su gruppo di schede sopra
 Stato attivo su gruppo di schede sotto
 Stato attivo su gruppo di schede a sinistra
 Stato attivo su gruppo di schede a destra
-Blocca/sblocca nota
+Appunta/rilascia
 Dividi a destra
 Dividi sotto
 Attiva/disattiva sovrapposizione schede
@@ -937,7 +977,7 @@ Attiva/disattiva stato dell'attività
 Passa a elenco/attività
 Inserisci callout
 Inserisci blocco di codice
-Inserisci blocco Math
+Inserisci blocco matematica
 Inserisci barra orizzontale
 Inserisci tabella
 Inserisci nota a piè di pagina
@@ -983,6 +1023,10 @@ Non chiedere più
 Attualmente c'è {{count}} collegamento che punta a questo file.
 Attualmente ci sono {{count}} collegamenti che puntano a questo file.
 Eliminazione file
+Eseguire l'azione dal collegamento esterno?
+L'azione “{{action}}” sta per essere eseguita. Continua solo se ritieni attendibile la fonte del collegamento.
+Il plugin “{{source}}” sta per eseguire l'azione “{{action}}”. Continua solo se ritieni attendibile la fonte del collegamento.
+Non chiedere più per “{{action}}”
 Scarica allegati
 Non ci sono allegati esterni in questa nota.
 Scaricato {{count}} allegato.
@@ -997,6 +1041,9 @@ Gestisci
 Visualizza
 Conferma
 Annulla
+Consenti
+Consenti una volta
+Consenti sempre
 Salta
 Scarica
 Fatto
@@ -1037,7 +1084,7 @@ Chiudi scheda
 Chiudi finestra
 Trova
 Sostituisci
-Riquadro
+
 Collegamento Markdown
 Collegamento
 Intestazione {{level}}
@@ -1046,7 +1093,7 @@ Citazione
 Esporta PDF
 Inserisci allegato...
 Blocco di codice
-Blocco Math
+Blocco matematica
 Tabella
 Nota a piè di pagina
 Titolo in linea
@@ -1081,22 +1128,22 @@ Dividi a destra
 Dividi sotto
 Note di rilascio
 Plugin
-Esplora risorse
-Visualizza tutti i file nel tuo vault.
-Apri Esplora risorse
-Mostra Esplora risorse
+Esplora file
+Esplora i file e le cartelle nel tuo vault.
+Apri Esplora file
+Mostra Esplora file
 Crea nuova nota
 Crea nuova cartella
 Crea nuova nota nella scheda attuale
 Crea nota a destra
-Rivela automaticamente file attuale
+Rivela automaticamente il file attuale
 Comprimi tutto
 Espandi tutto
 Nuova nota
 Nuova cartella
 Ordinamento
-Mostra in Esplora risorse
-Mostra file attivo in Esplora risorse
+Mostra in Esplora file
+Mostra il file attivo in Esplora file
 Crea una copia del file attuale
 Duplica file attuale
 Sposta file in un'altra cartella
@@ -1202,10 +1249,10 @@ ricerca parole nella stessa intestazione
 corrisponde alla proprietà
 Ricerca per "{{keyword}}"
 Ricerca nella cartella
-Selezione rapida
+Selettore rapido
 Passa a un file senza lasciare la tastiera. Ctrl/Cmd+O per attivare.
 Selezione
-Apri selezione rapida
+Apri selettore rapido
 seleziona
 apri
 per aprire in nuova scheda
@@ -1224,6 +1271,7 @@ Mostra file allegati come immagini, video e PDF.
 Mostra tutti i tipi di file
 Mostra tutti i file, compresi quelli che Obsidian non può aprire. Ogni file verrà aperto con l'app predefinita per quel tipo di file.
 Vista grafo
+Grafo locale
 Visualizza una panoramica a grafo dei collegamenti tra le note.
 Apri vista grafo
 Apri grafo locale
@@ -1420,8 +1468,9 @@ seleziona
 esegui
 annulla
 Nessun comando trovato.
-Digita un comando...
-Comandi in evidenza
+Aggiungi un comando...
+Seleziona un comando...
+Comandi appuntati
 Strumento importazione Markdown
 Converte Markdown da altre app al formato di Obsidian.
 Apri importazione Markdown
@@ -1437,8 +1486,8 @@ Conversione collegamenti Zettelkasten
 Converte i collegamenti "[[UID]]" in "[[UID File Name]]".
 Abbellimento collegamenti Zettelkasten
 Converte i collegamenti "[[UID]]" e li abbellisce in "[[UID File Name|File Name]]".
-Migrazione dei metadati iniziali
-Migra etichette dei metadati iniziali, alias e cssclasses nel formato rigoroso richiesto da Obsidian v1.9+
+Migrazione del frontmatter
+Migra etichette di frontmatter, alias e cssclasses nel formato rigoroso richiesto da Obsidian v1.9+
 Attenzione: lo strumento convertirà tutti i file nel vault, non solo il file attuale.
 I file verranno sovrascritti. Eseguire il backup prima di avviare la conversione.
 Avvia conversione
@@ -1452,30 +1501,30 @@ File processati
 File modificati
 Sostituzioni totali
 Non riuscito
-Note del giorno
-Apre la nota del giorno o ne crea una se non è presente.
+Note giornaliere
+Apre o crea la nota giornaliera.
 Oggi
-Apri nota del giorno
-Apri nota del giorno precedente
-Apri nota del giorno successiva
-Inserisci testo nella nota del giorno
-Inserisci collegamento nella nota del giorno
-Impossibile creare la nota del giorno. "{{format}}" non è un formato valido.
-Impossibile creare la nota del giorno. Cartella "{{folderOption}}" non trovata.
-Impossibile creare la nota del giorno. Modello "{{template}}" non trovato.
-Nessuna nota del giorno prima di questa.
-Nessuna nota del giorno dopo di questa.
+Apri nota giornaliera
+Apri nota giornaliera precedente
+Apri nota giornaliera successiva
+Nota giornaliera
+Inserisci collegamento nella nota giornaliera
+Impossibile creare la nota giornaliera. "{{format}}" non è un formato valido.
+Impossibile creare la nota giornaliera. Cartella "{{folderOption}}" non trovata.
+Impossibile creare la nota giornaliera. Modello "{{template}}" non trovato.
+Nessuna nota giornaliera prima di questa.
+Nessuna nota giornaliera dopo di questa.
 Formato data
-Scegli come vengono denominate le note quotidiane nella tua cassaforte.
+Scegli come vengono denominate le note giornaliere nel tuo vault.
 Formato personalizzato
 Personalizzato
 Formato data non valido
-Cartella delle note quotidiane non trovata.
+Cartella delle note giornaliere non trovata.
 Per maggiori informazioni, vedere: 
 formato di riferimento
 Apparirà così: 
 Posizione dei nuovi file
-Percorso della cartella per le nuove note del giorno.
+Percorso della cartella per le nuove note giornaliere.
 Posizione file modello
 Il percorso del file da usare come modello.
 Note univoche
@@ -1507,6 +1556,8 @@ Nessuna intestazione trovata.
 Scorri automaticamente alla sezione corrente
 Conteggio parole
 Visualizza il numero delle parole nella barra di stato.
+Visualizzare i diagrammi Mermaid in questo vault?
+Consenti solo se ritieni attendibili i contenuti di questo vault.
 Diapositive
 Presentazioni da Markdown. Usare "---" per separare le diapositive.
 Avvia presentazione
@@ -1522,8 +1573,8 @@ Apri con app predefinita
 Aggiunge un pulsante per aprire il file attuale con l'app predefinita.
 Apri con app predefinita
 Condivisione
-Mostra nella cartella
-Mostra in Finder
+Mostra in Esplora file
+Mostra nel Finder
 Modelli
 Inserisci modello da una cartella di file modello.
 Inserisci modello
@@ -1543,12 +1594,12 @@ annulla
 Nessun modello trovato
 Impossibile visualizzare i modelli. Cartella dei modelli non valida.
 Impossibile visualizzare i modelli. Cartella "{{folderOption}}" non trovata.
-Inserimento del template fallito, non è stato possibile leggere le proprietà nel file del template.
+Impossibile inserire il modello, le proprietà nel file del modello non sono leggibili.
 Impossibile visualizzare i modelli. Nessuna cartella dei modelli configurata.
 Digita nome modello...
 Finestra Traslucida
 Attiva l'effetto di traslucenza per aumentare il senso di profondità. Rende meglio in modalità scura. Non supportato su Linux.
-Comandi Slash
+Comandi slash
 Abilita la possibilità di inviare comandi slash nell'editor digitando la 'barra avanti'.
 Stato dell'editor
 Aggiunge un elemento alla barra di stato per visualizzare e modificare la modalità attuale dell'editor.
@@ -1561,7 +1612,7 @@ Pubblica modifiche
 Pubblica file attuale
 È necessario accedere a Internet per pubblicare le modifiche.
 Obsidian Publish è un servizio aggiuntivo a pagamento che consente di pubblicare appunti online direttamente da Obsidian.
-Per iniziare a pubblicare, effettuare il login o creare un nuovo account Obsidian.
+Per iniziare a pubblicare, accedi o crea un nuovo account Obsidian.
 Non sei ancora abbonato a Obsidian Publish.
 Acquista
 Gestione siti
@@ -1600,7 +1651,7 @@ Personalizza navigazione
 Sostituisci l'ordine degli elementi di navigazione e nascondi le pagine o le cartelle dalla visualizzazione.
 Ordine degli elementi di navigazione
 Nascondi pagine o cartelle dalla navigazione
-Fai clic con il tasto destro e seleziona "Nascondi" per impedire la visualizzazione di pagine specifiche nella navigazione del sito. Le pagine saranno comunque accessibili dai link o accedendo direttamente all'URL.
+Fai clic con il tasto destro e seleziona "Nascondi" per impedire la visualizzazione di pagine specifiche nella navigazione del sito. Le pagine saranno comunque accessibili tramite collegamenti o accedendo direttamente all'URL.
 Mostra nascosti
 Gestione
 Navigazione
@@ -1625,7 +1676,7 @@ Mostra la sezione dei riferimenti alla fine di ogni pagina.
 Usa finestre scorrevoli
 Apre le pagine in nuovi riquadri a destra. Consente lo scorrimento orizzontale tra i riquadri.
 Mostra anteprima al passaggio del mouse
-Visualizza l'anteprima della pagina quando si passa il mouse sui link.
+Visualizza l'anteprima della pagina quando si passa il mouse sui collegamenti.
 Nascondi titolo della pagina
 Nascondi l'intestazione del titolo della pagina. Utile se le intestazioni sono già presenti all'inizio di ogni pagina.
 Migliora leggibilità delle righe
@@ -1710,7 +1761,6 @@ Rimuovi utente
 Invita utente
 Inserisci la sua email...
 Per invitare qualcuno è necessario inserire un'email valida.
-Per visualizzare i siti, abilitare il plugin Publish in Impostazioni -> Plugin principali.
 I tuoi siti
 Siti condivisi con te
 Smetti di collaborare a questo sito
@@ -1899,13 +1949,13 @@ Configurazione sincronizzazione del vault
 Impostazioni cronologia delle versioni
 Visualizza e ripristina la cronologia delle versioni dei file d'impostazione.
 Impostazioni principali
-Sincronizza le impostazioni di editor, file e collegamenti, tasti di scelta rapida, etc.
+Sincronizza le impostazioni di editor, file, collegamenti e scorciatoie da tastiera, ecc.
 Impostazioni aspetto
 Sincronizza le impostazioni relative all'aspetto come tema Scuro, tema attivo e snippet attivi.
 Temi e snippet
 Sincronizzazione temi e snippet. La loro abilitazione dipende dall'impostazione precedente.
-Tasti di scelta rapida
-Sincronizza tasti di scelta rapida personalizzati.
+Scorciatoie da tastiera
+Sincronizza scorciatoie da tastiera personalizzate.
 Lista plugin principali attivi
 Sincronizza i plugin principali che sono stati attivati.
 Impostazioni plugin principali
@@ -1914,9 +1964,13 @@ Lista plugin della comunità attivi
 Sincronizza i plugin della comunità che sono stati attivati.
 Plugin della comunità installati
 Sincronizza i plugin della comunità installati (file .js, .css e manifest.json) e le loro impostazioni.
+Consentire l'esecuzione dei plugin sincronizzati su questo dispositivo?
+Obsidian Sync non può verificare il contenuto dei plugin sincronizzati su questo dispositivo e potrebbero differire dai plugin pubblicati nella directory della community.
+Abilita questa opzione solo se il vault e i dispositivi connessi sono attendibili.
+Sì, attiva la sincronizzazione dei plugin
 Sync è ancora in caricamento, aggiorna questa pagina più tardi.
 Obsidian Sync è un servizio aggiuntivo di Obsidian con crittografia end-to-end e cronologia delle versioni.
-Per iniziare a sincronizzare, effettuare il login o creare un nuovo account Obsidian.
+Per iniziare a sincronizzare, accedi o crea un nuovo account Obsidian.
 File attuale
 Sincronizza modifiche
 Oggi
@@ -2068,6 +2122,7 @@ Rimuove tutto quanto sopra oltre all'archivio locale e alle sessioni attive.
 Nuovo visualizzatore web
 Impossibile caricare il sito.
 Assicurati che l'indirizzo sia corretto.
+Vista lettura
 Cerca sul web
 Dati del visualizzatore web
 Cancella dati del visualizzatore web
@@ -2372,6 +2427,9 @@ Alta
 Molto alta
 Riepiloga...
 Raggruppa per questa proprietà
+Ridimensiona colonna...
+Ripristina dimensione colonna
+Trascina per ridimensionare
 Cancella valori
 Riepilogo
 Impossibile analizzare la formula "{{ formula }}"
@@ -2515,3 +2573,24 @@ Tipo di callout...
 {{count}} snippet
 {{count}} tema
 {{count}} temi
+Annulla
+
+Copia
+Apri collegamento
+Apri questo file
+Esegui file
+Aprire collegamento esterno?
+Questo collegamento aprirà un'applicazione esterna al di fuori di Obsidian. Procedi solo se consideri attendibile la fonte di questo collegamento.
+Apri sempre i collegamenti {{scheme}}://
+Avviso file remoto
+Questo file si trova su un server remoto e potrebbe essere pericoloso.\nSei sicuro di volerlo aprire?
+Posizione: {{location}}
+Accesso all'unità di rete
+Questo contenuto sta richiedendo dati da un'unità di rete. Consentirlo potrebbe esporre le tue credenziali di accesso o altre informazioni sensibili all'host remoto.
+
+Consenti
+Eseguire file eseguibile?
+Questo collegamento punta a un file eseguibile. Eseguirlo potrebbe danneggiare il tuo computer.
+
+Vault non trovato.
+Impossibile trovare un vault per l'URL {{url}}

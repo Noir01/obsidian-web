@@ -1,10 +1,19 @@
 Nastavení
 
 Základní pluginy
+Zobrazit v seznamu pluginů
 Nastavení pluginů
 Příklad: složka 1/složka 2
 Příklad: složka/poznámka
+Není vybrán žádný soubor
 Je vyžadován restart aby se tato změna projevila.
+Neplatné číslo
+Hodnota musí být alespoň {{min}}
+Hodnota musí být nejvýše {{max}}
+Soubor nebyl nalezen.
+Hledat v nastavení...
+Nebyla nalezena žádná nastavení.
+{{count}} dalších
 Režim úprav
 Chování
 Zobrazení
@@ -56,6 +65,8 @@ Velikost tabulátoru
 Množství mezer kterému odbovídá tabulátor.
 Zprava-doleva (RTL)
 Nastavuje směr poznámek, které se mají zobrazit zprava-doleva
+Zobrazovat diagramy Mermaid v poznámkách
+Vykreslovat vývojové diagramy, sekvenční diagramy a další diagramy z bloků kódu „mermaid“.
 Automaticky konvertovat HTML
 Automaticky konvertuje HTML do Markdownu při vkládání nebo přetažení z webových stránek. Použíjte Ctrl/Cmd+Shift+V pro vložení bez konverze.
 Vim klávesové zkratky
@@ -124,18 +135,26 @@ Název podsložky
 Pokud je soubor v "trezor/složka", a pojmenujete podsložku jako "přílohy", tak se přílohy budou ukládat do "trezor/složka/přílohy".
 Vyloučené soubory
 Vyloučené soubory budou buď skryté, nebo méně viditelné na různých místech, jako je Rychlý přepínač, návrhy odkazů a zobrazení grafu.
-Žádný filtr vyloučených souborů není v současné době použit. Přidejte ho níže.
-Soubory odpovídající následujícím filtrům jsou aktuálně vyloučeny:
-Filtr
+Přidat vyloučení...
+Nebyla přidána žádná vyloučení.
+{{count}} pravidlo
+{{count}} pravidel
+Přidat vyloučení
+Zadejte cestu nebo regulární výraz, např. /daily-.*/
 Filtr nemůže být prázdný
-Vložte cestu nebo "/regulární výraz (regex)/"...
 Povolit URI callbacky
 Povolit použití x-callback-url prostřednictvím x-success nebo x-error při zpracování Obsidian URI.
+
+Spravujte důvěryhodné akce a nakonfigurujte chování URI.
+Důvěryhodné akce
+Zatím žádné důvěryhodné akce. Schválené akce URI se zobrazí zde.
 Vzhled
 Základní motiv
 Zvolte výchozí odstín základního motivu aplikace Obsidian.
+tmavý světlý systém noční režim barevné schéma
 Barva akcentu
 Zvolte barvu akcentu používanou v celé aplikaci.
+zvýraznění značka primární barva
 Tmavý
 Světlý
 Přizpůsobit se systému
@@ -150,8 +169,8 @@ Písmo textu
 Nastavení písma pro režim editace a režim čtení.
 Písmo Monospace
 Nastavení písma pro místa, jako jsou bloky kódu a frontmatter.
- Aktuálně použité písmo: 
- Aktuálně jsou použita následující písma:
+{{count}} písmo
+{{count}} písem
 Zadejte název písma...
 Není použito žádné vlastní písmo. Přidejte ho níže.
 Bude použito první písmo z tohoto seznamu, které je v systému k dispozici.
@@ -163,24 +182,26 @@ Prouzkoumejte a vyberte si z úžasných motivů vytvořených komunitou.
 Procházet
 Velikost písma
 Velikost písma v pixelech, které ovlivňuje editor a náhled.
+velikost textu přiblížení
 Rychlé nastavení velikosti písma
 Upravte velikost písma pomocí klávesové zkratky Ctrl + Scroll nebo pomocí gesta pinch-zoom na trackpadu.
 Motivy
 Správa nainstalovaných motivů a hledání komunitních motivů.
+komunitní procházet instalovat stáhnout
 Správa
 Žádný
 Nativní nabídky
 Nabídky v celé aplikaci budou odpovídat operačnímu systému. Vaše motivy na ně nebudou mít vliv.
-Znovu načíst motivy
-Vlastní CSS byli aktualizovány.
 Otevřít složku motivů
 CSS úryvky
+Spravujte svou kolekci CSS souborů pro doladění vzhledu aplikace.
 Ve složce úryvků nejsou žádné CSS úryvky.
-CSS úryvky jsou umisťovány v "{{path}}".
+{{count}} zapnutých
+CSS úryvky vám umožňují přizpůsobit vzhled Obsidian. Aby se zde zobrazily, umístěte CSS soubory do „{{path}}“.
 Znovu načíst úryvky
 Otevřít složku úryvků
 CSS úryvky byli aktualizovány.
-Použít CSS úryvky umistěné v "{{path}}".
+Hledat v úryvcích...
 Nainstalované motivy
 Snímek obrazovky není k dispozici
 Výchozí
@@ -222,19 +243,24 @@ Aktualizovat vše
 Aktuální komunitní motivy
 Nainstalováno motivů: {{count}}.
 Nainstalováno motivů: {{count}}.
+Otevřít nastavení v novém okně
+Otevřít nastavení ve vlastním okně místo vloženého v aplikaci.
+Rozhraní
+Mobilní
+Pokročilé
 Klávesové Zkratky
 Hledat klávesové Zkratky
 Zobrazena {{count}} klávesová zkratka. 
 Zobrazeno {{count}} klávesových zkratek. 
-{{count}} příkaz s konfliktem.
-{{count}} příkazu s konflikty.
 Filtrovat...
 Smazat klávesovou zkratku
 Stikněte klávesovou zkratku...
 Vše
+Konflikty ({{count}})
 Nepřiřazeno
 Přiřazeno
 Přiřazeno mnou
+Nebyly nalezeny žádné výsledky.
 Vrátit vychozí nastavení
 Přizpůsobte si tento příkaz
 Tato klávesová zkratka je už používána "{{command}}"
@@ -352,28 +378,34 @@ Filtrujte pluginy podle názvu nebo popisu.
 Hledat pluginy...
 Pluginy třetích stran
 Restricted mode (Omezený režim)
-Omezený režim je vypnutý. Zapnutím zakážete komunitní pluginy.
+Zapněte omezený režim, chcete-li používat aplikaci bez komunitních pluginů.
 Zapnout
 Automaticky kontrolovat aktualizace pluginů
 Pravidelně kontrolovat aktualizace pluginů.
 Komunitní pluginy
-Procházejte a instalujte pluginy třetích stran vytvořené naší suprovou komunitou.
+Procházejte a instalujte komunitní pluginy vytvořené komunitou.
 Procházet
 Ukončit omezený režim
 Komunitní pluginy, stejně jako jakýkoliv jiný software, může potenciálně způsobit problémy se ztrátou a zabezpečením dat.
 Zabezpečení pluginů je pro nás důležité. Zde je co děláme:
 Navzdory našemu úsilí stále existuje malá pravděpodobnost, že komunitní plugin bude chybný.
-Prvotní revize kódu
-Než se pluginy objeví v nabídce, projdou úvodní kontrolou naším týmem.
+Revize kódu
+Pluginy v oficiálním komunitním adresáři procházejí po každé aktualizaci automatickou kontrolou.
 
 Většina pluginů má volně přístupný zdrojový kód na GitHubu, takže si ho můžete zkontrolovat sami.
 Nezávislý audit
 Máme velkou komunitu developerů, kteří na sebe navzájem dohlížejí.
 Report mechanismus
 Chybné pluginy sledujeme a odstraňujeme na základě nahlášení uživatelů.
-Chcete ukončit omezený režim a povolit komunitní pluginy? Doporučujeme předtím zálohovat svá data.
 Další informace o zabezpečení pluginů
-Zapnout komunitní pluginy
+Povolit komunitní pluginy
+Pluginy mohou ve vašem zařízení spouštět libovolný kód. Před jejich zapnutím doporučujeme zálohovat data.
+Znovu zapnout nainstalované pluginy
+Obnovit {{count}} dříve nainstalovaný plugin.
+Obnovit {{count}} dříve nainstalovaných pluginů.
+Zobrazit informace o pluginu
+Zapnuté pluginy
+Tyto pluginy budou zapnuty po opuštění omezeného režimu.
 Věříte autorovi tohoto trezoru?
 Tento trezor, který otevírate poprvé, obsahuje některé pluginy.
 Pokud jste tento trezor dostali od někoho jiného, mějte na paměti, že pluginy mohou představovat bezpečnostní riziko.
@@ -387,6 +419,9 @@ Nainstalovat
 Zapnout
 Vypnout
 Kopírovat odkaz sdílení
+Zobrazit podrobnosti
+Otevřít komunitní stránku
+Nastavení
 Přispět
 Žádné výsledky.
 Nedávné soubory nenalezeny. Pište pro vyhledání...
@@ -426,6 +461,7 @@ Hledat nainstalované pluginy
 Filtrovat nainstalované pluginy dle jména nebo popisu.
 Hledat nainstalované pluginy...
 Zobrazit pouze nainstalované
+Nejsou nainstalovány žádné pluginy.
 Přispět na podporu {{name}}
 Vývojáři pluginů jsou dobrovolníci, kteří z nadšení vytvářejí úžasné věci. Pokud je pro vás tento plugin užitečný, zvažte prosím financování jeho vývoje.
 100 % vašeho příspěvku jde vývojářům pluginů; Obsidian si nebere žádný podíl. Banka nebo kreditní společnost si může vzít poplatek.
@@ -526,6 +562,9 @@ Skrýt
 Uložení souboru "{{filepath}}" se nezdařilo. {{message}}.
 Nepodařilo se načíst plugin „{{plugin}}“
 Při načítání pluginu „{{plugin}}“ došlo k chybě
+Plugin {{plugin}} nebyl načten. Tento plugin není kompatibilní s Obsidian v{{version}}.
+Plugin {{plugin}} již nefunguje. Doporučujeme ho odinstalovat.
+Nelze načíst plugin {{plugin}} v{{version}}. Bylo nahlášeno, že tato verze způsobuje problémy. Zkontrolujte prosím, zda není k dispozici novější verze pluginu.
 Nepodařilo se otevřít „{{filepath}}“
 Nelze otevřít umístění „{{href}}“
 Žádný soubor
@@ -636,6 +675,7 @@ Propojit s kartou...
 Režim zdroje
 Režim čtení
 Přidat vlastnost souboru
+Smazat
 Smazat soubor
 Vytvořit tento soubor
 Otevřít odkaz
@@ -983,6 +1023,10 @@ Znovu se neptat
 Aktuálně existuje {{count}} odkaz směřující na tento soubor.
 Aktuálně existuje {{count}} odkazů směřujících na tento soubor.
 Odstranit soubor
+Spustit akci z externího odkazu?
+Chystá se spustit akce „{{action}}“. Pokračujte pouze tehdy, pokud důvěřujete zdroji odkazu.
+Plugin „{{source}}“ se chystá spustit akci „{{action}}“. Pokračujte pouze tehdy, pokud důvěřujete zdroji odkazu.
+U akce „{{action}}“ se znovu neptat
 Stáhnout přílohy
 V této poznámce nejsou žádné externí přílohy.
 Stažena {{count}} příloha.
@@ -997,6 +1041,9 @@ Spravovat
 Zobrazit
 Potvrdit
 Zrušit
+Povolit
+Povolit jednou
+Vždy povolit
 Přeskočit
 Stáhnout
 Hotovo
@@ -1224,6 +1271,7 @@ Zobrazit soubory příloh, jako jsou obrázky, videa a PDF.
 Zobrazit všechny typy souborů
 Zobrazit všechny soubory, včetně těch, které Obsidian neumí otevřít. Soubor se otevře ve výchozí aplikaci pro daný typ souboru.
 Graf
+Místní graf
 Podívejte se na grafický přehled toho jak jsou poznámky propojené.
 Otevřít graf
 Otevřít lokální graf
@@ -1420,7 +1468,8 @@ pro navigaci
 pro použití
 pro odmítnutí
 Nebyly nalezeny žádné příkazy.
-Napište příkaz...
+Přidat příkaz...
+Vyberte příkaz...
 Připnuté příkazy
 Importér Markdown formátu
 Převede Markdown z jiných aplikací do formátu aplikace Obsidian.
@@ -1507,6 +1556,8 @@ Nebyly nalezeny žádné nadpisy.
 Automaticky posouvat na aktuální sekci
 Počet slov
 Zobrazovat počet slov ve stavovém řádku.
+Zobrazit diagramy Mermaid v tomto trezoru?
+Povolte pouze v případě, že důvěřujete obsahu tohoto trezoru.
 Snímky
 Prezentujte přímo z Markdownu. Použijte "---" pro rozdělení snímků prezentace.
 Spustit prezentaci
@@ -1710,7 +1761,6 @@ Odebrat uživatele
 Pozvat uživatele
 Zadejte jeho e-mail…
 Pro pozvání někoho prosím zadejte platný e-mail.
-Chcete-li zobrazit weby, zapněte prosím základní plugin Publish v Nastavení -> Základní pluginy.
 Vaše weby
 Weby sdílené s vámi
 Ukončit spolupráci na tomto webu
@@ -1914,6 +1964,10 @@ Seznam aktivních komunitních pluginů
 Synchronizovat, které komunitní pluginy jsou zapnuté.
 Nainstalované komunitní pluginy
 Synchronizovat nainstalované komunitní pluginy (soubory .js, .css a manifest.json) a jejich nastavení.
+Povolit spuštění synchronizovaných pluginů na tomto zařízení?
+Obsidian Sync nemůže ověřit obsah pluginů synchronizovaných do tohoto zařízení a mohou se lišit od pluginů zveřejněných v komunitním katalogu.
+Zapněte to pouze v případě, že trezoru a připojeným zařízením důvěřujete.
+Ano, zapnout synchronizaci pluginů
 Sync se stále načítá, obnovte tuto stránku později.
 Obsidian Sync je služba pro synchronizaci souborů a nastavení s end-to-end šifrováním a historii verzí.
 Chcete-li spustit synchronizaci, přihlaste se nebo si vytvořte nový účet pro Obsidian.
@@ -2068,6 +2122,7 @@ Odstraní vše výše uvedené, stejně jako místní úložiště a aktivní re
 Nový webový prohlížeč
 Unable to load that site.
 Please make sure you have the correct address.
+Režim čtení
 Hledat na webu
 Data webového prohlížeče
 Vymazat data webového prohlížeče
@@ -2372,6 +2427,9 @@ Vysoká
 Extra vysoká
 Shrnout...
 Seskupit podle této vlastnosti
+Změnit velikost sloupce...
+Obnovit velikost sloupce
+Přetažením změníte velikost
 Vymazat hodnoty
 Shrnutí
 Nepodařilo se zpracovat vzorec "{{ formula }}"
@@ -2515,3 +2573,24 @@ Typ zvýrazněného bloku...
 {{count}} úryvky
 {{count}} motiv
 {{count}} motivy
+Zrušit
+
+Kopírovat
+Otevřít odkaz
+Otevřít tento soubor
+Spustit soubor
+Otevřít externí odkaz?
+Tento odkaz otevře externí aplikaci mimo Obsidian. Pokračujte pouze v případě, že důvěřujete zdroji tohoto odkazu.
+Vždy otevírat odkazy {{scheme}}://
+Upozornění na vzdálený soubor
+Tento soubor se nachází na vzdáleném serveru a může být nebezpečný.\nOpravdu ho chcete otevřít?
+Umístění: {{location}}
+Přístup k síťovému disku
+Tento obsah požaduje data ze síťového disku. Povolením můžete vzdálenému hostiteli zpřístupnit své přihlašovací údaje nebo jiné citlivé informace.
+Hostitel: {{host}}
+Povolit
+Spustit spustitelný soubor?
+Tento odkaz vede na spustitelný soubor. Jeho spuštění by mohlo poškodit váš počítač.
+Soubor: {{path}}
+Trezor nebyl nalezen.
+Nelze najít trezor pro URL {{url}}

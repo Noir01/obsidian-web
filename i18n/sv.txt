@@ -1,10 +1,19 @@
 Inställningar
 Tillägg
 Kärntillägg
+Visa i tilläggslistan
 Tilläggsinställningar
 Exempel: mapp 1/mapp 2
 Exempel: mapp/anteckning
+Ingen fil vald
 Ändring av denna inställning kräver omstart för verkan
+Ogiltigt nummer
+Värdet måste vara minst {{min}}
+Värdet får vara högst {{max}}
+Filen hittades inte.
+Sök inställningar...
+Inga inställningar hittades.
+{{count}} till
 Redigerare
 Beteende
 Skärm
@@ -56,6 +65,8 @@ Tabbstorlek
 Antal mellanslag som en tabb motsvarar.
 Skriv högerifrån (RTL)
 Gör så att texten går från höger till vänster.
+Visa Mermaid-diagram i anteckningar
+Rendera flödesscheman, sekvensdiagram och andra diagram från ”mermaid”-kodblock.
 Konvertera HTML automatiskt
 Konverterar HTML till Markdown när man kopierar in från hemsidor. Använd Ctrl/Cmd+Shift+V för att klista in utan någon konvertering.
 Vim tangentbindningar
@@ -124,18 +135,26 @@ Undermappens namn
 Om en fil är under /valv/mapp", och du lägger in bilagor kommer bilagorna saparas i "valv/mapp/bilagor".
 Exkluderade filer
 Exkluderade filer kommer att gömmas eller vara mindre synliga, t.ex. snabbnavigatorn och länkförslag.
-Inga exkluderade fileter används just nu. Lägg till ett nedan.
-Filter som matchar följande filter är exkluderade:
-
+Lägg till undantag...
+Inga undantag har lagts till.
+{{count}} regel
+{{count}} regler
+Lägg till undantag
+Ange en sökväg eller ett reguljärt uttryck, t.ex. /daily-.*/
 Filter kan ej vara tomma
-Mata in sökväg eller "/regex/"...
 Tillåt URI-callbacks
 Aktivera användningen av x-callback-url genom x-success eller x-error när du hanterar Obsidian URIs.
+Obsidian-URI
+Hantera betrodda åtgärder och konfigurera URI-beteende.
+Betrodda åtgärder
+Inga betrodda åtgärder ännu. Godkända URI-åtgärder visas här.
 Utseende
 Bastema
 Använd Obsidians normala färger
+mörk ljus system nattläge färgschema
 Accentfärg
 Välj den i appen tillämpade accentfärgen.
+markering varumärke primär färg
 Mörk
 Ljus
 Anpassa efter operativsystem
@@ -150,8 +169,8 @@ Texttypsnitt
 Välj typsnitt för skrivläget och läsläget.
 Typsnitt där alla bokstäver är lika breda
 Välj typsnitt för kodblock och inledning.
- Nuvarande typsnitt:
- Följande typsnitt används nu:
+{{count}} teckensnitt
+{{count}} teckensnitt
 Skriv in namnet av ett typsnitt...
 Inget speciellt typsnitt används. Lägg till ett nedan.
 Första typsnittet som finns på listan och är installerat kommer att användas.
@@ -163,24 +182,26 @@ Prova fantastiska teman av andra personer.
 Bläddra
 Typsnittsstorlek
 Typsnittsstorlek i pixlar som påverkar skrivläget och läsläget.
+textstorlek zoom
 Snabb typsnittsstorleksändring
 Ändra typsnittsstorleken med Ctrl + Scroll eller nypgesten på pekplattan.
 Teman
 Hantera installerade teman samt bläddra bland community-teman.
+gemenskap bläddra installera ladda ned
 Hantera
 Inga
 Native-menyer
 Menyer i appen kommer matcha operativsystemet. De kommer inte påverkas av det valda temat.
-Ladda om teman
-Laddade om anpassade CSS-teman.
 Öppna temamappen
 CSS-instick
+Hantera din samling av CSS-filer för att anpassa appens utseende.
 Inga CSS-instick kunde hittas i insticksmappen.
-CSS-instick lagras i "{{path}}".
+{{count}} aktiverade
+CSS-instick låter dig anpassa utseendet på Obsidian. Placera CSS-filer i “{{path}}” för att de ska visas här.
 Ladda om instick
 Öppna insticksmappen
 Laddade om CSS-instick
-Tillämpa CSS-instick i "{{path}}".
+Sök css-instick...
 Installerade teman
 Skärmbild otillgänglig
 Standard
@@ -222,19 +243,24 @@ Uppdatera alla
 Nuvarande community-teman
 För närvarande är {{count}} tema installerade.
 För närvarande är {{count}} teman installerade.
+Öppna inställningar i nytt fönster
+Öppna inställningar i ett eget fönster i stället för inbäddat i appen.
+Gränssnitt
+Mobil
+Avancerat
 Tangentbordsgenvägar
 Sök tangentbordsgenvägar
 Visar {{count}} tangentbordsgenväg. 
 Visar {{count}} tangentbordsgenvägar. 
-{{count}} kommando med konflikter.
-{{count}} kommandon med konflikter.
 Filtrera...
 Radera tangentbordskenväg
 Tryck tangentbordsgenvägen...
 Alla
+Konflikter ({{count}})
 Otilldelade
 Tilldelade
 Tilldelade av mig
+Inga resultat hittades.
 Återställ standard
 Anpassa detta kommando
 Denna genväg konflikterar med "{{command}}"
@@ -352,28 +378,34 @@ Filtrera tillägg efter namn eller beskrivning.
 Sök efter tillägg...
 Gemenskapstillägg
 Begränsat Tillstånd
-Begränsat Tillstånd är av. Slå på för att inaktivera gemenskapstillägg.
+Aktivera begränsat läge för att använda appen utan gemenskapstillägg.
 Slå på
 Sök automatiskt efter tilläggsuppdateringar
 Sök regelbundet efter tilläggsuppdateringar.
 Gemenskapstillägg
-Bläddra och installera gemenskapstillägg skapats av vår fantastiska gemenskap.
+Bläddra bland och installera gemenskapstillägg skapade av gemenskapen.
 Bläddra
-Avsluta Begränsat Tillstånd
+Avsluta begränsat läge
 Gemenskapstillägg, liksom all annan programvara som du installerar, kan potentiellt orsaka dataintegritet- och säkerhetsproblem.
 Tilläggssäkerhet är viktig för oss. Här är vad vi gör:
 Trots våra insatser, finns det fortfarande en liten risk att en gemenskapstillägg kan orsaka problem.
-Inledande kodgranskning
-Tillägg genomgår en inledande kodgranskning av vårt team innan de visas i butiken.
+Kodgranskning
+Tillägg i den officiella katalogen för gemenskapstillägg granskas automatiskt efter varje uppdatering.
 Öppen källkod
 De flesta tillägg är open source på GitHub, så du själv kan inspektera koden.
 Granskning av andra
 Vi har en stor utvecklargemenskap som tar hand om varandra.
 Rapportera mekanism
 Vi följer upp och tar bort felaktiga tillägg när de rapporteras till oss.
-Vill du avsluta Begränsat Tillstånd för att aktivera gemenskapstillägg? Vi rekommenderar att du skapa säkerhetskopior av dina data innan du gör det.
 Lär mer om tilläggssäkerhet
-Slå på gemenskapstillägg
+Tillåt gemenskapstillägg
+Tillägg kan köra godtycklig kod på din enhet. Vi rekommenderar att du säkerhetskopierar dina data innan du aktiverar dem.
+Återaktivera installerade tillägg
+Återaktivera {{count}} tidigare installerat tillägg.
+Återaktivera {{count}} tidigare installerade tillägg.
+Visa tilläggsinformation
+Aktiverade tillägg
+Dessa tillägg aktiveras när du lämnar begränsat läge.
 Litar du på skaparen av detta valv?
 Du öppnar detta valv för första gången, och det använder några tillägg.
 Om du fick detta valv från någon annan, observera att okända tillägg kan utgöra säkerhetsrisker.
@@ -387,6 +419,9 @@ Installera
 Aktivera
 Inaktivera
 Kopiera delningslänk
+Visa detaljer
+Öppna gemenskapssidan
+Inställningar
 Donera
 Inga resultat hittades.
 Inga nya filer hittades. Skriv för att söka...
@@ -426,6 +461,7 @@ Sök efter installerade tillägg
 Filtrera installerade tillägg efter namn eller beskrivning.
 Sök efter installerade tillägg...
 Visa endast installerade
+Inga tillägg installerade.
 Donera för att stödja {{name}}
 Tilläggsutvecklare är gemenskapsvolontärer som utvecklar fantastiska saker av passion. Om du tycker att detta tillägg är användbar, kan du överväga att stödja dess utveckling.
 100% av ditt bidrag ska gå till tilläggsutvecklaren; Obsidian tar inte en del av bidraget. Den finansieringsplattform som utvecklaren väljer kan ta betalt för det.
@@ -526,6 +562,9 @@ Kollapsa
 Misslyckades med att spara filen "{{filepath}}". {{message}}.
 Misslyckades med att ladda tillägg "{{plugin}}"
 Tillägg “{{plugin}}” stötte på ett fel vid laddning
+{{plugin}} lästes inte in. Det här tillägget är inte kompatibelt med Obsidian v{{version}}.
+{{plugin}} fungerar inte längre. Vi rekommenderar att du avinstallerar det.
+Det gick inte att läsa in tillägget {{plugin}} v{{version}}. Den här versionen har rapporterats orsaka problem. Kontrollera om det finns en nyare version av tillägget.
 Misslyckades med att öppna “{{filepath}}”
 Kan inte öppna plats “{{href}}”
 Ingen fil
@@ -636,6 +675,7 @@ Länka med flik...
 Källkodsläge
 Läsvy
 Lägg till fil-egenskap
+Radera
 Radera fil
 Skapa denna fil
 Öppna länk
@@ -983,6 +1023,10 @@ Fråga inte igen
 Det finns för närvarande {{count}} länk som pekar på denna fil.
 Det finns för närvarande {{count}} länkar som pekar på denna fil.
 Radera fil
+Kör åtgärd från extern länk?
+Åtgärden ”{{action}}” kommer att köras. Fortsätt endast om du litar på länkens källa.
+Tillägget ”{{source}}” kommer att köra åtgärden ”{{action}}”. Fortsätt endast om du litar på länkens källa.
+Fråga inte igen för ”{{action}}”
 Ladda ner bilagor
 Det finns inga externa bilagor i denna anteckning.
 Laddade ner {{count}} bilaga.
@@ -997,6 +1041,9 @@ Hantera
 Visa
 Bekräfta
 Avbryt
+Tillåt
+Tillåt en gång
+Tillåt alltid
 Hoppa över
 Ladda ner
 Klar
@@ -1224,6 +1271,7 @@ Visa bilagor som bilder, videor och PDF-filer.
 Visa alla filtyper
 Visa alla filer inklusive de som Obsidian inte kan öppna. Filerna öppnas med standardappen för den filtypen.
 Grafvy
+Lokal graf
 Se en graföversikt över vilka anteckningar som länkar till vilka.
 Öppna grafvy
 Öppna lokal graf
@@ -1420,7 +1468,8 @@ för att navigera
 för att använda
 för att avfärda
 Inga kommandon hittades.
-Skriv ett kommando...
+Lägg till ett kommando...
+Välj ett kommando...
 Fästa kommandon
 Markdown-formatimportör
 Konvertera Markdown från andra appar till Obsidian-format.
@@ -1507,6 +1556,8 @@ Inga rubriker hittades.
 Auto-scrolla till aktuell sektion
 Ordräkning
 Visa ordräkning i statusfältet.
+Visa Mermaid-diagram i detta valv?
+Tillåt endast om du litar på innehållet i detta valv.
 Bildspel
 Presentera från Markdown. Använd "---" för att separera bilder.
 Starta presentation
@@ -1710,7 +1761,6 @@ Ta bort användare
 Bjud in användare
 Ange deras e-post...
 Vänligen ange en giltig e-postadress för att bjuda in någon.
-Vänligen aktivera kärntillägget Publicera i Inställningar -> Kärntillägg för att visa webbplatser.
 Dina webbplatser
 Webbplatser delade med dig
 Sluta samarbeta på denna webbplats
@@ -1914,6 +1964,10 @@ Aktiv gemenskapstilläggslista
 Synkronisera vilka gemenskapstillägg som är aktiverade.
 Installerade gemenskapstillägg
 Synkronisera installerade gemenskapstillägg (.js, .css och manifest.json-filer) och deras inställningar.
+Vill du tillåta synkade tillägg att köras på den här enheten?
+Obsidian Sync kan inte verifiera innehållet i tillägg som synkats till den här enheten, och de kan skilja sig från tillägg som publicerats i gemenskapskatalogen.
+Aktivera detta endast om valvet och anslutna enheter är betrodda.
+Ja, aktivera synkronisering av tillägg
 Sync läses fortfarande in, uppdatera den här sidan senare.
 Obsidian Sync är Obsidians tilläggssynkroniseringstjänst med end-to-end-kryptering och versionshistorik.
 För att börja synkronisera, vänligen logga in eller skapa ett nytt Obsidian-konto.
@@ -2068,6 +2122,7 @@ Tar bort allt ovanstående samt lokal lagring och aktiva sessioner.
 Ny webbvisare
 Kan inte ladda den webbplatsen.
 Vänligen se till att du har rätt adress.
+Läsvy
 Sök på webben
 Webbvisardata
 Rensa webbvisardata
@@ -2372,6 +2427,9 @@ Hög
 Extra hög
 Sammanfatta...
 Gruppera efter den här egenskapen
+Ändra storlek på kolumn...
+Återställ kolumnstorlek
+Dra för att ändra storlek
 Rensa värden
 Sammanfattning
 Det gick inte att tolka formeln "{{ formula }}"
@@ -2515,3 +2573,24 @@ Callout-typ...
 {{count}} css-instick
 {{count}} tema
 {{count}} teman
+Avbryt
+
+Kopiera
+Öppna länk
+Öppna den här filen
+Kör fil
+Öppna extern länk?
+Den här länken öppnar en extern app utanför Obsidian. Fortsätt endast om du litar på källan till länken.
+Öppna alltid {{scheme}}://-länkar
+Varning för fjärrfil
+Den här filen finns på en fjärrserver och kan vara farlig.\nÄr du säker på att du vill öppna den?
+Plats: {{location}}
+Åtkomst till nätverksenhet
+Det här innehållet begär data från en nätverksenhet. Om du tillåter detta kan dina inloggningsuppgifter eller annan känslig information exponeras för fjärrvärden.
+Värd: {{host}}
+Tillåt
+Kör körbar fil?
+Den här länken pekar på en körbar fil. Att köra den kan skada din dator.
+Fil: {{path}}
+Valvet hittades inte.
+Det gick inte att hitta ett valv för URL:en {{url}}

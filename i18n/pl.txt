@@ -1,12 +1,21 @@
 Opcje
 Wtyczki
 Wbudowane wtyczki
+Pokaż na liście wtyczek
 Opcje wtyczek
 Przykład: folder 1/folder 2
 Przykład: folder/notatka
+Nie wybrano pliku
 Zmiana tej opcji wymaga ponownego uruchomienia, aby zadziałać.
+Nieprawidłowa liczba
+Wartość musi wynosić co najmniej {{min}}
+Wartość może wynosić najwyżej {{max}}
+Nie znaleziono pliku.
+Szukaj w ustawieniach...
+Nie znaleziono ustawień.
+{{count}} więcej
 Edytor
-Funkcje edytora
+Zachowanie
 Wyświetlanie
 Sprawdzanie pisowni
 Włącz sprawdzanie pisowni.
@@ -56,6 +65,8 @@ Rozmiar tabulacji
 Liczba spacji, którym odpowiada tabulator.
 Pisownia od strony prawej do lewej (RTL)
 Ustawia kierunek wyświetlania tekstu notatek od prawej do lewej.
+Pokaż diagramy Mermaid w notatkach
+Renderuj schematy blokowe, diagramy sekwencji i inne diagramy z bloków kodu „mermaid”.
 Automatyczne konwertowanie HTML
 Automatycznie konwertuje HTML na Markdown podczas wklejania i przeciągania ze stron internetowych. Użyj Ctrl/Cmd+Shift+V, aby wkleić bez konwertowania.
 Skróty klawiszowe Vim
@@ -124,18 +135,26 @@ Nazwa podfolderu
 Jeżeli plik znajduje się w folderze "sejf/folder", a nazwa podfolderu to "załączniki", będą one zapisane w "sejf/folder/załączniki".
 Pominięte pliki
 Pominięte pliki będą ukryte w wyszukiwarce, podglądzie grafu i niepowiązanych wzmiankach oraz mniej widoczne w oknie szybkiego wyboru i podpowiedziach łączy.
-W tej chwili nie jest stosowany żaden filtr. Dodaj go poniżej.
-Pliki pasujące do następujących filtrów są teraz pomijane:
-Filtr
+Dodaj wykluczenie...
+Nie dodano wykluczeń.
+{{count}} reguła
+{{count}} reguły
+Dodaj wykluczenie
+Wprowadź ścieżkę lub wyrażenie regularne, np. /daily-.*/
 Filtr nie może być pusty
-Wprowadź ścieżkę lub “/regex/”...
 Zezwalaj na URI
 Włącz x-callback-url poprzez x-success lub x-error podczas korzystania z URI Obsidian.
+
+Zarządzaj zaufanymi akcjami i konfiguruj zachowanie URI.
+Zaufane akcje
+Nie ma jeszcze zaufanych akcji. Zatwierdzone akcje URI pojawią się tutaj.
 Wygląd
 Schemat kolorów
 Wybierz domyślny schemat kolorów w Obsidian.
+ciemny jasny systemowy tryb nocny schemat kolorów
 Kolor akcentu
 Wybierz kolor akcentu używany w aplikacji.
+wyróżnienie marka kolor podstawowy
 Ciemny
 Jasny
 Dopasuj do systemu
@@ -150,8 +169,8 @@ Czcionka tekstu
 Wybierz czcionkę trybu edycji i odczytu.
 Czcionka o stałej szerokości (monospace)
 Wybierz czcionkę elementów takich jak bloki kodu i frontmatter.
- Aktywna czcionka: 
- Następujące czcionki są aktywne:
+
+{{count}} fonty
 Wprowadź nazwę czcionki...
 Żadna niestandardowa czcionka nie jest aktywna. Wybierz poniżej.
 Pierwsza czcionka z tej listy, która jest dostępna w systemie, zostanie aktywowana.
@@ -163,24 +182,26 @@ Przeglądaj i korzystaj z niesamowitych motywów stworzonych przez społecznoś�
 Przeglądaj
 Rozmiar czcionki
 Rozmiar czcionki w pikselach, który wpływa na edytor i podgląd.
+rozmiar tekstu powiększenie
 Szybka regulacja rozmiaru czcionki
 Dostosuj rozmiar czcionki za pomocą skrótu klawiszowego Ctrl + przewijanie lub gestu uszczypnięcia na gładziku.
 Motywy
 Zarządzaj zainstalowanymi motywami i przeglądaj motywy stworzone przez społeczność.
+społeczność przeglądaj zainstaluj pobierz
 Zmień
 Żaden
 Menu systemowe
 Menu w całej aplikacji będą zgodne z systemem operacyjnym. Motyw nie będzie miał na nie wpływu.
-Odśwież motywy
-Odświeżono niestandardowe motywy CSS.
 Otwórz folder motywów
 Snippety CSS
+Zarządzaj kolekcją plików CSS służących do dostosowywania wyglądu aplikacji.
 Nie znaleziono żadnych snippetów CSS w folderze.
-Snippety CSS przechowywane są w “{{path}}”.
+{{count}} włączonych
+Snippety CSS pozwalają dostosować wygląd aplikacji Obsidian. Umieść pliki CSS w „{{path}}”, aby pojawiły się tutaj.
 Odśwież snippety
 Otwórz folder snippetów
 Odświeżono snippety CSS.
-Włącz snippet CSS z “{{path}}”.
+Szukaj snippetów...
 Zainstalowane motywy
 Zrzut ekranu niedostępny
 Domyślny
@@ -222,19 +243,24 @@ Zaktualizuj wszystkie
 Zainstalowane motywy
 Zainstalowane motywy: {{count}}
 Zainstalowane motywy: {{count}}
+Otwórz ustawienia w nowym oknie
+Otwieraj ustawienia w osobnym oknie zamiast osadzać je w aplikacji.
+Interfejs
+Mobilny
+Zaawansowane
 Skróty klawiszowe
 Wyszukaj skróty klawiszowe
 Skróty klawiszowe: {{count}} 
 Skróty klawiszowe: {{count}} 
-Polecenia z konfliktami: {{count}}
-Polecenia z konfliktami: {{count}}
 Filtruj...
 Usuń skrót klawiszowy
 Wciśnij skrót klawiszowy...
 Wszystkie
+Konflikty ({{count}})
 Nieprzypisane
 Przypisane
 Przypisane przeze mnie
+Nie znaleziono wyników.
 Przywróć domyślny skrót klawiszowy
 Dostosuj to polecenie
 Ten skrót klawiszowy koliduje z "{{command}}"
@@ -317,7 +343,7 @@ Licencja Catalyst
 Posiadasz licencję Catalyst na poziomie {{tier}}. Dziękujemy za twoje wsparcie!
 Nie masz licencji Catalyst. Catalyst to jednorazowa darowizna, która pomaga Obsidian pozostać w 100% wspieranym przez użytkowników i zapewnia wczesny dostęp do nowych funkcji.
 Aplikacja
-Dowiedz się jak dodać nowy język do Obsidian.
+Dowiedz się, jak dodać nowy język do Obsidian.
 Konto
 Twoje konto
 Aktualnie zalogowano jako {{name}} ({{email}}).
@@ -352,28 +378,34 @@ Filtruj wtyczki po nazwie lub opisie.
 Wyszukaj wtyczki...
 Wtyczki społeczności
 Tryb ograniczony
-Tryb ograniczony jest wyłączony. Włącz, aby dezaktywować wtyczki społeczności.
+Włącz tryb ograniczony, aby korzystać z aplikacji bez wtyczek społeczności.
 Włącz i odśwież
 Automatycznie sprawdzaj aktualizacje wtyczek
 Co jakiś czas sprawdza, czy są dostępne aktualizacje wtyczek.
 Wtyczki społeczności
-Przeglądaj i instaluj wtyczki stworzone przez naszą niesamitą społeczność.
+Przeglądaj i instaluj wtyczki społeczności stworzone przez społeczność.
 Przeglądaj
 Wyłącz tryb ograniczony
 Wtyczki stworzone przez społeczność, podobnie jak każde inne samodzielnie instalowane oprogramowanie, mogą potencjalnie powodować problemy z integralnością danych i bezpieczeństwem.
 Bezpieczeństwo wtyczek jest dla nas ważne. Oto co robimy:
 Pomimo naszych wysiłków, nadal istnieje niewielka szansa, że wtyczki stworzone przez społeczność mogą działać nieprawidłowo.
-Wstępna weryfikacja kodu
-Wtyczki przechodzą wstępną weryfikację kodu przez nasz zespół, zanim pojawią się w katalogu.
+Weryfikacja kodu
+Wtyczki w oficjalnym katalogu społeczności są automatycznie weryfikowane po każdej aktualizacji.
 Otwarte oprogramowanie (open-source)
 Większość wtyczek jest dostępna jako otwarte oprogramowanie (open-source) na GitHub, możesz więc samodzielnie sprawdzić ich kod.
 Audyt społeczności
 Mamy dużą społeczność deweloperów, którzy nawzajem sprawdzają swoją pracę.
 Mechanizm raportowania
 Monitorujemy i usuwamy nieprawidłowo działające wtyczki po zgłoszeniu przez użytkowników.
-Czy chcesz wyłączyć tryb ograniczony, aby aktywować wtyczki stworzone przez społeczność? Zdecydowanie zalecamy wykonanie kopii zapasowej danych przed wykonaniem tej czynności.
 Dowiedz się więcej o bezpieczeństwie wtyczek
-Włącz wtyczki stworzone przez społeczność
+Zezwalaj na wtyczki społeczności
+Wtyczki mogą wykonywać dowolny kod na Twoim urządzeniu. Zalecamy wykonanie kopii zapasowej danych przed ich włączeniem.
+Włącz ponownie zainstalowane wtyczki
+Przywróć {{count}} wcześniej zainstalowaną wtyczkę.
+Przywróć {{count}} wcześniej zainstalowane wtyczki.
+Pokaż informacje o wtyczce
+Włączone wtyczki
+Te wtyczki zostaną włączone po opuszczeniu trybu ograniczonego.
 Czy źródło tego sejfu jest wiarygodne?
 Otwierasz ten sejf po raz pierwszy i zawiera on kilka wtyczek.
 Jeśli ten sejf pochodzi od kogoś innego, pamiętaj, że wtyczki nieznanego pochodzenia mogą stanowić zagrożenie dla bezpieczeństwa.
@@ -387,6 +419,9 @@ Instaluj
 Włącz
 Wyłącz
 Kopiuj łącze udostępniania
+Wyświetl szczegóły
+Otwórz stronę społeczności
+Ustawienia
 Wesprzyj
 Brak wyników wyszukiwania.
 Nie znaleziono najnowszych plików. Wpisz, aby wyszukać...
@@ -426,6 +461,7 @@ Szukaj zainstalowanych wtyczek
 Filtruj zainstalowane wtyczki według nazwy lub opisu.
 Wyszukaj zainstalowane wtyczki...
 Wyświetl tylko zainstalowane
+Nie zainstalowano żadnych wtyczek.
 Wesprzyj {{name}}
 Twórcy wtyczek są wolontariuszami, którzy tworzą niesamowite rzeczy z pasji dla społeczności. Jeśli uznasz tę wtyczkę za przydatną, rozważ wsparcie jej rozwoju.
 100% twojego wsparcia trafi do twórcy wtyczki; Obsidian nie pobiera żadnych prowizji. Platforma wybrana przez twórców wtyczek może pobierać prowizję.
@@ -520,12 +556,15 @@ Wyszukaj tag
 Nie można odnaleźć:
 Nie można odnaleźć “{{subpath}}” w {{file}}
 Otwórz w aplikacji domyślnej
-Pasek boczny jest pusty, spróbuj przeciągnąć tu jednen z paneli.
+Pasek boczny jest pusty, spróbuj przeciągnąć tu jeden z paneli.
 Rozwiń
 Zwiń
 Nie udało się zapisać pliku “{{filepath}}”. {{message}}. Wykonaj kopię zapasową zawartości tego pliku, aby uniknąć utraty danych.
 Nie udało się wczytać wtyczki “{{plugin}}”
 Wystąpił błąd podczas wczytywania wtyczki “{{plugin}}”
+Nie załadowano wtyczki {{plugin}}. Ta wtyczka nie jest zgodna z Obsidian v{{version}}.
+Wtyczka {{plugin}} już nie działa. Zalecamy jej odinstalowanie.
+Nie można załadować wtyczki {{plugin}} v{{version}}. Zgłoszono, że ta wersja powoduje problemy. Sprawdź, czy jest dostępna nowsza wersja wtyczki.
 Nie udało się otworzyć “{{filepath}}”
 Nie udało się otworzyć lokalizacji “{{href}}”
 Brak pliku
@@ -547,7 +586,7 @@ Skopiowano do schowka
 Nie udało się skopiować do schowka
 Filtruj...
 Wystąpił błąd podczas renderowania bloku kodu.
-Otwarto plik {{path}}”
+Otwarto plik “{{path}}”
 Nie znaleziono pliku “{{name}}”.
 Nieznana akcja URI: {{action}}
 Usuń
@@ -568,7 +607,7 @@ Nowa karta
 Ukryj menu wstążkowe
 Ta karta jest teraz zajęta, spróbuj ponownie później
 
-Paragraf
+Akapit
 Wstaw
 Łącze
 Łącze zewnętrzne
@@ -594,7 +633,7 @@ Wyczyść formatowanie
 Cytat
 Pusty
 Żaden plik nie jest otwarty
-Stwórz nowy plik
+Stwórz nową notatkę
 Przejdź do pliku
 Zobacz ostatnie pliki
 Zamknij
@@ -628,7 +667,7 @@ Zamknij wszystkie
 Zamknij karty: {{count}}
 Zamknij karty: {{count}}
 Zamknij pozostałe
-Zamknij karty za
+Zamknij karty po
 Przypnij
 Odepnij
 Odłącz kartę
@@ -636,6 +675,7 @@ Połącz kartę...
 Tryb źródłowy
 Tryb odczytu
 Dodaj atrybut
+Usuń
 Usuń plik
 Stwórz ten plik
 Otwórz łącze
@@ -771,7 +811,7 @@ Wybierz sejf
 Twoje konto **{{email}}** posiada istniejące sejfy, z którymi możesz się połączyć.
 Zaloguj się na swoje konto Obsidian
 Nie pamiętam hasła
-Reset hasła
+Zresetuj hasło
 Wysłaliśmy wiadomość email na adres {{email}} w celu zresetowania hasła.
 Wybierz sposób synchronizacji notatek
 Aby korzystać z Obsidian na swoich urządzeniach, należy zsynchronizować dane.
@@ -885,9 +925,9 @@ Wstecz
 Naprzód
 Tryb jasny lub ciemny
 Zmień motyw...
-Zmień skarbiec...
-Otwórz skarbiec...
-Zarządzaj skarbcami
+Zmień sejf...
+Otwórz sejf...
+Zarządzaj sejfami
 Szukaj w aktywnym pliku
 Szukaj i zamień w aktywnym pliku
 Dodaj atrybut
@@ -932,7 +972,7 @@ Komentarz
 Wyczyść formatowanie
 Wstaw łącze
 Włącz lub wyłącz sprawdzanie pisowni
-Usuń paragraf
+Usuń akapit
 Zaznacz lub odznacz element listy
 Lista punktowana lub lista zadań
 Objaśnienie
@@ -983,6 +1023,10 @@ Nie pytaj ponownie
 Łącza do tego pliku: {{count}}.
 Łącza do tego pliku: {{count}}.
 Usuń plik
+Uruchomić akcję z zewnętrznego łącza?
+Akcja „{{action}}” zostanie uruchomiona. Kontynuuj tylko wtedy, gdy ufasz źródłu łącza.
+Wtyczka „{{source}}” zamierza uruchomić akcję „{{action}}”. Kontynuuj tylko wtedy, gdy ufasz źródłu łącza.
+Nie pytaj ponownie dla „{{action}}”
 Pobierz załączniki
 Ta notatka nie zawiera zewnętrznych załączników.
 Pobierz załączniki: {{count}}.
@@ -997,6 +1041,9 @@ Zarządzaj
 Wyświetl
 Potwierdź
 Anuluj
+Zezwól
+Zezwól raz
+Zawsze zezwalaj
 Pomiń
 Pobierz
 Zrobione
@@ -1033,7 +1080,7 @@ Nowa karta
 Nowe okno
 Okno szybkiego wyboru...
 Otwórz sejf...
-Zakmnij kartę
+Zamknij kartę
 Zamknij okno
 Znajdź
 Zamień
@@ -1057,7 +1104,7 @@ Lista zadań
 Pogrubienie
 Kod
 Komentarz
-Pochylenie
+Kursywa
 Matematyka
 Wyróżnienie
 Przekreślenie
@@ -1067,7 +1114,7 @@ Zwiń wszystkie
 Rozwiń wszystkie
 Zwiń sekcję
 Rozwiń sekcję
-Tryb kodu
+Tryb źródłowy
 Tryb odczytu
 Pokaż informacje debugowania
 Otwórz sejf testowy
@@ -1224,6 +1271,7 @@ Wyświetlaj załączniki, takie jak obrazy, filmy i pliki PDF.
 Pokaż wszystkie typy plików
 Wyświetlaj wszystkie pliki, w tym te, których Obsidian nie może otworzyć. Plik zostanie otwarty za pomocą domyślnej aplikacji dla tego typu pliku.
 Podgląd grafu
+Graf lokalny
 Zobacz, jak twoje notatki są ze sobą powiązane.
 Otwórz podgląd grafu
 Otwórz lokalny podgląd grafu
@@ -1279,7 +1327,7 @@ Powiązane wzmianki
 Nie znaleziono linków zwrotnych.
 Niepowiązane wzmianki
 Pokaż filtry wyszukiwania
-Dodaj link
+Dodaj łącze
 Linki zwrotne do {{displayText}}
 Nie znaleziono żadnych niepowiązanych wzmianek.
 
@@ -1413,13 +1461,14 @@ Instalowanie motywu “{{name}}” powiodło się.
 Instalowanie motywu “{{name}}”...
 Znaleziono {{themeCount}}:
 Dostępna aktualizacja
-Lista poleceń
+Paleta poleceń
 Użyj kombinacji klawiszy Cmd/Ctrl+P i zacznij pisać, aby wywołać polecenie.
-Otwórz listę poleceń
+Otwórz paletę poleceń
 aby zmienić
 aby użyć
 aby anulować
 Nie znaleziono żadnych poleceń.
+Dodaj polecenie...
 Wybierz polecenie...
 Przypięte polecenia
 Konwerter formatowania
@@ -1453,15 +1502,15 @@ Zmodyfikowane pliki
 Całkowita liczba zmian
 Nie udało się
 Dziennik
-Stwórz lub otwórz dzisiejszy dziennik
+Stwórz lub otwórz dzisiejszy dziennik.
 Dziennik
 Otwórz dzisiejszy dziennik
 Otwórz wcześniejszy dziennik
 Otwórz późniejszy dziennik
-Dzisiejszay dziennik
+Dzisiejszy dziennik
 Wstaw łącze do dziennika
 Tworzenie dziennika nie powiodło się. “{{format}}” nie jest prawidłowym formatem.
-Tworzenie cdziennika nie powiodło się. Folder “{{folderOption}}” nie został odnaleziony.
+Tworzenie dziennika nie powiodło się. Folder “{{folderOption}}” nie został odnaleziony.
 Tworzenie dziennika nie powiodło się. Szablon “{{template}}” nie został odnaleziony.
 Nie ma wcześniejszego dziennika.
 Nie ma późniejszego dziennika.
@@ -1507,6 +1556,8 @@ Nie znaleziono nagłówków.
 Automatycznie przewiń do aktywnej sekcji
 Liczba słów
 Pokaż liczbę słów na pasku stanu.
+Wyświetlać diagramy Mermaid w tym sejfie?
+Zezwól tylko wtedy, gdy ufasz zawartości tego sejfu.
 Slajdy
 Prezentuj w formacie Markdown. Użyj “---”, aby oddzielić slajdy.
 Rozpocznij prezentację
@@ -1548,8 +1599,8 @@ Wyświetlenie szablonów nie powiodło się. Folder szablonów nie został ustaw
 Wpisz nazwę szablonu...
 Przezroczyste okno
 Włącz efekt półprzezroczystości, aby zwiększyć poczucie głębi. Najlepiej używać w trybie ciemnym. Nieobsługiwane w systemie Linux.
-Ukośnik komend
-Włącza możliwość uruchamiania komend poprzez wpisanie znaku ukośnika.
+Ukośnik poleceń
+Włącza możliwość uruchamiania poleceń poprzez wpisanie znaku ukośnika (/).
 Pokaż tryb na pasku stanu
 Dodaje do paska stanu aktualny tryb z możliwością jego zmiany.
 Tryb odczytu
@@ -1710,7 +1761,6 @@ Usuń użytkownika
 Zaproś użytkownika
 Wpisz adres email...
 Wprowadź prawidłowy adres email, aby kogoś zaprosić.
-Aktywuj wtyczkę Publish, aby wyświetlić strony. (Ustawienia -> Wbudowane wtyczki)
 Twoje strony
 Strony udostępnione tobie
 Przestań współpracować przy tej stronie
@@ -1899,7 +1949,7 @@ Synchronizacja ustawień sejfu
 Historia wersji plików konfiguracyjnych
 Wyświetl i przywróć historię wersji plików konfiguracyjnych.
 Ustawienia główne
-Włącz synchronizację ustawień edycji, plików i linków, niestandardowych skrótów klawiszowych itp.
+Włącz synchronizację ustawień edycji, plików i łączy, niestandardowych skrótów klawiszowych itp.
 Ustawienia wyglądu
 Synchronizuj ustawienia wyglądu, takie jak tryb ciemny, aktywny motyw i włączone snippety.
 Motywy i snippety
@@ -1914,6 +1964,10 @@ Lista aktywnych wtyczek społeczności
 Synchronizuj, które wtyczki społeczności są włączone.
 Zainstalowane wtyczki społeczności.
 Synchronizuj zainstalowane wtyczki społeczności (pliki .js, .css, i manifest.json) i ich ustawienia.
+Zezwolić zsynchronizowanym wtyczkom na działanie na tym urządzeniu?
+Obsidian Sync nie może zweryfikować zawartości wtyczek zsynchronizowanych z tym urządzeniem i mogą się one różnić od wtyczek opublikowanych w katalogu społeczności.
+Włącz to tylko wtedy, gdy sejf i połączone urządzenia są zaufane.
+Tak, włącz synchronizację wtyczek
 Synchronizacja nadal się wczytuje, odśwież tę stronę później.
 Obsidian Sync to dodatkowa usługa synchronizacji Obsidian z szyfrowaniem end-to-end i historią wersji.
 Aby rozpocząć synchronizację, zaloguj się lub stwórz nowe konto Obsidian.
@@ -2068,6 +2122,7 @@ Usuwa wszystkie powyższe, a także dane lokalne i aktywne sesje.
 Nowa przeglądarka
 Nie można wczytać tej strony.
 Upewnij się, że podany adres jest prawidłowy.
+Widok czytania
 Szukaj w sieci
 Dane przeglądarki
 Wyczyść dane przeglądarki
@@ -2372,6 +2427,9 @@ Wysoki
 Bardzo wysoki
 Podsumuj...
 Grupuj według tego atrybutu
+Zmień rozmiar kolumny...
+Resetuj rozmiar kolumny
+Przeciągnij, aby zmienić rozmiar
 Wyczyść wartości
 Podsumowanie
 Nie udało się przetworzyć wzoru "{{ formula }}"
@@ -2515,3 +2573,24 @@ snippety: {{count}}
 snippety: {{count}}
 motywy: {{count}}
 motywy: {{count}}
+Anuluj
+
+Kopiuj
+Otwórz łącze
+Otwórz ten plik
+Uruchom plik
+Otworzyć zewnętrzne łącze?
+To łącze otworzy zewnętrzną aplikację poza Obsidian. Kontynuuj tylko wtedy, gdy ufasz źródłu tego łącza.
+Zawsze otwieraj łącza {{scheme}}://
+Ostrzeżenie dotyczące zdalnego pliku
+Ten plik znajduje się na zdalnym serwerze i może być niebezpieczny.\nCzy na pewno chcesz go otworzyć?
+Lokalizacja: {{location}}
+Dostęp do dysku sieciowego
+Ta zawartość żąda danych z dysku sieciowego. Zezwolenie na to może ujawnić Twoje dane logowania lub inne poufne informacje zdalnemu hostowi.
+
+Zezwól
+Uruchomić plik wykonywalny?
+To łącze wskazuje na plik wykonywalny. Jego uruchomienie może uszkodzić Twój komputer.
+Plik: {{path}}
+Nie znaleziono sejfu.
+Nie można znaleźć sejfu dla adresu URL {{url}}

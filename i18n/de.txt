@@ -1,10 +1,19 @@
 Optionen
 Erweiterungen
 Obsidian-Erweiterungen
+In Erweiterungsliste anzeigen
 Erweiterungs-Einstellungen
 Beispiel: Ordner 1/Ordner 2
 Beispiel: Ordner/Notiz
+Keine Datei ausgewählt
 Damit diese Änderungen wirksam werden, starte Obsidian bitte neu.
+Ungültige Zahl
+Wert muss mindestens {{min}} betragen
+Wert darf höchstens {{max}} betragen
+Datei nicht gefunden.
+Einstellungen suchen...
+Keine Einstellungen gefunden.
+{{count}} weitere
 
 Verhalten
 Anzeige
@@ -56,6 +65,8 @@ Länge der Tabs
 Definiert die Anzahl der Leerzeichen, die einem Tab entsprechen.
 Schreib- und Leserichtung (RTL)
 Ändert die Laufrichtung von Text in Notizen nach RTL (von rechts nach links).
+Mermaid-Diagramme in Notizen anzeigen
+Flussdiagramme, Sequenzdiagramme und andere Diagramme aus „mermaid“-Quelltext-Blöcken rendern.
 HTML automatisch konvertieren
 Konvertiert HTML automatisch nach Markdown, wenn Inhalte von Webseiten durch Ziehen und Ablegen eingefügt werden. Verwende Strg/Cmd+Umschalt+V, um ohne Konvertierung einzufügen.
 Vim-Tastenbindung
@@ -124,18 +135,26 @@ Name des Unterordners
 Wenn deine Datei unter "Vault/Ordner" liegt und du den Unterordner "Anhänge" genannt hast, werden Anhänge unter "Vault/Ordner/Anhänge" gespeichert.
 Ignorierte Dateien
 Ignorierte Dateien sind entweder ausgeblendet oder weniger auffällig an verschiedenen Stellen, wie z.B. in der Schnellauswahl, Linkvorschlägen und der Graph-Ansicht.
-Im Moment werden keine Dateien ignoriert. Füge einen Filter hinzu.
-Dateien, die den folgenden Filterkriterien entsprechen, werden momentan ignoriert:
-
+Ausschluss hinzufügen...
+Keine Ausschlüsse hinzugefügt.
+{{count}} Regel
+{{count}} Regeln
+Ausschluss hinzufügen
+Gib einen Pfad oder eine Regex ein, z. B. /daily-.*/
 Filter darf nicht leer sein
-Pfad oder "/regex/" eingeben...
 URI-Callbacks erlauben
 Bei der Behandlung von Obsidian-URIs die Verwendung von X-Callback-URLs durch x-success oder x-error aktivieren.
+Obsidian-URI
+Vertrauenswürdige Aktionen verwalten und URI-Verhalten konfigurieren.
+Vertrauenswürdige Aktionen
+Noch keine vertrauenswürdigen Aktionen. Genehmigte URI-Aktionen werden hier angezeigt.
 Darstellung
 Farbschema
 Wähle das Standard-Farbschema für Obsidian.
+dunkel hell system nachtmodus farbschema
 Akzentfarbe
 Wähle eine Akzentfarbe, die in der gesamten Anwendung verwendet werden soll.
+hervorhebung marke primärfarbe
 Dunkel
 Hell
 Systemeinstellung verwenden
@@ -150,8 +169,8 @@ Text-Schriftart
 Wähle eine Schriftart für die Bearbeitungs- und Leseansicht.
 Monospace-Schriftart
 Wähle eine Schriftart für Quelltext-Blöcke und Frontmatter.
-Aktuell verwendete Schriftart: 
-Die folgenden Schriftarten werden momentan verwendet:
+{{count}} Schriftart
+{{count}} Schriftarten
 Name der Schriftart eingeben...
 Derzeit wird keine eigene Schriftart verwendet. Füge unten eine hinzu.
 Es wird die erste Schriftart aus dieser Liste verwendet, die auf deinem System verfügbar ist.
@@ -163,24 +182,26 @@ Vorschau und Verwendung der von unserer Community erstellten Designs.
 Durchsuchen
 Schriftgröße
 Schriftgröße in Pixeln für die Bearbeitungs- und Leseansicht.
+textgröße zoom
 Schnellanpassung der Schriftgröße
 Die Schriftgröße kann durch Strg + Scrollen oder durch eine Zoom-Geste auf dem Trackpad angepasst werden.
 Thema
 Verwalte installierte Themen und durchsuche von der Community erstellte Designs.
+community durchsuchen installieren herunterladen
 Verwalten
 Keines
 Native Menüs
 Der Menü-Stil wird an die Systemeinstellung angepasst. Das gewählte Farbschema hat darauf keinen Einfluss.
-Themen neu laden
-Themen wurden neu geladen.
 Themen-Ordner öffnen
 CSS-Bausteine
+Verwalte deine Sammlung von CSS-Dateien, um die Darstellung der App anzupassen.
 Keine CSS-Bausteine gefunden.
-CSS-Bausteine sind in "{{path}}" gespeichert.
+{{count}} aktiviert
+Mit CSS-Snippets kannst du die Darstellung von Obsidian anpassen. Lege CSS-Dateien in „{{path}}“ ab, damit sie hier erscheinen.
 CSS-Bausteine neu laden
 CSS-Baustein-Ordner öffnen
 CSS-Bausteine wurden neu geladen.
-CSS-Baustein unter "{{path}}" anwenden.
+Snippets suchen...
 Installierte Themen
 Screenshot nicht verfügbar
 Standard
@@ -222,19 +243,24 @@ Alle aktualisieren
 Installierte Community-Themen
 Du hast derzeit {{count}} Thema installiert.
 Du hast derzeit {{count}} Themen installiert.
+Einstellungen in neuem Fenster öffnen
+Öffnet die Einstellungen in einem eigenen Fenster, statt sie in die App einzubetten.
+Oberfläche
+Mobil
+Erweitert
 Tastenkürzel
 Tastenkürzel durchsuchen
 Zeige {{count}} Tastenkürzel. 
 Zeige {{count}} Tastenkürzel. 
-{{count}} Befehl mit Konflikten.
-{{count}} Befehle mit Konflikten.
 Filtern...
 Tastenkürzel löschen
 Tastenkürzel drücken...
 Alle
+Konflikte ({{count}})
 Nicht zugewiesen
 Zugewiesen
 Von mir zugewiesen
+Keine Ergebnisse gefunden.
 Standard wiederherstellen
 Eigenes Tastenkürzel festlegen
 Dieses Tastenkürzel und "{{command}}" überschneiden sich.
@@ -352,28 +378,34 @@ Filtere Erweiterungen nach Name oder Beschreibung.
 Durchsuche Erweiterungen...
 Externe Erweiterungen
 Eingeschränkter Modus
-Eingeschränkter Modus ist abgeschaltet. Schalte ihn ein, um Community-Erweiterungen zu deaktivieren.
+Aktiviere den Eingeschränkten Modus, um die App ohne externe Erweiterungen zu verwenden.
 Einschalten
 Automatisch nach Plugin-Aktualisierungen suchen
 In regelmäßigen Abständen nach Plugin-Aktualisierungen suchen.
 Community-Erweiterungen
-Durchsuche und installiere von unserer großartigen Community erstellte Erweiterungen.
+Durchsuche und installiere externe Erweiterungen, die von der Community erstellt wurden.
 Durchsuchen
 Eingeschränkten Modus verlassen
 Community-Erweiterungen, wie auch jede andere Software, die du installierst, können potentiell die Integrität und Sicherheit deiner Daten gefährden.
 Die Sicherheit von Erweiterungen ist uns sehr wichtig. Das tun wir dafür:
 Trotz all unserer Bemühungen besteht dennoch die Möglichkeit, dass eine Community-Erweiterung sich unangemessen verhält.
-Erste Code-Überprüfung
-Erweiterungen werden von unserem Team einer Code-Überprüfung unterzogen, bevor sie in der offiziellen Plugin-Liste erscheinen.
+Code-Überprüfung
+Erweiterungen im offiziellen Community-Verzeichnis werden nach jeder Aktualisierung automatisch überprüft.
 Open Source
 Die meisten Erweiterungen sind quelloffen und auf Github zu finden, so dass du den Code selbst überprüfen kannst.
 Peer-Audit
 Wir haben eine große Community von Entwicklern, die ein Auge aufeinander haben.
 Meldesystem
 Wir verfolgen und entfernen fehlerhafte Plugins nach Meldung durch unsere Anwender.
-Möchtest du den eingeschränkten Modus verlassen, um Community-Erweiterungen zu verwenden? Wir empfehlen dringend, vorher eine Sicherungskopie deiner Daten zu erstellen.
 Erfahre mehr zur Sicherheit von Erweiterungen
-Community-Erweiterungen aktivieren
+Externe Erweiterungen zulassen
+Erweiterungen können beliebigen Code auf deinem Gerät ausführen. Wir empfehlen, deine Daten zu sichern, bevor du sie aktivierst.
+Installierte Erweiterungen erneut aktivieren
+{{count}} zuvor installierte Erweiterung wiederherstellen.
+{{count}} zuvor installierte Erweiterungen wiederherstellen.
+Erweiterungsinfos anzeigen
+Aktivierte Erweiterungen
+Diese Erweiterungen werden aktiviert, wenn der Eingeschränkte Modus verlassen wird.
 Vertraust du dem Ersteller dieses Vaults?
 Du öffnest diesen Vault zum ersten Mal und er enthält einige Erweiterungen.
 Wenn du diesen Vault nicht selbst erstellt hast, beachte bitte, dass Erweiterungen unbekannter Herkunft ein Sicherheitsrisiko darstellen können.
@@ -387,6 +419,9 @@ Installieren
 Aktivieren
 Deaktivieren
 Öffentlichen Link kopieren
+Details anzeigen
+Community-Seite öffnen
+Einstellungen
 Spenden
 Keine Ergebnisse gefunden.
 Keine kürzlich verwendeten Dateien gefunden. Suchen...
@@ -426,6 +461,7 @@ Installierte Erweiterungen durchsuchen
 Installierte Erweiterungen nach Name oder Beschreibung filtern.
 Installierte Erweiterungen durchsuchen...
 Nur installierte anzeigen
+Keine Erweiterungen installiert.
 Spenden, um {{name}} zu unterstützen
 Die Entwickler der Erweiterungen sind Mitglieder unserer Community, die großartige Dinge mit Leidenschaft erstellen. Wenn du diese Erweiterung hilfreich findest, ziehe bitte in Betracht, ihre Entwicklung zu unterstützen.
 Dein Beitrag geht zu 100% an die Entwickler; Obsidian bekommt nichts davon. Die Plattform, über die deine Spende verarbeitet wird, berechnet möglicherweise eine Gebühr.
@@ -526,6 +562,9 @@ Einklappen
 Fehler beim Speichern der Datei "{{filepath}}". {{message}}.
 Erweiterung “{{plugin}}” konnte nicht geladen werden
 Beim Laden der Erweiterung “{{plugin}}” ist ein Fehler aufgetreten
+{{plugin}} wurde nicht geladen. Diese Erweiterung ist nicht mit Obsidian v{{version}} kompatibel.
+{{plugin}} funktioniert nicht mehr. Wir empfehlen, sie zu deinstallieren.
+Die Erweiterung {{plugin}} v{{version}} konnte nicht geladen werden. Es wurde gemeldet, dass diese Version Probleme verursacht. Bitte prüfe, ob eine neuere Version der Erweiterung verfügbar ist.
 “{{filepath}}” konnte nicht geöffnet werden
 “{{href}}” konnte nicht geöffnet werden
 Keine Datei
@@ -636,6 +675,7 @@ Mit Tab verlinken...
 Quellcode-Ansicht
 Leseansicht
 Dateieigenschaften hinzufügen
+Löschen
 Datei löschen
 Diese Datei erstellen
 Link öffnen
@@ -983,6 +1023,10 @@ Nicht erneut fragen
 Es existiert {{count}} Link, der auf diese Datei verweist.
 Es existieren {{count}} Links, die auf diese Datei verweisen.
 Datei löschen
+Aktion über externen Link ausführen?
+Die Aktion „{{action}}“ wird gleich ausgeführt. Fahre nur fort, wenn du der Quelle des Links vertraust.
+Die Erweiterung „{{source}}“ wird gleich die Aktion „{{action}}“ ausführen. Fahre nur fort, wenn du der Quelle des Links vertraust.
+Für „{{action}}“ nicht erneut fragen
 Anhänge herunterladen
 Es gibt keine externen Anhänge in dieser Notiz.
 {{count}} Anhang heruntergeladen.
@@ -997,6 +1041,9 @@ Verwalten
 Anzeigen
 Bestätigen
 Abbrechen
+Zulassen
+Einmal erlauben
+Immer erlauben
 Überspringen
 Herunterladen
 Fertig
@@ -1224,6 +1271,7 @@ Zeigt angehängte Dateien wie Bilder, Videos und PDFs.
 Alle Dateitypen zeigen
 Zeigt alle Dateitypen an, inklusive solcher, die Obsidian nicht öffnen kann. Die Datei wird mit der Standardanwendung geöffnet.
 Graph-Ansicht
+Lokales Diagramm
 Zeigt Beziehungen zwischen deinen Notizen in einer graphischen Übersicht.
 Graph-Ansicht öffnen
 Lokalen Graphen öffnen
@@ -1420,7 +1468,8 @@ zum Navigieren
 zum Verwenden
 zum Schließen
 Keine Befehle gefunden.
-Gib einen Befehl ein...
+Befehl hinzufügen...
+Befehl auswählen...
 Angeheftete Befehle
 Importprogramm für Markdown Format
 Konvertiert Markdown aus anderen Anwendungen in das Obsidian Format.
@@ -1507,6 +1556,8 @@ Keine Überschriften gefunden.
 Automatisch zum aktiven Abschnitt scrollen
 Anzahl der Wörter
 Zeigt die Anzahl der Wörter in der Statusleiste an.
+Mermaid-Diagramme in diesem Vault anzeigen?
+Nur zulassen, wenn du den Inhalten dieses Vaults vertraust.
 Präsentation
 Ermöglicht die Präsentation mit Markdown. Verwende "---", um Folien zu trennen.
 Präsentation starten
@@ -1710,7 +1761,6 @@ Nutzer entfernen
 Nutzer einladen
 Gib die Email-Adresse ein...
 Bitte gib eine gültige Email-Adresse ein, um jemanden einzuladen.
-Bitte aktiviere das Publish-Kernplugin in Einstellungen -> Obsidian-Erweiterungen, um Websites anzuzeigen.
 Deine Websites
 Websites, die für dich freigegeben wurden
 Mitarbeit an dieser Website beenden
@@ -1914,6 +1964,10 @@ Aktive externe Erweiterungen
 Synchronisiert, welche Community-Erweiterungen aktiviert sind.
 Installierte externe Erweiterungen
 Synchronisiert installierte Community-Erweiterungen (.js, .css, und manifest.json Dateien) und deren Einstellungen.
+Synchronisierte Erweiterungen auf diesem Gerät ausführen lassen?
+Obsidian Sync kann den Inhalt von Erweiterungen, die mit diesem Gerät synchronisiert wurden, nicht überprüfen. Sie können sich von den im Community-Verzeichnis veröffentlichten Erweiterungen unterscheiden.
+Aktiviere dies nur, wenn der Vault und die verbundenen Geräte vertrauenswürdig sind.
+Ja, Erweiterungssynchronisierung aktivieren
 Sync wird noch geladen, bitte aktualisiere diese Seite später.
 Obsidian Sync ist Obsidian's optionaler Synchronisierungsdienst mit Ende-zu-Ende-Verschlüsselung und Versionsverlauf.
 Um die Synchronisierung zu starten, melde dich bitte an oder erstelle ein neues Obsidian-Konto.
@@ -2068,6 +2122,7 @@ Entfernt alle oben genannten Daten sowie den lokalen Speicher und aktive Sitzung
 Neuer Web-Viewer
 Seite konnte nicht geladen werden.
 Stelle sicher, dass die Adresse korrekt geschrieben ist.
+Leseransicht
 Im Internet suchen
 Web-Viewer-Daten
 Web-Viewer-Daten zurücksetzen
@@ -2351,7 +2406,7 @@ Eigenschaftentrennzeichen
 Aufzählung
 Nummer
 Keine
-Karten
+Galerie
 Kartengröße
 Bild-Eigenschaft
 Bildanpassung
@@ -2372,6 +2427,9 @@ Groß
 Extra groß
 Zusammenfassen...
 Nach dieser Eigenschaft gruppieren
+Spaltengröße ändern...
+Spaltengröße zurücksetzen
+Zum Ändern der Größe ziehen
 Werte löschen
 Zusammenfassung
 Formel "{{ formula }}" konnte nicht aufgelöst werden
@@ -2515,3 +2573,24 @@ Callout-Typ...
 {{count}} Snippets
 {{count}} Thema
 {{count}} Themen
+Abbrechen
+
+Kopieren
+Link öffnen
+Diese Datei öffnen
+Datei ausführen
+Externen Link öffnen?
+Dieser Link öffnet eine externe Anwendung außerhalb von Obsidian. Fahre nur fort, wenn du der Quelle dieses Links vertraust.
+{{scheme}}://-Links immer öffnen
+Warnung zu Remote-Datei
+Diese Datei befindet sich auf einem Remote-Server und kann gefährlich sein.\nMöchtest du sie wirklich öffnen?
+Speicherort: {{location}}
+Zugriff auf Netzlaufwerk
+Dieser Inhalt fordert Daten von einem Netzlaufwerk an. Wenn du dies zulässt, können deine Anmeldedaten oder andere vertrauliche Informationen dem Remote-Host offengelegt werden.
+
+Zulassen
+Ausführbare Datei ausführen?
+Dieser Link verweist auf eine ausführbare Datei. Sie auszuführen könnte deinem Computer schaden.
+Datei: {{path}}
+Vault nicht gefunden.
+Für die URL {{url}} konnte kein Vault gefunden werden

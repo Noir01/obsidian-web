@@ -1,10 +1,19 @@
 Roghanna
 Breiseán
 Breiseáin lárnacha
+Taispeáin i liosta na mbreiseán
 Roghanna breiseán
 Sampla: fillteán 1/fillteán 2
 Sampla: fillteán/nóta
+Níl aon chomhad roghnaithe
 Éilíonn an rogha seo a athrú chun atosú a bheith i bhfeidhm.
+Uimhir neamhbhailí
+Caithfidh an luach a bheith {{min}} ar a laghad
+Caithfidh an luach a bheith {{max}} ar a mhéad
+Níor aimsíodh an comhad.
+Cuardaigh socruithe...
+Níor aimsíodh socruithe ar bith.
+{{count}} eile
 Eagarthóir
 Iompar
 Taispeáin
@@ -56,6 +65,8 @@ Leithead amhairc insint
 Líon na spásanna a thabharfaidh carachtar cluaisín mar.
 Ar dheis go clé (RTL)
 Socraíonn treo réamhshocraithe téacs na nótaí ar dheis go clé.
+Taispeáin léaráidí Mermaid i nótaí
+Rindreáil sreabhchairteacha, léaráidí seichimh, agus léaráidí eile ó bhloic cóid “mermaid”.
 Tiontaigh HTML greamaithe go Markdown
 Tiontaigh HTML go Markdown go huathoibríoch agus tú ag greamú agus tarraingt-agus-scaoil ó leathanaigh ghréasáin. Úsáid Ctrl/Cmd+Shift+V chun HTML a ghreamú gan tiontú.
 Ceangail eochair Vim
@@ -124,18 +135,26 @@ Ainm an fho-fhillteáin
 Má tá do chomhad faoi “vault/folder”, agus má shocraíonn tú ainm an fho-fhillteáin go “ceangaltáin”, sábhálfar ceangaltáin chuig “vault/fillteán/ceangaltáin”.
 Comhaid eisiata
 Beidh comhaid eisiata i bhfolach i gCuardach, Amharc Graf, agus Luanna Neamhnasctha, nach bhfuil chomh suntasach i gQuick Switcher agus moltaí nasc.
-Ní chuirtear aon scagaire eisiata i bhfeidhm anois. Cuir ceann thíos.
-Tá comhaid a mheaitseálann leis na scagairí seo a leanas eisiata
-Scagaire
+Cuir eisiamh leis...
+Níor cuireadh aon eisiamh leis.
+{{count}} riail
+{{count}} riail
+Cuir eisiamh leis
+Cuir isteach cosán nó slonn rialta, m.sh. /daily-.*/
 Ní féidir leis an scagaire a bheith folamh
-Cuir isteach cosán nó “/regex/”...
 Ceadaigh aisghlaonna URI
 Cumasaigh úsáid x-callback-url trí x-success nó x-error agus URIs Obsidian á láimhseáil.
+URI Obsidian
+Bainistigh gníomhartha iontaofa agus cumraigh iompar URI.
+Gníomhartha iontaofa
+Níl aon ghníomhartha iontaofa ann fós. Beidh gníomhartha URI ceadaithe le feiceáil anseo.
 Dealramh
 Scéim dathanna bonn
 Roghnaigh scéim dathanna réamhshocraithe Obsidian.
+dorcha geal córas mód oíche scéim dathanna
 Dath blas
 Roghnaigh an dath blas a úsáidtear ar fud an aip.
+aibhsiú branda príomhdhath
 Dorcha
 Solas
 Oiriúnaigh don chóras
@@ -150,8 +169,8 @@ Cló téacs
 Socraigh cló chun tuairimí a chur in eagar agus a léamh
 Cló Monospace
 Socraigh cló d'áiteanna cosúil le bloic cód agus tosaigh.
- Cló atá i bhfeidhm faoi láthair: 
- Tá na clónna seo a leanas i bhfeidhm faoi láthair:
+{{count}} cló
+{{count}} cló
 Cuir isteach ainm cló...
 Ní chuirtear aon chló saincheaptha i bhfeidhm faoi láthair. Cuir ceann thíos.
 Cuirfear an chéad chló ón liosta seo atá ar fáil ar do chóras i bhfeidhm.
@@ -163,24 +182,26 @@ Réamhamharc agus bain úsáid as téamaí iontacha a chruthaigh an pobal.
 Brabhsáil
 Méid cló
 Méid cló i bpicteilíní a théann i bhfeidhm ar eagarthóireacht agus
+méid téacs zúmáil
 Coigeartú tapa ar mhéid cló
 Coigeartaigh méid an cló ag baint úsáide as Ctrl + Scroll, nó ag baint úsáide as an gcomhartha súmáil brúnt-súmá
 Téamaí
 Bainistigh téamaí suiteáilte agus téamaí pobail a
+pobal brabhsáil suiteáil íoslódáil
 Bainistiú
 Níl aon
 Biachláir dúchasacha
 Meaitneoidh biachláir ar fud an aip an córas oibriúcháin. Ní bheidh tionchar ag do théama orthu.
-Athluchtaigh téamaí
-Téamaí saincheaptha CSS athluchtaithe.
 Fillteán téamaí osc
 Snippets CSS
+Bainistigh do bhailiúchán comhad CSS chun cuma na haipe a mhionathrú.
 Níor aimsíodh aon snippets CSS.
-Stóráiltear Snippets CSS i “{{path}}”.
+{{count}} cumasaithe
+Ligeann sleachta CSS duit cuma Obsidian a shaincheapadh. Cuir comhaid CSS in “{{path}}” chun go dtaispeánfar anseo iad.
 Athluchtaigh sraitheanna
 Oscail fillteán snippets
 Snippets CSS athluchtaithe.
-Cuir snippet CSS i bhfeidhm ag “{{path}}”.
+Cuardaigh sleachta...
 Téama suiteáilte
 Scáileán ar fáil
 Réamhshocraithe
@@ -222,19 +243,24 @@ Nuashonraigh gach
 Téamaí pobail reatha
 Tá téama {{count}} suiteáilte agat faoi láthair.
 Tá téamaí {{count}} suiteáilte agat faoi láthair.
+Oscail socruithe i bhfuinneog nua
+Oscail socruithe ina bhfuinneog féin in ionad iad a bheith leabaithe san aip.
+Comhéadan
+Soghluaiste
+Casta
 Aicearraí méarchláir
 Cuardaigh hotkeys
 Ag taispeáint hotkey {{count}}. 
 Ag taispeáint hotkeys {{count}}. 
-Ordú {{count}} le coinbhleachtaí.
-Orduithe {{count}} le coinbhleachtaí.
 Scagaire...
 Scrios hotkey
 Brúigh hotkey...
 Gach
+Coinbhleachtaí ({{count}})
 Neamhshannaithe
 Sannaithe
 Sannaithe agam
+Níor aimsíodh torthaí ar bith.
 Athshocraigh réamhshoc
 Saincheapadh an t-ordú seo
 Déanann an hotkey seo i gcoinbhleacht le “{{command}}”
@@ -352,28 +378,34 @@ Scagaigh breiseáin de réir ainm nó tuairisc.
 Cuardaigh breiseáin...
 Breiseáin pobail
 Modh srianta
-Tá modh srianta as. Cas air chun breiseáin phobail a dhíchumasú.
+Cas mód srianta air chun an aip a úsáid gan breiseáin phobail.
 Cas air agus athluchtaigh
 Seiceáil go huathoibríoch le haghaidh nuashonruithe breiseán
 Seiceáil go tréimhsiúil le haghaidh nuashonruithe breiseán.
 Breiseáin pobail
-Brabhsáil agus suiteáil breiseáin pobail a rinne ár bpobal iontach.
+Brabhsáil agus suiteáil breiseáin pobail a rinne an pobal.
 Brabhsáil
-Mód Srianta Scoir
+Scoir den mhód srianta
 D'fhéadfadh breiseáin phobail, cosúil le haon bhogearraí eile a shuiteálann tú, fadhbanna sláine agus slándála sonraí a bheith
 Tá slándáil breiseán tábhachtach dúinn. Seo an méid a dhéanaimid:
 In ainneoin ár n-iarrachtaí, tá seans beag ann fós go bhféadfadh breiseán pobail mí-iompar.
-Athbhreithniú tosaigh
-Déanann ár bhfoireann athbhreithniú tosaigh ar chód breiseáin san eolaire pobail oifigiúil sula ndéantar iad a liostáil
+Athbhreithniú ar chód
+Déantar athbhreithniú uathoibríoch ar bhreiseáin san eolaire pobail oifigiúil tar éis gach nuashonraithe.
 Foinse oscailte
 Tá an chuid is mó de na breiseáin foinse oscailte ar GitHub, ionas gur féidir leat an cód a iniúchadh duit féin.
 Iniúchadh piaraí
 Tá pobal mór forbróirí againn a faire amach dá chéile.
 Meicníocht tuar
 Leanaimid suas agus bainimid breiseáin lochtacha ar thuarascáil an úsáideora.
-Ar mhaith leat an Mód Srianta a fhágáil chun breiseáin phobail a chumasú? Molaimid go láidir cúltacaí a dhéanamh de do shonraí sula ndéanann tú é sin.
 Tuilleadh eolais a fháil faoi shlándáil
-Cas ar bhreiseáin pobail
+Ceadaigh breiseáin pobail
+Is féidir le breiseáin cód treallach a rith ar do ghléas. Molaimid cúltaca a dhéanamh de do shonraí sula gcumasaíonn tú iad.
+Athchumasaigh breiseáin suiteáilte
+Athchóirigh {{count}} bhreiseán a bhí suiteáilte roimhe seo.
+Athchóirigh {{count}} breiseán a bhí suiteáilte roimhe seo.
+Taispeáin eolas faoin mbreiseán
+Breiseáin chumasaithe
+Cumasófar na breiseáin seo nuair a fhágfar Mód Srianta.
 An bhfuil muinín agat as údar an chluiche seo?
 Tá tú ag oscailt an clár seo den chéad uair, agus tagann sé le roinnt breiseáin.
 Má fuair tú an clúdach seo ó dhuine eile, tabhair faoi deara le do thoil go bhféadfadh rioscaí slándála a bheith i mbun breiseáin
@@ -387,6 +419,9 @@ Suiteáil
 Cumasaigh
 Díchumasaigh
 Cóipeáil nasc roinnt
+Amharc ar na sonraí
+Oscail leathanach an phobail
+Socruithe
 Deontas
 Níor aimsíodh aon torthaí.
 Ní bhfuarthas aon chomhaid le déanaí. Clóscríobh le cuardach...
@@ -426,6 +461,7 @@ Cuardaigh breiseáin suiteá
 Scagaigh breiseáin suiteáilte de réir ainm nó tuairisc
 Cuardaigh breiseáin suiteáilte
 Taispeáin suiteáilte amháin
+Níl aon bhreiseáin suiteáilte.
 Deonaigh chun tacú le {{name}}
 Is saorálaithe pobail iad forbróirí breiseán a dhéanann rudaí iontacha as paisean. Má aimsíonn an breiseán seo úsáideach, smaoinigh ar a fhorbairt a mhaoiniú.
 Rachaidh 100% de do ranníocaíocht chuig an bhforbróir breiseán; Ní ghlacann Obsidian gearradh. D'fhéadfadh an t-ardán maoinithe a roghnaíonn siad táille a ghearradh
@@ -526,6 +562,9 @@ Titim
 Theip ar chomhad “{{filepath}}” a shábháil. {{message}}. Déan cúltaca d'ábhar an chomhaid seo anois chun sonraí a chailleadh a sheachaint.
 Theip ar an breiseán “{{plugin}}” a luchtú
 Bhí earráid ag an mbreiseán “{{plugin}}” agus é á luchtú
+Níor lódáladh {{plugin}}. Níl an breiseán seo comhoiriúnach le Obsidian v{{version}}.
+Níl {{plugin}} ag feidhmiú a thuilleadh. Molaimid é a dhíshuiteáil.
+Ní féidir breiseán {{plugin}} v{{version}} a lódáil. Tuairiscíodh go mbíonn fadhbanna mar thoradh ar an leagan seo. Seiceáil an bhfuil leagan níos nuaí den bhreiseán ar fáil.
 Theip ar oscailt “{{filepath}}”
 Ní féidir suíomh “{{href}}” a oscailt
 Gan aon chomhad
@@ -636,6 +675,7 @@ Nasc le cluaisín...
 Modh foinse
 Féach léitheoire
 Cuir maoin comhad leis
+Scrios
 Scrios comhad
 Cruthaigh an comhad seo
 Oscail nasc
@@ -983,6 +1023,10 @@ Ná iarr arís
 Tá nasc {{count}} ann faoi láthair ag díriú chuig an gcomhad seo.
 Tá naisc {{count}} ann faoi láthair ag díriú ar an gcomhad seo.
 Scrios comhad
+Rith gníomh ó nasc seachtrach?
+Tá an gníomh “{{action}}” ar tí rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
+Tá an breiseán “{{source}}” ar tí an gníomh “{{action}}” a rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
+Ná fiafraigh arís faoi “{{action}}”
 Íoslódáil ceangal
 Níl aon cheangaltáin sheachtracha sa nóta seo.
 Ceangaltán {{count}} íoslódáilte.
@@ -997,6 +1041,9 @@ Bainistiú
 Féach
 Deimhnigh
 Cealaigh
+Ceadaigh
+Ceadaigh uair amháin
+Ceadaigh i gcónaí
 Scipeáil
 Íoslódáil
 Déanta
@@ -1224,6 +1271,7 @@ Taispeáin comhaid ceangaltán cosúil le híomhánna, físeáin agus PDFanna.
 Taispeáin gach cineál comhaid
 Taispeáin gach comhad lena n-áirítear cinn nach féidir le Obsidian a oscailt. Osclófar an comhad leis an aip réamhshocraithe don chineál comhaid sin.
 Amharc graif
+Graf áitiúil
 Samhlaigh na caidrimh idir do nótaí.
 Radharc graf oscailte
 Oscail graf áitiúil
@@ -1420,6 +1468,7 @@ nascleanúint a dhéanamh
 le húsáid
 a dhíscríobh
 Níor aimsíodh aon orduithe.
+Cuir ordú leis...
 Roghnaigh ordú...
 Orduithe brionnaithe
 Tiontaire formáid
@@ -1507,6 +1556,8 @@ Níor aimsíodh aon cheannteidil.
 Scrollaigh go huathoibríoch go dt
 Líon focal
 Taispeáin comhaireamh focal sa bharra stádais.
+Taispeáin léaráidí Mermaid sa bhoghta seo?
+Ná ceadaigh é ach má tá muinín agat as ábhar an bhoghta seo.
 Sleamhnáin
 Cruthaigh cur i láthair trí úsáid a bhaint as “---” chun sleamhnáin a scaradh.
 Tosaigh cur i láthair
@@ -1710,7 +1761,6 @@ Bain úsáideoir
 Cuireadh d'úsáideoir
 Cuir isteach a r-phost...
 Cuir isteach ríomhphost bailí chun cuireadh a thabhairt do dhuine.
-Cumasaigh an croí-breiseán Foilsigh i Socruithe -> Breiseáin lárnacha chun suíomhanna a fheiceáil
 Do shuíomhanna
 Láithreáin roinnte leat
 Stop ag comhoibriú ar an suíomh seo
@@ -1914,6 +1964,10 @@ Liosta breiseán gníomhach pobail
 Sync na breiseáin pobail atá cumasaithe.
 Breiseáin pobail suiteáil
 Sync breiseáin pobail suiteáilte (comhaid .js, .css, agus manifest.json) agus a gcuid socruithe.
+An gceadófar do bhreiseáin shioncronaithe rith ar an ngléas seo?
+Ní féidir le Obsidian Sync ábhar na mbreiseán atá sioncronaithe leis an ngléas seo a fhíorú, agus d’fhéadfadh siad a bheith éagsúil leis na breiseáin atá foilsithe san eolaire pobail.
+Ná cumasaigh é seo ach amháin má tá muinín agat as an mboghta agus as na gléasanna nasctha.
+Tá, cuir sioncronú breiseán ar siúl
 Tá sioncrónú fós á luchtú, athnuachan an leathanach seo níos déanaí.
 Is é Obsidian Sync seirbhís sioncrónaithe breiseán Obsidian le criptiú deireadh go deireadh agus stair leaganacha.
 Chun sioncrónú a thosú, logáil isteach nó cruthaigh cuntas nua Obsidian.
@@ -2068,6 +2122,7 @@ Baintear gach ceann de na rudaí thuas chomh maith le stóráil áitiúil agus s
 Breathnóir gréasáin nua
 Ní féidir an láithreán a luchtú.
 Déan cinnte go bhfuil an seoladh ceart agat.
+Amharc léitheora
 Cuardaigh ar an ngréasán
 Sonraí féachana gréasáin
 Sonraí féachana gréasáin a ghlanadh
@@ -2372,6 +2427,9 @@ Ard
 An-ard
 Déan achoimre...
 Grúpáil de réir an airí seo
+Athraigh méid an cholúin...
+Athshocraigh méid an cholúin
+Tarraing chun méid a athrú
 Glan luachanna
 Achoimre
 Theip ar fhoirmle "{{ formula }}" a pháirseáil
@@ -2515,3 +2573,24 @@ Snipppet {{count}}
 Snippets {{count}}
 {{count}} téama
 {{count}} téamaí
+Cealaigh
+
+Cóipeáil
+Oscail nasc
+Oscail an comhad seo
+Rith an comhad
+Oscail nasc seachtrach?
+Osclóidh an nasc seo feidhmchlár seachtrach lasmuigh de Obsidian. Ná lean ar aghaidh ach amháin má tá muinín agat as foinse an naisc seo.
+Oscail naisc {{scheme}}:// i gcónaí
+Rabhadh comhaid iargúlta
+Tá an comhad seo suite ar fhreastalaí iargúlta, agus d’fhéadfadh sé a bheith contúirteach.\nAn bhfuil tú cinnte gur mhaith leat é a oscailt?
+Suíomh: {{location}}
+Rochtain ar thiomántán líonra
+Tá an t-ábhar seo ag iarraidh sonraí ó thiomántán líonra. Má cheadaíonn tú é seo, d’fhéadfadh do dhintiúir logála isteach nó faisnéis íogair eile a bheith nochtaithe don óstach iargúlta.
+Óstach: {{host}}
+Ceadaigh
+Rith comhad inrite?
+Díríonn an nasc seo ar chomhad inrite. D’fhéadfadh sé dochar a dhéanamh do do ríomhaire má ritheann tú é.
+Comhad: {{path}}
+Níor aimsíodh an boghta.
+Ní féidir boghta a aimsiú don URL {{url}}

@@ -1,10 +1,19 @@
 Alternativer
 Utvidelse
 Kjerneutvidelser
+Vis i listen over tillegg
 Utvidelsesvalg
 Eksempel: mappe 1/mappe 2
 Eksempel: mappe/notat
+Ingen fil valgt
 Endring av dette alternativet krever omstart for å tre i kraft.
+Ugyldig tall
+Verdien må være minst {{min}}
+Verdien må være høyst {{max}}
+Filen ble ikke funnet.
+Søk i innstillinger...
+Fant ingen innstillinger.
+{{count}} til
 Redigering
 Atferd
 Visning
@@ -56,6 +65,8 @@ Tab size
 Number of spaces a tab is equivalent to.
 Høyre-til-venstre (RTL)
 Sets the text direction of notes to display in right-to-left.
+Vis Mermaid-diagrammer i notater
+Gjengi flytdiagrammer, sekvensdiagrammer og andre diagrammer fra «mermaid»-kodeblokker.
 Auto convert HTML
 Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.
 Vim-hurtigtaster
@@ -124,18 +135,26 @@ Navn på undermappe
 If your file is under "vault/folder", and your set subfolder name to "attachments", attachments will be saved to "vault/folder/attachments".
 Ekskluderte filer
 Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
-Ingen ekskluderingsfiltre er brukt.
-Filer som samsvarer med disse filtrene er ekskludert:
-
+Legg til unntak...
+Ingen unntak lagt til.
+{{count}} regel
+{{count}} regler
+Legg til unntak
+Angi en sti eller et regulært uttrykk, f.eks. /daily-.*/
 Filter kan ikke være tomt
-Enter path or "/regex/"...
 Tillat URI-callbacker
 Aktiver bruk av x-callback-url ved håndtering av Obsidian-URI-er.
+
+Administrer klarerte handlinger og konfigurer URI-atferd.
+Klarerte handlinger
+Ingen klarerte handlinger ennå. Godkjente URI-handlinger vises her.
 Programstil
 Base theme
 Choose Obsidian’s default color scheme.
+mørk lys system nattmodus fargeskjema
 Aksentfarge
 Velg aksentfargen som brukes i hele appen.
+utheving merkevare primær farge
 Mørk
 Lys
 Tilpass systemet
@@ -150,8 +169,8 @@ Tekstskrift
 Skrifttype for redigering og lesing.
 Fastbredde-skrift
 Skrifttype for kodeblokker og metadata.
- Skrifttype som er i bruk nå: 
- Følgende skrifttyper er i bruk nå:
+{{count}} skrifttype
+{{count}} skrifttyper
 Skriv skriftnavn...
 Ingen egendefinert skrift er brukt.
 Den første skrifttypen fra denne listen som er tilgjengelig på systemet ditt, vil bli brukt.
@@ -163,24 +182,26 @@ Forhåndsvis og bruk stiler lagd av andre brukere.
 Bla gjennom
 Skriftstørrelse
 Font size in pixels that affects editor and preview.
+tekststørrelse zoom
 Rask justering av skriftstørrelse
 Juster skriftstørrelsen med Ctrl + rulling, eller ved å bruke knipe-zoom-bevegelsen på styreflaten.
 Temaer
 Administrer installerte temaer og bla gjennom community-temaer.
+community bla gjennom installer last ned
 Administrer
 Ingen
 Native menyer
 Menyer i hele appen vil samsvare med operativsystemet. De vil ikke bli påvirket av temaet ditt.
-Last temaer på nytt
-Egendefinerte CSS-temaer lastet på nytt.
 Åpne temamappe
 CSS-utdrag
+Administrer samlingen din av CSS-filer for å tilpasse appens utseende.
 No CSS snippets found in the snippets folder.
-CSS Snippets are stored in "{{path}}".
+{{count}} aktivert
+CSS-utdrag lar deg tilpasse utseendet til Obsidian. Plasser CSS-filer i «{{path}}» for at de skal vises her.
 Last utdrag på nytt
 Åpne utdragsmappe
 CSS-utdrag lastet på nytt.
-Apply CSS snippet at "{{path}}".
+Søk i utdrag...
 Installerte temaer
 Skjermbilde ikke tilgjengelig
 Standard
@@ -222,19 +243,24 @@ Oppdater alle
 Nåværende community-temaer
 Du har for øyeblikket {{count}} tema installert.
 Du har for øyeblikket {{count}} temaer installert.
+Åpne innstillinger i nytt vindu
+Åpne innstillinger i eget vindu i stedet for innebygd i appen.
+Grensesnitt
+Mobil
+Avansert
 Hurtigtaster
 Søk i hurtigtaster
 Viser {{count}} hurtigtast. 
 Viser {{count}} hurtigtaster. 
-{{count}} kommando med konflikter.
-{{count}} kommandoer med konflikter.
 Filtrer...
 Slett hurtigtast
 Trykk hurtigtast...
 Alle
+Konflikter ({{count}})
 Uten tildeling
 Tildelt
 Tildelt av meg
+Ingen resultater funnet.
 Tilbake til standard
 Endre hurtigtast
 This hotkey conflicts with "{{command}}"
@@ -352,28 +378,34 @@ Filtrer tillegg etter navn eller beskrivelse.
 Søk i tillegg...
 Third-party plugin
 Begrenset modus
-Restricted Mode is off. Turn on to disable community plugins.
+Slå på begrenset modus for å bruke appen uten community-utvidelser.
 Turn on
 Se automatisk etter utvidelsesoppdateringer
 Sjekk jevnlig etter oppdateringer.
 Community-utvidelser
-Browse and install third-party plugins made by our amazing community.
+Bla gjennom og installer community-utvidelser laget av fellesskapet.
 Bla gjennom
 Avslutt begrenset modus
 Community-utvidelser kan, som all annen programvare du installerer, potensielt forårsake problemer med dataintegritet og sikkerhet.
 Sikkerhet for tillegg er viktig for oss. Dette gjør vi:
 Til tross for innsatsen vår er det fortsatt en liten sjanse for at en community-utvidelse kan oppføre seg uventet.
-Innledende kodegjennomgang
-Plugins undergo an initial code review by our team before they appear in the store.
+Kodegjennomgang
+Tillegg i den offisielle community-katalogen gjennomgås automatisk etter hver oppdatering.
 Åpen kildekode
 De fleste tillegg har åpen kildekode på GitHub, så du kan inspisere koden selv.
 Fagfellevurdering
 Vi har et stort community av utviklere som passer på hverandre.
 Rapporteringsmekanisme
 Vi følger opp og fjerner tillegg med feil når de rapporteres av brukere.
-Vil du avslutte Begrenset modus for å aktivere community-utvidelser? Vi anbefaler sterkt å ta sikkerhetskopi av dataene dine før du gjør dette.
 Finn ut mer om sikkerhet for tillegg
-Slå på community-utvidelser
+Tillat community-utvidelser
+Tillegg kan kjøre vilkårlig kode på enheten din. Vi anbefaler at du sikkerhetskopierer dataene dine før du aktiverer dem.
+Aktiver installerte tillegg på nytt
+Gjenopprett {{count}} tidligere installert tillegg.
+Gjenopprett {{count}} tidligere installerte tillegg.
+Vis tilleggsinfo
+Aktiverte tillegg
+Disse tilleggene blir aktivert når du forlater begrenset modus.
 Stoler du på forfatteren av dette hvelvet?
 Du åpner dette hvelvet for første gang, og det følger med noen tillegg.
 Hvis du fikk dette hvelvet fra noen andre, vær oppmerksom på at tillegg med ukjent opphav kan innebære sikkerhetsrisiko.
@@ -387,6 +419,9 @@ Installer
 Aktiver
 Deaktiver
 Kopier delelenke
+Vis detaljer
+Åpne community-siden
+Innstillinger
 Doner
 Ingen resultater funnet.
 Ingen nylige filer funnet. Skriv for å søke...
@@ -426,6 +461,7 @@ Søk i installerte tillegg
 Filtrer installerte tillegg etter navn eller beskrivelse.
 Søk i installerte tillegg...
 Vis kun installerte
+Ingen tillegg installert.
 Doner for å støtte {{name}}
 Tilleggsutviklere er frivillige i communityet som lager fantastiske ting av lidenskap. Hvis du synes dette tillegget er nyttig, vurder å støtte videre utvikling.
 100 % av bidraget ditt går til tilleggsutvikleren; Obsidian tar ingen andel. Finansieringsplattformen de velger kan ta et gebyr.
@@ -526,6 +562,9 @@ Lukk
 Lagring av "{{filepath}}" feilet. {{message}}.
 Kunne ikke laste tillegg «{{plugin}}»
 Tillegget «{{plugin}}» støtte på en feil under lasting
+{{plugin}} ble ikke lastet inn. Denne utvidelsen er ikke kompatibel med Obsidian v{{version}}.
+{{plugin}} fungerer ikke lenger. Vi anbefaler å avinstallere utvidelsen.
+Kan ikke laste inn utvidelsen {{plugin}} v{{version}}. Det er rapportert at denne versjonen forårsaker problemer. Se etter en nyere versjon av utvidelsen.
 Kunne ikke åpne «{{filepath}}»
 Kan ikke åpne plasseringen «{{href}}»
 Ingen fil
@@ -636,6 +675,7 @@ Koble til fane...
 Kildemodus
 Lesevisning
 Legg til filegenskap
+Slett
 Slett fil
 Opprett denne filen
 Åpne lenke
@@ -983,6 +1023,10 @@ Ikke spør igjen
 Det er for øyeblikket {{count}} lenke som peker til denne filen.
 Det er for øyeblikket {{count}} lenker som peker til denne filen.
 Slett fil
+Kjøre handling fra ekstern lenke?
+Handlingen «{{action}}» er i ferd med å kjøre. Fortsett bare hvis du stoler på lenkens kilde.
+Tillegget «{{source}}» er i ferd med å kjøre handlingen «{{action}}». Fortsett bare hvis du stoler på lenkens kilde.
+Ikke spør igjen for «{{action}}»
 Last ned vedlegg
 Det finnes ingen eksterne vedlegg i dette notatet.
 Lastet ned {{count}} vedlegg.
@@ -997,6 +1041,9 @@ Administrer
 Vis
 Bekreft
 Avbryt
+Tillat
+Tillat én gang
+Tillat alltid
 Hopp over
 Last ned
 Ferdig
@@ -1224,6 +1271,7 @@ Vis vedleggsfiler som bilder, videoer og PDF-er.
 Vis alle filtyper
 Vis alle filer, inkludert de Obsidian ikke kan åpne. Filen åpnes med standardappen for den filtypen.
 Grafvisnining
+Lokal graf
 Se en graf over alle notatene dine, og hvordan de knyttes sammen.
 Åpne grafvisning
 Åpne lokal graf
@@ -1420,7 +1468,8 @@ for å velge
 for å aktivere
 for å lukke
 Ingen kommandoer funnet.
-Skriv en kommando...
+Legg til en kommando …
+Velg en kommando …
 Festede kommandoer
 Markdown-importør
 Konverter Markdown fra andre apper til Obsidians format.
@@ -1507,6 +1556,8 @@ Ingen overskrifter funnet.
 Rull automatisk til gjeldende seksjon
 Antall ord
 Vis antall ord i statusbaren.
+Vise Mermaid-diagrammer i dette hvelvet?
+Tillat bare hvis du stoler på innholdet i dette hvelvet.
 Presentasjonsmodus
 Lag en presentasjon fra Markdown. Bruk "---" for å skille mellom lysbilder.
 Start presentasjon
@@ -1710,7 +1761,6 @@ Fjern bruker
 Inviter bruker
 Skriv inn e-postadressen deres...
 Skriv inn en gyldig e-postadresse for å invitere noen.
-Aktiver Publish-kjerneutvidelsen i Innstillinger -> Kjerneutvidelser for å se nettsteder.
 Dine nettsteder
 Nettsteder delt med deg
 Slutt å samarbeide om dette nettstedet
@@ -1914,6 +1964,10 @@ Aktiv liste over community-utvidelser
 Synkroniser hvilke community-utvidelser som er aktivert.
 Installerte community-utvidelser
 Synkroniser installerte community-utvidelser (.js-, .css- og manifest.json-filer) og innstillingene deres.
+Tillat synkroniserte utvidelser å kjøre på denne enheten?
+Obsidian Sync kan ikke verifisere innholdet i utvidelser som er synkronisert til denne enheten, og de kan avvike fra utvidelser publisert i community-katalogen.
+Aktiver dette bare hvis hvelvet og tilkoblede enheter er klarert.
+Ja, slå på synkronisering av tillegg
 Sync lastes fortsatt inn. Oppdater denne siden senere.
 Obsidian Sync er Obsidians tilleggstjeneste for synkronisering med ende-til-ende-kryptering og versjonshistorikk.
 For å starte synkronisering, logg inn eller opprett en ny Obsidian-konto.
@@ -2068,6 +2122,7 @@ Fjerner alt ovenfor, i tillegg til lokal lagring og aktive økter.
 Ny Webviser
 Unable to load that site.
 Please make sure you have the correct address.
+Leservisning
 Søk på nettet
 Webviser-data
 Tøm Webviser-data
@@ -2372,6 +2427,9 @@ Høy
 Ekstra høy
 Oppsummer...
 Grupper etter denne egenskapen
+Endre kolonnestørrelse...
+Tilbakestill kolonnestørrelse
+Dra for å endre størrelse
 Tøm verdier
 Sammendrag
 Kunne ikke tolke formelen "{{ formula }}"
@@ -2515,3 +2573,24 @@ Type uthevet blokk...
 {{count}} utdrag
 {{count}} tema
 {{count}} temaer
+Avbryt
+
+Kopier
+Åpne lenke
+Åpne denne filen
+Kjør fil
+Åpne ekstern lenke?
+Denne lenken åpner et eksternt program utenfor Obsidian. Fortsett bare hvis du stoler på kilden til denne lenken.
+Åpne alltid {{scheme}}://-lenker
+Advarsel om fjernfil
+Denne filen ligger på en ekstern server og kan være farlig.\nEr du sikker på at du vil åpne den?
+Plassering: {{location}}
+Tilgang til nettverksstasjon
+Dette innholdet ber om data fra en nettverksstasjon. Hvis du tillater dette, kan innloggingsopplysningene dine eller annen sensitiv informasjon bli eksponert for den eksterne verten.
+Vert: {{host}}
+Tillat
+Kjøre kjørbar fil?
+Denne lenken peker til en kjørbar fil. Å kjøre den kan skade datamaskinen din.
+Fil: {{path}}
+Finner ikke hvelvet.
+Kan ikke finne et hvelv for URL-en {{url}}
