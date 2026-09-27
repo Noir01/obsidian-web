@@ -309,6 +309,50 @@ const VFS = (() => {
 const VAULT_ID = "sandbox-demo";
 const VAULT_PATH = "/vault";
 
+const _ipcListeners = new Map();
+
+function _emitIpc(channel, value) {
+  const listeners = _ipcListeners.get(channel);
+  if (!listeners) return;
+  for (const listener of [...listeners]) {
+    if (listener.once) listeners.delete(listener);
+    listener.callback(null, value);
+  }
+  if (!listeners.size) _ipcListeners.delete(channel);
+}
+
+function _addIpcListener(channel, callback, once) {
+  if (!_ipcListeners.has(channel)) _ipcListeners.set(channel, new Set());
+  _ipcListeners.get(channel).add({ callback, once });
+}
+
+async function _requestUrl(channel, options) {
+  try {
+    const url = new URL(options.url);
+    const isRelease = url.hostname === "github.com" &&
+      /^\/[^/]+\/[^/]+\/releases\/download\//.test(url.pathname);
+    const requestUrl = isRelease
+      ? "/api/request?url=" + encodeURIComponent(url.href)
+      : url.href;
+    const headers = { ...options.headers };
+    if (options.contentType) headers["Content-Type"] = options.contentType;
+    const response = await fetch(requestUrl, {
+      method: options.method || "GET",
+      headers,
+      body: options.body,
+    });
+    const responseHeaders = {};
+    response.headers.forEach((value, key) => { responseHeaders[key] = value; });
+    _emitIpc(channel, {
+      status: response.status,
+      headers: responseHeaders,
+      body: await response.arrayBuffer(),
+    });
+  } catch (error) {
+    _emitIpc(channel, { error });
+  }
+}
+
 const ipcShim = {
   sendSync(channel, arg) {
     switch (channel) {
@@ -341,15 +385,34 @@ const ipcShim = {
     }
   },
   send(channel, ...args) {
+    if (channel === "request-url") {
+      _requestUrl(args[0], args[1]);
+      return;
+    }
     console.log("[shim] ipcRenderer.send:", channel, ...args);
   },
   on(channel, cb) {
-    // no-op — we don't push events from main process
+    _addIpcListener(channel, cb, false);
     return ipcShim;
   },
-  once(channel, cb) { return ipcShim; },
-  removeListener(channel, cb) { return ipcShim; },
-  removeAllListeners(channel) { return ipcShim; },
+  once(channel, cb) {
+    _addIpcListener(channel, cb, true);
+    return ipcShim;
+  },
+  removeListener(channel, cb) {
+    const listeners = _ipcListeners.get(channel);
+    if (listeners) {
+      for (const listener of listeners)
+        if (listener.callback === cb) listeners.delete(listener);
+      if (!listeners.size) _ipcListeners.delete(channel);
+    }
+    return ipcShim;
+  },
+  removeAllListeners(channel) {
+    if (channel) _ipcListeners.delete(channel);
+    else _ipcListeners.clear();
+    return ipcShim;
+  },
   invoke(channel, ...args) {
     console.log("[shim] ipcRenderer.invoke:", channel);
     return Promise.resolve(null);
@@ -620,6 +683,32 @@ function _scheduleFlush() {
     }
   };
   VFS.promises.unlink = async (p) => VFS.unlinkSync(p);
+
+  // Recursive removals (including plugin uninstall) must delete each stored
+  // file because OPFS and the HTTP backend do not have a directory delete API.
+  const _origRm = VFS.rmSync;
+  VFS.rmSync = function(p, opts) {
+    const removedFiles = [];
+    function collect(path) {
+      let stat;
+      try { stat = VFS.statSync(path); } catch(e) { return; }
+      if (stat.isFile()) removedFiles.push(path);
+      else if (stat.isDirectory())
+        for (const name of VFS.readdirSync(path)) collect(pathShim.join(path, name));
+    }
+    const norm = VFS.realpathSync(p);
+    if (opts?.recursive || (VFS.existsSync(norm) && VFS.statSync(norm).isFile()))
+      collect(norm);
+    _origRm(p, opts);
+    if (!_suppressBackendFlush && activeBackend) {
+      for (const file of removedFiles) {
+        _pendingWrites.delete(file);
+        _pendingDeletes.add(file);
+      }
+      if (removedFiles.length) _scheduleFlush();
+    }
+  };
+  VFS.promises.rm = async (p, opts) => VFS.rmSync(p, opts);
 
   const _origRename = VFS.renameSync;
   VFS.renameSync = function(oldP, newP) {

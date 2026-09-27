@@ -114,6 +114,28 @@ const server = http.createServer(async (req, res) => {
   const url      = new URL(req.url, "http://localhost");
   const pathname = url.pathname;
 
+  // GitHub release downloads do not allow browser CORS requests. Obsidian's
+  // desktop app fetches these through Electron, so serve those assets here.
+  if (req.method === "GET" && pathname === "/api/request") {
+    let target;
+    try { target = new URL(url.searchParams.get("url")); } catch(e) {}
+    if (!target || target.protocol !== "https:" || target.hostname !== "github.com" ||
+        target.username || target.password || target.port ||
+        !/^\/[\w.-]+\/[\w.-]+\/releases\/download\/[^/]+\/(manifest\.json|main\.js|styles\.css)$/.test(target.pathname)) {
+      res.writeHead(400); res.end("Invalid plugin release URL"); return;
+    }
+    try {
+      const upstream = await fetch(target, { signal: AbortSignal.timeout(30000) });
+      res.writeHead(upstream.status, {
+        "Content-Type": upstream.headers.get("content-type") || "application/octet-stream",
+      });
+      res.end(Buffer.from(await upstream.arrayBuffer()));
+    } catch(e) {
+      res.writeHead(502); res.end("Plugin download failed");
+    }
+    return;
+  }
+
   // ── GET /api/vault ────────────────────────────────────────
   if (req.method === "GET" && pathname === "/api/vault") {
     const files = loadVaultFiles();
