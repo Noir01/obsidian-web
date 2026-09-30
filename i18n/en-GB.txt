@@ -6,6 +6,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 Behaviour
 
 
@@ -21,6 +30,8 @@ Behaviour
 
 
 In preview mode, ignore single line breaks according to the Markdown specification. Turn this off for single line breaks to show in preview.
+
+
 
 
 
@@ -132,10 +143,25 @@ If your file is under “vault/folder”, and you set subfolder name to “attac
 
 
 
+
+
+
+
+
+
 Base colour scheme
 Choose Obsidian's default colour scheme.
+
 Accent colour
 Choose the accent colour used throughout the app.
+
+
+
+
+
+
+
+
 
 
 
@@ -375,6 +401,12 @@ Plugin security is important to us. Here is what we do:
 
 
 
+
+
+
+
+
+
 You are opening this vault for the first time, and it comes with some plugins.
 
 
@@ -395,7 +427,11 @@ You are opening this vault for the first time, and it comes with some plugins.
 
 
 
+
+
+
 Last updated: 
+
 
 
 
@@ -575,6 +611,9 @@ Toggle maths block
 
 
 
+
+
+
 Maths block
 
 
@@ -601,6 +640,7 @@ Maths
 
 
 The plugin that created this view ({{type}}) has gone away
+
 
 
 
@@ -1125,6 +1165,13 @@ do not ask again
 
 
 
+
+
+
+
+
+
+
 There is already a file with the same name
 
 
@@ -1223,6 +1270,7 @@ There is already a file with the same name
 
 
 Show all files including ones that Obsidian cannot open. The file will be opened with the default app for that file type.
+
 
 
 
@@ -1420,7 +1468,8 @@ Showing {{themeCount}}:
 
 
 
-Select a command...
+
+
 
 
 
@@ -1465,6 +1514,8 @@ Failed to create daily note. Folder "{{folderOption}}" not found.
 Failed to create daily note. Template file "{{template}}" not found.
 There is no daily note before this one.
 There is no daily note after this one.
+
+
 
 
 
@@ -1731,7 +1782,6 @@ You have not bought any sites.
 
 
 
-
 Files under these folders will not show up when you review changes to publish. This setting takes priority over included folders above.
 
 
@@ -1936,7 +1986,12 @@ You do not have an active Obsidian Sync subscription.
 
 
 
+
+
+
+
 You are now connected to "{{name}}".
+
 
 
 
@@ -2380,6 +2435,9 @@ Base configured with an unknown view type: {{ viewtype }}
 
 
 
+
+
+
 Cannot access index {{ index }} of non-array value
 Cannot find {{ index }} on type {{ type }}
 
@@ -2469,6 +2527,27 @@ Add column before
 
 
 Align centre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

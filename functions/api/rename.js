@@ -1,3 +1,5 @@
+import { objectsForPath, preserveLegacyObject } from "../../lib/vault-storage.mjs";
+
 const CORS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
@@ -9,25 +11,22 @@ export async function onRequestPost({ env, request }) {
   const fromDecoded = from.slice(1);  // decoded VFS path without leading "/"
   const toDecoded   = to.slice(1);
 
-  // Try decoded key first (files written after URL-encoding fix)
-  let existing = await env.VAULT.get(fromDecoded);
-  let fromKey  = fromDecoded;
+  const sources = await objectsForPath(env.VAULT, fromDecoded);
+  if (!sources.length) return new Response("Not found", { status: 404, headers: CORS });
+  if (fromDecoded === toDecoded) return new Response(null, { status: 204, headers: CORS });
+  const content = await sources[0].object.text();
 
-  // Fall back to URL-encoded key (files seeded/written before the fix)
-  if (!existing) {
-    const fromEncoded = fromDecoded.split("/").map(encodeURIComponent).join("/");
-    if (fromEncoded !== fromDecoded) {
-      existing = await env.VAULT.get(fromEncoded);
-      if (existing) fromKey = fromEncoded;
-    }
-  }
-
-  if (!existing) return new Response("Not found", { status: 404, headers: CORS });
-  const content = await existing.text();
+  // Keep an unrelated legacy file if the new name reuses its encoded key.
+  await preserveLegacyObject(env.VAULT, toDecoded);
   await env.VAULT.put(toDecoded, content, {
     httpMetadata: { contentType: "text/plain; charset=utf-8" },
+    customMetadata: { pathEncoding: "raw-v1" },
   });
-  await env.VAULT.delete(fromKey);
+  // Preservation can repurpose an old physical key for a different note.
+  // Recheck which objects still represent the source before deleting them.
+  const remaining = await objectsForPath(env.VAULT, fromDecoded);
+  const oldKeys = remaining.map(file => file.key).filter(key => key !== toDecoded);
+  if (oldKeys.length) await env.VAULT.delete(oldKeys);
   return new Response(null, { status: 204, headers: CORS });
 }
 

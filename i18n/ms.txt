@@ -1,10 +1,19 @@
 Tetapan
 
 Plugin teras
+Dedahkan dalam senarai plugin
 Tetapan plugin
 Contoh: folder 1/folder 2
 Contoh: folder/nota
+Tiada fail dipilih
 Menukar pilihan ini memerlukan mulakan semula untuk berkuat kuasa.
+Nombor tidak sah
+Nilai mestilah sekurang-kurangnya {{min}}
+Nilai mestilah tidak melebihi {{max}}
+Fail tidak ditemui.
+Cari tetapan...
+Tiada tetapan ditemui.
+{{count}} lagi
 Penyuntingan
 Tingkah laku
 Paparan
@@ -56,6 +65,8 @@ Saiz Tab
 Satu kekunci Tab bersamaan berapa jarak.
 Kanan ke kiri (RTL)
 Sets the text direction of notes to display in right-to-left.
+Tunjukkan rajah Mermaid dalam nota
+Paparkan carta alir, rajah jujukan dan rajah lain daripada bongkah kod “mermaid”.
 Auto tukar dari HTML
 Menukarkan format HTML menjadi Markdown apabila menampal atau ditarik dari laman web. Gunakan Ctrl/Cmd+Shift+V untuk menampal tanpa penukaran.
 Pemadanan kekunci Vim
@@ -124,18 +135,26 @@ Nama subfolder
 Jika fail sekarang ini ialah "akar peti/folder", lalu subfolder ini dinamakan "lampiran", maka lampiran-lampiran akan diletakkan dalam folder "akar peti/folder/lampiran".
 Fail dikecualikan
 Fail dikecualikan akan disembunyikan dalam Carian, Paparan graf dan Sebutan tidak dipaut, serta kurang ketara dalam Penukaran pantas dan cadangan pautan.
-Tiada penapis pengecualian digunakan sekarang. Tambah satu di bawah.
-Fail yang sepadan dengan penapis berikut sedang dikecualikan:
-Penapis
+Tambah pengecualian...
+Tiada pengecualian ditambahkan.
+{{count}} peraturan
+{{count}} peraturan
+Tambah pengecualian
+Masukkan laluan atau ungkapan biasa, cth. /daily-.*/
 Penapis tidak boleh kosong
-Enter path or "/regex/"...
 Benarkan panggilan balik URI
 Dayakan penggunaan x-callback-url melalui x-success atau x-error semasa mengendalikan URI Obsidian.
+URI Obsidian
+Urus tindakan dipercayai dan konfigurasikan kelakuan URI.
+Tindakan dipercayai
+Tiada tindakan dipercayai lagi. Tindakan URI yang diluluskan akan muncul di sini.
 Penampilan
 Tema asal
 Gunakan tema asal Obsidian.
+gelap terang sistem mod malam skema warna
 Warna aksen
 Pilih warna aksen yang digunakan di seluruh apl.
+tumpuan jenama warna utama
 Gelap
 Cerah
 Sesuaikan dengan sistem
@@ -150,8 +169,8 @@ Font teks
 Tetapkan font untuk paparan penyuntingan dan bacaan.
 Font monospace
 Tetapkan font untuk tempat seperti bongkah kod dan frontmatter.
- Font yang sedang digunakan: 
- Font berikut sedang digunakan:
+{{count}} fon
+{{count}} fon
 Masukkan nama font...
 Tiada font tersuai digunakan sekarang. Tambahkan satu di bawah.
 Font pertama daripada senarai ini yang tersedia pada sistem anda akan digunakan.
@@ -163,24 +182,26 @@ Pralihat dan gunakan tema-tema mengagumkan yang dihasilkan oleh komuniti.
 Cari
 Saiz huruf
 Saiz huruf dalam ukuran piksel yang akan mempengaruhi mod suntingan dan pralihat.
+saiz teks zum
 Ubah saiz huruf dengan pantas
 Ubah saiz huruf menggunakan CTRL + Tatal atau gunakan kawalan zum pada pad sesentuh.
 Tema
 Urus tema yang dipasang dan layari tema komuniti.
+komuniti semak imbas pasang muat turun
 Urus
 Tiada
 Menu natif
 Menu di seluruh apl akan sepadan dengan sistem operasi. Ia tidak akan dipengaruhi oleh tema anda.
-Muat semula tema
-Tema CSS sendiri sudah dimuatkan semula.
 Buka folder tema
 Snippet CSS
+Urus koleksi fail CSS anda untuk mengubah suai penampilan apl.
 Tiada snippet CSS dijumpai dalam folder snippet.
-Snippet CSS disimpan dalam "{{path}}".
+{{count}} didayakan
+Petikan CSS membolehkan anda menyesuaikan penampilan Obsidian. Letakkan fail CSS dalam “{{path}}” supaya ia muncul di sini.
 Muat semula snippet
 Buka folder snippet
 Snippet CSS sudah dimuatkan semula.
-Gunakan snippet CSS dari "{{path}}".
+Cari petikan...
 Tema yang dipasang
 Tangkap layar tidak tersedia
 Lalai
@@ -222,19 +243,24 @@ Kemas kini semua
 Tema komuniti semasa
 Anda kini mempunyai {{count}} tema dipasang.
 Anda kini mempunyai {{count}} tema dipasang.
+Buka tetapan dalam tetingkap baharu
+Buka tetapan dalam tetingkapnya sendiri dan bukannya dibenamkan dalam apl.
+Antara muka
+Mudah alih
+Lanjutan
 Kekunci Pintasan
 Cari kekunci pintasan
 Menunjukkan {{count}} kekunci pintasan. 
 Menunjukkan {{count}} kekunci pintasan. 
-{{count}} arahan dengan konflik.
-{{count}} arahan dengan konflik.
 Tapis...
 Hapuskan kekunci pintasan
 Tekan kekunci pintasan...
 Semua
+Konflik ({{count}})
 Belum ditetapkan
 Ditugaskan
 Ditugaskan oleh saya
+Tiada hasil ditemui.
 Balik ke tetapan asal
 Tetapkan kekunci untuk arahan
 Kekunci pintasan ini bercanggah dengan "{{command}}"
@@ -352,28 +378,34 @@ Tapis plugin mengikut nama atau penerangan.
 Cari plugin...
 Plugin pihak ketiga
 Mod terhad
-Mod terhad dimatikan. Hidupkan untuk melumpuhkan pemalam komuniti.
+Hidupkan Mod terhad untuk menggunakan apl tanpa pemalam komuniti.
 Turn on
 Semak kemas kini plugin secara automatik
 Semak kemas kini plugin secara berkala.
 Plugin komuniti
-Gelintar dan pasang plugin pihak ketiga yang dihasilkan oleh komuniti kami yang hebat-hebat belaka.
+Semak imbas dan pasang pemalam komuniti yang dibuat oleh komuniti.
 Gelintar
-Keluar Mod Terhad
+Keluar daripada Mod terhad
 Pemalam komuniti, seperti mana-mana perisian lain yang anda pasang, berpotensi menyebabkan isu integriti data dan keselamatan.
 Keselamatan plugin penting bagi kami. Inilah yang kami lakukan:
 Walaupun dengan usaha kami, masih ada kemungkinan kecil pemalam komuniti mungkin berkelakuan tidak semestinya.
-Semakan kod awal
-Plugins undergo an initial code review by our team before they appear in the store.
+Semakan kod
+Plugin dalam direktori komuniti rasmi disemak secara automatik selepas setiap kemas kini.
 Sumber terbuka
 Kebanyakan plugin adalah sumber terbuka di GitHub, jadi anda boleh memeriksa kodnya sendiri.
 Audit rakan sebaya
 Kami mempunyai komuniti pembangun yang besar yang saling memantau antara satu sama lain.
 Mekanisme laporan
 Kami menindak susulan dan membuang plugin yang bermasalah berdasarkan laporan pengguna.
-Adakah anda mahu keluar daripada Mod Terhad untuk mendayakan pemalam komuniti? Kami sangat mengesyorkan anda membuat sandaran data anda sebelum berbuat demikian.
 Ketahui lebih lanjut tentang keselamatan plugin
-Hidupkan pemalam komuniti
+Benarkan pemalam komuniti
+Plugin boleh menjalankan kod arbitrari pada peranti anda. Kami mengesyorkan agar anda membuat sandaran data anda sebelum mendayakannya.
+Dayakan semula plugin yang dipasang
+Pulihkan {{count}} plugin yang dipasang sebelum ini.
+Pulihkan {{count}} plugin yang dipasang sebelum ini.
+Tunjukkan maklumat plugin
+Plugin didayakan
+Plugin ini akan didayakan apabila meninggalkan mod terhad.
 Adakah anda mempercayai pengarang peti nota ini?
 Anda membuka peti nota ini buat kali pertama, dan ia disertakan dengan beberapa plugin.
 Jika anda memperoleh peti nota ini daripada orang lain, sila ambil perhatian bahawa plugin daripada sumber yang tidak diketahui mungkin menimbulkan risiko keselamatan.
@@ -387,6 +419,9 @@ Pasang
 Hidupkan
 Matikan
 Salin pautan kongsi
+Lihat butiran
+Buka halaman komuniti
+Tetapan
 Derma
 Tiada hasil carian.
 Tiada fail terkini ditemui. Taip untuk mencari...
@@ -426,6 +461,7 @@ Cari plugin yang dipasang
 Tapis plugin yang dipasang mengikut nama atau keterangan.
 Cari plugin yang dipasang...
 Tunjukkan yang dipasang sahaja
+Tiada plugin dipasang.
 Derma untuk menyokong {{name}}
 Pembangun plugin ialah sukarelawan komuniti yang mencipta perkara hebat atas dasar minat. Jika anda mendapati plugin ini berguna, sila pertimbangkan untuk membiayai pembangunannya.
 100% sumbangan anda akan diberikan kepada pembangun plugin; Obsidian tidak mengambil sebarang bahagian. Platform pembiayaan yang mereka pilih mungkin mengenakan yuran.
@@ -526,6 +562,9 @@ Tutup
 Gagal menyimpan fail "{{filepath}}". {{message}}.
 Gagal memuatkan plugin “{{plugin}}”
 Plugin “{{plugin}}” mengalami ralat semasa dimuatkan
+{{plugin}} tidak dimuatkan. Plugin ini tidak serasi dengan Obsidian v{{version}}.
+{{plugin}} tidak lagi berfungsi. Kami mengesyorkan agar anda menyahpasangnya.
+Tidak dapat memuatkan plugin {{plugin}} v{{version}}. Versi ini telah dilaporkan menimbulkan masalah. Sila semak sama ada terdapat versi plugin yang lebih baharu.
 Gagal membuka “{{filepath}}”
 Tidak dapat membuka lokasi “{{href}}”
 Tiada fail
@@ -636,6 +675,7 @@ Pautkan dengan tab...
 Mod sumber
 Paparan bacaan
 Tambah sifat fail
+Hapus
 Hapuskan fail
 Cipta fail ini
 Buka pautan
@@ -983,6 +1023,10 @@ Jangan tanya lagi
 Pada masa ini terdapat {{count}} pautan yang menunjuk kepada fail ini.
 Pada masa ini terdapat {{count}} pautan yang menunjuk kepada fail ini.
 Hapus fail
+Jalankan tindakan daripada pautan luaran?
+Tindakan “{{action}}” akan dijalankan. Hanya teruskan jika anda mempercayai sumber pautan tersebut.
+Plugin “{{source}}” akan menjalankan tindakan “{{action}}”. Hanya teruskan jika anda mempercayai sumber pautan tersebut.
+Jangan tanya lagi untuk “{{action}}”
 Muat turun lampiran
 Tiada lampiran luaran dalam nota ini.
 Memuat turun {{count}} lampiran.
@@ -997,6 +1041,9 @@ Urus
 Lihat
 Sahkan
 Batal
+Benarkan
+Benarkan sekali
+Sentiasa benarkan
 Langkau
 Muat turun
 Selesai
@@ -1224,6 +1271,7 @@ Tunjukkan fail lampiran seperti imej, video dan PDF.
 Tunjukkan semua jenis fail
 Tunjukkan semua fail termasuk yang Obsidian tidak boleh buka. Fail akan dibuka dengan apl lalai untuk jenis fail tersebut.
 Paparan graf
+Graf setempat
 Lihat graf yang menggambarkan pautan antara nota.
 Buka paparan graf
 Buka graf tempatan
@@ -1420,7 +1468,8 @@ untuk navigasi
 untuk guna
 untuk tutup
 Tiada arahan ditemui.
-Taipkan arahan...
+Tambah arahan...
+Pilih arahan...
 Arahan tersemat
 Pengimport format Markdown
 Tukar fail Markdown dari aplikasi lain menjadi format Markdown Obsidian.
@@ -1507,6 +1556,8 @@ Tiada pengepala dijumpai.
 Auto-tatal ke bahagian semasa
 Jumlah kata
 Tunjukkan jumlah perkataan dalam jalur status.
+Paparkan rajah Mermaid dalam peti nota ini?
+Hanya benarkan jika anda mempercayai kandungan peti nota ini.
 Slaid
 Buat pembentangan guna Markdown. Gunakan "---" untuk pisahkan slaid.
 Mula pembentangan
@@ -1710,7 +1761,6 @@ Alih keluar pengguna
 Jemput pengguna
 Masukkan e-mel mereka...
 Sila masukkan e-mel yang sah untuk menjemput seseorang.
-Sila dayakan plugin teras Publish dalam Tetapan -> Plugin teras untuk melihat tapak.
 Tapak anda
 Tapak yang dikongsi dengan anda
 Hentikan kolaborasi pada tapak ini
@@ -1914,6 +1964,10 @@ Senarai pemalam komuniti aktif
 Sync pemalam komuniti yang didayakan.
 Pemalam komuniti dipasang
 Sync pemalam komuniti yang dipasang (fail .js, .css, dan manifest.json) serta tetapan mereka.
+Benarkan plugin yang disegerakkan berjalan pada peranti ini?
+Obsidian Sync tidak dapat mengesahkan kandungan plugin yang disegerakkan ke peranti ini, dan kandungan tersebut mungkin berbeza daripada plugin yang diterbitkan dalam direktori komuniti.
+Hanya dayakan ini jika peti nota dan peranti yang disambungkan dipercayai.
+Ya, hidupkan penyegerakan plugin
 Sync masih sedang dimuatkan, sila segar semula halaman ini kemudian.
 Obsidian Sync ialah perkhidmatan tambahan berbayar untuk penyegrakan berserta penyulitan hujung-ke-hujung dan sejarah versi.
 Untuk mula menyegerak, sila daftar masuk atau buat akaun Obsidian baharu.
@@ -2068,6 +2122,7 @@ Menghapuskan semua di atas serta storan setempat dan sesi aktif.
 Pemapar web baharu
 Unable to load that site.
 Please make sure you have the correct address.
+Paparan pembaca
 Cari di web
 Data pemapar web
 Kosongkan data pemapar web
@@ -2372,6 +2427,9 @@ Tinggi
 Sangat tinggi
 Ringkaskan...
 Kumpulkan mengikut sifat ini
+Ubah saiz lajur...
+Tetapkan semula saiz lajur
+Seret untuk ubah saiz
 Kosongkan nilai
 Ringkasan
 Gagal menghurai formula "{{ formula }}"
@@ -2515,3 +2573,24 @@ Jenis callout...
 {{count}} petikan
 {{count}} tema
 {{count}} tema
+Batal
+
+Salin
+Buka pautan
+Buka fail ini
+Jalankan fail
+Buka pautan luaran?
+Pautan ini akan membuka aplikasi luaran di luar Obsidian. Hanya teruskan jika anda mempercayai sumber pautan ini.
+Sentiasa buka pautan {{scheme}}://
+Amaran fail jauh
+Fail ini terletak pada pelayan jauh dan mungkin berbahaya.\nAdakah anda pasti mahu membukanya?
+Lokasi: {{location}}
+Akses pemacu rangkaian
+Kandungan ini meminta data daripada pemacu rangkaian. Membenarkan ini mungkin mendedahkan kelayakan log masuk anda atau maklumat sensitif lain kepada hos jauh.
+Hos: {{host}}
+Benarkan
+Jalankan fail boleh laku?
+Pautan ini menunjuk kepada fail boleh laku. Menjalankannya boleh membahayakan komputer anda.
+Fail: {{path}}
+Peti nota tidak ditemui.
+Tidak dapat mencari peti nota untuk URL {{url}}

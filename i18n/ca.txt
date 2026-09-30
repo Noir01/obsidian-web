@@ -1,10 +1,19 @@
 Opcions
 Connector
 Connectors principals
+Mostra a la llista de connectors
 Opcions del connector
 Exemple: carpeta 1/carpeta 2
 Exemple: carpeta/nota
+No s'ha seleccionat cap fitxer
 Canviar aquesta opció requereix un reinici perquè tingui efecte.
+Nombre no vàlid
+El valor ha de ser com a mínim {{min}}
+El valor ha de ser com a màxim {{max}}
+No s'ha trobat el fitxer.
+Cerca a la configuració...
+No s'ha trobat cap configuració.
+{{count}} més
 
 Comportament
 Visualització
@@ -56,13 +65,15 @@ Mida de la tabulació
 Nombre d'espais equivalents a una tabulació.
 Dreta a esquerra (RTL)
 Defineix la direcció del text de les notes com a de dreta a esquerra.
+Mostra els diagrames Mermaid a les notes
+Renderitza diagrames de flux, diagrames de seqüència i altres diagrames a partir de blocs de codi «mermaid».
 Conversió automàtica d'HTML
 Converteix automàticament HTML a Markdown quan enganxes i arrossegues contingut de pàgines web. Utilitza Ctrl/Cmd+Maj+V per enganxar sense conversió.
 Vincles de tecles Vim
 Permet utilitzar els vincles de tecles Vim a l'editor font.
 En dispositius mòbils, aquesta configuració és per dispositiu i no es sincronitza mitjançant el fitxer de configuració.
-Reconstrueix la memòria cau de la cambra forta
-Reconstruir la memòria cau pot trigar d'uns segons a uns quants minuts segons la mida de la cambra forta.
+Reconstrueix la memòria cau de l'Arca
+Reconstruir la memòria cau pot trigar d'uns segons a uns quants minuts segons la mida de l'Arca.
 Reconstrueix
 Confirma l'entrada al mode Vim
 El mode Vim és per a l'edició de text eficient, però pot ser bastant contra-intuïtiu. Si no estàs familiaritzat amb Vim, aquesta opció podria fer que sembli que Obsidian ha deixat de funcionar.
@@ -124,18 +135,26 @@ Nom de la subcarpeta
 Si el teu fitxer es troba a "arca/carpeta", i estableixes el nom de la subcarpeta com "adjunts", els fitxers adjunts es guardaran a "arca/carpeta/adjunts".
 Fitxers exclosos
 Els fitxers exclosos es mostraran ocults o menys visibles en diversos llocs, com ara al Quick Switcher, la suggerència d'enllaços i la Vista de Gràfic.
-No s'aplica cap filtre d'exclusió ara mateix. Afegeix-ne un a continuació.
-Actualment s'exclouen els fitxers que coincideixen amb els següents filtres:
-Filtre
+Afegeix una exclusió...
+No s'ha afegit cap exclusió.
+{{count}} regla
+{{count}} regles
+Afegeix una exclusió
+Introduïu un camí o una expressió regular, p. ex. /daily-.*/
 El filtre no pot estar buit
-Introdueix la ruta o "/regex/"...
 Permet callbacks d'URI
 Activa l'ús de x-callback-url mitjançant x-success o x-error en gestionar els URI d'Obsidian.
+URI d'Obsidian
+Gestiona les accions de confiança i configura el comportament dels URI.
+Accions de confiança
+Encara no hi ha cap acció de confiança. Les accions d'URI aprovades apareixeran aquí.
 Aparença
 Tema base
 Tria l'esquema de colors per defecte d'Obsidian.
+fosc clar sistema mode nocturn esquema de colors
 Color d'accent
 Tria el color d'accent utilitzat a tota l'aplicació.
+ressaltat marca color primari
 Fosc
 Clar
 Adaptat al sistema
@@ -150,8 +169,8 @@ Font de text
 Estableix la font per a les vistes d'edició i lectura.
 Font monoespaiada
 Estableix la font per a llocs com ara blocs de codi i metadades.
- Font actualment aplicada: 
- Les següents fonts s'apliquen actualment:
+{{count}} tipus de lletra
+{{count}} tipus de lletra
 Introdueix el nom de la font...
 Actualment no s'aplica cap font personalitzada. Afegeix-ne una a continuació.
 S'aplicarà la primera font d'aquesta llista que estigui disponible al teu sistema.
@@ -163,24 +182,26 @@ Previsualitza i utilitza temes increïbles creats per la comunitat.
 Navega
 Mida de la font
 Mida de la font en píxels que afecta l'editor i a la visualització prèvia.
+mida del text zoom
 Ajust ràpid de la mida de la font
 Ajusta la mida de la font amb Ctrl + Roda o fent servir el gest de pessigada.
 Temes
 Gestiona els temes instal·lats i navega pels temes de la comunitat.
+comunitat navega instal·la baixa
 Gestiona
 Cap
 Menús nadius
 Els menús a tota l'aplicació coincidiran amb el sistema operatiu. No es veuran afectats pel teu tema.
-Recarrega els temes
-Temes CSS personalitzats recarregats.
 Obre la carpeta de temes
 Pedaços de CSS
+Gestiona la col·lecció de fitxers CSS per ajustar l'aparença de l'aplicació.
 No s'han trobat pedaços de CSS a la carpeta de pedaços.
-Els Pedaços de CSS s'emmagatzemen a "{{path}}".
+{{count}} activats
+Els fragments CSS et permeten personalitzar l'aparença d'Obsidian. Col·loca els fitxers CSS a “{{path}}” perquè apareguin aquí.
 Recarrega els pedaços
 Obre la carpeta de pedaços
 Pedaços de CSS recarregats.
-Aplica el tros de CSS a "{{path}}".
+Cerca fragments...
 Temes instal·lats
 Captura de pantalla no disponible
 Per defecte
@@ -222,19 +243,24 @@ Actualitzar tots
 Temes comunitaris actuals
 Actualment tens {{count}} tema instal·lat.
 Actualment tens {{count}} temes instal·lats.
+Obre la configuració en una finestra nova
+Obre la configuració en una finestra pròpia en lloc d'incrustada a l'aplicació.
+Interfície
+Mòbil
+Avançat
 Dreceres de teclat
 Cercar drecera de teclat
 Mostrant {{count}} drecera.
 Mostrant {{count}} dreceres.
-{{count}} comandament amb conflicte.
-{{count}} comandaments amb conflictes.
 Filtrar...
 Eliminar la drecera
 Prem la tecla de drecera...
 Totes
+Conflictes ({{count}})
 No assignades
 Assignades
 Assignades per mi
+No s'ha trobat cap resultat.
 Restaurar la configuració predeterminada
 Personalitza aquest comandament
 Aquesta drecera té conflicte amb "{{command}}"
@@ -352,28 +378,34 @@ Filtra els connectors per nom o descripció.
 Cerca connectors...
 Connectors de tercers
 Mode restringit
-El mode restringit està apagat. Activa'l per desactivar els connectors de la comunitat.
+Activa el mode restringit per fer servir l'aplicació sense connectors de la comunitat.
 Activar
 Comprova automàticament les actualitzacions dels connectors
 Comprova periòdicament les actualitzacions dels connectors.
 Connectors de la comunitat
-Navega i instaŀla connectors de tercers creats per la nostra increïble comunitat.
+Navega i instal·la connectors de la comunitat creats per la comunitat.
 Navega
 Sortir del mode restringit
 Els connectors de la comunitat, com qualsevol altra aplicació que instal·les, podrien causar problemes d'integritat de dades i seguretat.
 La seguretat dels connectors és important per a nosaltres. Així és com ho gestionem:
 Tot i els nostres esforços, encara hi ha una petita possibilitat que un connector de la comunitat pugui funcionar incorrectament.
-Revisió de codi inicial
-Els connectors passen per una revisió de codi inicial per part del nostre equip abans d'aparèixer a la botiga.
+Revisió de codi
+Els connectors del directori oficial de la comunitat es revisen automàticament després de cada actualització.
 Codi obert
 La majoria dels connectors tenen codi obert a GitHub, així pots inspeccionar el codi tu mateix.
 Auditoria de companys
 Tenim una gran comunitat de desenvolupadors que vetllen els uns pels altres.
 Mecanisme de notificació
 Donem seguiment i eliminem els connectors defectuosos quan els usuaris ho notifiquen.
-Vols sortir del mode restringit per habilitar els connectors de la comunitat? Recomanem molt fer còpies de seguretat de les teves dades abans de fer-ho.
 Més informació sobre la seguretat dels connectors
-Habilitar els connectors de la comunitat
+Permet connectors de la comunitat
+Els connectors poden executar codi arbitrari al dispositiu. Recomanem fer una còpia de seguretat de les dades abans d'activar-los.
+Torna a activar els connectors instal·lats
+Restaura {{count}} connector instal·lat anteriorment.
+Restaura {{count}} connectors instal·lats anteriorment.
+Mostra la informació del connector
+Connectors activats
+Aquests connectors s'activaran en sortir del mode restringit.
 Confies en l'autor d'aquesta arca?
 Estàs obrint aquesta arca per primera vegada i conté alguns connectors.
 Si has obtingut aquest arca d'algú altre, tingues en compte que els connectors d'origen desconegut podrien comportar riscos de seguretat.
@@ -387,6 +419,9 @@ Instal·lar
 Habilitar
 Desactivar
 Copiar l'enllaç de compartició
+Mostra els detalls
+Obre la pàgina de la comunitat
+Configuració
 Donar
 No s'han trobat resultats.
 No s'han trobat fitxers recents. Escriu per buscar...
@@ -426,6 +461,7 @@ Cerca connectors instal·lats
 Filtra els connectors instal·lats pel nom o la descripció.
 Cerca connectors instal·lats...
 Mostra només els instal·lats
+No hi ha connectors instal·lats.
 Fes una donació per donar suport a {{name}}
 Els desenvolupadors de connectors són voluntaris de la comunitat que fan coses increïbles amb passió. Si trobes aquest connector útil, considera fer-hi una donació.
 El 100% de la teva contribució anirà al desenvolupador del connector; Obsidian no se'n queda cap comissió. La plataforma de finançament que hagin triat podria quedar-se'n una part.
@@ -526,6 +562,9 @@ Redueix
 No s'ha pogut desar el fitxer "{{filepath}}". {{message}}.
 No s'ha pogut carregar el connector “{{plugin}}”
 El connector “{{plugin}}” ha trobat un error en carregar-se
+{{plugin}} no s'ha carregat. Aquest connector no és compatible amb Obsidian v{{version}}.
+{{plugin}} ja no funciona. Us recomanem que el desinstal·leu.
+No s'ha pogut carregar el connector {{plugin}} v{{version}}. S'ha informat que aquesta versió causa problemes. Comproveu si hi ha una versió més recent del connector.
 No s'ha pogut obrir “{{filepath}}”
 No es pot obrir la ubicació “{{href}}”
 Sense fitxer
@@ -636,6 +675,7 @@ Enllaça amb la pestanya...
 Mode codi
 Vista de lectura
 Afegeix una propietat del fitxer
+Suprimeix
 Esborra el fitxer
 Crea aquest fitxer
 Obre l'enllaç
@@ -649,7 +689,7 @@ Copia el camí
 Copia la imatge
 com a URL d'Obsidian
 des de l'arrel del sistema
-des de la carpeta de la cambra forta
+des de la carpeta de l'Arca
 Enganxa com a text pla
 Cerca “{{selection}}”
 Selecciona-ho tot
@@ -722,16 +762,16 @@ sincronitzat
 no sincronitzat
 Cap
 Recomanat
-Obsidian desa les notes al dispositiu, perquè hi pugueu accedir de manera ràpida i privada, fins i tot sense connexió.\nLes dades s'emmagatzemen en una carpeta local segura anomenada **cambra forta**.
-Crea una cambra forta
-Fes servir la meva cambra forta existent
+Obsidian desa les notes al dispositiu, perquè hi pugueu accedir de manera ràpida i privada, fins i tot sense connexió.\nLes dades s'emmagatzemen en una carpeta local segura anomenada **Arca**.
+Crea una Arca
+Fes servir la meva Arca existent
 Per accedir a les notes en altres dispositius, cal que configureu la sincronització.
 Com que Obsidian desa les notes als dispositius, haureu de configurar la sincronització si voleu accedir a les notes en un altre telèfon o ordinador.\nPodeu configurar la sincronització ara, o bé començar a escriure i configurar-la més endavant.
 Configura la sincronització
 Skip for now
 Omet
 Choose a name for your vault.
-Crea una cambra forta
+Crea una Arca
 Configuració de Sync
 Create a synced vault on your Obsidian account so that you can access your data from other devices.
 Xifratge de Sync
@@ -747,27 +787,27 @@ Registra't
 Inicia la sessió
 Torna a enviar el correu electrònic
 Teniu cambres fortes de Sync existents
-Voleu crear una cambra forta nova o connectar-vos a una cambra forta sincronitzada existent?
-Crea una cambra forta de Sync nova
-Trieu una cambra forta existent
+Voleu crear una Arca nova o connectar-vos a una Arca sincronitzada existent?
+Crea una Arca de Sync nova
+Trieu una Arca existent
 Log Out
 Heu oblidat la contrasenya
-Nom de la cambra forta
-Ubicació de la cambra forta
+Nom de l'Arca
+Ubicació de l'Arca
 Emmagatzematge del dispositiu
 Permet que altres aplicacions accedeixin a les dades d'Obsidian.
 Requereix permisos addicionals.
 Emmagatzematge de l'aplicació
 Les vostres dades no seran accessibles per a altres aplicacions.
 Android suprimirà les vostres dades si desinstal·leu Obsidian.
-La vostra cambra forta nova es col·locarà a {{vaultLocation}}
+La vostra Arca nova es col·locarà a {{vaultLocation}}
 Regió
 Trieu una regió de servidor propera per fer que la sincronització sigui més ràpida.
 Clau de xifratge
 Aquesta contrasenya no es pot canviar més endavant. Si oblideu la contrasenya, totes les dades remotes als servidors de Sync seran inaccessibles per sempre.
-La meva cambra forta
+La meva Arca
 Automàtic
-Trieu una cambra forta
+Trieu una Arca
 El vostre compte **{{email}}** té cambres fortes existents a les quals us podeu connectar.
 Inicieu la sessió al vostre compte d'Obsidian
 Heu oblidat la contrasenya
@@ -787,7 +827,7 @@ Utilitza iCloud
 Use Third-party sync
 Altres mètodes de sincronització
 Utilitza mètodes de sincronització compatibles
-On es troba la teva cambra forta?
+On es troba la teva Arca?
 Altres
 Sincronització de tercers
 En aquest dispositiu
@@ -796,23 +836,23 @@ Connecta a un altre servei de sincronització
 Connecta a Obsidian Sync
 Tria una carpeta
 Altres mètodes de sincronització
-Obsidian admet oficialment dos mètodes de sincronització: **Obsidian Sync** i **iCloud**.\nTanmateix, com que Obsidian et dona control sobre les teves dades, hi ha altres opcions de sincronització que pots utilitzar.\nAquestes opcions inclouen connectors de tercers i altres eines que poden requerir una configuració més avançada.\nPer utilitzar un mètode de sincronització alternatiu, **crea una cambra forta** i segueix les instruccions proporcionades pel connector o el proveïdor de sincronització de tercers.
+Obsidian admet oficialment dos mètodes de sincronització: **Obsidian Sync** i **iCloud**.\nTanmateix, com que Obsidian et dona control sobre les teves dades, hi ha altres opcions de sincronització que pots utilitzar.\nAquestes opcions inclouen connectors de tercers i altres eines que poden requerir una configuració més avançada.\nPer utilitzar un mètode de sincronització alternatiu, **crea una Arca** i segueix les instruccions proporcionades pel connector o el proveïdor de sincronització de tercers.
 Introdueix el teu correu electrònic
 El teu correu electrònic és necessari per crear un compte d'Obsidian.
 Introdueix el teu nom i contrasenya
 Connecta a Obsidian Sync
 Hauries de rebre aviat un correu electrònic a **{{email}}** amb instruccions per connectar-te a Obsidian Sync.
-No s'ha detectat la teva cambra forta d'iCloud. Això pot ser degut a algun dels motius següents:
-La teva cambra forta és en un compte d'iCloud diferent del que tens iniciat actualment en aquest dispositiu.
-La teva cambra forta no està desada a la carpeta d'Obsidian de nivell superior de l'iCloud Drive.
+No s'ha detectat la teva Arca d'iCloud. Això pot ser degut a algun dels motius següents:
+La teva Arca és en un compte d'iCloud diferent del que tens iniciat actualment en aquest dispositiu.
+La teva Arca no està desada a la carpeta d'Obsidian de nivell superior de l'iCloud Drive.
 iCloud no compatible
-La sincronització amb iCloud només està disponible en dispositius Apple. Si la teva cambra forta s'està sincronitzant actualment mitjançant iCloud, informa't sobre com migrar-la a un servei de sincronització diferent.
+La sincronització amb iCloud només està disponible en dispositius Apple. Si la teva Arca s'està sincronitzant actualment mitjançant iCloud, informa't sobre com migrar-la a un servei de sincronització diferent.
 Permet l'accés als fitxers
 S'està iniciant la sessió...
-El nom de la cambra forta és obligatori
+El nom de l'Arca és obligatori
 S'ha enviat un nou correu de confirmació.
 No s'ha pogut reenviar el correu electrònic.
-La ubicació de la cambra forta ha de ser una carpeta.
+La ubicació de l'Arca ha de ser una carpeta.
 Hola
 Aquesta és la teva nova *arca*.\n\nFes una nota d'alguna cosa, [[crea un enllaç]] o prova [l'importador](https://help.obsidian.md /Plugins/Importer)!\n\nQuan estiguis a punt, suprimeix aquesta nota i fes la teva arca.
 Insereix l'enllaç aquí
@@ -885,8 +925,8 @@ Navega enrere
 Navega endavant
 Commuta el mode clar/fosc
 Canvia el tema...
-Canvia la cambra forta...
-Obre la cambra forta...
+Canvia l'Arca...
+Obre l'Arca...
 Gestiona les cambres fortes
 Cerca a l'arxiu actual
 Cerca i substitueix a l'arxiu actual
@@ -983,6 +1023,10 @@ No ho preguntis més
 Actualment hi ha {{count}} enllaç que apunta a aquest fitxer.
 Actualment hi ha {{count}} enllaços que apunten a aquest fitxer.
 Suprimeix l'arxiu
+Voleu executar l'acció des d'un enllaç extern?
+L'acció «{{action}}» està a punt d'executar-se. Continueu només si confieu en l'origen de l'enllaç.
+El connector «{{source}}» està a punt d'executar l'acció «{{action}}». Continueu només si confieu en l'origen de l'enllaç.
+No ho tornis a preguntar per a «{{action}}»
 Descarrega adjunts
 No hi ha adjunts externs en aquesta nota.
 S'ha descarregat {{count}} adjunt.
@@ -997,6 +1041,9 @@ Gestiona
 Mostra
 Confirma
 Cancel·la
+Permet
+Permet-ho una vegada
+Permet-ho sempre
 Omet
 Baixa
 Fet
@@ -1224,6 +1271,7 @@ Mostra els fitxers adjunts com ara imatges, vídeos i PDF.
 Mostra tots els tipus de fitxer
 Mostra tots els fitxers, inclosos aquells que Obsidian no pot obrir. El fitxer s'obrirà amb l'aplicació predeterminada per a aquest tipus de fitxer.
 Vista gràfica
+Gràfic local
 Visualitza un gràfic de les notes que estan enllaçades entre elles.
 Obre la vista gràfica
 Obre la vista gràfica local
@@ -1384,7 +1432,7 @@ Títol
 Grup de marcadors
 Marcadors
 CSS personalitzat
-Llegeix i aplica “obsidian.css” a la carpeta de la cambra forta.
+Llegeix i aplica “obsidian.css” a la carpeta de l'Arca.
 Temes de la comunitat
 S'estan obtenint les dades dels temes de la comunitat...
 Filtre...
@@ -1420,7 +1468,8 @@ per navegar
 per utilitzar
 per descartar
 No s'han trobat ordres.
-Escriu una ordre...
+Afegeix una ordre...
+Selecciona una ordre...
 Ordres fixades
 Importador de format Markdown
 Converteix Markdown d'altres aplicacions al format Obsidian.
@@ -1466,7 +1515,7 @@ No s'ha pogut crear la nota diària. Fitxer de plantilla "{{template}}" no troba
 No hi ha cap nota diària abans d'aquesta.
 No hi ha cap nota diària després d'aquesta.
 Format de data
-Trieu com s'anomenen les notes diàries a la vostra cambra forta.
+Trieu com s'anomenen les notes diàries a la vostra Arca.
 Format personalitzat
 Personalitzat
 Format de data no vàlid
@@ -1507,6 +1556,8 @@ No s'han trobat capçaleres.
 Desplaçament automàtic a la secció actual
 Comptador de paraules
 Mostra el comptador de paraules a la barra d'estat.
+Voleu mostrar els diagrames Mermaid en aquesta Arca?
+Permeteu-ho només si confieu en el contingut d'aquesta Arca.
 Presentació
 Presenta des de Markdown. Usa "---" per separar les diapositives.
 Inicia presentació
@@ -1710,13 +1761,12 @@ Elimina l'usuari
 Convida un usuari
 Introdueix el seu correu electrònic...
 Si us plau, introdueix un correu electrònic vàlid per convidar algú.
-Si us plau, habilita el onnector Publish almenys en la configuració -> Connectors principals per veure els llocs.
 Els teus llocs
 Llocs compartits amb tu
 Deixa de col·laborar en aquest lloc
 Confirma la finalització de col·laboració en el lloc
 Això eliminarà aquest lloc de la llista de llocs compartits amb tu. Aquesta acció no es pot desfer.
-Si us plau, contacta amb el propietari del lloc si vols col·laborar en aquest lloc de nou.
+Contacta amb el propietari del lloc si vols col·laborar en aquest lloc de nou.
 Marxar
 Compara amb la versió en directe
 Utilitza la versió en directe
@@ -1914,6 +1964,10 @@ Llista de connectors de la comunitat actius
 Sincronitza quins connectors de la comunitat estan habilitats.
 Connectors de la comunitat instal·lats
 Sincronitza connectors de la comunitat instal·lats (fitxers .js, .css i manifest.json) i la seva configuració.
+Voleu permetre que els connectors sincronitzats s'executin en aquest dispositiu?
+Obsidian Sync no pot verificar el contingut dels connectors sincronitzats amb aquest dispositiu, i poden diferir dels connectors publicats al directori de la comunitat.
+Activeu-ho només si confieu en l'Arca i els dispositius connectats.
+Sí, activa la sincronització de connectors
 Sync encara s'està carregant. Actualitzeu aquesta pàgina més tard.
 Obsidian Sync és el servei de sincronització addicional d'Obsidian amb xifrat d'extrem a extrem i historial de versions.
 Per començar la sincronització, inicieu la sessió o creeu un compte nou d'Obsidian.
@@ -1958,21 +2012,21 @@ Copia la informació de depuració
 Envia un correu al suport
 Sync no està connectat a cap arca remota.
 Obsidian Sync et permet crear fins a 5 arcque remotes. Per crear una arca remota nova, elimina'n una d'existent.
-Actualitza la cambra forta
-Actualitza el xifratge de la cambra forta
+Actualitza l'Arca
+Actualitza el xifratge de l'Arca
 Hi ha disponible una versió nova de xifratge per a les cambres remotes.
 Migra la cambra remota
 Configuració de la cambra remota
 Migra
 Això suprimirà la vostra cambra remota i la recrearà amb el xifratge més recent. Els fitxers locals no se'n veuran afectats; tanmateix, es perdrà l'historial de versions.
-Confirma la migració de la cambra forta
-Per actualitzar el xifratge, totes les dades de la cambra forta es tornaran a pujar als servidors d'Obsidian Sync amb el nou mètode de xifratge. Aquest procés suprimirà de manera permanent totes les dades xifrades amb el xifratge antic, inclòs l'historial de versions de la vostra cambra forta.
-Important: recomanem fermament crear una còpia de seguretat de la vostra cambra forta abans de continuar per evitar qualsevol possible pèrdua de dades.
+Confirma la migració de l'Arca
+Per actualitzar el xifratge, totes les dades de l'Arca es tornaran a pujar als servidors d'Obsidian Sync amb el nou mètode de xifratge. Aquest procés suprimirà de manera permanent totes les dades xifrades amb el xifratge antic, inclòs l'historial de versions de la vostra Arca.
+Important: recomanem fermament crear una còpia de seguretat de la vostra Arca abans de continuar per evitar qualsevol possible pèrdua de dades.
 Un cop completada l'actualització, haureu de reconnectar tots els vostres dispositius a la cambra remota actualitzada.
-La migració de la cambra forta pot trigar una estona. Haureu de mantenir Obsidian actiu en aquest dispositiu per tornar a pujar totes les vostres notes i adjunts. És millor fer-ho al vostre dispositiu principal.
+La migració de l'Arca pot trigar una estona. Haureu de mantenir Obsidian actiu en aquest dispositiu per tornar a pujar totes les vostres notes i adjunts. És millor fer-ho al vostre dispositiu principal.
 Voleu continuar?
-La migració de la cambra forta està en curs.
-La migració de la cambra forta s'ha completat.
+La migració de l'Arca està en curs.
+La migració de l'Arca s'ha completat.
 Resolució de conflictes
 Trieu com es resolen els conflictes quan una nota es modifica de manera independent en diversos dispositius.
 Fusiona automàticament
@@ -2048,8 +2102,8 @@ Retalla
 Enganxa
 Suprimeix
 Selecciona-ho tot
-Desa a la cambra forta
-Desa la imatge a la cambra forta
+Desa a l'Arca
+Desa la imatge a l'Arca
 Copia l'enllaç de la imatge
 Enrere
 Endavant
@@ -2065,9 +2119,10 @@ Dades en memòria cau
 Historial
 Totes les dades del visor web
 Elimina tot l'anterior, així com l'emmagatzematge local i les sessions actives.
-Visor web nou
-Unable to load that site.
-Please make sure you have the correct address.
+Nou visor web
+No es pot carregar aquest lloc web.
+Assegureu-vos que teniu l'adreça correcta.
+Vista de lectura
 Cerca al web
 Dades del visor web
 Esborra les dades del visor web
@@ -2222,9 +2277,9 @@ Canvas ha detectat canvis de nom de fitxers que afecten {{count}} fitxers de Can
 Canvas ha actualitzat {{count}} targeta incrustada
 Canvas ha actualitzat {{count}} targetes incrustades
 
-Create bases by querying note properties.
+Crea vistes personalitzades que et permetin editar, ordenar i filtrar fitxers mitjançant les seves propietats.
 Base nova
-Add property
+Afegeix la propietat "{{name}}" 
 Afegeix el resum de "{{name}}"
 Afegeix una fórmula
 Amaga-ho tot
@@ -2285,10 +2340,10 @@ i
 Propietat
 Sense títol
 fitxer
-name
+nom
 nom base del fitxer
 nom complet del fitxer
-path
+camí
 carpeta
 extension
 hora de creació
@@ -2315,7 +2370,7 @@ Aquest filtre no es pot representar amb el constructor de filtres simple.
 No es pot analitzar el filtre. No es pot utilitzar el constructor de filtres bàsic.
 Configuració de propietats no vàlida.
 Configuració de propietat no vàlida per a "{{ name }}".
-Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+No s'ha pogut afegir la nova vista de Bases "{{ viewID }}". Ja existeix una vista amb aquest ID.
 No s'ha pogut analitzar el fitxer de base:
 No s'ha trobat la vista "{{ view }}"
 Base configured with an unknown view type: {{ viewtype }}
@@ -2372,6 +2427,9 @@ Alta
 Molt alta
 Resumeix...
 Agrupa per aquesta propietat
+Redimensiona la columna...
+Restableix la mida de la columna
+Arrossegueu per redimensionar
 Esborra els valors
 Resum
 No s'ha pogut analitzar la fórmula "{{ formula }}"
@@ -2515,3 +2573,24 @@ Tipus de destacat...
 {{count}} fragments
 {{count}} tema
 {{count}} temes
+Cancel·la
+D'acord
+Copia
+Obre l'enllaç
+Obre aquest fitxer
+Executa el fitxer
+Voleu obrir l'enllaç extern?
+Aquest enllaç obrirà una aplicació externa fora d'Obsidian. Continueu només si confieu en l'origen d'aquest enllaç.
+Obre sempre els enllaços {{scheme}}://
+Avís de fitxer remot
+Aquest fitxer es troba en un servidor remot i pot ser perillós.\nSegur que voleu obrir-lo?
+Ubicació: {{location}}
+Accés a la unitat de xarxa
+Aquest contingut sol·licita dades d'una unitat de xarxa. Permetre-ho pot exposar les vostres credencials d'inici de sessió o altra informació sensible a l'amfitrió remot.
+Amfitrió: {{host}}
+Permet
+Voleu executar el fitxer executable?
+Aquest enllaç apunta a un fitxer executable. Executar-lo podria danyar l'ordinador.
+Fitxer: {{path}}
+Arca no trobada.
+No s'ha pogut trobar cap Arca per a l'URL {{url}}

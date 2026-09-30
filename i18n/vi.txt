@@ -1,10 +1,19 @@
 Tùy chọn
 
 Plugin cốt lõi
+Hiển thị trong danh sách plugin
 Tùy chọn plugin
 Ví dụ: folder 1/folder 2
 Ví dụ: folder/note
+Chưa chọn tệp nào
 Thay đổi tùy chọn này yêu cầu khởi động lại để có hiệu lực.
+Số không hợp lệ
+Giá trị phải ít nhất là {{min}}
+Giá trị phải nhiều nhất là {{max}}
+Không tìm thấy tệp.
+Tìm kiếm cài đặt...
+Không tìm thấy cài đặt nào.
+{{count}} mục nữa
 Trình soạn thảo
 Hành vi
 Hiển thị
@@ -56,6 +65,8 @@ Kích thước tab
 Số khoảng trắng tương đương với một tab.
 Hướng văn bản từ phải sang trái (RTL)
 Đặt hướng văn bản của các ghi chú để hiển thị từ phải sang trái.
+Hiển thị sơ đồ Mermaid trong ghi chú
+Kết xuất lưu đồ, sơ đồ trình tự và các sơ đồ khác từ khối mã “mermaid”.
 Tự động chuyển đổi HTML
 Tự động chuyển đổi HTML thành Markdown khi dán và kéo và thả từ các trang web. Sử dụng Ctrl/Cmd+Shift+V để dán mà không cần chuyển đổi.
 Phím tắt Vim
@@ -124,18 +135,26 @@ Tên thư mục con
 Nếu tệp của bạn nằm dưới "khóa/thư mục" và bạn đặt tên thư mục con của mình là "đính kèm", tệp đính kèm sẽ được lưu vào "khóa/thư mục/đính kèm".
 Tệp bị loại trừ
 Các tệp bị loại trừ sẽ bị ẩn hoặc ít nổi bật trong các vị trí khác nhau, chẳng hạn như Trình chuyển đổi nhanh, đề xuất liên kết và Xem biểu đồ.
-Hiện tại không áp dụng bộ lọc bị loại trừ nào. Thêm một bộ lọc dưới đây.
-Các tệp phù hợp với các bộ lọc sau đây hiện đang bị loại trừ:
-Bộ lọc
+Thêm loại trừ...
+Chưa thêm loại trừ nào.
+{{count}} quy tắc
+{{count}} quy tắc
+Thêm loại trừ
+Nhập đường dẫn hoặc biểu thức chính quy, ví dụ /daily-.*/
 Bộ lọc không thể để trống
-Nhập đường dẫn hoặc "/regex/"...
 Cho phép callback URI
 Bật việc sử dụng x-callback-url thông qua x-success hoặc x-error khi xử lý URI của Obsidian.
+
+Quản lý các hành động được tin cậy và cấu hình hành vi URI.
+Hành động được tin cậy
+Chưa có hành động được tin cậy nào. Các hành động URI đã được phê duyệt sẽ xuất hiện ở đây.
 Giao diện
 Chủ đề cơ bản
 Chọn sơ đồ màu mặc định của Obsidian.
+tối sáng hệ thống chế độ ban đêm bảng màu
 Màu nhấn
 Chọn màu nhấn được sử dụng trong toàn bộ ứng dụng.
+tô sáng thương hiệu màu chính
 Tối
 Sáng
 Thích ứng với hệ thống
@@ -150,8 +169,8 @@ Phông chữ văn bản
 Thiết lập phông chữ cho chế độ chỉnh sửa và xem.
 Phông chữ không chia khoảng
 Thiết lập phông chữ cho các vị trí như khối mã và frontmatter.
- Phông chữ đang áp dụng: 
- Các phông chữ sau đang áp dụng:
+{{count}} phông chữ
+{{count}} phông chữ
 Nhập tên phông chữ...
 Hiện không có phông chữ tùy chỉnh nào được áp dụng. Thêm một phông chữ dưới đây.
 Phông chữ đầu tiên từ danh sách này mà có sẵn trên hệ thống của bạn sẽ được áp dụng.
@@ -163,24 +182,26 @@ Xem trước và sử dụng các chủ đề tuyệt vời được tạo bởi
 Duyệt
 Cỡ chữ
 Cỡ chữ tính bằng pixel ảnh ảnh hưởng đến chỉnh sửa và xem trước.
+kích thước văn bản cỡ chữ phóng to
 Điều chỉnh nhanh cỡ chữ
 Điều chỉnh cỡ chữ bằng cách sử dụng Ctrl + Cuộn, hoặc sử dụng cử chỉ thu phóng bằng cách kẹp trackpad.
 Chủ đề
 Quản lý chủ đề đã cài đặt và duyệt các chủ đề cộng đồng.
+cộng đồng duyệt cài đặt tải xuống
 Quản lý
 Không
 Các menu hệ thống
 Các menu trong ứng dụng sẽ phù hợp với hệ điều hành. Chúng sẽ không bị ảnh hưởng bởi chủ đề của bạn.
-Tải lại chủ đề
-Đã tải lại các chủ đề CSS tùy chỉnh.
 Mở thư mục chủ đề
 Mẩu CSS
+Quản lý bộ sưu tập tệp CSS để tinh chỉnh giao diện của ứng dụng.
 Không có mẩu CSS nào được tìm thấy trong thư mục mẩu.
-Mẩu CSS được lưu trữ trong "{{path}}".
+Đã bật {{count}}
+Đoạn trích CSS cho phép bạn tùy chỉnh giao diện của Obsidian. Đặt các tệp CSS vào “{{path}}” để chúng xuất hiện ở đây.
 Tải lại mẩu
 Mở thư mục mẩu
 Đã tải lại các mẩu CSS.
-Áp dụng mẩu CSS tại "{{path}}".
+Tìm kiếm đoạn trích...
 Các chủ đề đã cài đặt
 Không có hình ảnh màn hình
 Mặc định
@@ -222,19 +243,24 @@ Cập nhật tất cả
 Các chủ đề cộng đồng hiện tại
 Bạn hiện có {{count}} chủ đề đã cài đặt.
 Bạn hiện có {{count}} chủ đề đã cài đặt.
+Mở cài đặt trong cửa sổ mới
+Mở cài đặt trong cửa sổ riêng thay vì nhúng trong ứng dụng.
+Giao diện người dùng
+Di động
+Nâng cao
 Phím tắt
 Tìm kiếm phím tắt
 Hiển thị {{count}} phím tắt. 
 Hiển thị {{count}} phím tắt. 
-{{count}} lệnh có xung đột.
-{{count}} lệnh có xung đột.
 Lọc...
 Xóa phím tắt
 Nhấn phím tắt...
 Tất cả
+Xung đột ({{count}})
 Chưa được gán
 Đã được gán
 Được gán bởi tôi
+Không tìm thấy kết quả nào.
 Khôi phục mặc định
 Tùy chỉnh lệnh này
 Phím tắt này có xung đột với "{{command}}"
@@ -352,28 +378,34 @@ Lọc phần mở rộng theo tên hoặc mô tả.
 Tìm kiếm phần mở rộng...
 Phần mở rộng của bên thứ ba
 Chế độ hạn chế
-Chế độ Hạn chế đã được tắt. Bật để vô hiệu hóa các phần mở rộng từ cộng đồng.
+Bật chế độ hạn chế để sử dụng ứng dụng mà không có plugin cộng đồng.
 Bật
 Tự động kiểm tra cập nhật plugin
 Định kỳ kiểm tra cập nhật plugin.
 Phần mở rộng từ cộng đồng
-Duyệt và cài đặt các phần mở rộng của bên thứ ba do cộng đồng tuyệt vời của chúng ta tạo ra.
+Duyệt và cài đặt plugin cộng đồng do cộng đồng tạo ra.
 Duyệt
-Thoát khỏi Chế độ Hạn chế
+Thoát khỏi chế độ hạn chế
 Phần mở rộng từ cộng đồng, giống như bất kỳ phần mềm khác mà bạn cài đặt, có thể gây ra vấn đề về toàn vẹn dữ liệu và bảo mật.
 Bảo mật của phần mở rộng là điều quan trọng đối với chúng tôi. Dưới đây là những gì chúng tôi thực hiện:
 Mặc dù chúng tôi đã nỗ lực, vẫn có một khả năng nhỏ rằng một số phần mở rộng từ cộng đồng có thể hoạt động không đúng.
-Đánh giá mã ban đầu
-Các phần mở rộng phải trải qua đánh giá mã ban đầu từ đội ngũ của chúng tôi trước khi xuất hiện trong cửa hàng.
+Đánh giá mã
+Các plugin trong danh mục cộng đồng chính thức được tự động đánh giá sau mỗi lần cập nhật.
 Mã nguồn mở
 Hầu hết các phần mở rộng đều mã nguồn mở trên GitHub, vì vậy bạn có thể kiểm tra mã nguồn một cách tự do.
 Đánh giá đồng nghiệp
 Chúng tôi có một cộng đồng lớn của các nhà phát triển theo dõi lẫn nhau.
 Cơ chế báo cáo
 Chúng tôi tiếp tục theo dõi và gỡ bỏ các phần mở rộng lỗi sau khi người dùng báo cáo.
-Bạn có muốn thoát khỏi Chế độ Hạn chế để kích hoạt các phần mở rộng từ cộng đồng không? Chúng tôi khuyên bạn nên sao lưu dữ liệu trước khi làm điều này.
 Tìm hiểu thêm về bảo mật phần mở rộng
-Bật phần mở rộng từ cộng đồng
+Cho phép plugin cộng đồng
+Plugin có thể thực thi mã tùy ý trên thiết bị của bạn. Chúng tôi khuyên bạn nên sao lưu dữ liệu trước khi bật chúng.
+Bật lại các plugin đã cài đặt
+Khôi phục {{count}} plugin đã cài đặt trước đó.
+Khôi phục {{count}} plugin đã cài đặt trước đó.
+Hiển thị thông tin plugin
+Plugin đã bật
+Các plugin này sẽ được bật khi rời khỏi chế độ hạn chế.
 Bạn tin tưởng tác giả của kho lưu trữ này không?
 Bạn đang mở kho lưu trữ này lần đầu tiên, và nó đi kèm với một số phần mở rộng.
 Nếu bạn nhận được kho lưu trữ này từ người khác, hãy lưu ý rằng các phần mở rộng không rõ nguồn gốc có thể tạo ra rủi ro về bảo mật.
@@ -387,6 +419,9 @@ Cài đặt
 Kích hoạt
 Vô hiệu hóa
 Sao chép liên kết chia sẻ
+Xem chi tiết
+Mở trang cộng đồng
+Cài đặt
 Ủng hộ
 Không tìm thấy kết quả.
 Không tìm thấy tệp gần đây. Nhập để tìm kiếm...
@@ -426,6 +461,7 @@ Tìm kiếm phần mở rộng đã cài đặt
 Lọc phần mở rộng đã cài đặt theo tên hoặc mô tả.
 Tìm kiếm phần mở rộng đã cài đặt...
 Chỉ hiển thị đã cài đặt
+Chưa cài đặt plugin nào.
 Ủng hộ {{name}}
 Các nhà phát triển phần mở rộng là những tình nguyện viên trong cộng đồng tạo ra những điều tuyệt vời với đam mê. Nếu bạn thấy phần mở rộng này hữu ích, xin vui lòng xem xét hỗ trợ việc phát triển của nó.
 100% đóng góp của bạn sẽ được chuyển cho nhà phát triển phần mở rộng; Obsidian không thu phí. Nền tảng gọi vốn mà họ chọn có thể tính phí.
@@ -526,6 +562,9 @@ Thu gọn
 Không thể lưu tệp "{{filepath}}". {{message}}.
 Không thể tải plugin “{{plugin}}”
 Plugin “{{plugin}}” gặp lỗi khi tải
+Không thể tải {{plugin}}. Plugin này không tương thích với Obsidian v{{version}}.
+{{plugin}} không còn hoạt động. Bạn nên gỡ cài đặt plugin này.
+Không thể tải plugin {{plugin}} v{{version}}. Phiên bản này đã được báo cáo là gây ra sự cố. Vui lòng kiểm tra phiên bản mới hơn của plugin.
 Không thể mở “{{filepath}}”
 Không thể mở vị trí “{{href}}”
 Không có tệp
@@ -636,6 +675,7 @@ Liên kết với tab...
 Chế độ nguồn
 Chế độ đọc
 Thêm thuộc tính tệp
+Xóa
 Xóa tệp
 Tạo tệp này
 Mở liên kết
@@ -983,6 +1023,10 @@ Không hỏi lại
 Hiện tại có {{count}} liên kết trỏ đến tệp này.
 Hiện tại có {{count}} liên kết trỏ đến tệp này.
 Xóa tệp
+Chạy hành động từ liên kết bên ngoài?
+Hành động “{{action}}” sắp chạy. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
+Plugin “{{source}}” sắp chạy hành động “{{action}}”. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
+Không hỏi lại đối với “{{action}}”
 Tải xuống tệp đính kèm
 Không có tệp đính kèm bên ngoài trong ghi chú này.
 Đã tải xuống {{count}} tệp đính kèm.
@@ -997,6 +1041,9 @@ Quản lý
 Xem
 Xác nhận
 Hủy bỏ
+Cho phép
+Chỉ cho phép lần này
+Luôn cho phép
 Bỏ qua
 Tải xuống
 Hoàn tất
@@ -1224,6 +1271,7 @@ Hiển thị các tệp đính kèm như hình ảnh, video và PDF.
 Hiển thị tất cả các loại tệp
 Hiển thị tất cả các tệp bao gồm cả những tệp mà Obsidian không thể mở. Tệp sẽ được mở bằng ứng dụng mặc định cho loại tệp đó.
 Xem biểu đồ
+Đồ thị cục bộ
 Xem tổng quan biểu đồ về các ghi chú liên kết với nhau.
 Mở xem biểu đồ
 Mở biểu đồ cục bộ
@@ -1420,7 +1468,8 @@ Mở khay lệnh
 để sử dụng
 để hủy
 Không tìm thấy lệnh.
-Nhập lệnh...
+Thêm lệnh...
+Chọn lệnh...
 Lệnh được ghim
 Bộ chuyển đổi định dạng Markdown
 Chuyển đổi định dạng Markdown từ các ứng dụng khác sang định dạng Obsidian.
@@ -1507,6 +1556,8 @@ Không tìm thấy tiêu đề.
 Tự động cuộn đến phần hiện tại
 Số từ
 Hiển thị số từ trong thanh trạng thái.
+Hiển thị sơ đồ Mermaid trong kho này?
+Chỉ cho phép nếu bạn tin tưởng nội dung của kho này.
 Trang trình chiếu
 Trình diễn từ Markdown. Sử dụng "---" để tách các trang.
 Bắt đầu trình diễn
@@ -1710,7 +1761,6 @@ Xóa người dùng
 Mời người dùng
 Nhập địa chỉ email của họ...
 Vui lòng nhập một địa chỉ email hợp lệ để mời một người nào đó.
-Vui lòng kích hoạt plugin Publish core trong Cài đặt -> Plugin cốt lõi để xem trang web.
 Trang web của bạn
 Trang web đã chia sẻ với bạn
 Ngừng cộng tác trên trang web này
@@ -1914,6 +1964,10 @@ Danh sách plugin cộng đồng đang hoạt động
 Đồng bộ hóa plugin cộng đồng nào đang được bật.
 Cài đặt plugin cộng đồng đã cài đặt
 Đồng bộ hóa plugin cộng đồng đã cài đặt (tệp .js, .css và manifest.json) và cài đặt của chúng.
+Cho phép các plugin đã đồng bộ chạy trên thiết bị này?
+Obsidian Sync không thể xác minh nội dung của các plugin được đồng bộ với thiết bị này và chúng có thể khác với các plugin được xuất bản trong thư mục cộng đồng.
+Chỉ bật nếu kho và các thiết bị đã kết nối đáng tin cậy.
+Có, bật đồng bộ plugin
 Sync vẫn đang tải, vui lòng làm mới trang này sau.
 Obsidian Sync là dịch vụ đồng bộ hóa của Obsidian với mã hóa đầu cuối và lịch sử phiên bản.
 Để bắt đầu đồng bộ hóa, vui lòng đăng nhập hoặc tạo tài khoản Obsidian mới.
@@ -2068,6 +2122,7 @@ Xóa tất cả mục trên, cũng như local storage và các phiên đang ho�
 Trình xem web mới
 Unable to load that site.
 Please make sure you have the correct address.
+Chế độ đọc
 Tìm kiếm trên web
 Dữ liệu trình xem web
 Xóa dữ liệu trình xem web
@@ -2372,6 +2427,9 @@ Cao
 Rất cao
 Tóm tắt...
 Nhóm theo thuộc tính này
+Thay đổi kích thước cột...
+Đặt lại kích thước cột
+Kéo để thay đổi kích thước
 Xóa giá trị
 Tóm tắt
 Không thể phân tích công thức "{{ formula }}"
@@ -2515,3 +2573,24 @@ Loại chú thích...
 {{count}} đoạn trích
 {{count}} giao diện
 {{count}} giao diện
+Hủy
+
+Sao chép
+Mở liên kết
+Mở tệp này
+Chạy tệp
+Mở liên kết bên ngoài?
+Liên kết này sẽ mở một ứng dụng bên ngoài Obsidian. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết này.
+Luôn mở các liên kết {{scheme}}://
+Cảnh báo tệp từ xa
+Tệp này nằm trên máy chủ từ xa và có thể nguy hiểm.\nBạn có chắc chắn muốn mở không?
+Vị trí: {{location}}
+Truy cập ổ đĩa mạng
+Nội dung này đang yêu cầu dữ liệu từ một ổ đĩa mạng. Việc cho phép có thể làm lộ thông tin đăng nhập hoặc thông tin nhạy cảm khác của bạn cho máy chủ từ xa.
+Máy chủ: {{host}}
+Cho phép
+Chạy tệp thực thi?
+Liên kết này trỏ đến một tệp thực thi. Việc chạy tệp này có thể gây hại cho máy tính của bạn.
+Tệp: {{path}}
+Không tìm thấy kho.
+Không thể tìm thấy kho cho URL {{url}}

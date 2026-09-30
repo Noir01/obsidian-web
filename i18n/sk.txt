@@ -1,10 +1,19 @@
 Možnosti
 Doplnok
 Vstavané pluginy
+Zobraziť v zozname doplnkov
 Možnosti pluginov
 Napr. priečinok 1/priečinok 2
 Napr. priečinok/poznámka
+Nie je vybraný žiadny súbor
 Na prejavenie tejto zmeny je nutný reštart.
+Neplatné číslo
+Hodnota musí byť aspoň {{min}}
+Hodnota musí byť najviac {{max}}
+Súbor sa nenašiel.
+Hľadať v nastaveniach...
+Nenašli sa žiadne nastavenia.
+Ďalších {{count}}
 
 Správanie
 Zobrazenie
@@ -54,8 +63,10 @@ Používať tabulátor
 Používať tabulátor na odsadenie po stlačení klávesy "Tab". Ak chcete použiť medzery, vypnite túto možnosť.
 Veľkosť tabulátora
 Počet medzier, ktoré sú ekvivalentné jednému tabulátoru.
-Zprava doľava (RTL)
-Nastavenie smeru textu poznámok na zobrazenie zprava doľava.
+Sprava doľava (RTL)
+Nastavenie smeru textu poznámok na zobrazenie sprava doľava.
+Zobrazovať diagramy Mermaid v poznámkach
+Vykresľovať vývojové diagramy, sekvenčné diagramy a ďalšie diagramy z blokov kódu „mermaid“.
 Automaticky konvertovať HTML
 Automatická konverzia HTML na Markdown pri vložení a pretiahnutí z webových stránok. Použite Ctrl/Cmd+Shift+V pre vloženie bez konverzie.
 Klávesové skratky Vim
@@ -121,21 +132,29 @@ V podpriečinku pod aktuálnym priečinkom
 Umiestnenie priečinku s prílohami
 Novo vytvorené prílohy sa presunú sem. Medzi prílohy patria vložené obrázky a audio nahrávky.
 Názov podpriečinku
-Pokiaľ je váš súbor v "trezor/priečinok", a názov podpriečinoku nastavíte na "prílohy", tak sa prílohy budú ukladať do "trezor/priečinok/prílohy".
+Pokiaľ je váš súbor v "trezor/priečinok", a názov podpriečinku nastavíte na "prílohy", tak sa prílohy budú ukladať do "trezor/priečinok/prílohy".
 Vylúčené súbory
 Vylúčené súbory budú buď skryté, alebo menej viditeľné na rôznych miestach, ako napríklad Rýchly prepínač, návrhy odkazov, a zobrazenie grafu.
-Žiadny filter vylúčených súborov nie je aktuálne použitý. Pridáte ho nižšie.
-Súbory zodpovedajúce nasledujúcim filtrom sú aktuálne vylúčené:
-
+Pridať vylúčenie...
+Neboli pridané žiadne vylúčenia.
+{{count}} pravidlo
+{{count}} pravidlá
+Pridať vylúčenie
+Zadajte cestu alebo regulárny výraz, napr. /daily-.*/
 Filter nemôže byť prázdny
-Zadajte cestu, alebo "/regulárny výraz (regex)/"...
 Povoliť URI callbacky
 Povoľuje použitie x-callback-url cez x-success alebo x-error pri spracovaní URI Obsidianu.
+
+Spravovať dôveryhodné akcie a konfigurovať správanie URI.
+Dôveryhodné akcie
+Zatiaľ žiadne dôveryhodné akcie. Schválené akcie URI sa zobrazia tu.
 Vzhľad
 Základná téma
 Vyberte predvolenú farebnú tému pre Obsidian.
+tmavý svetlý systém nočný režim farebná schéma
 Farba akcentu
 Vyberte farbu akcentu, ktorá sa bude používať v aplikácií.
+zvýraznenie značka primárna farba
 Tmavá
 Svetlá
 Prispôsobiť systému
@@ -150,8 +169,8 @@ Písmo textu
 Nastavenie písma pre režim úprav a režim čítania.
 Monospace písmo
 Nastavenie písma pre režim zdrojového kódu a frontmatter.
- Aktuálne písmo: 
- Tieto písma sú práve používané:
+{{count}} písmo
+{{count}} písma
 Zadajte názov písma...
 Práve sa nepoužíva žiadne vlastné písmo. Vyberte písmo, ktoré chcete použiť.
 Bude použité prvé písmo z tohto zoznamu, ktoré je v systéme k dispozícií.
@@ -163,24 +182,26 @@ Preskúmajte úžasné témy vytvorené komunitou.
 Prehľadávať
 Veľkosť písma
 Veľkosť písma v pixeloch, pre editor a náhľad.
+veľkosť textu priblíženie
 Rýchla zmena veľkosti písma
 Upraviť veľkosť písma pomocou Ctrl + Koliesko myši, alebo použitím gesta na touchpade.
 Témy
 Spravovať nainštalované a prehliadať komunitné témy.
+komunita prehliadať nainštalovať stiahnuť
 Spravovať
 Žiadne
 Predvolené menu
 Menu v aplikácii sa bude zhodovať s operačným systémom. Menu nebude ovplyvnené témou.
-Znovu načítať témy
-Znovu načítať vlastné CSS témy.
 Otvoriť priečinok s témami
 CSS snippety
+Spravujte svoju kolekciu CSS súborov na úpravu vzhľadu aplikácie.
 Žiadne CSS snippety nájdené v priečinku snippetov.
-CSS snippety sú uložené v "{{path}}".
+{{count}} povolených
+Úryvky CSS vám umožňujú prispôsobiť vzhľad aplikácie Obsidian. Umiestnite súbory CSS do „{{path}}“, aby sa zobrazili tu.
 Znovu načítať snippety
 Otvoriť priečinok so snippetmi
 Znovu načítané CSS snippety.
-Použi CSS snippet na "{{path}}".
+Hľadať úryvky...
 Nainštalované témy
 Snímok obrazovky nedostupný
 Základná
@@ -222,19 +243,24 @@ Aktualizovať všetky témy
 Aktuálne komunitné témy
 Aktuálne máte nainštalovanú {{count}} tému.
 Aktuálne máte nainštalované(ých) {{count}} témy(m).
+Otvoriť nastavenia v novom okne
+Otvoriť nastavenia vo vlastnom okne namiesto vloženia v aplikácii.
+Rozhranie
+Mobil
+Rozšírené
 Klávesové skratky
 Vyhľadať klávesové skratky
 Zobrazená {{count}} klávesovej skratky.
 Zobrazené(ých) {{count}} klávesové(ých) skratky(iek).
-{{count}} príkaz s konfliktom.
-{{count}} príkazy(ov) s konfliktmi.
 Filtrovať...
 Odstrániť klávesovú skratku
 Stlačte klávesovú skratku...
 Všetko
+Konflikty ({{count}})
 Nepriradené
 Priradené
 Priradené mnou
+Nenašli sa žiadne výsledky.
 Obnoviť predvolené
 Prispôsobiť tento príkaz
 Táto klávesová skratka je v konflikte s "{{command}}"
@@ -324,7 +350,7 @@ Prihlásený ako {{name}} ({{email}}).
 Nie ste prihlásený. Účet je potrebný pre Obsidian sync, Obsidian Publish, a Catalyst insider buildy.
 Vylepšiť
 Komerčná licencia
-Ak používate Obsidian pre komerčné použitie, musíte si kúpiť komerčnú licenciu.
+Pomôžte udržať Obsidian 100 % podporovaný používateľmi.
 Kúpiť
 Odhlásiť
 Prihlásiť
@@ -352,28 +378,34 @@ Filtrovať pluginy podľa názvu alebo popisu.
 Hľadať pluginy...
 Pluginy tretích strán
 Obmedzený režim
-Obmedzený režim je vypnutý. Zapnutím zakážete komunitné pluginy.
+Zapnite obmedzený režim, ak chcete používať aplikáciu bez komunitných pluginov.
 Zapnúť a obnoviť
 Automaticky kontrolovať aktualizácie doplnkov
 Pravidelne kontrolovať aktualizácie doplnkov.
 Komunitné pluginy
-Prechádzajte a inštalujte pluginy tretích strán vytvorené našou super komunitou.
+Prechádzajte a inštalujte komunitné pluginy vytvorené komunitou.
 Prehľadávať
 Ukončiť obmedzený režim
 Komunitné pluginy, rovnako ako akýkoľvek iný softvér, môžu potenciálne spôsobiť problémy so stratou a zabezpečením dát.
 Zabezpečenie pluginov je pre nás dôležité. Zoznam kritérií, ktorými musí prejsť každý plugin:
 Napriek nášmu úsiliu stále existuje malá pravdepodobnosť, že komunitný plugin bude chybný.
-Prvotná revízia kódu
-Skôr ako sa pluginy objavia v ponuke, prejdú úvodnou kontrolou našim tímom.
+Revízia kódu
+Pluginy v oficiálnom komunitnom adresári sa po každej aktualizácii automaticky kontrolujú.
 Otvorený zdrojový kód
 Väčšina pluginov má otvorený zdrojový kód na Githube, takže si ho môžete skontrolovať.
 Vzájomný audit
 Máme veľkú komunitu vývojárov, ktorí na seba navzájom dohliadajú.
 Mechanizmus nahlásenia
 Chybné pluginy sledujeme a odstraňujeme na základe nahlásení od používateľov.
-Chcete ukončiť obmedzený režim a povoliť komunitné pluginy? Odporúčame najprv zálohovať svoje dáta.
 Ďalšie informácie o zabezpečení pluginov
-Zapnúť komunitné pluginy
+Povoliť komunitné pluginy
+Doplnky môžu na vašom zariadení spúšťať ľubovoľný kód. Pred ich povolením odporúčame zálohovať vaše údaje.
+Znova povoliť nainštalované doplnky
+Obnoviť {{count}} predtým nainštalovaný doplnok.
+Obnoviť {{count}} predtým nainštalovaných doplnkov.
+Zobraziť informácie o doplnku
+Povolené doplnky
+Tieto doplnky budú povolené po opustení obmedzeného režimu.
 Veríte autorovi tohto trezoru?
 Trezor, ktorý otvárate po prvýkrát, obsahuje niektoré pluginy.
 Ak ste tento trezor dostali od niekoho iného, pamätajte, že niektoré pluginy neznámeho pôvodu môžu predstavovať bezpečnostné riziko.
@@ -387,6 +419,9 @@ Inštalovať
 Zapnúť
 Vypnúť
 Kopírovať odkaz
+Zobraziť podrobnosti
+Otvoriť stránku komunity
+Nastavenia
 Prispieť
 Žiadne výsledky hľadania.
 Nedávne súbory neboli nájdené. Píšte pre spustenie hľadania...
@@ -426,9 +461,10 @@ Hľadať nainštalované pluginy
 Filtrovať nainštalované pluginy podľa mena alebo popisu.
 Hľadať nainštalované pluginy...
 Zobraziť iba nainštalované
+Nie sú nainštalované žiadne doplnky.
 Prispieť na podporu {{name}}
 Vývojári pluginov sú dobrovoľníci, ktorí nadšene vytvárajú úžasné veci. Ak je pre vás tento plugin užitočný, zvážte prosím spolu-financovanie jeho vývoja.
-100% z vašich príspevkov ide vývojárom pluginov; Obsidian si neberie žiadny podiel. Platba môže obsahovať poplatok z vašej banky alebo kreditnej spoločnosti.
+100 % z vašich príspevkov ide vývojárom pluginov; Obsidian si neberie žiadny podiel. Platba môže obsahovať poplatok z vašej banky alebo kreditnej spoločnosti.
 Ďakujeme za vašu podporu!
 Prispieť na tento plugin:
 Zobrazujem {{pluginCount}}:
@@ -526,6 +562,9 @@ Skryť postranný panel
 Súbor "{{filepath}}" sa nepodarilo uložiť. {{message}}.
 Nepodarilo sa načítať plugin “{{plugin}}”
 Pri načítaní pluginu “{{plugin}}” došlo k chybe
+{{plugin}} sa nenačítal. Tento doplnok nie je kompatibilný s Obsidian v{{version}}.
+{{plugin}} už nefunguje. Odporúčame ho odinštalovať.
+Doplnok {{plugin}} v{{version}} sa nepodarilo načítať. Bolo hlásené, že táto verzia spôsobuje problémy. Skontrolujte, či nie je k dispozícii novšia verzia doplnku.
 Nepodarilo sa otvoriť “{{filepath}}”
 Nie je možné otvoriť “{{href}}”
 Žiadny súbor
@@ -636,6 +675,7 @@ Prepojiť s kartou...
 Režim zdrojového kódu
 Režim čítania
 Pridať vlastnosť súboru
+Odstrániť
 Odstrániť súbor
 Vytvoriť súbor
 Otvoriť odkaz
@@ -841,7 +881,7 @@ Načítavanie vyrovnávacej pamäte...
 Načítavanie pracovného priestoru...
 Importovať do trezoru
 Pridať text do súboru:
-Zvoliť súbor pre vloženie
+Zvoliť súbor pre vloženie...
 Vložiť text do {{filename}}
 Vložiť odkaz do {{filename}}
 Zobraziť prehľad kariet
@@ -932,7 +972,7 @@ Komentár
 Odstrániť formátovanie
 Vložiť odkaz
 Kontrola pravopisu
-Odstrániť odstavec
+Odstrániť odsek
 Zoznam úloh
 Odrážky/zaškrtávacie políčka
 Vložiť popis
@@ -945,7 +985,7 @@ Upraviť názov súboru
 Kopírovať cestu k súboru
 Kopírovať cestu k aktuálnemu súboru od koreňa systému
 Kopírovať Obsidian URL
-Exportovať do PDF
+Exportovať do PDF...
 Reštartovať aplikáciu bez uloženia
 Vrátiť späť zatvorenie karty
 Zobraziť kontextové menu pod kurzorom
@@ -983,6 +1023,10 @@ Už sa nepýtať
 Momentálne existuje {{count}} odkaz smerujúci na tento súbor.
 Momentálne existuje {{count}} odkazov smerujúcich na tento súbor.
 Odstrániť súbor
+Spustiť akciu z externého odkazu?
+Akcia „{{action}}“ sa chystá spustiť. Pokračujte iba vtedy, ak dôverujete zdroju odkazu.
+Doplnok „{{source}}“ sa chystá spustiť akciu „{{action}}“. Pokračujte iba vtedy, ak dôverujete zdroju odkazu.
+Už sa nepýtať na „{{action}}“
 Stiahnuť prílohy
 V tejto poznámke nie sú externé prílohy.
 Úspešne stiahnutá {{count}} príloha.
@@ -997,6 +1041,9 @@ Spravovať
 Zobraziť
 Potvrdiť
 Zrušiť
+Povoliť
+Povoliť raz
+Vždy povoliť
 Preskočiť
 Stiahnuť
 Hotovo
@@ -1043,7 +1090,7 @@ Odkaz
 Nadpis {{level}}
 Žiadny nadpis
 Citácia
-Exportovať do PDF
+Exportovať do PDF...
 Vložiť prílohu...
 Blok kódu
 Blok matematiky
@@ -1119,7 +1166,7 @@ Zoradiť podľa času vytvorenia (od najstaršieho po najnovšie)
 Zoradiť podľa času vytvorenia (od najnovšieho po najstaršie)
 Nová poznámka
 Nový priečinok
-Premenovať
+Premenovať...
 Odstrániť
 Kopírovať
 Duplikovať
@@ -1224,6 +1271,7 @@ Zobraziť prílohy súborov ako napríklad obrázky, videá a PDF súbory.
 Zobraziť všetky typy súborov
 Zobraziť všetky súbory vrátane tých, ktoré Obsidian nedokáže otvoriť. Súbor bude otvorený predvolenou aplikáciou pre daný typ súboru.
 Graf
+Lokálny graf
 Pozrite sa na grafický prehľad toho, ako sú poznámky prepojené.
 Otvoriť graf
 Otvoriť lokálny graf
@@ -1420,7 +1468,8 @@ navigovať
 použiť
 odmietnuť
 Neboli nájdené žiadne príkazy.
-Napíšte príkaz...
+Pridať príkaz...
+Vyberte príkaz...
 Pripnuté príkazy
 Prevodník formátov
 Prevedie Markdown z iných aplikácií do formátu aplikácie Obsidian.
@@ -1507,6 +1556,8 @@ Neboli nájdené žiadne nadpisy.
 Automaticky skrolovať na aktuálnu sekciu
 Počet slov
 Zobrazovať počet slov v stavovom riadku.
+Zobrazovať diagramy Mermaid v tomto trezore?
+Povoľte iba vtedy, ak dôverujete obsahu tohto trezora.
 Snímky
 Prezentujte priamo z Markdownu. Použite "---" pre oddelenie snímkov prezentácie.
 Spustiť prezentáciu
@@ -1710,7 +1761,6 @@ Odstrániť používateľa
 Pozvať používateľa
 Zadajte jeho email...
 Prosím vložte platný email pre pozvánku.
-Ak chcete zobraziť stránky, povoľte plugin Publish v Nastavenia -> Vstavané pluginy.
 Vaše stránky
 Stránky zdieľané s vami
 Zastaviť spoluprácu na tejto stránke
@@ -1797,7 +1847,7 @@ Automatická
 Zvoľte oblasť serveru, ktorá je najbližšie k vám, pre uloženie vzdialeného trezoru. Toto nastavenie sa nedá v budúcnosti zmeniť.
 Môj úžasný trezor
 Šifrovanie
-End-to-end šifrovanie ponúka najvyššiu bezpečnosť, ale vyžaduje bezpečné uloženie šifrovacieho hesla. Štandardné šifrovanie používa kľúč spravovaný Obsiadianom, pre ochranu dát počas prenosu na naše servery.
+End-to-end šifrovanie ponúka najvyššiu bezpečnosť, ale vyžaduje bezpečné uloženie šifrovacieho hesla. Štandardné šifrovanie používa kľúč spravovaný Obsidianom, pre ochranu dát počas prenosu na naše servery.
 Táto možnosť sa nedá zmeniť v budúcnosti.
 End-to-end šifrovanie
 Štandardné šifrovanie
@@ -1914,6 +1964,10 @@ Zoznam aktívnych komunitných pluginov
 Synchronizovať, ktoré komunitné pluginy sú zapnuté.
 Nainštalované komunitné pluginy
 Synchronizovať nainštalované komunitné pluginy (.js, .css, a manifest.json súbory) a ich nastavenia.
+Povoliť spustenie synchronizovaných doplnkov na tomto zariadení?
+Obsidian Sync nedokáže overiť obsah doplnkov synchronizovaných do tohto zariadenia a môžu sa líšiť od doplnkov zverejnených v komunitnom adresári.
+Toto povoľte iba vtedy, ak dôverujete trezoru a pripojeným zariadeniam.
+Áno, zapnúť synchronizáciu doplnkov
 Synchronizácia sa načíta, aktualizujte túto stránku neskôr.
 Obsidian Sync je doplnková synchronizačná služba Obsidianu s end-to-end šifrovaním a históriou verzií.
 Pre spustenie synchronizácie sa prosím prihláste alebo si vytvorte nový Obsidian účet.
@@ -2068,6 +2122,7 @@ Odstráni všetky vyššie uvedené položky, ako aj lokálne úložisko a aktí
 Nový webový prehliadač
 Túto stránku nie je možné načítať.
 Skontrolujte, že ste zadali správnu adresu.
+Režim čítania
 Vyhľadávať na webe
 Údaje webového prehliadača
 Odstrániť údaje webového prehliadača
@@ -2359,7 +2414,7 @@ Obálka
 Obsah
 Pomer strán obrázka
 Tabuľka
-Skryť stĺcec
+Skryť stĺpec
 Upraviť vlastnosť...
 Upraviť vzorec...
 Vyčistiť triedenie
@@ -2372,6 +2427,9 @@ Vysoká
 Extra vysoká
 Zhrnúť...
 Zoskupiť podľa tejto vlastnosti
+Zmeniť veľkosť stĺpca...
+Obnoviť veľkosť stĺpca
+Potiahnutím zmeníte veľkosť
 Vymazať hodnoty
 Súhrn
 Nepodarilo sa analyzovať vzorec "{{ formula }}"
@@ -2515,3 +2573,24 @@ Typ upozornenia...
 {{count}} snippety
 {{count}} téma
 {{count}} témy(m)
+Zrušiť
+
+Kopírovať
+Otvoriť odkaz
+Otvoriť tento súbor
+Spustiť súbor
+Otvoriť externý odkaz?
+Tento odkaz otvorí externú aplikáciu mimo Obsidian. Pokračujte iba vtedy, ak dôverujete zdroju tohto odkazu.
+Vždy otvárať odkazy {{scheme}}://
+Upozornenie na vzdialený súbor
+Tento súbor sa nachádza na vzdialenom serveri a môže byť nebezpečný.\nNaozaj ho chcete otvoriť?
+Umiestnenie: {{location}}
+Prístup k sieťovej jednotke
+Tento obsah požaduje údaje zo sieťovej jednotky. Povolením sa môžu vaše prihlasovacie údaje alebo iné citlivé informácie sprístupniť vzdialenému hostiteľovi.
+Hostiteľ: {{host}}
+Povoliť
+Spustiť spustiteľný súbor?
+Tento odkaz odkazuje na spustiteľný súbor. Jeho spustenie môže poškodiť váš počítač.
+Súbor: {{path}}
+Trezor sa nenašiel.
+Nedá sa nájsť trezor pre URL {{url}}

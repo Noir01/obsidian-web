@@ -1,10 +1,19 @@
 Pengaturan
 
 Plugin inti
+Tampilkan di daftar plugin
 Pengaturan plugin
 Contoh: folder 1/folder 2
 Contoh: folder/catatan
+Tidak ada file yang dipilih
 Mengubah opsi ini memerlukan mulai ulang agar berlaku.
+Angka tidak valid
+Nilai harus setidaknya {{min}}
+Nilai harus paling banyak {{max}}
+File tidak ditemukan.
+Cari pengaturan...
+Pengaturan tidak ditemukan.
+{{count}} lainnya
 
 Perilaku
 Tampilan
@@ -56,6 +65,8 @@ Ukuran tab
 Jumlah spasi yang setara dengan tab.
 Kanan-ke-Kiri (RTL)
 Atur arah teks dari catatan untuk ditampilkan secara kanan-ke-kiri.
+Tampilkan diagram Mermaid dalam catatan
+Render diagram alir, diagram urutan, dan diagram lainnya dari blok kode “mermaid”.
 Ubah HTML otomatis
 Secara otomatis mengubah HTML ke Markdown saat menempelkan atau seret-dan-jatuhkan dari laman web. Gunakan Ctrl/Cmd+Shift+V untuk menempelkan tanpa pengubahan.
 key binding Vim
@@ -124,18 +135,26 @@ Nama subfolder
 Jika berkas Anda di bawah "vault/folder", dan Anda mengatur nama subfolder ke "lampiran", lampiran akan disimpan ke "vault/folder/lampiran".
 Berkas yang dikecualikan
 Berkas yang dikecualikan merupakan antara tersembunyi atau kurang terlihat di beragam tempat, seperti Peralih Cepat, saran tautan, dan Tampilan Grafik.
-Tidak ada berkas yang dikecualikan saat ini. Tambahkan di bawah.
-Berkas yang menyesuaikan saringan berikut saat ini dikecualikan:
-Saring
+Tambahkan pengecualian...
+Tidak ada pengecualian yang ditambahkan.
+{{count}} aturan
+{{count}} aturan
+Tambahkan pengecualian
+Masukkan jalur atau ekspresi reguler, mis. /daily-.*/
 Penyaring tidak dapat kosong
-Masukkan alur atau "/regex/"...
 Izinkan callback URI
 Aktifkan penggunaan x-callback-url melalui x-success atau x-error saat menangani URI Obsidian.
+URI Obsidian
+Kelola tindakan tepercaya dan konfigurasikan perilaku URI.
+Tindakan tepercaya
+Belum ada tindakan tepercaya. Tindakan URI yang disetujui akan muncul di sini.
 Tampilan
 Tema dasar
 Pilih skema warna bawaan Obsidian.
+gelap terang sistem mode malam skema warna
 Warna aksen
 Pilih warna aksen yang digunakan pada aplikasi.
+sorotan merek warna utama
 Gelap
 Terang
 Beradaptasi dengan sistem
@@ -150,8 +169,8 @@ Font teks
 Atur font untuk tampilan pengubah dan baca.
 Font monospace
 Atur font untuk tempat-tempat seperti blok kode dan frontmatter.
- Font yang diterapkan saat ini: 
- Font berikut yang saat ini diterapkan:
+
+{{count}} font
 Masukkan nama font...
 Tidak ada font kustom yang diterapkan saat ini. Tambahkan di bawah.
 Font pertama dari daftar ini yang tersedia pada sistem Anda akan diterapkan.
@@ -163,24 +182,26 @@ Tampilkan dan gunakan tema-tema luar biasa yang dibuat oleh komunitas.
 Telusuri
 Ukuran font
 Ukuran font dalam piksel yang mempengaruhi editor dan pratinjau.
+ukuran teks perbesar
 Pengaturan cepat ukuran font
 Atur ukuran font menggunakan Ctrl + gulir, atau menggunakan gestur jepit perbesar trackpad.
 Tema
 Kelola tema terpasang dan telusuri tema komunitas.
+komunitas telusuri instal unduh
 Kelola
 Tidak ada
 Menu bawaan
 Menu pada aplikasi akan menyesuaikan sistem operasi. Mereka tidak akan dipengaruhi oleh tema Anda.
-Muat ulang tema
-Tema CSS kustom termuat ulang.
 Buka folder tema
 Cuplikan CSS
+Kelola koleksi file CSS Anda untuk menyesuaikan tampilan aplikasi.
 Cuplikan CSS tidak ditemukan di folder cuplikan.
-Cuplikan CSS tersimpan di "{{path}}".
+{{count}} diaktifkan
+Cuplikan CSS memungkinkan Anda menyesuaikan tampilan Obsidian. Letakkan file CSS di “{{path}}” agar muncul di sini.
 Muat ulang cuplikan
 Buka folder cuplikan
 Cuplikan CSS termuat ulang.
-Terapkan cuplikan CSS di "{{path}}".
+Cari cuplikan...
 Tema terpasang
 Tangkapan layar tidak tersedia
 Bawaan
@@ -222,19 +243,24 @@ Perbarui semua
 Tema komunitas terkini
 Anda saat ini memiliki {{count}} tema terpasang.
 Anda saat ini memiliki {{count}} tema terpasang.
+Buka pengaturan di jendela baru
+Buka pengaturan di jendelanya sendiri alih-alih disematkan di aplikasi.
+Antarmuka
+Seluler
+Lanjutan
 Pintasan
 Cari pintasan
 Menampilkan {{count}} pintasan. 
 Menampilkan {{count}} pintasan. 
-{{count}} perintah dengan konflik.
-{{count}} perintah dengan konflik.
 Saring...
 Hapus tombol pintasan
 Tekan tombol pintasan...
 Semua
+Konflik ({{count}})
 Belum ditetapkan
 Ditetapkan
 Ditetapkan oleh saya
+Tidak ada hasil yang ditemukan.
 Pulihkan bawaan
 Kustomisasi pintasan ini
 Pintasan ini berkonflik dengan "{{command}}"
@@ -352,28 +378,34 @@ Saring plugin berdasarkan nama atau deskripsi.
 Cari plugin...
 Plugin komunitas
 Mode terbatas
-Mode terbatas sedang mati. Nyalakan untuk menonaktifkan plugin komunitas.
+Nyalakan mode terbatas untuk menggunakan aplikasi tanpa plugin komunitas.
 Nyalakan
 Periksa pembaruan plugin secara otomatis
 Periksa pembaruan plugin secara berkala.
 Plugin komunitas
-Telusuri dan pasang plugin yang dibuat oleh komunitas kami yang menakjubkan.
+Telusuri dan pasang plugin komunitas yang dibuat oleh komunitas.
 Telusuri
-Keluar Mode Terbatas
+Keluar dari mode terbatas
 Plugin komunitas, seperti halnya aplikasi lain yang Anda pasang, berpotensi menyebabkan masalah integritas dan keamanan data.
 Keamanan plugin sangat penting bagi kami. Berikut yang kami lakukan:
 Terlepas dari upaya kami, masih ada kemungkinan kecil bahwa plugin komunitas mungkin berperilaku tidak semestinya.
-Peninjauan awal kode
-Plugin menjalani peninjauan kode awal oleh tim kami sebelum merka tampil pada toko.
+Peninjauan kode
+Plugin di direktori komunitas resmi ditinjau secara otomatis setelah setiap pembaruan.
 Sumber terbuka
 Kebanyakan plugin merupakan sumber terbuka pada GitHub, sehingga Anda dapat memeriksa kode secara mandiri.
 Audit rekan
 Kami memiliki komunitas pengembang yang besar yang saling mengawasi satu sama lain.
 Mekanisme pelaporan
 Kami menindaklanjuti dan menghapus plugin yang salah setelah laporan pengguna.
-Apakah Anda ingin keluar dari Mode Terbatas untuk mengaktifkan plugin komunitas? Kami sangat merekomendasikan untuk mencadangkan data Anda sebelum melakukannya.
 Pelajari lebih lanjut mengenai keamanan plugin
-Aktifkan plugin komunitas
+Izinkan plugin komunitas
+Plugin dapat menjalankan kode arbitrer di perangkat Anda. Kami menyarankan untuk mencadangkan data Anda sebelum mengaktifkannya.
+Aktifkan ulang plugin terpasang
+Pulihkan {{count}} plugin yang sebelumnya terpasang.
+Pulihkan {{count}} plugin yang sebelumnya terpasang.
+Tampilkan info plugin
+Plugin yang diaktifkan
+Plugin ini akan diaktifkan saat keluar dari mode terbatas.
 Apakah Anda mempercayai pemilik dari vault ini?
 Anda membuka vault ini untuk pertama kalinya, dan terdapat beberapa plugin bersamanya.
 Jika Anda mendapatkan vault ini dari seseorang, harap dicatat bahwa plugin dengan sumber yang tidak diketahui mungkin akan menimbulkan risiko keamanan.
@@ -387,6 +419,9 @@ Pasang
 Aktifkan
 Matikan
 Salin tautan berbagi
+Lihat detail
+Buka halaman komunitas
+Pengaturan
 Donasi
 Tidak ada hasil.
 Tidak ada berkas terkini. Ketik untuk mencari...
@@ -426,6 +461,7 @@ Cari plugin terpasang
 Saring plugin yang terpasang dengan nama atau deskripsi.
 Cari plugin terpasang...
 Tampilkan hanya yang terpasang
+Tidak ada plugin yang terpasang.
 Donasi untuk mendukung {{name}}
 Pengembang plugin merupakan komunitas yang secara sukarela membuat sesuatu yang luar biasa. Jika Anda merasa plugin ini berguna, harap pertimbangkan untuk mendanai pengembangannya.
 100% dari kontribusi Anda akan diberikan kepada pengembang plugin; Obsidian tidak meminta potongan. Media pendanaan yang mereka pilih mungkin memerlukan biaya.
@@ -526,6 +562,9 @@ Tutup
 Gagal menyimpan berkas "{{filepath}}". {{message}}.
 Gagal memuat plugin “{{plugin}}”
 Plugin “{{plugin}}” mengalami kesalahan saat dimuat
+{{plugin}} tidak dimuat. Plugin ini tidak kompatibel dengan Obsidian v{{version}}.
+{{plugin}} tidak lagi berfungsi. Kami menyarankan untuk menghapus instalasinya.
+Tidak dapat memuat plugin {{plugin}} v{{version}}. Versi ini dilaporkan menyebabkan masalah. Silakan periksa apakah tersedia versi plugin yang lebih baru.
 Gagal membuka “{{filepath}}”
 Tidak dapat membuka lokasi “{{href}}”
 Tidak ada berkas
@@ -636,6 +675,7 @@ Tautkan dengan tab...
 Mode Sumber
 Tampilan Baca
 Tambah properti berkas
+Hapus
 Hapus berkas
 Buat berkas ini
 Buka tautan
@@ -983,6 +1023,10 @@ Jangan tanya lagi
 Saat ini ada {{count}} tautan yang menunjuk ke file ini.
 Saat ini ada {{count}} tautan yang menunjuk ke file ini.
 Hapus berkas
+Jalankan tindakan dari tautan eksternal?
+Tindakan “{{action}}” akan dijalankan. Lanjutkan hanya jika Anda memercayai sumber tautan tersebut.
+Plugin “{{source}}” akan menjalankan tindakan “{{action}}”. Lanjutkan hanya jika Anda memercayai sumber tautan tersebut.
+Jangan tanya lagi untuk “{{action}}”
 Unduh lampiran
 Tidak ada lampiran eksternal di catatan ini.
 Mengunduh {{count}} lampiran.
@@ -997,6 +1041,9 @@ Kelola
 Lihat
 Konfirmasi
 Batal
+Izinkan
+Izinkan sekali
+Selalu izinkan
 Lewati
 Unduh
 Selesai
@@ -1224,6 +1271,7 @@ Tampilkan berkas lampiran, seperti gambar, video dan PDF.
 Tampilkan semua jenis berkas
 Tampilkan semua berkas termasuk yang tidak bisa Obsidian buka. Berkas akan dibuka dengan aplikasi bawaan untuk jenis berkas itu.
 Tampilan grafik
+Grafik lokal
 Tampilkan grafik yang menunjukan ketertautan catatan-catatan Anda.
 Buka tampilan grafik
 Buka grafik lokal
@@ -1420,7 +1468,8 @@ untuk navigasi
 untuk gunakan
 untuk tutup
 Perintah tidak ditemukan.
-Ketik perintah...
+Tambahkan perintah...
+Pilih perintah...
 Perintah tersemat
 Importir format Markdown
 Konversi format Markdown dari aplikasi lain ke format Obsidian.
@@ -1507,6 +1556,8 @@ Tidak ditemukan judul.
 Gulir otomatis ke bagian saat ini
 Penghitung kata
 Tampilkan penghitung kata di bilah status.
+Tampilkan diagram Mermaid di brankas ini?
+Izinkan hanya jika Anda memercayai isi brankas ini.
 Slide
 Presentasi dari Markdown. Gunakan "---" untuk memisahkan slide.
 Mulai presentasi
@@ -1710,7 +1761,6 @@ Hapus pengguna
 Undang pengguna
 Masukkan surel mereka..
 Harap masukkan surel yang valid untuk mengundang seseorang.
-Harap aktifkan plugin inti Pubikasi di Pengaturan -> Plugin inti untuk melihat situs.
 Situs Anda
 Situs yang dibagikan dengan Anda
 Berhenti berkolaborasi pada situs ini
@@ -1914,6 +1964,10 @@ Daftar plugin komunitas aktif
 Sinkronkan plugin komunitas yang diaktifkan.
 Plugin komunitas yang terpasang
 Sinkronkan plugin komunitas yang terpasang (berkas .js, .css, dan manifest.json) dan pengaturannya.
+Izinkan plugin yang disinkronkan berjalan di perangkat ini?
+Obsidian Sync tidak dapat memverifikasi konten plugin yang disinkronkan ke perangkat ini, dan kontennya mungkin berbeda dari plugin yang diterbitkan di direktori komunitas.
+Aktifkan ini hanya jika brankas dan perangkat yang terhubung tepercaya.
+Ya, aktifkan sinkronisasi plugin
 Sync masih dimuat, silakan segarkan halaman ini nanti.
 Obsidian Sync adalah layanan sinkronisasi tambahan Obsidian dengan enkripsi ujung-ke-ujung dan riwayat versi.
 Untuk memulai sinkronisasi, masuk atau buat akun Obsidian.
@@ -2068,6 +2122,7 @@ Menghapus semua yang di atas serta penyimpanan lokal dan sesi aktif.
 Penampil web baru
 Unable to load that site.
 Please make sure you have the correct address.
+Tampilan pembaca
 Cari di web
 Data penampil web
 Hapus data penampil web
@@ -2372,6 +2427,9 @@ Tinggi
 Sangat tinggi
 Ringkas...
 Kelompokkan berdasarkan properti ini
+Ubah ukuran kolom...
+Atur ulang ukuran kolom
+Seret untuk mengubah ukuran
 Hapus nilai
 Ringkasan
 Gagal mengurai rumus "{{ formula }}"
@@ -2515,3 +2573,24 @@ Jenis callout...
 {{count}} cuplikan
 {{count}} tema
 {{count}} tema
+Batal
+
+Salin
+Buka tautan
+Buka file ini
+Jalankan file
+Buka tautan eksternal?
+Tautan ini akan membuka aplikasi eksternal di luar Obsidian. Lanjutkan hanya jika Anda memercayai sumber tautan ini.
+Selalu buka tautan {{scheme}}://
+Peringatan file jarak jauh
+File ini berada di server jarak jauh dan mungkin berbahaya.\nApakah Anda yakin ingin membukanya?
+Lokasi: {{location}}
+Akses drive jaringan
+Konten ini meminta data dari drive jaringan. Mengizinkan ini dapat mengekspos kredensial masuk Anda atau informasi sensitif lainnya ke host jarak jauh.
+
+Izinkan
+Jalankan file eksekutabel?
+Tautan ini mengarah ke file eksekutabel. Menjalankannya dapat membahayakan komputer Anda.
+
+Brankas tidak ditemukan.
+Tidak dapat menemukan brankas untuk URL {{url}}

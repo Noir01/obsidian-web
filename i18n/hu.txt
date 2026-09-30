@@ -1,10 +1,19 @@
 Beállítások
 Bővítmény
 Alap bővítmények
+Megjelenítés a bővítmények listájában
 Bővítmény beállítások
 Példa: mappa 1/mappa 2
 Példa: mappa/jegyzet
+Nincs fájl kiválasztva
 Ezen beállítás érvényesítéséhez újraindítás szükséges.
+Érvénytelen szám
+Az értéknek legalább {{min}} kell lennie
+Az érték legfeljebb {{max}} lehet
+A fájl nem található.
+Beállítások keresése...
+Nem találhatók beállítások.
+További {{count}}
 Szerkesztő
 Viselkedés
 Megjelenítés
@@ -56,6 +65,8 @@ A behúzás szélessége
 A tabulátor lenyomásakor a megjelenítéshez használt szóközök száma.
 Jobbról-balra (RTL)
 A jegyzetek szövegirányának beállítása jobbról-balra (RTL) megjelenítéshez.
+Mermaid-diagramok megjelenítése a jegyzetekben
+Folyamatábrák, szekvenciadiagramok és más diagramok megjelenítése „mermaid” kódblokkokból.
 Beillesztett HTML automatikus konvertálása Markdown-ba
 HTML automatikus átalakítása Markdown formátummá beillesztés és weboldalakról való húzás és beillesztés esetén. A konverzió nélküli beillesztéshez használja a Ctrl/Cmd+Shift+V billentyűkombinációt.
 Vim billentyűparancsok
@@ -124,18 +135,26 @@ Almappa neve
 Ha a fájl a “széf/mappa“ alatt található, és az almappa nevét “mellékletek“-re állítja, a mellékletek a “széf/mappa/mellékletek“ mappában lesznek elmentve.
 Kizárt fájlok
 A kizárt fájlok nem lesznek megjelenítve a keresőben, a Gráf nézetben és a nem hivatkozott említésekben, és kevésbé lesznek feltűnőek a hivatkozási javaslatokban.
-Jelenleg nincs fájlkizáró szűrő megadva. Alább hozzáadhatja őket.
-A következő szűrőkkel megegyező fájlok jelenleg kizárásra kerülnek:
-Szűrő
+Kizárás hozzáadása...
+Nincs hozzáadott kizárás.
+{{count}} szabály
+{{count}} szabály
+Kizárás hozzáadása
+Adj meg egy elérési utat vagy egy reguláris kifejezést, pl. /daily-.*/
 A szűrő nem lehet üres
-Elérési út vagy “/regex/“...
 URI-visszahívások engedélyezése
 Az x-callback-url engedélyezése 'x-success'-en vagy 'x-error'-on keresztül Obsidian URL-ek kezelése során.
+
+Megbízható műveletek kezelése és az URI viselkedésének beállítása.
+Megbízható műveletek
+Még nincsenek megbízható műveletek. A jóváhagyott URI-műveletek itt jelennek meg.
 Megjelenés
 Alap színséma
 Válassza ki az Obsidian alapértelmezett színsémáját.
+sötét világos rendszer éjszakai mód színséma
 Hangsúly szín
 Válassza ki az alkalmazásban használt hangsúly színt.
+kiemelés márka elsődleges szín
 Sötét
 Világos
 Rendszerhez igazítás
@@ -150,8 +169,8 @@ Szöveg betűtípusa
 Beállítja a szerkesztési és olvasási nézet betűtípusát.
 Monospace betűtípus
 Beállítja az olyan helyek, mint a kódblokkok és a metaadatok, betűtípusát.
- Jelenleg alkalmazott betűtípus: 
- Jelenleg alkalmazott betűtípusok: 
+{{count}} betűtípus
+{{count}} betűtípus
 Adja meg a betűtípus nevét...
 Jelenleg nincs alkalmazott egyedi betűtípus. Adjon hozzá egyet alább.
 Az első betűtípus, amely ebből a listából rendelkezésre áll a rendszeren, lesz alkalmazva.
@@ -163,24 +182,26 @@ Tekintse meg és használja a közösség által készített fantasztikus témá
 Böngészés
 Betűméret
 A szerkesztő és az olvasási nézet betűmérete pixelben.
+szövegméret nagyítás
 Betűméret gyors állítása
 A betűméret állítása a Ctrl + görgetéssel vagy az érintőpad többujjas nagyítás gesztusával.
 Témák
 Telepített témák kezelése, és közösségi témák böngészése.
+közösségi böngészés telepítés letöltés
 Kezelés
 Nincs
 Natív menük
 Az alkalmazásban lévő menük igazodnak az operációs rendszerhez. Ezt a témák nem befolyásolják.
-Témák újratöltése
-Újratöltött egyedi CSS témák.
 Témamappa megnyitása
 CSS kódrészletek
+Az alkalmazás megjelenésének testreszabására szolgáló CSS-fájlok gyűjteményének kezelése.
 Nem található CSS kódrészlet a kódrészletek mappában.
-A CSS kódrészletek itt tárolódnak: “{{path}}”.
+{{count}} engedélyezve
+A CSS-kódrészletekkel testreszabhatja az Obsidian megjelenését. Helyezze a CSS-fájlokat ide: “{{path}}”, hogy itt megjelenjenek.
 Kódrészletek újratöltése
 Kódrészletek mappa megnyitása
 CSS kódrészletek újratöltve.
-A(z) “{{path}}” útvonalon lévő CSS kódrészlet alkalmazása.
+Kódrészletek keresése...
 Telepített témák
 Nem érhető el képernyőkép
 Alapértelmezett
@@ -222,19 +243,24 @@ Minden frissítése
 Aktuális közösségi témák
 Jelenleg {{count}} téma van telepítve.
 Jelenleg {{count}} téma van telepítve.
+Beállítások megnyitása új ablakban
+A beállítások megnyitása saját ablakban, az alkalmazásba ágyazás helyett.
+Felület
+Mobil
+Speciális
 Gyorsbillentyűk
 Gyorsbillentyűk keresése
 {{count}} gyorsbillentyű megjelenítve. 
 {{count}} gyorsbillentyű megjelenítve. 
-{{count}} parancs ütközik.
-{{count}} parancs ütközik.
 Szűrés...
 Gyorsbillentyű törlése
 Nyomjon meg egy gyorsbillentyűt...
 Minden
+Ütközések ({{count}})
 Hozzárendelés nélküli
 Hozzárendelt
 Általam hozzárendelve
+Nincs találat.
 Alapértelmezettek visszaállítása
 Ezen parancs testreszabása
 Ezen gyorsbillentyű ütközik a következővel: “{{command}}”
@@ -352,28 +378,34 @@ Bővítmények szűrése név vagy leírás alapján.
 Bővítmények keresése...
 Közösségi bővítmények
 Korlátozott mód
-A korlátozott mód ki van kapcsolva. Kapcsolja be a közösségi bővítmények letiltásához.
+Kapcsolja be a korlátozott módot, hogy az alkalmazást közösségi bővítmények nélkül használja.
 Bekapcsolás és újratöltés
 Bővítményfrissítések automatikus keresése
 Időszakosan ellenőrizze a bővítmények frissítéseit.
 Közösségi bővítmények
-Böngésszen és telepítsen bővítményeket, amelyeket a fantasztikus közösségünk tagjai készítettek.
+Böngésszen és telepítsen közösségi bővítményeket, amelyeket a közösség készített.
 Böngészés
 Kilépés a korlátozott módból
 A közösségi bővítmények, mint bármely más telepített szoftver, potenciálisan adatintegritási és biztonsági problémákat okozhatnak.
 A bővítmények biztonsága fontos számunkra. Íme, amit teszünk:
 Erőfeszítéseink ellenére még mindig van kis esély arra, hogy egy közösségi bővítmény ne az elvárt módon viselkedjen.
-Kezdeti kódellenőrzés
-A bővítmények az áruházban való megjelenés előtt, a csapatunk által, egy kezdeti kódellenőrzésen esnek át.
+Kódellenőrzés
+A hivatalos közösségi könyvtárban szereplő bővítményeket minden frissítés után automatikusan ellenőrzik.
 Nyílt forráskód
 A legtöbb bővítmény nyílt forráskóddal érhető el a GitHub-on, így Ön is megtekintheti a kódot.
 Kölcsönös ellenőrzés
 Nagy fejlesztői közösséggel rendelkezünk, akik odafigyelnek egymásra.
 Bővítmények jelentése
 Felhasználói bejelentéseket követően utánanézünk és eltávolítjuk a hibás bővítményeket.
-Szeretne kilépni a korlátozott módból a közösségi bővítmények engedélyezéséhez? Mielőtt megtenné, erősen ajánlott adatairól biztonsági mentést készíteni.
 Tudjon meg többet a bővítménybiztonságról
 Közösségi bővítmények engedélyezése
+A bővítmények tetszőleges kódot futtathatnak az eszközödön. Javasoljuk, hogy engedélyezésük előtt készíts biztonsági mentést az adataidról.
+Telepített bővítmények újbóli engedélyezése
+{{count}} korábban telepített bővítmény visszaállítása.
+{{count}} korábban telepített bővítmény visszaállítása.
+Bővítményadatok megjelenítése
+Engedélyezett bővítmények
+Ezek a bővítmények a korlátozott módból való kilépéskor lesznek engedélyezve.
 Megbízik ezen széf szerzőjében?
 Ön először nyitja meg ezt a széfet, amely néhány bővítményt is tartalmaz.
 Ha valaki mástól kapta meg ezt a széfet, vegye figyelembe, hogy az ismeretlen eredetű bővítmények biztonsági kockázatot jelenthetnek.
@@ -387,6 +419,9 @@ Telepítés
 Engedélyezés
 Letiltás
 Megosztási link másolása
+Részletek megtekintése
+Közösségi oldal megnyitása
+Beállítások
 Adományozás
 Nincs találat.
 Nem találhatók friss fájlok. Írjon ide a kereséshez...
@@ -426,6 +461,7 @@ Telepített bővítmények keresése
 A telepített bővítmények szűrése név vagy leírás alapján.
 Telepített bővítmények keresése...
 Csak a telepítettek mutatása
+Nincs telepített bővítmény.
 Adományozás a(z) {{name}} támogatására
 A bővítményfejlesztők közösségi önkéntesek, akik szenvedéllyel készítenek lenyűgöző dolgokat. Ha hasznosnak találja ezt a bővítményt, kérjük, fontolja meg a fejlesztés támogatását.
 Hozzájárulásának 100%-a a bővítményfejlesztőhöz kerül; az Obsidian nem von le semmit. Az általuk választott finanszírozási platform díjat számíthat fel.
@@ -526,6 +562,9 @@ Kibontás
 Nem sikerült menteni a “{{filepath}}” fájlt: {{message}}. Készítsen biztonsági mentést most a fájl tartalmáról az adatvesztés megelőzése végett.
 Nem sikerült betölteni a(z) “{{plugin}}” bővítményt
 A(z) “{{plugin}}” bővítmény hibába ütközött a betöltés során
+A(z) {{plugin}} nem töltődött be. Ez a bővítmény nem kompatibilis az Obsidian v{{version}} verziójával.
+A(z) {{plugin}} már nem működik. Javasoljuk az eltávolítását.
+Nem sikerült betölteni a(z) {{plugin}} v{{version}} verzióját. A jelentések szerint ez a verzió problémákat okoz. Ellenőrizze, hogy elérhető-e a bővítmény újabb verziója.
 Nem sikerült megnyitni a következőt: “{{filepath}}”
 A hely megnyitása nem lehetséges: “{{href}}”
 Nincs fájl
@@ -636,6 +675,7 @@ Kapcsolódás lapokkal...
 Forrás mód
 Olvasási nézet
 Fájltulajdonság hozzáadása
+Törlés
 Fájl törlése
 Fájl létrehozása
 Hivatkozás megnyitása
@@ -983,6 +1023,10 @@ Ne kérdezzen rá újra
 Jelenleg {{count}} hivatkozás mutat erre a fájlra.
 Jelenleg {{count}} hivatkozás mutat erre a fájlra.
 Fájl törlése
+Művelet futtatása külső hivatkozásból?
+A(z) „{{action}}” művelet futni fog. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+A(z) „{{source}}” bővítmény futtatni fogja a(z) „{{action}}” műveletet. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+Ne kérdezzen rá újra erre: „{{action}}”
 Csatolmányok letöltése
 Ez a jegyzet nem rendelkezik külső csatolmánnyal.
 {{count}} csatolmány letöltve.
@@ -997,6 +1041,9 @@ Kezelés
 Megtekintés
 Megerősítés
 Mégse
+Engedélyezés
+Engedélyezés egyszer
+Mindig engedélyezés
 Kihagyás
 Letöltés
 Kész
@@ -1224,6 +1271,7 @@ Csatolmányfájlok, mint például képek, videók és PDF-ek megjelenítése.
 Minden fájltípus megjelenítése
 Megjeleníti az összes fájlt, beleértve azokat is, amelyeket az Obsidian nem tud megnyitni. A fájl a fájltípushoz tartozó alapértelmezett alkalmazásban fog megnyílni.
 Gráf nézet
+Helyi gráf
 Vizualizálja a jegyzetek közötti kapcsolatokat.
 Gráf nézet megnyitása
 Helyi gráf megnyitása
@@ -1420,7 +1468,8 @@ navigáláshoz
 használathoz
 elutasításhoz
 Nincsenek találatok.
-Válasszon egy parancsot...
+Parancs hozzáadása...
+Parancs kiválasztása...
 Rögzített parancsok
 Formátum-konvertáló
 Az Obsidian formátumába konvertálhatja más alkalmazások Markdown-ját.
@@ -1507,6 +1556,8 @@ Nincsenek fejlécek.
 Auto. görgetés az aktuális szakaszhoz
 Szavak száma
 Szavak számának megjelenítése az állapotsorban.
+Megjelenjenek a Mermaid-diagramok ebben a széfben?
+Csak akkor engedélyezd, ha megbízol a széf tartalmában.
 Diák
 Előadás Markdown formátumból. Használja a “---” jelet a diák elválasztásához.
 Előadás indítása
@@ -1710,7 +1761,6 @@ Felhasználó eltávolítása
 Felhasználó meghívása
 Írja ide az e-mail címüket...
 Kérjük, adjon meg érvényes e-mail címet a meghíváshoz.
-A webhelyek megtekintéséhez kérjük, engedélyezze a Publish alap bővítményt a Beállítások -> Alap bővítmények menüben.
 A webhelyei
 Az Önnel megosztott webhelyek
 Együttműködés befejezése ezen a webhelyen
@@ -1914,6 +1964,10 @@ Aktív közösségi bővítmények
 Szinkronizálja, hogy mely közösségi bővítmények vannak engedélyezve.
 Telepített közösségi bővítmények
 Szinkronizálja a telepített közösségi bővítményeket (.js, .css és manifest.json fájlok) és azok beállításait.
+Engedélyezed a szinkronizált bővítmények futtatását ezen az eszközön?
+Az Obsidian Sync nem tudja ellenőrizni az erre az eszközre szinkronizált bővítmények tartalmát, és azok eltérhetnek a közösségi könyvtárban közzétett bővítményektől.
+Csak akkor engedélyezd ezt, ha a széf és a csatlakoztatott eszközök megbízhatók.
+Igen, a bővítmény-szinkronizálás bekapcsolása
 A Sync betöltése folyamatban, kérjük, frissítse az oldalt később.
 Az Obsidian Sync az Obsidian kiegészítő szinkronizációs szolgáltatása végpontok közötti titkosítással és verziótörténettel.
 A szinkronizáláshoz kérjük, jelentkezzen be vagy hozzon létre egy új Obsidian fiókot.
@@ -2068,6 +2122,7 @@ Eltávolítja az összes fenti adatot, továbbá a lokális tárolót és az akt
 Új megjelenítő
 Az oldal betöltése sikertelen.
 Bizonyosodjon meg róla, hogy helyes a megadott cím.
+Olvasó nézet
 Keresés a weben
 A webes megjelenítő adatai
 Adatok törlése
@@ -2372,6 +2427,9 @@ Magas
 Extra magas
 Összegzés...
 Csoportosítás e tulajdonság szerint
+Oszlop átméretezése...
+Oszlopméret visszaállítása
+Húzással átméretezhető
 Értékek törlése
 Összegzés
 A(z) "{{ formula }}" képlet beolvasása sikertelen
@@ -2515,3 +2573,24 @@ Felhívás típusa...
 {{count}} kódrészlet
 {{count}} téma
 {{count}} téma
+Mégse
+
+Másolás
+Hivatkozás megnyitása
+Fájl megnyitása
+Fájl futtatása
+Megnyitod a külső hivatkozást?
+Ez a hivatkozás egy Obsidianon kívüli külső alkalmazást fog megnyitni. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+{{scheme}}:// hivatkozások mindig megnyitása
+Távoli fájlra vonatkozó figyelmeztetés
+Ez a fájl egy távoli szerveren található, és veszélyes lehet.\nBiztosan meg szeretnéd nyitni?
+Hely: {{location}}
+Hozzáférés hálózati meghajtóhoz
+Ez a tartalom adatokat kér egy hálózati meghajtóról. Ennek engedélyezése felfedheti a bejelentkezési adataidat vagy más érzékeny információkat a távoli gazdagép számára.
+Gazdagép: {{host}}
+Engedélyezés
+Futtatod a végrehajtható fájlt?
+Ez a hivatkozás egy végrehajtható fájlra mutat. A futtatása kárt tehet a számítógépedben.
+Fájl: {{path}}
+A széf nem található.
+Nem található széf ehhez az URL-hez: {{url}}

@@ -1,141 +1,160 @@
 Indstillinger
 
 Kerneplugins
+Vis i pluginlisten
 Pluginindstillinger
 Eksempel: mappe 1/mappe 2
 Eksempel: mappe/note
-Ændring af denne indstilling kræver en genstart for at fungere.
+Ingen fil valgt
+Ændring af denne indstilling kræver en genstart for at træde i kraft.
+Ugyldigt tal
+Værdi skal være mindst {{min}}
+Værdi må højst være {{max}}
+Filen blev ikke fundet.
+Søg i indstillinger...
+Ingen indstillinger fundet.
+{{count}} flere
 
 Adfærd
 Visning
 Stavekontrol
-Aktiverer stavekontrol. Fungerer i øjeblikket kun på engelsk (USA).
-Stavekontrolsprog
-Vælg de sprog, som stavekontrollen skal bruge.
+Kontrollér stavning, mens du skriver.
+Sprog til stavekontrol
+Vælg, hvilke sprog stavekontrollen skal bruge.
 Den indbyggede stavekontrol på macOS registrerer automatisk sproget, du bruger.
 Stavekontrolordbog
 Stavekontrolordbogen er tom.
-Indlejret titel
-Vis filnavn som en redigerbar titel indlejret i filindholdet.
+Titel i indholdet
+Vis filnavnet som en redigerbar titel sammen med filens indhold.
 Læsbar linjelængde
 Begræns maksimal linjelængde. Rummer mindre indhold på skærmen, men gør lange afsnit mere læsbare.
-Strikse linjeskift
-I forhåndsvisning ignoreres enkeltlinjeskift ifølge Markdown-specifikationerne. Slå dette fra for at vise enkeltlinjeskift.
+Følg Markdown-linjeskift
+Markdown ignorerer enkeltstående linjeskift i læsevisning. Slå dette fra for at vise dem.
 Egenskaber i dokument
-Vælg, hvordan egenskaber vises i editoren. Vælg "kilde" for at vise egenskaberne som YAML.
+Vælg, hvordan egenskaber vises øverst i noter. Vælg "kilde" for at vise egenskaber som rå YAML.
 Skjult
 Synlig
 Kilde
-Auto-par paranteser
-Par parenteser og anførselstegn automatisk.
-Auto-par Markdown-syntaks
-Par automatisk symboler for fed, kursiv, fremhævning, gennemstregning og kode.
-Smart listeindrykning
-Ordner indrykning og listepunkter for dig.
+Automatisk parring af parenteser
+Par automatisk parenteser og anførselstegn.
+Automatisk parring af Markdown-syntaks
+Par automatisk symboler for fed, kursiv, fremhævning, kode m.m.
+Smarte lister
+Indryk automatisk, og placer listeelementer korrekt.
 Fold overskrift
-Lader dig folde alt under en overskrift.
-Fold indrykning
-Lader dig folde en del af den samme indrykning, fx lister.
-Standardview for nye faner
-Standardviewet, som en ny Markdown fane åbnes i.
+Lader dig folde alt indhold under en overskrift sammen.
+Fold indrykninger
+Lader dig folde en del af en indrykning sammen, fx lister.
+Standardvisning for nye faner
+Den visning, som nye Markdown-faner åbnes i som standard.
 Redigering
 Læsning
-Fokuser altid på nye faner
-Når du åbner et link i en ny fane, skift til det med det samme.
-Standard redigeringstilstand
-Den standard redigeringstilstand, som et nyt panel starter med.
+Fokusér altid på nye faner
+Når du åbner et link i en ny fane, skift straks til den.
+Standardtilstand for redigering
+Den redigeringstilstand, som nye faner starter med som standard.
 Kildetilstand
 Live forhåndsvisning
-Linjenummer
-Vis linjenummer i margen.
-Indrykningshjælpelinjer
-Vis lodrette hjælpelinjer mellem punkter for visuel vejledning.
-Brug tabulatorer
-Brug tabulatorer til indrykning ved tryk på "Tab"-tasten. Slå dette fra for at bruge mellemrum.
-Tabulatorstørrelse
-Antal mellemrum, en tabulator svarer til.
-Højre-til-venstre (RTL)
-Indstiller tekstretningen for noter til at vises fra højre mod venstre.
-Auto-konverter HTML
-Konverter automatisk HTML til Markdown ved indsætning og træk-og-slip fra hjemmesider. Brug Ctrl/Cmd+Shift+V for at indsætte uden konvertering.
+Linjenumre
+Vis linjenumre i margenen.
+Indrykningslinjer
+Vis lodrette hjælpelinjer mellem listeelementer.
+Indryk med tabulatorer
+Brug tabulatorer til indrykning, når du trykker på “Tab”. Slå dette fra for at indrykke med 4 mellemrum.
+Visuel indrykningsbredde
+Antal mellemrum, et tabulatortegn vises som.
+Højre mod venstre (RTL)
+Indstiller standardtekstretningen for noter til at vises fra højre mod venstre.
+Vis Mermaid-diagrammer i noter
+Vis flow-, sekvens- og andre diagrammer fra “mermaid”-kodeblokke.
+Konverter indsat HTML til Markdown
+Konverter automatisk HTML til Markdown ved indsætning eller træk-og-slip fra websider. Brug Ctrl/Cmd+Shift+V for at indsætte HTML uden at konvertere det.
 Vim-tastaturgenveje
-Lader dig bruge Vim-tastaturgenveje i kildeeditoren.
-På mobilenheder er denne indstilling pr. enhed og synkroniseres ikke via konfigurationsfilen.
-Genopbyg boks cache
+Brug Vim-tastaturgenveje under redigering.
+På mobilenheder gælder denne indstilling pr. enhed og synkroniseres ikke via konfigurationsfilen.
+Genopbyg boksens cache
 Genopbygning af cachen kan tage fra et par sekunder til et par minutter afhængig af størrelsen på din boks.
 Genopbyg
-Bekræft, at gå ind i Vim-tilstand
-Vim-tilstand er til effektiv tekstredigering, men kan være ret ulogisk. Hvis du ikke kender Vim, kan denne indstilling få Obsidian til at se ud, som om den ikke virker mere.
-For at bekræfte, at du kender til Vim, bedes du indtaste kommandoen for at afslutte Vim uden at gemme nedenfor:
+Bekræft aktivering af Vim-tilstand
+Vim-tilstand er til effektiv tekstredigering, men kan være ret kontraintuitiv. Hvis du ikke kender Vim, kan denne indstilling få det til at se ud, som om Obsidian ikke virker mere.
+Indtast kommandoen til at afslutte Vim uden at gemme nedenfor for at bekræfte, at du kender Vim:
 Dit svar
 Indtast kommando...
 Lad mig aktivere Vim
 Kommandoen er korrekt. Vim-tilstand er nu aktiveret.
-Kommandoen er ikke korrekt. Vim-tilstand forbliver deaktiveret for at beskytte dig.
-Indtast venligst kommandoen for at aktivere Vim-tilstand
-Filer & Links
+Kommandoen er forkert. Vim-tilstand forbliver deaktiveret for at beskytte dig.
+Indtast kommandoen for at aktivere Vim-tilstand
+Filer og links
 Bekræft før filer slettes
-Undgå at komme til at slette filer ved et uheld.
+Undgå at slette filer ved en fejl.
 Papirkurv
 Slettede filer
-Hvad der sker med filer ved sletning.
+Hvad der sker med en fil ved sletning.
 Flyt til systemets papirkurv
-Flyt til Obsidians papirkurv (.trash-mappe)
+Flyt til Obsidian-papirkurven (.trash-mappen)
 Slet permanent
 Slet vedhæftninger, når filer slettes
 Fjern automatisk vedhæftninger, der er linket til den slettede fil, hvis de ikke bruges andre steder.
 Altid
 Spørg hver gang
 Aldrig
-Standardfil der åbnes
-Vælg hvilken fil der åbnes, når appen starter.
+Standardfil, der åbnes
+Vælg, hvilken fil der åbnes, når appen starter.
 Sidst åbnet
 Ny note
 Bestemt fil
 Daglig note
-Fil der åbnes
-Vælg en bestemt fil, der åbnes som standard.
-Opdater altid interne links
-Om links skal opdateres automatisk efter omdøbning af en fil eller prompt.
+Fil, der åbnes
+Vælg en bestemt fil, der skal åbnes som standard.
+Opdater automatisk interne links
+Slå dette fra for at blive spurgt, om links skal opdateres ved filomdøbning.
 Standardplacering for nye noter
-Hvor nye noter skal placeres. Plugin-indstillinger tilsidesætter dette.
+Hvor nyoprettede noter placeres.
 Boksmappe
-I Samme mappe som nuværende fil
+Samme mappe som den aktuelle fil
 I mappen angivet nedenfor
-Mappe at oprette nye noter i
-Nye noter vises i denne mappe. Plugin-indstillinger tilsidesætter dette.
+Mappe til nye noter
+Nyoprettede noter vises i denne mappe.
 Brug [[Wikilinks]]
-Auto-generér Wikilinks for [[links]] og ![[images]] i stedet for Markdown-links og -billeder. Deaktiver denne indstilling for at generere Markdown-links i stedet.
-Registrer alle filtyper
-Vis alle filtyper, selvom Obsidian ikke kan åbne dem direkte, så du kan linke til dem og se dem i Stifinder og Quick Switcher.
+Opret automatisk Wikilinks til [[links]] og ![[billeder]] i stedet for Markdown-links og -billeder. Slå dette fra for at oprette Markdown-links i stedet.
+Vis alle filtyper
+Vis alle filtyper, selvom Obsidian ikke kan åbne dem direkte, så du kan linke til dem og se dem i Stifinder og Hurtigskifter.
 
-Nyt linkformat
-Hvilke links skal indsættes ved auto-generering af interne links.
+Format for nye links
+Hvilke links der indsættes, når interne links oprettes automatisk.
 Korteste sti, når muligt
-Relativ sti til fil
-Absolut sti til boks
+Sti fra den aktuelle fil
+Sti fra boksmappen
 Standardplacering for nye vedhæftninger
-Hvor nye vedhæftede filer placeres.
-vedhæftninger
-I undermappe under nuværende mappe
+Hvor nye vedhæftninger placeres.
+Vedhæftninger
+I en undermappe under den aktuelle mappe
 Sti til vedhæftningsmappe
-Nye vedhæftede filer vises her. Det inkluderer billeder, der er oprettet via træk-og-slip eller indsætning, og lydoptagelser.
+Placer nyoprettede vedhæftede filer, fx billeder oprettet via træk-og-slip eller lydoptagelser, i denne mappe.
 Navn på undermappe
-Hvis din fil er i "boks/mappe", og du angiver undermappens navn til "vedhæftninger", gemmes vedhæftninger i "boks/mappe/vedhæftninger".
+Hvis din fil er i “boks/mappe”, og du angiver undermappens navn som “vedhæftninger”, gemmes vedhæftninger i “boks/mappe/vedhæftninger”.
 Ekskluderede filer
-Ekskluderede filer bliver enten skjult eller mindre synlige forskellige steder, fx i Quick Switcher, linkforslag og Grafvisning.
-Intet eksklusionsfilter anvendes lige nu. Tilføj et nedenfor.
-Filer, der matcher følgende filtre, er i øjeblikket ekskluderet:
-
+Ekskluderede filer skjules i Søgning, Grafvisning og Ikke-linkede omtaler og bliver mindre synlige i Hurtigskifter og linkforslag.
+Tilføj ekskludering...
+Ingen ekskluderinger tilføjet.
+{{count}} regel
+{{count}} regler
+Tilføj ekskludering
+Indtast en sti eller et regulært udtryk, fx /daily-.*/
 Filter må ikke være tomt
-Angiv sti eller "/regex/"...
-Tillad URI callbacks
-Slå brugen til af x-callback-url gennem x-success eller x-error for Obsidian URIs.
+Tillad URI-callbacks
+Slå brugen af x-callback-url via x-success eller x-error til ved håndtering af Obsidian-URI'er.
+Obsidian-URI
+Administrer betroede handlinger, og konfigurer URI-adfærd.
+Betroede handlinger
+Ingen betroede handlinger endnu. Godkendte URI-handlinger vises her.
 Udseende
-Basistema
+Grundlæggende farvetema
 Vælg Obsidians standard farvetema.
+mørk lys system nattilstand farveskema
 Accentfarve
 Vælg accentfarven, der bruges i hele appen.
+fremhævning brand primær farve
 Mørk
 Lys
 Tilpas til system
@@ -150,37 +169,39 @@ Tekstskrifttype
 Indstil skrifttype for redigerings- og læsevisninger.
 Monospace-skrifttype
 Indstil skrifttype til steder som kodeblokke og frontmatter.
- Nuværende anvendt skrifttype: 
- Følgende skrifttyper anvendes i øjeblikket:
+{{count}} skrifttype
+{{count}} skrifttyper
 Indtast skrifttypenavn...
 Ingen brugerdefineret skrifttype anvendes lige nu. Tilføj en nedenfor.
 Den første skrifttype fra denne liste, der er tilgængelig på dit system, anvendes.
 Denne skrifttype findes ikke på dit system.
 Denne skrifttype findes på dit system.
 Skrifttypenavn
-Åbn fællesskabstemaer
+Fællesskabstemaer
 Forhåndsvis og brug fantastiske temaer skabt af fællesskabet.
 Gennemse
 Skriftstørrelse
-Skriftstørrelse i pixels, der påvirker editor og forhåndsvisning.
-Hurtig justering af skriftstørrelse
-Juster skriftstørrelsen med Ctrl + Scroll eller knibe-zoom-bevægelsen på touchpad'en.
+Skriftstørrelse i pixels, der påvirker redigerings- og læsevisninger.
+tekststørrelse zoom
+Hurtigjustering af skriftstørrelse
+Juster skriftstørrelsen med Ctrl + Rul eller knibe-zoom-bevægelsen på touchpad'en.
 Temaer
-Administrer installerede temaer og gennemse fællesskabstemaer.
+Administrér installerede temaer og gennemse fællesskabstemaer.
+fællesskab gennemse installer download
 Administrer
 Ingen
-Styresystemets menuer
-Menuer i hele appen vil matche styresystemets menuer. De påvirkes ikke af dit tema.
-Genindlæs temaer
-Genindlæste brugerdefinerede CSS-temaer.
-Åbn temamappe
+Systemets menuer
+Menuer i hele appen vil matche operativsystemets menuer. De påvirkes ikke af dit tema.
+Åbn temamappen
 CSS-kodestykker
-Ingen CSS-kodestykker fundet i kodestykker-mappen.
-CSS-kodestykker er gemt i "{{path}}".
+Administrer din samling af CSS-filer til at justere applikationens udseende.
+Ingen CSS-kodestykker fundet.
+{{count}} aktiveret
+CSS-kodestykker lader dig tilpasse udseendet af Obsidian. Placer CSS-filer i “{{path}}”, så de vises her.
 Genindlæs kodestykker
-Åbn kodestykker-mappe
-Genindlæste CSS-kodestykker.
-Anvend CSS-kodestykke ved "{{path}}".
+Åbn mappe med kodestykker
+CSS-kodestykker blev genindlæst.
+Søg i kodestykker...
 Installerede temaer
 Skærmbillede utilgængeligt
 Standard
@@ -190,54 +211,59 @@ Aktiv
 Vinduesrammestil
 Bestemmer stilen for titellinjen i Obsidian-vinduer. Kræver en fuld genstart for at træde i kraft.
 Skjult (standard)
-Obsidian stil
-Styresystem stil
-Brugerdefineret applikationsikon
-Indstil et brugerdefineret ikon til applikationen
+Obsidian-stil
+Systemets stil
+Brugerdefineret appikon
+Indstil et brugerdefineret ikon til appen
 Vælg brugerdefineret ikon
-Båndmenu
-Konfigurer hvilke kommandoer, der vises i båndmenuen på navigationslinjen.
+Konfiguration af båndmenu
+Konfigurer, hvilke kommandoer der vises i båndmenuen.
 Hurtig adgang til båndelement
-Et tryk på båndelementet i navigationsmenuen aktiverer dette. Tryk og hold viser stadig menuen.
+Vælg, hvad der skal ske, når du trykker på båndknappen i navigationsmenuen. Som standard åbnes en menu med alle dine båndelementer.
 Åbn båndmenu
 Konfigurer
 Vis båndmenu
-Vis lodret menubjælke på siden af vinduet.
+Vis lodret værktøjslinje på siden af vinduet.
 Andre båndelementer
-Båndkonfiguration
-Vælg, hvilke elementer du vil have aktive i båndet. Træk og slip for at ændre rækkefølgen.
+Båndmenu
+Vælg, hvilke elementer der skal være aktive i båndmenuen. Træk og slip for at ændre rækkefølgen.
 Vis fanens titellinje
-Vis overskriften øverst på hver fane.
+Vis titellinjen øverst på hver fane.
 Flydende navigation
-Navigationsknapperne flyder over indholdet i stedet for at være forankret.
-Skydesidepaneler
+Navigationsknapperne flyder over indholdet i stedet for at være fastgjort.
+Glidende sidepaneler
 Sidepaneler glider ud ved siden af indholdet i stedet for at flyde ovenpå.
 Fuld skærm
 Skjul automatisk brugerfladeelementer under læsning.
-Fandt {{count}} tema at opdatere.
-Fandt {{count}} temaer at opdatere.
-Tjek for opdateringer
+{{count}} tema kan opdateres.
+{{count}} temaer kan opdateres.
+Søg efter opdateringer
 Se opdateringer
 Opdater alle
 Nuværende fællesskabstemaer
 Du har i øjeblikket {{count}} tema installeret.
 Du har i øjeblikket {{count}} temaer installeret.
+Åbn indstillinger i et nyt vindue
+Åbn indstillinger i et separat vindue i stedet for indlejret i appen.
+Brugerflade
+Mobil
+Avanceret
 Genvejstaster
 Søg i genvejstaster
 Viser {{count}} genvejstast. 
 Viser {{count}} genvejstaster. 
-{{count}} kommando med konflikter.
-{{count}} kommandoer med konflikter.
-Filtrer...
+Filtrér...
 Slet genvejstast
 Tryk på genvejstast...
 Alle
+Konflikter ({{count}})
 Ikke tildelt
 Tildelt
 Tildelt af mig
+Ingen resultater fundet.
 Gendan standard
 Tilpas denne kommando
-Denne genvejstast er i konflikt med "{{command}}"
+Denne genvejstast er i konflikt med “{{command}}”
 Denne genvejstast er i konflikt med {{count}} andre kommandoer
 Tomt
 Nøglering
@@ -262,44 +288,44 @@ Vælg hemmelighed
 Find hemmelighed...
 Tilføj hemmelighed...
 
-Hemmeligheder gemmes uden kryptering, fordi der ikke er nogen hemmelighedslager tilgængelig på dette system.
+Hemmeligheder gemmes uden kryptering, fordi der ikke findes et hemmelighedslager på dette system.
 Hemmeligheder er ikke krypteret
 Vis ikke igen
-Kryptering ikke tilgængelig
+Kryptering utilgængelig
 Kryptering leveres af dit operativsystems hemmelighedslager. Uden et hemmelighedslager gemmes dine hemmeligheder uden kryptering.
 På Linux omfatter understøttede hemmelighedslagre:
-Om
+Generelt
 Kommerciel licens
 Licensnøgle
 Din licensnøgle...
-Aktiver licens
-Aktiver
+Aktivér licens
+Aktivér
 Ukendt
 
 Installationsversion: {{version}}
 Læs ændringsloggen.
-For at understøtte og modtage de nyeste funktioner og sikkerhedsopdateringer kræver Obsidian en stor opdatering af installationsprogrammet. Du skal manuelt hente og geninstallere Obsidian.
-En ny version er klar til at installeres. 
+For at understøtte de nyeste funktioner og sikkerhedsrettelser kræver Obsidian en større opdatering af installationsprogrammet. Du skal hente og geninstallere Obsidian manuelt.
+En ny version er klar til installation. 
 Opdateringer er deaktiveret.
 Genstart
-Tjek for opdateringer
+Søg efter opdateringer
 Automatiske opdateringer
-Slå dette fra for at forhindre appen i at tjekke for opdateringer.
-Notificer hvis opstarten tager længere tid end forventet
-Diagnosticer problemer med Obsidian ved at vise årsager til at opstarten er langsom.
+Slå dette fra, hvis appen ikke skal søge efter opdateringer.
+Giv besked, hvis opstart tager længere tid end forventet
+Find ud af, hvad der gør appen langsom at indlæse.
 Tjek nu
 Kommandolinjegrænseflade
 Tillad interaktioner med Obsidian fra kommandolinjen.
 Konfigurer CLI til at virke i terminalen
-Registrer "obsidian" i PATH for at give adgang til kommandoen "obsidian" hvor som helst fra din terminal.
+Registrer "obsidian" i PATH, så kommandoen "obsidian" kan bruges overalt fra terminalen.
 Registrer
-Få hjælp
-Få hjælp til at bruge Obsidian.
+Hjælp
+Lær at bruge Obsidian, og få hjælp fra fællesskabet.
 Åbn
 Sprog
-Skift det viste sprog.
-Modtag insider-versioner
-Auto-opdater til insider-versioner for at afprøve nye funktioner. Bemærk, at disse versioner er helt nye og kan være mindre stabile.
+Skift visningssprog.
+Modtag tidlig adgang-versioner
+Opdater automatisk til den seneste tidlig adgang-version. Disse versioner indeholder nye funktioner, men kan være mindre stabile.
 Avanceret
 Hardwareacceleration
 Slår hardwareacceleration til, som bruger din GPU til at forbedre Obsidians ydeevne.
@@ -308,33 +334,33 @@ Tilsidesæt konfigurationsmappe
 Brug en anden konfigurationsmappe end standardmappen. Skal starte med et punktum.
 Konfigurationsplaceringen skal være et gyldigt mappenavn, der starter med et punktum.
 Licens
-Din kommercielle licensnøgle er "{{key}}".
-Registreret til "{{company}}" for {{seats}} brugere. Gyldig indtil {{expiry}}.
+Din kommercielle licensnøgle er “{{key}}”.
+Registreret til “{{company}}” for {{seats}} brugere. Gyldig indtil {{expiry}}.
 Validerer...
 Licensen er ugyldig: 
 Fjern
 Catalyst-licens
 Du har i øjeblikket {{tier}} Catalyst-licens. Tak for din støtte!
-Du har ingen Catalyst-licens i øjeblikket. Catalyst-licensen er en engangsdonation til at støtte Obsidians udvikling.
+Du har ikke en Catalyst-licens. Catalyst er en engangsdonation, der hjælper Obsidian med at forblive 100% brugerstøttet og giver dig tidlig adgang til nye funktioner.
 
-Se, hvordan du føjer dit sprog til Obsidian.
+Lær, hvordan du føjer et nyt sprog til Obsidian.
 Konto
 Din konto
-Du er nu logget ind på {{name}} ({{email}}).
-Du er ikke logget ind i øjeblikket. En konto er kun nødvendig for Obsidian Sync, Obsidian Publish og Catalyst insider-versioner.
+Du er logget ind som {{name}} ({{email}}).
+Du er ikke logget ind lige nu. En konto er kun nødvendig til Obsidian Sync, Obsidian Publish og tidlig adgang-versioner.
 Opgrader
 Kommerciel licens
-Hjælp til med at lade Obsidian være 100% brugersupporteret.
+Hjælp med at holde Obsidian 100% brugerstøttet.
 Køb
 Log ud
 Log ind
 Tilmeld dig
 E-mail
 Din e-mail...
-Dit navn
+Fuldt navn
 Adgangskode
 Din adgangskode...
-Har du glemt kodeordet?
+Glemt adgangskode?
 Log ind
 E-mail må ikke være tom.
 E-mail er ikke gyldig.
@@ -344,49 +370,58 @@ Kunne ikke oprette konto
 Har du ikke en konto? 
 Tilmeld dig nu
 6-cifret 2FA-kode
-2FA-godkendelseskoden skal være på 6 cifre.
+2FA-godkendelseskoden skal være 6 cifre.
 2FA-koden er forkert. Dobbelttjek venligst din godkendelsesapp.
 Pluginliste
 Søg i kerneplugins
-Filtrer plugins efter navn eller beskrivelse.
-Søg plugins...
-Fællesskabssplugins
-Begrænset tilstand
-Begrænset tilstand er slået fra. Slå til for at deaktivere fællesskabsplugins.
-Slå til
-Kontrollér automatisk for pluginopdateringer
-Kontrollér med jævne mellemrum for pluginopdateringer.
+Filtrér plugins efter navn eller beskrivelse.
+Søg i plugins...
 Fællesskabsplugins
-Gennemse og installer fællesskabssplugins skabt af vores fantastiske fællesskab.
+Begrænset tilstand
+Slå begrænset tilstand til for at bruge appen uden fællesskabsplugins.
+Slå til og genindlæs
+Søg automatisk efter pluginopdateringer
+Søg regelmæssigt efter pluginopdateringer.
+Fællesskabsplugins
+Gennemse og installer plugins skabt af fællesskabet.
 Gennemse
-Afslut Begrænset Tilstand
+Afslut begrænset tilstand
 Fællesskabsplugins kan, som enhver anden software du installerer, potentielt forårsage problemer med dataintegritet og sikkerhed.
 Pluginsikkerhed er vigtig for os. Sådan gør vi:
-På trods af vores indsats er der stadig en lille chance for, at et fællesskabsplugin opfører sig forkert.
-Indledende kodegennemgang
-Plugins gennemgår en indledende kodegennemgang af vores team, før de vises i butikken.
+På trods af vores indsats er der stadig en lille risiko for, at et fællesskabsplugin kan opføre sig forkert.
+Kodegennemgang
+Plugins i det officielle fællesskabskatalog gennemgås automatisk efter hver opdatering.
 
 De fleste plugins er open source på GitHub, så du selv kan undersøge koden.
-Kollegial revision
+Fællesskabsgennemgang
 Vi har et stort fællesskab af udviklere, som passer på hinanden.
 Rapporteringsmekanisme
-Vi følger op og fjerner fejlbehæftede plugins ved brugerrapportering.
-Vil du gerne afslutte Begrænset Tilstand for at aktivere fællesskabsplugins? Det er stærkt anbefalet at lave en sikkerhedskopi af dine data, før du gør det.
+Vi følger op på brugerrapporter og fjerner fejlbehæftede plugins.
 Få mere at vide om pluginsikkerhed
-Aktiver fællesskabsplugins
+Tillad fællesskabsplugins
+Plugins kan køre vilkårlig kode på din enhed. Vi anbefaler at sikkerhedskopiere dine data, før du aktiverer dem.
+Genaktivér installerede plugins
+Gendan {{count}} tidligere installeret plugin.
+Gendan {{count}} tidligere installerede plugins.
+Vis plugininfo
+Aktiverede plugins
+Disse plugins slås til, når du forlader begrænset tilstand.
 Har du tillid til skaberen af denne boks?
 Du åbner denne boks for første gang, og den indeholder nogle plugins.
-Hvis du har fået denne boks fra en anden, så bemærk, at plugins af ukendt oprindelse kan udgøre en sikkerhedsrisiko.
-Hvis du ikke har fuld tillid til skaberen af denne boks, anbefaler vi at blive i Begrænset Tilstand, så plugins i denne boks ikke kan køre.
-Stol på skaberen, og aktiver plugins
-Gennemse boks i Begrænset Tilstand
+Hvis du har fået boksen fra en anden, så bemærk, at plugins af ukendt oprindelse kan udgøre en sikkerhedsrisiko.
+Hvis du ikke har fuld tillid til skaberen af denne boks, anbefaler vi at blive i begrænset tilstand, så plugins i boksen ikke kan køre.
+Stol på skaberen, og aktivér plugins
+Gennemse boks i begrænset tilstand
 Søg i fællesskabsplugins...
 Kunne ikke indlæse fællesskabsplugins.
 Installeret
 Installer
-Aktiver
+Aktivér
 Deaktiver
 Kopiér delingslink
+Vis detaljer
+Åbn fællesskabsside
+Indstillinger
 Donér
 Ingen resultater fundet.
 Ingen nylige filer fundet. Skriv for at søge...
@@ -395,69 +430,70 @@ Kunne ikke indlæse plugin-manifest.
  (installeret i øjeblikket: {{version}})
 Af 
 
-Seneste opdatering: 
+Sidst opdateret: 
 Se den seneste opdatering
 Dette plugin understøtter ikke din enhed.
 Opdater
 Dette plugin indeholdt ikke en README-fil.
-Installerer plugin "{{name}}"...
-Kunne ikke installere plugin "{{name}}".
-Pluginet "{{name}}" blev installeret.
+Installerer plugin “{{name}}”...
+Kunne ikke installere plugin “{{name}}”.
+Plugin “{{name}}” blev installeret.
 Kunne ikke afinstallere plugin “{{id}}”.
 Kunne ikke deaktivere plugin “{{id}}”.
 Installerede plugins
 Genindlæs plugins
-Genindlæste tredjepartsplugins.
+Tredjepartsplugins blev genindlæst.
 Afinstaller
 Afinstaller plugin
-Er du sikker på, at du vil afinstallere dette plugin? Dette sletter mappen med pluginet.
+Er du sikker på, at du vil afinstallere dette plugin? Dette sletter plugin-mappen.
 Åbn plugins-mappe
-Tjek for opdateringer
+Søg efter opdateringer
 Opdater alle
 Nuværende plugins
-Kontrollerer for opdateringer...
+Søger efter opdateringer...
 Du har i øjeblikket {{count}} plugin installeret.
 Du har i øjeblikket {{count}} plugins installeret.
 Ingen pluginopdateringer fundet.
-Fandt {{count}} plugin at opdatere.
-Fandt {{count}} plugins at opdatere.
+{{count}} plugin kan opdateres.
+{{count}} plugins kan opdateres.
 Opdater til version {{version}}
 Søg i installerede plugins
-Filtrer installerede plugins efter navn eller beskrivelse.
+Filtrér installerede plugins efter navn eller beskrivelse.
 Søg i installerede plugins...
 Vis kun installerede
+Ingen plugins installeret.
 Donér for at støtte {{name}}
-Pluginudviklere er frivillige i fællesskabet, som skaber fantastiske ting ud af passion. Hvis dette plugin er nyttigt for dig, overvej venligst at bidrage til udviklingen.
-100% af dit bidrag går til pluginudvikleren; Obsidian tager ikke en andel. Finansieringsplatformen, de vælger, kan opkræve et gebyr.
+Pluginudviklere er frivillige i fællesskabet, som skaber fantastiske ting af passion. Hvis du har glæde af dette plugin, overvej venligst at bidrage til udviklingen.
+100% af dit bidrag går til pluginudvikleren; Obsidian tager ikke en andel. Finansieringsplatformen, de vælger, kan dog opkræve et gebyr.
 Tak for din generøse støtte!
 Støt dette plugin:
-Viser {{pluginCount}}:
-Mest hentet
+Viser {{pluginCount}}
+Mest downloadede
 Nyligt udgivet
 Nyligt opdateret
 Alfabetisk
 Opdateret {{time}}
-Mobil værktøjslinje
-Konfigurer Hurtig Handling på mobil
-Konfigurer, hvilken kommando der skal udløses, når du trækker ned fra toppen. Den nuværende kommando er sat til "{{kommando}}".
-Kommando er ikke konfigureret
+Værktøjslinje
+Konfigurer hurtighandling på mobil
+Vælg, hvilken kommando der skal udløses, når du trækker ned fra toppen. Den aktuelle kommando er “{{command}}”.
+Ingen handling konfigureret
 Konfigurer
-Vælg Hurtig Handling...
+Vælg hurtighandling...
 Ingen
-Administrer værktøjslinjeindstillinger
+Tilpas værktøjslinjen
 Tilføj internt link
 Tilføj indlejring
 Tilføj tag
-Slå overskrift til/fra
-Slå gennemstregning til/fra
-Slå fremhævning til/fra
-Slå kode til/fra
-Slå blokcitat til/fra
-Slå indlejret matematik til/fra
-Slå matematikblok til/fra
+Overskrift til/fra
+Gennemstregning til/fra
+Fremhævning til/fra
+Kode til/fra
+Blokcitat til/fra
+Matematik i linje til/fra
+Matematikblok til/fra
 Tilføj Markdown-link
-Slå punktliste til/fra
-Slå nummereret liste til/fra
+Punktliste til/fra
+Nummereret liste til/fra
 Indryk listeelement
 Fjern indrykning af listeelement
 Fortryd
@@ -468,13 +504,13 @@ Flyt markøren til venstre
 Flyt markøren til højre
 Gå til første linje
 Gå til sidste linje
-Slå tastatur til/fra
-Konfigurer Værktøjslinje på mobil
-Tilføjede indstillinger
-Flere værktøjslinjeindstillinger
+Tastatur til/fra
+Tilpas mobilværktøjslinjen
+Tilføjede elementer
+Flere værktøjslinjeelementer
 Indsæt vedhæftning
-Find
-Erstat
+
+Erstat...
 Afslut søgning
 Næste
 Forrige
@@ -482,15 +518,15 @@ Find alle
 Erstat
 Erstat alt
 Skriv #
-for at linke overskrift
+for at linke til en overskrift
 Skriv ^
-for at linke blokke
+for at linke til blokke
 Skriv |
 for at ændre visningstekst
-Vis tekst
+Visningstekst
 Overskrift
 Intet match fundet
-Billedstørrelse: {{size}}px bred
+Billedbredde: {{size}}px
 for at acceptere
 Ny fodnote...
 Ingen forslag...
@@ -504,7 +540,7 @@ Slet billede
 Ingen overskrift
 Overskrift {{level}}
 Eksportér til PDF
-Eksportér "{{filename}}" til PDF med nedenstående indstilling.
+Eksportér “{{filename}}” til PDF med nedenstående indstillinger.
 Sidestørrelse
 Inkluder filnavn som titel
 Landskab
@@ -516,49 +552,52 @@ Nedskaleringsprocent
 Eksportér til PDF
 Følg link
 Åbn link
-Søg tag
+Søg efter tag
 Kan ikke finde:
 Kunne ikke finde “{{subpath}}” i {{file}}
 Åbn i standardapp
-Sidebjælken er tom. Prøv at trække et panel derhen.
+Sidepanelet er tomt. Prøv at trække en fane hertil.
 Udvid
 Skjul
-Kunne ikke gemme filen "{{filepath}}". {{message}}.
+Kunne ikke gemme filen “{{filepath}}”. {{message}}. Lav en sikkerhedskopi af filens indhold nu for at undgå datatab.
 Kunne ikke indlæse plugin “{{plugin}}”
-Plugin “{{plugin}}” løb ind i en fejl under indlæsning
+Plugin “{{plugin}}” stødte på en fejl under indlæsning
+{{plugin}} blev ikke indlæst. Dette plugin er ikke kompatibelt med Obsidian v{{version}}.
+{{plugin}} fungerer ikke længere. Vi anbefaler at afinstallere det.
+Kunne ikke indlæse pluginet {{plugin}} v{{version}}. Denne version er rapporteret at forårsage problemer. Se efter en nyere version af pluginet.
 Kunne ikke åbne “{{filepath}}”
 Kan ikke åbne lokationen “{{href}}”
 Ingen fil
-"{{file}}" er blevet ændret eksternt, og ændringerne flettes automatisk.
-Håndtér bokse...
+“{{file}}” er blevet ændret eksternt. Ændringerne flettes automatisk.
+Administrer bokse...
 Hjælp
 Indstillinger
 Træk for at omarrangere
-Skiftede standardvisningstilstand til læsevisning.
-Skiftede standardvisningstilstand til editor.
-For at bruge denne funktion, geninstaller med den nyeste installationsfil fra vores hjemmeside.
-Langsom opstart er detekteret.
-Denne funktion er kun tilgængelig i desktop versionen.
+Standardvisningen blev skiftet til læsevisning.
+Standardvisningen blev skiftet til redigeringsvisning.
+For at bruge denne funktion skal du geninstallere appen med det nyeste installationsprogram fra vores websted.
+Langsom opstart registreret.
+Denne funktion er kun tilgængelig i desktop-appen.
 Gendan standardindstillinger
 Kopiér til udklipsholder
 Kopiér
 Kopieret til udklipsholderen
 {{item}} blev kopieret til udklipsholderen
 Kunne ikke kopiere til udklipsholderen
-
-Stødte på en fejl under visning af en kodeblok.
-Åbnede filen "{{path}}"
-Filen "{{name}}" blev ikke fundet.
+Filtrér...
+Der opstod en fejl under gengivelse af kodeblokken.
+Åbnede filen “{{path}}”
+Filen “{{name}}” blev ikke fundet.
 Ukendt URI-handling: {{action}}
 Slet
-Obsidian indekserer din boks... \nDette bør kun ske én gang.\nNogle funktioner er muligvis ikke tilgængelige, før dette er fuldført.
+Indekserer boks...
 Nogle funktioner er muligvis ikke tilgængelige, før dette er fuldført.
 Indeksering fuldført.
 Dette er en sandkasseboks.\nÆndringer, du foretager i denne boks, går tabt.
-Der kræves IndexedDB for denne feature, men den er deaktiveret i øjeblikket.
-Hvis du benytter iOS i Lockdown mode, så ekskluder Obsidian fra "Configure Web Browsing" indstillingerne under Lockdown Mode.
-Tryk Enter for at oprette
-Opdatering Tilgængelig
+IndexedDB er påkrævet for at bruge denne funktion, men er i øjeblikket slået fra.
+Hvis du bruger iOS i Isolationsfunktion, skal du udelukke Obsidian fra indstillingen “Konfigurer webbrowsing” i Isolationsfunktion.
+Enter for at oprette
+Opdatering tilgængelig
 Fejlfindingsinfo
 Få mere at vide
 Ikke nu
@@ -566,13 +605,13 @@ Tilføj
 Administrer
 Ny fane
 Skjul båndmenu
-Denne fane er optaget i øjeblikket. Prøv venligst igen senere.
+Denne fane er i øjeblikket optaget. Prøv igen senere.
 Formatering
 Afsnit
 Indsæt
 Tilføj link
 Tilføj eksternt link
-Boble
+
 Vandret streg
 Kodeblok
 Matematisk blok
@@ -586,34 +625,34 @@ Kursiv
 Gennemstreget
 Matematik
 Punktliste
-Tjekliste
+Opgaveliste
 Nummereret liste
 Overskrift {{level}}
-Tekst
+Brødtekst
 Ryd formatering
 Citat
 Tom
 Ingen fil er åben
-Opret ny fil
+Opret ny note
 Gå til fil
 Se seneste filer
 Luk
-Luk alle “{{id}}” faner ({{count}})
+Luk alle “{{id}}”-faner ({{count}})
 Plugin er ikke længere aktivt
-Pluginet, der oprettede dette panel ({{type}}), er forsvundet
+Det plugin, der oprettede denne fane ({{type}}), er ikke længere tilgængeligt.
 Udgivelsesnoter {{version}}
 Der er ingen udgivelsesnoter for {{version}}.
-Udgivelsesnoter kunne ikke hentes for {{version}}.
+Kunne ikke indlæse udgivelsesnoterne for {{version}}.
 Udgivet den {{date}}
-Hvad er nyt i {{version}}
-Rediger (Ctrl/Cmd+Klik for at redigere i nyt panel)
+Nyt i {{version}}
+Nuværende visning: redigering
 Nuværende visning: læsning
 Båndmenu
-Venstre sidebjælke
-Højre sidebjælke
+Venstre sidepanel
+Højre sidepanel
 Klik for at redigere
 Klik for at læse
-{{key}}+Klik for at åbne i ny fane
+{{key}}+klik for at åbne til højre
 Tryk på {{key}}+C for at kopiere kilde
 
 Erstat...
@@ -631,11 +670,12 @@ Luk andre
 Luk faner efter
 Fastgør
 Frigør
-Fjern link til fane
+Fjern link fra fane
 Link med fane...
 Kildetilstand
 Læsevisning
 Tilføj filegenskab
+Slet
 Slet fil
 Opret denne fil
 Åbn link
@@ -646,9 +686,9 @@ Kopiér
 Klip
 Indsæt
 Kopiér sti
-Kopier billede
+Kopiér billede
 som Obsidian-URL
-fra systemroden
+fra systemets rodmappe
 fra boksmappe
 Indsæt som almindelig tekst
 Slå “{{selection}}” op
@@ -657,9 +697,9 @@ Omdøb denne overskrift...
 Omdøb dette blok-ID...
 Åbn i nyt vindue
 Flyt til nyt vindue
-Åbn i browser
+Åbn eksternt link
 Gruppér faner
-Afgruppér faner
+Ophæv gruppering af faner
 Åbn linket visning
 Klik for at udvide
 Klik for at skjule
@@ -671,13 +711,13 @@ Opret lokal boks
 Vælg en eksisterende mappe med Markdown-filer.
 Opret ny boks
 Opret en ny Obsidian-boks under en mappe.
-Forbind til Obsidian Sync
+Åbn boks fra Obsidian Sync
 Opsæt en synkroniseret boks med en eksisterende ekstern boks.
-Navn på boks
-Angiv et navn til din lokale boks.
+Boksnavn
+Vælg et navn til din fede boks.
 Placering
-Angiv en placering til din nye boks.
-Din boks placeres i: 
+Vælg et sted til din nye boks.
+Din nye boks placeres i: 
 Vis boks i systemets stifinder
 Vis boks i Finder
 Omdøb boks...
@@ -700,124 +740,124 @@ Gennemse
 Forbind
 Opret
 Tilbage
-Navnet på boksen må ikke være tom.
-Boksnavnet kan ikke slutte med et punktum.
+Boksnavnet må ikke være tomt.
+Boksnavnet må ikke slutte med et punktum.
 Vælg venligst en gyldig mappe.
 Kunne ikke oprette boks.
-Kunne ikke oprette boks i den givne placering. Dobbelttjek venligst placering og tilladelse.
-Kunne ikke åbne boksen.
+Kunne ikke oprette boksen på den angivne placering. Dobbelttjek venligst placering og tilladelse.
+Kunne ikke åbne.
 Kan ikke fjerne en åben boks.
-Få Hjælp
+Få hjælp
 E-mail
 Din e-mail...
 Adgangskode
 Din adgangskode...
 Log ind
-Opsætning
+Konfigurer
 Opret en synkroniseret boks på denne enhed.
-Dette er en ekstern boks, du ejer.
+Dette er en ekstern boks, som du ejer.
 Dette er en ekstern boks, som deles med dig.
 Dine tanker er dine.
 synkroniseret
 ikke synkroniseret
 Ingen
 Anbefalet
-Obsidian gemmer noter på din enhed, så du kan tilgå den hurtigt og privat, endda offline.\nDine data er gemt i en sikker lokal mappe kaldet en **boks**.
+Obsidian gemmer noter på din enhed, så du har hurtig og privat adgang til dem – også offline.\nDine data gemmes i en sikker lokal mappe kaldet en **boks**.
 Opret en boks
-Benyt min eksisterende boks
-For at tilgå dine noter på andre enheder skal du benytte og opsætte Obsidian Sync.
-Fordi Obsidian gemmer dine noter på din enhed, skal du benytte Obsidian Sync. hvis du vi lkunne tilgå dine noter på en anden mobil, tablet eller computer.\nDu kan opsætte Sync nu, eller gøre det senere.
+Brug min eksisterende boks
+For at tilgå dine noter på andre enheder skal du konfigurere synkronisering.
+Fordi Obsidian gemmer dine noter på dine enheder, skal du konfigurere synkronisering for at få adgang til dem på en anden telefon eller computer.\nDu kan opsætte det nu eller bare begynde at skrive og gøre det senere.
 Opsæt Sync
-Spring over for nu
+Fortsæt uden Sync
 Spring over
-Vælg et navn til din boks.
+Konfigurer din nye boks.
 Opret boks
-Sync opsætning
-Opret en synkroniseret boks på din Obsidian konto, så du har adgang til dine data på andre enheder.
-Sync kryptering
-Slut-til-slut kryptering
-Tilbyder den stærkeste sikkerhed, men kræver at du gemmer dit kordord sikkert
-Standard kryptering
-Anvender en nøgle, som er administreret af Obsidian for at sikre dine data i transit til vores servere.
-Sync indstillinger
-Vil du udelukke nogle mapper eller filer, når du synkroniserer til denne enhed?
+Sync-opsætning
+Opret en synkroniseret boks på din Obsidian-konto, så du har adgang til dine data på andre enheder.
+Sync-kryptering
+End-to-end-kryptering
+Giver den stærkeste sikkerhed, men kræver, at du opbevarer din krypteringsadgangskode sikkert
+Standardkryptering
+Bruger en nøgle administreret af Obsidian til at beskytte dine data under overførsel og på vores servere.
+Sync-indstillinger
+Vil du udelukke mapper eller filer fra synkronisering til denne enhed?
 Start synkronisering
-Opret en Obsidian konto eller logind
+Opret en Obsidian-konto eller log ind
+Tilmeld dig
 Log ind
-Opret konto
-Gensend email
-Du har eksisterende bokse, som er synkroniseret
+Send e-mail igen
+Du har eksisterende Sync-bokse
 Vil du oprette en ny boks eller forbinde til en eksisterende synkroniseret boks?
-Opret ny synkroniseret boks
+Opret ny Sync-boks
 Vælg en eksisterende boks
 Log ud
-Har glemt kodeord
-Boks navn
-Boks placering
+Glemt adgangskode
+Boksnavn
+Placering af boks
 Enhedslager
 Gør det muligt for andre apps at få adgang til Obsidian-data.
 Kræver yderligere tilladelser.
 App-lager
-Dine data vil ikke være tilgængelige for andre apps.
+Andre apps kan ikke få adgang til dine data.
 Android sletter dine data, hvis du afinstallerer Obsidian.
-Din nye boks bliver placeret her: {{vaultLocation}}
+Din nye boks placeres her: {{vaultLocation}}
 
-Vælg den server region, som ligger tættest på dig, for hurtigere synkronisering.
+Vælg en serverregion tæt på dig for at synkronisere hurtigere.
 Krypteringsnøgle
-Dette kodeord kan ikke ændres senere. Hvis du glemmer dit kodeord, vil al data på en synkroniseret fjernserver være utilgængelig for altid.
-Ny boks
+Denne adgangskode kan ikke ændres senere. Hvis du glemmer den, vil alle eksterne data på Sync-serverne være utilgængelige for altid.
+Min boks
 Automatisk
 Vælg en boks
-Din konto **{{email}}** har eksisterende bokse, som du kan forbinde til.
-Log ind på din Obsidian konto
-Glemt kodeord
-Nulstil kodeord
-Vi har sendt en email til {{email}}, så du kan nulstille dit kodeord.
-Vælg hvordan du vil synkronisere dine noter
-For at benytte Obsidian på dine enheder, er du nødt til at synkronisere dine data.
-Problemfrit mellem enhver enhed og ethvert operativsystem.
-Sikret med den stærkeste slut-til-slut krypteringsstandard.
-Kræver en Obsidian konto.
+Din konto **{{email}}** har allerede bokse, du kan oprette forbindelse til.
+Log ind på din Obsidian-konto
+Glemt adgangskode
+Nulstil adgangskode
+Vi har sendt en mail til {{email}} med instruktioner til at nulstille din adgangskode.
+Vælg, hvordan dine noter skal synkroniseres
+For at bruge Obsidian på dine enheder skal du synkronisere dine data.
+Problemfrit på alle enheder og operativsystemer.
+Beskyttet med den stærkeste standard for end-to-end-kryptering.
+Kræver en Obsidian-konto.
 Kun for iOS og macOS.
-Som udgangspunk ikke krypteret.
-Kræver tredjepartsplugins eller værktøjer.
-Er muligvis ikke krypteret som standard.
-Benyt Obsidian Sync
-Benyt iCloud
-Benyt tredjepartssynkronisering
+Ikke krypteret som standard.
+Kræver tredjepartsplugins eller -værktøjer.
+Muligvis ikke krypteret som standard.
+Brug Obsidian Sync
+Brug iCloud
+Brug tredjepartssynkronisering
 Andre synkroniseringsmetoder
-Benyt supporterede synkroniseringsmetoder
+Brug understøttede synkroniseringsmetoder
 Hvor er din boks placeret?
-andre
+Andet
 Tredjepartssynkronisering
 På denne enhed
 Forbind til iCloud
-Forbind til andre synkroniseringsservices
+Forbind til anden synkroniseringstjeneste
 Forbind til Obsidian Sync
-Valg mappe
+Vælg mappe
 Andre synkroniseringsmetoder
-Obsidian supporterer officielt to synkroniseringsmetoder: **Obsidian Sync** og **iCloud**.\nMen da Obsidian giver dig fuld kontrol over dine data er der andre synkroniseringsmetoder du kan anvende.\nDisse muligheder inkluderer tredjeparts plugins eller andre værktøjer, som kræver mere avanceret opsætning.\nFor at anvende en alternativ synkroniseringsmetode, så **opret en boks** og følg instruktionerne, der følger med det valgte tredjeparts plugin eller værktøj.
-Angiv din email
-Din email er nødvendig for at kunne oprette en Obsidian konto.
-Angiv dit navn og et kodeord
+Obsidian understøtter officielt to synkroniseringsmetoder: **Obsidian Sync** og **iCloud**.\nMen fordi Obsidian giver dig kontrol over dine data, kan du også bruge andre synkroniseringsmuligheder.\nDisse muligheder omfatter tredjepartsplugins og andre værktøjer, som kan kræve mere avanceret opsætning.\nHvis du vil bruge en alternativ synkroniseringsmetode, skal du **oprette en boks** og følge instruktionerne fra det valgte plugin eller tredjepartsudbyderen.
+Indtast din e-mail
+Din e-mail er påkrævet for at oprette en Obsidian-konto.
+Indtast dit navn og en adgangskode
 Forbind til Obsidian Sync
-Du bør modtage en email indenfor kort tid på mailkonto **{{email}}** med instruktioner om, hvordan du forbinder til Obsidian Sync.
-Din iCloud boks kunne ikke findes. Du kan skyldes en af følgende grunde:
-Din boks ligger på en anden iCloud konto end den, som du for nuværende er logget ind på, på denne enhed.
-Din boks er ikke placeret direkte under Obsidian mappen på dit iCloud drev.
-iCloud er ikke understøttet
-iCloud synkronisering er kun tilgængelig på Apple enheder. Hvis din boks for nuværende synkroniseres via iCloud, kan du lære hvordan du migrerer din boks til andre synkroniseringsmetoder.
+Du modtager snart en mail på **{{email}}** med instruktioner til at oprette forbindelse til Obsidian Sync.
+Din iCloud-boks blev ikke fundet. Det kan skyldes en af følgende årsager:
+Din boks ligger på en anden iCloud-konto end den, der er logget ind på denne enhed.
+Din boks er ikke placeret direkte under Obsidian-mappen på dit iCloud-drev.
+iCloud ikke understøttet
+iCloud-synkronisering er kun tilgængelig på Apple-enheder. Hvis din boks i øjeblikket synkroniseres via iCloud, kan du lære, hvordan du flytter boksen til en anden synkroniseringstjeneste.
 Tillad filadgang
 Logger dig ind...
-Der kræves et boksnavn
-En ny bekræftelsesemail er sendt.
-Kunne ikke gensende email.
+Boksnavn påkrævet
+Ny bekræftelsesmail sendt.
+Kunne ikke sende mailen igen.
 Boksplaceringen skal være en mappe.
 Velkommen
-Dette er din nye *boks*.\n\nNotér noget, [[opret et link]], eller prøv [Importer] (https://help.obsidian.md/Plugins/Importer)!\n\nNår du er klar, så slet denne note og gør boksen til din egen.
+Dette er din nye *boks*.\n\nSkriv en note, [[opret et link]], eller prøv [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nNår du er klar, kan du slette denne note og gøre boksen til din egen.
 Indsæt link her
 Indsæt links her
-Flyt til "{{folder}}"
+Flyt til “{{folder}}”
 Stjernemarkér denne fil
 Stjernemarkér disse filer
 Åbn i denne fane
@@ -831,74 +871,74 @@ Gå frem
 Indlæser Obsidian...
 En fejl opstod under indlæsning af Obsidian.
 Genindlæs appen
-Genindlæs appen i sikker tilstand
+Genindlæs appen i begrænset tilstand
 Åbn en anden boks
 Indlæser plugins...
-Plugin “{{plugin}}” er for længe op at blive indlæst. 
+Plugin “{{plugin}}” er længe om at indlæse. 
 Indlæser boks...
 Kunne ikke indlæse boks: 
 Indlæser cache...
 Indlæser arbejdsområde...
 Importér til boks
 Føj tekst til filen:
-Vælg en fil at indsætte
-Indsæt tekst i {{filename}}
-Indsæt link i {{filename}}
-Vis fane overblik
+Vælg en fil...
+
+Indsæt link i “{{filename}}”
+Vis faneoverblik
 Importerer...
-Vellykket import
-Kunne ikke importere filen {{filename}}
+Import fuldført
+Kunne ikke importere filen “{{filename}}”
 Tryk tilbage igen for at afslutte.
 
-Nyder du Obsidian? Hjælp os ved at give den en bedømmelse.
-Bedøm Obsidian
+Kan du lide Obsidian? Hjælp os ved at bedømme appen.
+Bedøm appen
 Afvis
-Konfigurationsfiler opdateret fra iCloud, genindlæsning kræves
+Konfigurationsfiler opdateret fra iCloud; genindlæsning påkrævet
 Genindlæs
 Officiel hjælpeside
-Læs Obsidians officielle hjælpedokumentation, tilgængelig på flere sprog.
+Læs den officielle hjælpedokumentation til Obsidian, som findes på flere sprog.
 Besøg
 Discord-chat
 Discord er det bedste sted at chatte med andre erfarne Obsidian-brugere fra hele verden.
 Deltag
 Officielt forum
-Hjælp hinanden, indsend funktionsanmodninger, rapporter fejl, og deltag i dybdegående diskussioner om vidensstyring.
+Hjælp hinanden, del funktionsønsker, rapportér fejl, og deltag i dybdegående diskussioner om videnshåndtering.
 Sandkasseboks
-Prøv dig frem og eksperimentér med forskellige funktioner. Bemærk, at dine ændringer ikke gemmes.
+Afprøv og eksperimentér med forskellige funktioner. Bemærk, at dine ændringer ikke gemmes.
 Gem nuværende fil
-Hent vedhæftninger for nuværende fil
+Hent vedhæftninger til nuværende fil
 Følg link under markør
 Åbn link under markør i ny fane
 Åbn link under markør til højre
 Åbn link under markør i nyt vindue
-Fokuser på fanegruppen ovenfor
-Fokuser på fanegruppen nedenfor
-Fokuser på fanegruppen til venstre
-Fokuser på fanegruppen til højre
-Fastgør/Frigør
-Del til højre
-Del nedad
-Slå fanegrupper til/fra
-Slå læsbar linjelængde til/fra
-Slå linjenumre til/fra
+Fokusér på fanegruppen ovenfor
+Fokusér på fanegruppen nedenfor
+Fokusér på fanegruppen til venstre
+Fokusér på fanegruppen til højre
+Fastgør/frigør
+Opdel til højre
+Opdel nedad
+Stablede faner til/fra
+Læsbar linjelængde til/fra
+Linjenumre til/fra
 Naviger tilbage
 Naviger frem
-Slå lys/mørk tilstand til/fra
+Skift mellem lys og mørk tilstand
 Skift tema...
 Skift boks...
 Åbn boks...
 Administrer bokse
 Søg i nuværende fil
-Søg & erstat i nuværende fil
+Søg og erstat i nuværende fil
 Tilføj filegenskab
 Navn (A til Å)
-Navn (Å to A)
+Navn (Å til A)
 Tilføj alias
 Ryd filegenskaber
 Åbn indstillinger
 Åbn hjælp
 Skift mellem redigerings- og læsevisning
-Skift mellem forhåndsvisning og kildetilstand
+Skift mellem live forhåndsvisning og kildetilstand
 Slet nuværende fil
 Ny fane
 Nyt vindue
@@ -908,56 +948,56 @@ Luk nuværende fane
 Luk andre i fanegruppen
 Luk alle andre faner
 Luk denne fanegruppe
-Slå venstre sidebjælke til/fra
-Skift båndmenu
-Slå højre sidebjælke til/fra
+Vis/skjul venstre sidepanel
+Båndmenu til/fra
+Vis/skjul højre sidepanel
 Skift standardtilstand for nye faner
 Tilføj markør ovenfor
 Tilføj markør nedenfor
-Fokuser på editor
-Skift mellem foldningsegenskaber i nuværende fil
-Slå foldning på den aktuelle linje til/fra
+Fokusér på sidste note
+Sammenfold/udfold egenskaber i den aktuelle fil
+Sammenfold/udfold den aktuelle linje
 Sammenfold alle overskrifter og lister
 Udfold alle overskrifter og lister
-Fold mere
-Fold mindre
-Byt linje op
-Byt linje ned
+Sammenfold mere
+Udfold mere
+Flyt linje op
+Flyt linje ned
 Fjern overskrift
 Sæt som overskrift {{level}}
-Skift til fed skrift for markering
-Skift til kursiv skrift for markering
-Skift til fremhævning for markering
-Skift til kommentar for markering
+Fed til/fra
+Kursiv til/fra
+Fremhævning til/fra
+Kommentar til/fra
 Ryd formatering
-Indsæt link
+Indsæt Markdown-link
 Slå stavekontrol til/fra
 Slet afsnit
-Skift status for tjekliste
-Skift mellem punkter/afkrydsningsfelter
-Indsæt boble
+Skift status for afkrydsningsfelt
+Skift mellem listepunkt og afkrydsningsfelt
+Indsæt callout
 Indsæt kodeblok
 Indsæt matematisk blok
 Indsæt vandret streg
 Indsæt tabel
 Indsæt fodnote
-Rediger filtitel
-Kopiér filsti
-Kopiér aktuel filsti fra systemroden
-Kopiér Obsidian-URL
-Eksportér til PDF
+Omdøb fil
+Kopiér den aktuelle fils sti fra boksmappen
+Kopiér den aktuelle fils sti fra systemets rodmappe
+Kopiér Obsidian-URL til den aktuelle fil
+Eksportér til PDF...
 Genindlæs app uden at gemme
 Fortryd lukket fane
 Vis kontekstmenu under markøren
 Vis fejlfindingsinfo
 Åbn sandkasseboks
-Skift vindue til altid at være øverst
+Vindue altid øverst til/fra
 Zoom ind
 Zoom ud
 Nulstil zoom
-Skift mellem læsning og redigering
-Flyt nuværende panel til nyt vindue
-Åbn nuværende panel i nyt vindue
+Læsevisning til/fra
+Flyt nuværende fane til nyt vindue
+Åbn nuværende fane i nyt vindue
 Omdøb nuværende fil
 Gå til forrige fane
 Gå til næste fane
@@ -967,36 +1007,43 @@ Vis udgivelsesnoter
 Dette vil påvirke {{links}} i {{files}}.
 Opdaterede {{links}} i {{files}}.
 Opdater links
-Vil du opdatere interne links, der fører til denne fil?
+Vil du opdatere interne links, der linker til denne fil?
 Opdater altid
 Kun én gang
 Opdater ikke
-Er du sikker på, at du vil slette "{{filename}}"?
+Er du sikker på, at du vil slette “{{filename}}”?
 Den flyttes til systemets papirkurv.
-Den flyttes til Obsidians papirkurv, som ligger i den skjulte mappe ".trash" i din boks.
+Den flyttes til Obsidians papirkurv, som ligger i boksens skjulte “.trash”-mappe.
 Filen slettes permanent.
 Denne mappe er ikke tom.
 Hvis du fortsætter, slettes alle filer i denne mappe.
 Slet mappe
 Slet
 Spørg ikke igen
-Der er i øjeblikket {{count}} link, der peger på denne fil.
-Der er i øjeblikket {{count}} links, der peger på denne fil.
+Der er i øjeblikket {{count}} link til denne fil.
+Der er i øjeblikket {{count}} links til denne fil.
 Slet fil
+Kør handling fra eksternt link?
+Handlingen “{{action}}” skal til at køre. Fortsæt kun, hvis du har tillid til linkets kilde.
+Plugin “{{source}}” skal til at køre handlingen “{{action}}”. Fortsæt kun, hvis du har tillid til linkets kilde.
+Spørg ikke igen om “{{action}}”
 Hent vedhæftninger
 Der er ingen eksterne vedhæftninger i denne note.
-Har hentet {{count}} vedhæftning.
-Har hentet {{count}} vedhæftninger.
+{{count}} vedhæftning hentet.
+{{count}} vedhæftninger hentet.
 Opdaterede {{count}} fil.
 Opdaterede {{count}} filer.
-Fjernede ændringerne i {{count}} fil.
-Fjernede ændringerne i {{count}} filer.
+Fortrød ændringer i {{count}} fil.
+Fortrød ændringer i {{count}} filer.
 Ingen internetforbindelse
 Indlæser...
 Administrer
 Vis
 Bekræft
 Annuller
+Tillad
+Tillad én gang
+Tillad altid
 Spring over
 Hent
 Færdig
@@ -1008,8 +1055,8 @@ Vælg
 Prøv igen
 Opdater
 Fortryd
-Klargører PDF...
-Omdøb fil
+Klargør PDF...
+Notetitel
 Filnavn
 Nyt navn
 Fejl
@@ -1018,8 +1065,8 @@ Filen blev omdøbt.
 Kunne ikke flette noter: {{message}}
 Filen eller mappen “{{path}}” findes ikke.
 Overskrift kan ikke være tom
-Blok ID kan ikke være tom
-Blok ID kan kun indeholde alfanummeriske tegn eller bindestreg
+Blok-ID kan ikke være tom
+Blok-ID kan kun indeholde alfanummeriske tegn eller bindestreger
 Omdøb overskrift
 Omdøb blok-ID
 Slet filvedhæftninger?
@@ -1031,29 +1078,29 @@ Opret note
 Ny note til højre
 Ny fane
 Nyt vindue
-Åbn Hurtig...
+Åbn hurtigt...
 Åbn boks...
 Luk fane
 Luk vindue
 
 Erstat
-Boble
+
 Markdown-link
 
 Overskrift {{level}}
-Ingen overskrift
+Brødtekst
 Citat
-Eksportér PDF
+Eksportér til PDF...
 Indsæt vedhæftning...
 Kodeblok
 Matematisk blok
 Tabel
 Fodnote
-Indlejret titel
+Titel i indholdet
 Linjenumre
 Punktliste
 Nummereret liste
-Tjekliste
+Opgaveliste
 Fed
 Kode
 Kommentar
@@ -1065,8 +1112,8 @@ Kommentar
 Foldning
 Sammenfold alle
 Udfold alle
-Fold mere
-Fold mindre
+Sammenfold mere
+Udfold mere
 Kildetilstand
 Læsevisning
 Vis fejlfindingsinfo
@@ -1074,115 +1121,115 @@ Vis fejlfindingsinfo
 Flyt til nyt vindue
 Naviger tilbage
 Naviger frem
-Slå venstre sidebjælke til/fra
-Slå højre sidebjælke til/fra
+Venstre sidepanel
+Højre sidepanel
 Båndmenu
-Del til højre
-Del nedad
+Opdel til højre
+Opdel nedad
 Udgivelsesnoter
 
-Stifinder
-Se alle filerne i din boks.
-Åbn stifinder
-Vis stifinder
+Filer
+Gennemse boksens filer og mapper.
+Åbn filstifinder
+Vis filstifinder
 Opret ny note
 Opret ny mappe
 Opret ny note i nuværende fane
-opret note til højre
-Auto-vis nuværende fil
+Opret note til højre
+Vis automatisk nuværende fil
 Skjul alle
 Udvid alle
 Ny note
 Ny mappe
 Skift sorteringsrækkefølge
-Vis fil i stifinder
-Vis aktiv fil i stifinder
+Vis fil i navigationen
+Vis nuværende fil i navigationen
 Opret en kopi af den nuværende fil
-Dupliker den aktuelle fil
-Flyt fil til en anden mappe
-Ny mappe med ({{count}}) valgt element
-Ny mappe med ({{count}} valgte elementer)
+Dupliker nuværende fil
+Flyt nuværende fil til anden mappe
+Ny mappe med markering ({{count}} element)
+Ny mappe med markering ({{count}} elementer)
 Flyt fil til...
 Flyt mappe til...
 Flyt {{count}} elementer til...
-Indtast et mappenavn
+Indtast en mappe
 Ingen mapper fundet.
 for at navigere
 for at flytte
 for at oprette
 for at afvise
 Filnavn (A til Å)
-Filnavn (Å to A)
-Sidst redigeret (ny til gammel)
-Sidst redigeret (gammel til ny)
-Oprettelsestidspunkt (gammel til ny)
-Oprettelsestidspunkt (ny til gammel)
+Filnavn (Å til A)
+Sidst ændret (nyeste først)
+Sidst ændret (ældste først)
+Oprettet (ældste først)
+Oprettet (nyeste først)
 Ny note
 Ny mappe
-Omdøb
+Omdøb...
 Slet
 Opret en kopi
 Dupliker
 Filnavn må ikke indeholde nogen af følgende tegn: 
 Links fungerer ikke med filnavne, der indeholder nogen af disse tegn: 
-Der findes allerede en fil med dette navn
+Der er allerede en fil med dette navn
 Filnavn må ikke være tomt.
 Filnavn må ikke starte med punktum.
-Sidst modificeret {{time}}
+Sidst ændret {{time}}
 Oprettet {{time}}
 Unavngivet
 Unavngivet
-Vedhæftninger gemmes fremover i "{{path}}".
+Vedhæftninger gemmes fremover i “{{path}}”.
 Søg
-Søg efter nøgleord i alle noter.
+Søg efter et nøgleord i alle noter.
 Søg i alle filer
 Skjul resultater
-Match store og små bogstaver
+Skeln mellem store og små bogstaver
 Forklar søgeord
 Vis mere kontekst
 {{count}} resultat
 {{count}} resultater
 Søgeindstillinger
-Skriv for at starte søgning...
+Søg...
 Matcher tekst: 
 Matcher regex: 
 Indeholder nøjagtig tekst: 
 Større end: 
 Mindre end: 
-Matcher
-Matcher ikke
+Er sand
+Er falsk
 Er tom
 Indeholder egenskab:
 Matcher alle: 
-Matcher enhver: 
-Ekskluder: 
+Matcher mindst én af: 
+Ekskluderer: 
 Forskel på store og små bogstaver
 Ikke forskel på store og små bogstaver
 Matcher filsti: 
 Matcher filnavn: 
 Matcher filindhold: 
 Matcher opgave: 
-Matcher opgave (skal gøres): 
-Matcher opgave (færdig): 
+Matcher opgave (ikke udført): 
+Matcher opgave (udført): 
 Matcher linje: 
 Matcher blok: 
 Matcher sektion: 
 Matcher tag: 
-Ingen matcher fundet.
-... og {{count}} mere match.
-... og {{count}} flere matcher.
+Ingen matches fundet.
+... og {{count}} match mere.
+... og {{count}} matches mere.
 Kopiér søgeresultater
 Kopiér resultater
 Resultater kopieret til udklipsholderen.
 Vis sti
-Vis hele filstien i stedet for kun filnavn.
+Vis hele filstien frem for kun filnavnet.
 Linkstil
-Eventuelt kan du gøre hvert filresultat til et link.
+Gør eventuelt hvert filresultat til et link.
 Ingen
-Wiki-link
+
 Markdown-link
 Listepræfiks
-Eventuelt kan du føje en listepræfiks til hvert filresultat.
+Tilføj eventuelt et listepunkt foran hvert filresultat.
 Ingen
 Bindestreg (-)
 Stjerne (*)
@@ -1197,15 +1244,15 @@ Ryd søgehistorik
 match filens sti
 match filnavn
 søg efter tags
-søg nøgleord på samme linje
-søg nøgleord under samme overskrift
+søg efter nøgleord på samme linje
+søg efter nøgleord under samme overskrift
 match egenskab
-Søg efter "{{keyword}}"
+Søg efter “{{keyword}}”
 Søg i mappe
-Hurtig Skifter
-Spring til enhver fil uden at forlade tastaturet. Ctrl/Cmd+O for at aktivere.
+Hurtigskifter
+Spring til andre filer med tastaturet.
 Skifter
-Åbn hurtig skifter
+Åbn Hurtigskifter
 for at navigere
 for at åbne
 for at åbne i ny fane
@@ -1213,24 +1260,25 @@ for at åbne til højre
 for at oprette
 for at afvise
 for at vælge
-Ingen noter fundet. Tryk Enter for at oprette en ny.
-Indtast filnavn for at skifte til eller oprette...
-Tryk Enter for at oprette
-Ikke oprettet endnu. Vælg for at oprette
+Ingen noter fundet. Enter for at oprette en ny.
+Find eller opret en note...
+Enter for at oprette
+Ikke oprettet endnu; vælg for at oprette
 Vis kun eksisterende
-Vis links til filer, der endnu ikke er oprettet.
+Vis kun resultater fra eksisterende filer. Links til filer, der endnu ikke er oprettet, skjules.
 Vis vedhæftninger
-Vis vedhæftede filer som billeder, videoer og PDF'er.
+Vis vedhæftninger såsom billeder, videoer og PDF'er.
 Vis alle filtyper
-Vis alle filtyper, også dem Obsidian ikke kan åbne. Filen åbnes med standardappen for den pågældende filtype.
+Vis alle filer, også dem Obsidian ikke kan åbne. Filen åbnes med standardappen for filtypen.
 Grafvisning
-Se en grafoversigt over, hvilke noter der linker til hvilke.
+Lokal graf
+Visualiser relationerne mellem dine noter.
 Åbn grafvisning
 Åbn lokal graf
 Kopiér skærmbillede
 Graf over {{displayText}}
 Filtre
-Søg filer...
+Søg efter filer...
 Dybde
 Vis noder dette antal links væk
 Nabolinks
@@ -1242,19 +1290,19 @@ Vis links fra andre filer
 
 Tags er linket til filerne, der indeholder dem
 Vedhæftninger
-Vis vedhæftninger inkluderet af filer
+Vis vedhæftninger
 Kun eksisterende filer
-Når markeret, vises links til ikke-eksisterende filer ikke
+Når aktiveret, vises links til ikke-eksisterende filer ikke
 Forældreløse
 Vis filer, der ikke er linket til nogen anden fil
 Visning
 Pile
-Vis pile, når der zoomes ind
+Vis pile, når der er zoomet ind
 Tærskel for tekstudtoning
 Nodestørrelse
 Linktykkelse
 Kræfter
-Centerkraft
+Centreringskraft
 Linkkraft
 Linkafstand
 Frastødningskraft
@@ -1265,15 +1313,15 @@ Indtast forespørgsel...
 Slet gruppe
 Ny gruppe
 Klik for at ændre farve\nTræk for at omarrangere grupper
-Start grafens timelapse-animation
+Start timelapse-animation af grafen
 Start timelapse-animation
 Animer
 Tilbagelinks
-Vis links fra andre filer til den nuværende fil. Tilbagelinks kan vises i et separat vindue eller i bunden af noten.
+Vis links fra andre filer til den aktuelle fil. Tilbagelinks kan vises i en separat visning eller nederst i noten.
 Åbn tilbagelinks
-Vis tilbagelinkspanel
-Åbn tilbagelinks for nuværende fil
-Vis/skjul tilbagelinks
+Vis tilbagelinks
+Åbn tilbagelinks for nuværende note
+Vis/skjul tilbagelinks i dokument
 Tilbagelinks i dokument
 Linkede omtaler
 Ingen tilbagelinks fundet.
@@ -1283,41 +1331,41 @@ Vis søgefilter
 Tilbagelinks for {{displayText}}
 Ingen ikke-linkede omtaler fundet.
 
-Tilbagelinks i dokument
-Vis tilbagelinks i dokumentet som standard, når nye paneler åbnes.
-Udgående Links
-Vis udgående links og find ikke-linkede omtaler fra andre noter i den aktuelle note.
+Vis tilbagelinks nederst i noter
+Vis tilbagelinks i nye faner som standard.
+Udgående links
+Vis udgående links og registrer ikke-linkede omtaler af andre noter i den aktuelle note.
 Åbn udgående links
-Vis udgående links-panel
+Vis udgående links
 Åbn udgående links for nuværende fil
 Udgående links fra {{displayText}}
 
 Ingen links fundet.
 Ikke-linkede omtaler
-Link denne fil
+Link til denne fil
 Ikke oprettet endnu
-Tagspanel
+Tagsvisning
 
-Viser alle dine tags samt antallet af forekomster.
-Vis tagspanel
+Vis en liste over alle tags samt antallet af forekomster.
+Vis tags
 Ingen tags fundet.
-Tagnavn (A to Å)
-Tagnavn (Å to A)
-Frekvens (høj til lav)
-Frekvens (lav til høj)
+Tagnavn (A til Å)
+Tagnavn (Å til A)
+Hyppighed (flest først)
+Hyppighed (færrest først)
 Vis indlejrede tags
-Sammenfold alle
-Udfold alle
+Skjul alle
+Udvid alle
 Fodnotevisning
 Fodnoter
-Viser en liste af fodnoter for den nuværende note.
+Vis en liste over fodnoter for den nuværende note.
 Vis fodnoter
 Ingen fodnoter fundet.
-Egenskaber
-Vis metadata for dine filer.
+Egenskabsvisning
+Vis metadata for dine filer i sidepanelet.
 Alle egenskaber
 Filegenskaber
-Filegenskaber for  {{displayText}}
+Filegenskaber for {{displayText}}
 Vis alle egenskaber
 Vis filegenskaber
 Slet egenskab
@@ -1326,32 +1374,32 @@ Automatisk
 Automatisk ({{type}})
 Ingen egenskaber fundet.
 Ugyldige egenskaber.
-Egenskabsnavn (A to Z)
-Egenskabsnavn (Z to A)
-Frekvens (høj til lav)
-Frekvens (lav til høj)
+Egenskabsnavn (A til Å)
+Egenskabsnavn (Å til A)
+Hyppighed (flest først)
+Hyppighed (færrest først)
 Flet egenskaben “{{oldKey}}” med “{{newKey}}”?
-I tilfælde af konflikter flettes værdierne eller værdien fra “{{oldKey}}” bruges.
-Sammenfold alle
-Udfold alle
+Ved konflikter flettes værdierne, eller værdien fra “{{oldKey}}” bruges.
+Skjul alle
+Udvid alle
 Åbn filegenskaber
 Åbn daglig note
 Sideforhåndsvisning
-Forhåndsvis en note ved at holde musen over et internt link. Ctrl/Cmd + hold musen over i redigeringstilstand.
+Hold markøren over et internt link for at forhåndsvise indholdet. I redigeringstilstand skal du holde Ctrl/Cmd nede.
 “{{linktext}}” kunne ikke findes.
-"{{linktext}}" er ikke oprettet endnu. Klik for at oprette.
-Fodnoten {{id}} er ikke fundet. Klik for at oprette den.
-Editor
-Forhåndsvis
+“{{linktext}}” er ikke oprettet endnu. Klik for at oprette.
+Fodnoten {{id}} blev ikke fundet. Klik for at oprette den.
+Redigeringsvisning
+Læsevisning
 Søg, Tilbagelinks og Udgående Links
-Fande overskrift
-Kræver {{key}} for at udløse sideforhåndsvisning, når musen holdes over
+Fanetitel
+Kræv {{key}} for at aktivere sideforhåndsvisning, når markøren holdes over et link
 Bogmærker
-Bogmærk ofte brugte filer og søgninger.
+Gem bogmærker til filer, søgninger, overskrifter og grafer.
 Vis bogmærker
-Sammenfold alle
+Skjul alle
 Bogmærk den aktive fane...
-Ny bogmærkegruppe
+Ny gruppe
 Bogmærk...
 Tilføj bogmærke
 Rediger bogmærke
@@ -1384,15 +1432,15 @@ Titel
 Bogmærkegruppe
 Bogmærker
 Brugerdefineret CSS
-Læs og anvend “obsidian.css” i boks-mappen.
+Læs og anvend “obsidian.css” i boksmappen.
 Fællesskabstemaer
 Henter data om fællesskabstemaer...
-Filtrer...
+Filtrér...
 Kun mørke temaer
 Kun lyse temaer
 Brug
-Stop brugen af dette tema
-Installer og brug
+Stop med at bruge
+Installer og anvend
 Opdater
 Dette tema indeholdt ikke en README-fil.
 Fjern tema
@@ -1406,42 +1454,43 @@ Installeret
 Opdater alle
 Kunne ikke indlæse fællesskabstemaer.
 Ingen temaopdateringer fundet.
-Fandt {{count}} tema at opdatere.
-Fandt {{count}} temaer at opdatere.
-Kunne ikke installere temaet "{{name}}".
-Temaet "{{name}}" blev installeret.
-Installerer tema "{{name}}"...
-Viser {{themeCount}}:
+{{count}} tema kan opdateres.
+{{count}} temaer kan opdateres.
+Kunne ikke installere temaet “{{name}}”.
+Temaet “{{name}}” blev installeret.
+Installerer temaet “{{name}}”...
+Viser {{themeCount}}
 Opdatering tilgængelig
-Fastgjorte kommandoer
-Indtast en kommando for at aktivere den. Ingen grund til at bruge brugergrænsefladen eller huske genvejen.
-Åbn fastgjorte kommandoer
+Kommandopalet
+Brug Cmd/Ctrl+P, og begynd at skrive for at køre en kommando.
+Åbn kommandopalet
 for at navigere
 for at bruge
 for at afvise
 Ingen kommandoer fundet.
-Indtast en kommando...
+Tilføj en kommando...
+Vælg en kommando...
 Fastgjorte kommandoer
-Importør af Markdown-format
+Formatkonvertering
 Konverter Markdown fra andre apps til Obsidian-format.
-Åbn Markdown-importør
-Konverter Roam Research-tag
-Konverterer "#tag" og "#[[tag]]" til "[[tag]]".
-Konverter Roam Research-fremhævning
-Konverterer "^^fremhævet^^" til "==fremhævet==".
+Åbn formatkonvertering
+Ret Roam Research-tags
+Konverterer “#tag” og “#[[tag]]” til “[[tag]]”.
+Ret Roam Research-fremhævning
+Konverterer “^^fremhævning^^” til “==fremhævning==”.
 Konverter Roam Research-TODOs
-Konverterer "{{[[TODO]]}}" til "[ ]".
-Konverter Bear-fremhævning
-Konverterer "::fremhævning::" til "==fremhævning==".
-Konverter Zettelkasten-links
-Konverterer "[[UID]]" links til fuldt format "[[UID Filname]]".
-Zettelkasten-linkforskønner
-Retter "[[UID]]" links og forskønner dem også "[[UID File Name|File Name]]".
-Frontmatter migrering
-Migrerer frontmatter tags, aliases, og cssclasses til det strikte format som Obsidian v1.9+ kræver
-Advarsel: importøren konverterer alle filerne i din boks, ikke kun den aktuelle fil.
-Dine filer overskrives. Sikkerhedskopiér alle dine filer, før du forsøger at konvertere.
-Start Konvertering
+Konverterer “{{[[TODO]]}}” til “[ ]”.
+Ret Bear-fremhævning
+Konverterer “::fremhævning::” til “==fremhævning==”.
+Ret Zettelkasten-links
+Konverterer “[[UID]]”-links til det fulde format “[[UID File Name]]”.
+Forskøn Zettelkasten-link
+Retter “[[UID]]”-links og forskønner dem samtidig til “[[UID File Name|File Name]]”.
+Migrering af frontmatter
+Migrerer frontmatter-tags, aliasser og cssclasses til det strenge format, som kræves af Obsidian v1.9+
+Advarsel: Konverteringen ændrer alle filer i din boks, ikke kun den aktuelle fil.
+Dine filer overskrives. Sikkerhedskopiér alle dine filer, før du forsøger konvertering.
+Start konvertering
 
 Gå tilbage
 Udført
@@ -1449,20 +1498,20 @@ Behandler...
 Annullerer...
 Færdig!
 Behandlede filer
-Modificerede filer
+Ændrede filer
 Erstatninger i alt
 Fejlede
 Daglige noter
-Åbn dagens daglige note, eller opret en, hvis du ikke har en.
+Opret eller åbn dagens daglige note.
 I dag
 Åbn dagens note
 Åbn forrige daglige note
 Åbn næste daglige note
-Indsæt tekst i daglig note
+Dagens daglige note
 Indsæt link i daglig note
-Kunne ikke oprette daglig note. "{{format}}" er ikke et gyldigt format.
-Kunne ikke oprette daglig note. Mappen "{{folderOption}}" blev ikke fundet.
-Kunne ikke oprette daglig note. Skabelonfilen "{{template}}" blev ikke fundet.
+Kunne ikke oprette daglig note. “{{format}}” er ikke et gyldigt format.
+Kunne ikke oprette daglig note. Mappen “{{folderOption}}” blev ikke fundet.
+Kunne ikke oprette daglig note. Skabelonfilen “{{template}}” blev ikke fundet.
 Ingen daglig note før denne.
 Ingen daglige note efter denne.
 Datoformat
@@ -1471,64 +1520,66 @@ Brugerdefineret format
 Brugerdefineret
 Ugyldigt datoformat
 Mappen til daglige noter blev ikke fundet.
-For mere syntaks, se: 
+For mere syntaks, se 
 formatreference
-Sådan kommer det til at se ud: 
+Din nuværende syntaks ser sådan ud: 
 Ny filplacering
-Mappestien, hvor den nye daglige note oprettes.
-Skabelonens filplacering
-Filstien, der bruges som skabelon.
+Nye daglige noter placeres her.
+Placering af skabelonfil
+Vælg den fil, der skal bruges som skabelon.
 Unik noteopretter
 Opret noter med unikke tidsstempelpræfikser til arbejdsgange som zettelkasten eller slip box.
 Unik
 Opret ny unik note
 Ny unik note
-Tilføj unik internt link
+Tilføj unikt internt link
 Ny filplacering
 Mappestien, hvor den nye unikke note oprettes.
-Kunne ikke oprette unik note. Mappen "{{folderOption}}" blev ikke fundet.
-Skabelonens filplacering
+Kunne ikke oprette unik note. Mappen “{{folderOption}}” blev ikke fundet.
+Placering af skabelonfil
 Filstien, der bruges som skabelon.
 Eksempel: mappe1/note
 Unikt præfiksformat
-Kunne ikke oprette unik note. Skabelonfilen "{{template}}" blev ikke fundet.
-Kunne ikke generere en unik note med formatet "{{format}}"
+Kunne ikke oprette unik note. Skabelonfilen “{{template}}” blev ikke fundet.
+Kunne ikke generere en unik note med formatet “{{format}}”
 Tilfældig note
-Åbner en tilfældig note. Praktisk til gennemgang og opdagelse.
+Åbn en tilfældig note for genopdagelse eller gennemgang.
 Tilfældig
 Åbn tilfældig note
 Disposition
-Viser dispositionen af den aktuelle fil eller tilknyttede panel.
+Vis indholdsfortegnelsen for den aktuelle note.
 Åbn disposition
-Vis dispositionspanel
+Vis disposition
 Åbn disposition af den nuværende fil
 Disposition af {{displayText}}
 Ingen overskrifter fundet.
-Auto-scroll til nuværende sektion
+Rul automatisk til den aktuelle sektion
 Ordtælling
-Vis ordtælling i statuslinjen.
+Vis antal ord i statuslinjen.
+Vis Mermaid-diagrammer i denne boks?
+Tillad kun, hvis du har tillid til indholdet i denne boks.
 
-Præsenter fra Markdown. Brug "---" for at adskille slides.
+Opret en præsentation ved at bruge “---” til at adskille slides.
 Start præsentation
 Lydoptager
-Optag lyd, og gem som vedhæftning.
+Optag lydnoter, og gem dem som vedhæftninger.
 Start lydoptagelse
 Stop lydoptagelse
 Start/stop lydoptagelse
-Mikrofonadgang blev nægtet. Aktiver den venligst på indstillingssiden.
+Mikrofonadgang blev nægtet. Aktivér den i indstillingspanelet.
 Giv venligst mikrofontilladelse for at starte optagelsen.
 Ingen mikrofon er tilsluttet.
 Åbn i standardapp
-Tilføj knap for at åbne nuværende fil i standardappen.
+Tilføj en knap, der åbner den aktuelle fil i standardappen.
 Åbn i standardapp
 Del
-Vis i mappe
-Vis i Stifinder
+Vis i systemets stifinder
+Vis i Finder
 Skabeloner
 Indsæt skabelonindhold fra en mappe med skabelonfiler.
 Indsæt skabelon
 Indsæt dags dato
-Indsæt nuværende tidspunkt
+Indsæt aktuelt klokkeslæt
 Placering af skabelonmappe
 Filer i denne mappe vil være tilgængelige som skabeloner.
 Datoformat
@@ -1542,26 +1593,26 @@ for at indsætte skabelon
 for at afvise
 Ingen skabeloner fundet
 Kunne ikke liste skabeloner. Skabelonmappen er ugyldig.
-Kunne ikke liste skabeloner. Mappen "{{folderOption}}" blev ikke fundet.
+Kunne ikke liste skabeloner. Mappen “{{folderOption}}” blev ikke fundet.
 Kan ikke indsætte skabelon. Egenskaberne i skabelonfilen kunne ikke læses.
 Kunne ikke liste skabeloner. Ingen skabelonmappe konfigureret.
 Indtast navn på en skabelon...
 Gennemsigtigt vindue
 Slå gennemsigtighedseffekten til for at forstærke dybdefornemmelsen. Bruges bedst med mørk tilstand. Understøttes ikke på Linux.
 Skråstregskommandoer
-Aktiver evnen til at udløse skråstregskommandoer i editoren ved at skrive en skråstreg.
-Vis redigeringstilstand i statusbar
-Føjer et element til statuslinjen som viser og ændrer den aktuelle redigeringstilstand.
+Kør kommandoer i editoren med skråstregstasten.
+Vis redigeringstilstand i statuslinje
+Vis knappen til skift af redigeringstilstand i statuslinjen.
 Læsning
 Kildetilstand
 Live forhåndsvisning
 
-Udgiv dine noter gennem Obsidian Publish.
+Udgiv dine noter online som et websted, en wiki eller dokumentation.
 Udgiv ændringer...
 Udgiv nuværende fil
 Du skal have adgang til internettet for at udgive ændringer.
 Obsidian Publish er en betalt tillægstjeneste, der lader dig udgive dine noter online direkte fra Obsidian.
-For at begynde at udgive, log venligst ind eller opret en ny Obsidian-konto.
+Log ind eller opret en ny Obsidian-konto for at komme i gang med udgivelse.
 Du har endnu ikke et Obsidian Publish-abonnement.
 Køb
 Administrer sider
@@ -1571,15 +1622,15 @@ Rediger side-ID
 Slet side
 Er du sikker på, at du vil slette denne side?
 Dette sletter straks og permanent din side.
-Bekræft sletning af side "{{site}}"
+Bekræft sletning af side “{{site}}”
 Side-ID
-Din side vil være på https://publish.obsidian.md/{side id}. Du kan ændre dette senere. Kun små bogstaver, tal og bindestreger er tilladt.
+Dit websted vil være på https://publish.obsidian.md/{site id}. Du kan ændre dette senere. Kun små bogstaver, tal og bindestreger er tilladt.
 Vælg et side-ID
 Opret
 Side-ID kan kun indeholde små bogstaver, tal og bindestreger.
 Dette side-ID er allerede i brug. Prøv venligst et andet.
 Der opstod et problem ved oprettelsen af din side.
-Side-indstillinger
+Sideindstillinger
 Generelt
 Komponenter
 Udseende
@@ -1589,7 +1640,7 @@ Sidenavn
 Navnet på din udgivne side. Det vises i sidetitlen på din side.
 Navnet på din side
 Startsidefil
-Den første side, brugeren ser, når de lander på din udgivne side
+Den første side, brugeren ser, når de lander på din udgivne side.
 Vælg en udgivet fil
 
 Vælg en billedfil som dit side-logo.
@@ -1597,10 +1648,10 @@ Ethvert uploadet billede i din boks...
 Side-samarbejde
 Administrer samarbejdspartnere for denne side.
 Tilpas navigation
-Tilsidesæt rækkefølgen af navigationspunkter og skjul sider eller mapper fra visning.
+Tilsidesæt rækkefølgen af navigationspunkter, og skjul sider eller mapper.
 Visningsrækkefølge for navigationspunkter
 Skjul sider eller mapper fra navigation
-Højreklik og vælg "Skjul" for at forhindre specifikke sider i at vises i side-navigationen. Siderne vil stadig være tilgængelige via links eller ved at tilgå URL'en direkte.
+Højreklik, og vælg “Skjul” for at skjule bestemte sider fra sidens navigation. Siderne vil stadig være tilgængelige via links eller direkte adgang til URL'en.
 Vis skjulte
 Administrer
 
@@ -1611,21 +1662,21 @@ Tema
 Vælg standardfarveskema for din side.
 Tilpas til system
 Skift mellem lys/mørk
-Lad besøgende skifte mellem lys og mørk tema efter eget ønske.
+Lad besøgende skifte mellem lyst og mørkt tema efter eget ønske.
 Vis navigation
 Vis en liste over alle udgivne sider i venstre side af din udgivne side.
 Vis søgefelt
-Vis et søgefelt øverst i navigationen, der lader besøgende søge efter sider og overskrifter på din side.
+Vis et søgefelt, der lader besøgende søge efter sider, aliasser og overskrifter på din side.
 Vis grafvisning
 Vis en lille lokal graf på hver side.
 Vis indholdsfortegnelse
 Vis dispositionen af overskrifter på hver side.
-Vis backlinks
-Vis backlink-sektionen i slutningen af hver side.
-Brug glidende vinduer
-Åbn sider i nye paneler til højre. Tillader vandret scrolling gennem paneler.
-Vis hover-forhåndsvisning
-Vis sideforhåndsvisning ved musen over links.
+Vis tilbagelinks
+Vis tilbagelinks-sektionen i slutningen af hver side.
+Stablede sider
+Links åbnes ved siden af den aktuelle side i samme vindue. Rul vandret for at se de stablede sider.
+Vis forhåndsvisning ved hover
+Vis sideforhåndsvisning, når markøren holdes over links.
 Skjul sidetitel
 Skjul sidens titeloverskrift. Nyttigt ved brug af egne overskrifter i begyndelsen af hver side.
 Læsbar linjelængde
@@ -1641,12 +1692,12 @@ Tilbage
 Udgiver til
 Skift side
 Tilføj linkede
-Tilføj alle filer, der er linket af de nuværende valgte elementer
+Tilføj alle filer, der er linket af de valgte elementer
 {{count}} linket fil er blevet tilføjet.
 {{count}} linkede filer er blevet tilføjet.
 Ændr sideindstillinger
 Ingen ændringer blev registreret.
-Ændringer
+Ændret
 Uændret (vælg for at slette)
  valgt
 Vælg alle
@@ -1660,16 +1711,16 @@ Upload ændringer
 Færdig
 
 Uploader
-At udgive
-At slette
+Til udgivelse
+Til sletning
 Udgivet
 Slettet
 Mislykket
 Annulleret
 Skift
-Det kan tage op til et par minutter, før ændringerne vises på din side. Hvis du ikke ser dine seneste ændringer, prøv at rydde cachen i din browser.
+Det kan tage op til et par minutter, før ændringerne vises på din side. Hvis du ikke ser dine seneste ændringer, så prøv at rydde cachen i din browser.
 Du kan besøge din side her: 
-Noget gik galt. Tjek udviklerkonsollen for detaljer.
+Noget gik galt.
 Der opstod en netværksfejl.
 Administrer adgangskoder
 Tilføj adgangskode
@@ -1677,44 +1728,43 @@ Ny adgangskode
 Din side har i øjeblikket ingen adgangskoder. Alle kan besøge den.
 Din side er adgangskodebeskyttet. Hvis du har flere adgangskoder, kan besøgende få adgang til din side ved at indtaste en af dem.
 Adgangskode
-En hash af din adgangskode gemmes sikkert. Når adgangskoden er indstillet, kan den ikke afsløres i klartekst.
+En hash af din adgangskode gemmes sikkert. Når adgangskoden er indstillet, kan den ikke afsløres i almindelig tekst.
 Din adgangskode
 Kaldenavn (valgfrit)
-Indstil et kaldenavn for at minde dig selv om, hvad eller hvem adgangskoden er til.
+Angiv et kaldenavn for at minde dig selv om, hvad eller hvem adgangskoden er til.
 Tilføj denne adgangskode
 Unavngivet adgangskode
 Oprettet {{time}}
 Tilføjede ny adgangskode.
 Brugerdefineret domæne
-Brug dit eget domæne i stedet for https://publish.obsidian.md/{side id} URL'en.
-Forhindre søgemaskineindeksering
-Forhindre søgemaskiner i at indeksere din side.
+Brug dit eget domæne i stedet for URL'en https://publish.obsidian.md/{site id}.
+Bloker indeksering af søgemaskiner
+Forhindr søgemaskiner i at indeksere din side.
 Konfigurer
 Konfigurer brugerdefineret domæne
 Brugerdefineret URL
-Den URL, din hjemmeside ligger på.
+Indtast URL'en af din brugerdefineret side. Inkluder ikke “www”.
 Omdiriger til dit brugerdefinerede domæne
 Omdiriger besøgende på publish.obsidian.md/id til dit brugerdefinerede domæne.
 Opdater domæneindstilling
 Se venligst vores {{link}} på vores hjælpeside for mere information.
-vejledning til opsætning af brugerdefineret domæne
+vejledning til brugerdefineret domæne
 Du bruger {{site}} ud af din {{limit}}.
-Køb flere sider
+Tilføj flere sider
 Du har ikke købt nogen sider.
 Få en side
-Administrer deling for "{{name}}"
-Denne side deles i øjeblikket med følgende personer.
+Administrer deling for “{{name}}”
+Denne side deles i øjeblikket med følgende personer:
 Denne side deles i øjeblikket ikke med nogen.
 Afventer
 Fjern bruger
 Inviter bruger
 Indtast deres e-mail...
 Indtast venligst en gyldig e-mail for at invitere nogen.
-Aktiver venligst Publish-kerneplugin i Indstillinger -> Kerneplugins for at se sider.
 Dine sider
 Sider delt med dig
 Stop samarbejde på denne side
-Bekræft stop af sidesamarbejde
+Bekræft stop af side-samarbejde
 Dette fjerner denne side fra listen over sider, der er delt med dig. Denne handling kan ikke fortrydes.
 Kontakt ejeren af siden, hvis du ønsker at samarbejde om denne side igen.
 Forlad
@@ -1722,15 +1772,15 @@ Sammenlign med live-version
 Brug live-version
 Bekræft overskrivning af lokal version
 Er du sikker på, at du vil overskrive den lokale version?
-Live versionen bruges, og din lokale version kasseres. Sikkerhedskopiér venligst, hvis nødvendigt.
+Live-versionen bruges, og din lokale version kasseres. Lav sikkerhedskopier, hvis nødvendigt.
 Fortsæt
-Det lykkedes at bruge live-versionen til at overskrive din lokale version.
-Åben på live websted
+Din lokale version blev overskrevet med live-versionen.
+Åbn på live-siden
 Åbn fil
 Administrer udgivelsesfiltre
 Inkluderede mapper
 Filer i disse mapper vælges automatisk, når du gennemgår ændringer til udgivelse.
-Disse mapper er i øjeblikket inkluderet:
+ Disse mapper er i øjeblikket inkluderet:
 Ekskluderede mapper
 Filer i disse mapper vises ikke, når du gennemgår ændringer til udgivelse. Denne indstilling har prioritet over de inkluderede mapper ovenfor.
 Obsidian Publish inkluderer i øjeblikket {{folders}}.
@@ -1751,85 +1801,85 @@ Gem nuværende arbejdsområdelayout som...
 Gem
 Indlæs
 Slet layout
-Indtast venligst et navn til det nye layout.
-Layout blev gemt.
+Indtast et navn til det nye layout.
+Layout “{{name}}” blev gemt
 Ingen gemte layouts fundet.
-Modificeret {{time}}
+Ændret {{time}}
 Indtast layoutnavn...
 
 Synkroniser dine filer med Obsidian Sync.
-Se versionshistorik
-Opsæt Obsidian Sync
-Åbn versions historie
-Vis Sync historie
-Åbn aktivitets log
+Se versionshistorik for den nuværende fil
+Opsæt Sync
+Åbn versionshistorik
+Vis Sync-historik
+Åbn aktivitetslog
 Indlæs mere
-Vis forskel
+Vis ændringer
 Kopiér til udklipsholder
-Gendan denne version
+Gendan
 Denne version er allerede den seneste version.
 Version fra {{time}} blev gendannet
-Denne fil var slettet
+Denne fil blev slettet
 Slettet via {{ device }}
-Denne fil blev omdøbt fra "{{filepath}}"
+Omdøbt fra “{{from}}”
 Omdøbt fra “{{from}}” til “{{to}}”
 Flyttet fra “{{from}}”
 Flyttet fra “{{from}}” til “{{to}}”
-1 revision
-{{revisions}} revisioner
 
-Der er ingen synkroniserings historik for denne fil.
+{{count}} revisioner
+
+Ingen synkroniseringshistorik for denne fil.
 Tom
 Kan ikke hente versionshistorik
 Indstillingsfiler
 Slettede filer
 Versionshistorik
-Klik på en slettet fil for at se dens historik.
+Klik på en fil for at se dens historik.
 Opret ekstern boks
 Indtast venligst en adgangskode.
 Boksnavnet må ikke være tomt.
-Den eksterne boks "{{name}}" blev oprettet.
+Den eksterne boks “{{name}}” blev oprettet.
 Eksterne bokse synkroniserer din boks sikkert mellem enheder.
 Boksnavn
 Hjælper dig med at huske, hvad denne boks er til.
 
 Automatisk
-Vælg den serverregion tættest på dig til at gemme den eksterne boks. Dette kan ikke ændres i fremtiden.
-Min fantastiske boks
+Vælg den serverregion tættest på dig til lagring af den eksterne boks. Dette kan ikke ændres senere.
+Min fede boks
 Kryptering
-Slut-til-slut kryptering er den stærkeste kryptering, men kræver at du gemmer dit kodeord sikkert. Standard kryptering benytter en nøgle, som er håndteret af Obsidian for at beskytte dine data under flytning til vores servere og på dem.
+End-to-end-kryptering giver den stærkeste sikkerhed, men kræver, at du opbevarer din krypteringsadgangskode sikkert. Med standardkryptering bruges en nøgle administreret af Obsidian til at beskytte dine data under overførsel og på vores servere.
 Denne valgmulighed kan ikke ændres senere.
-Slut-til-slut kryptering
-Standard kryptering
+End-to-end-kryptering
+Standardkryptering
 Krypteringsadgangskode
 Denne adgangskode kan ikke ændres senere.
-Hvis du glemmer denne adgangskode, forbliver alle fjerndata ubrugelige for evigt.
+Hvis du glemmer denne adgangskode, vil alle eksterne data være utilgængelige for altid.
 Dette påvirker ikke dine lokale data.
-Fjernboksen “{{name}}” er i øjeblikket krypteret. Angiv dit kodeord for at låse den op.
+Den eksterne boks “{{name}}” er i øjeblikket krypteret. Indtast din adgangskode for at låse den op.
 Din adgangskode
-Lås din fjernboks op
+Lås din eksterne boks op
 Lås boks op
 Dine eksterne bokse
 Oprettet {{time}}
 Slet
 Omdøb
-Omdøb ekstern boks "{{name}}"
+Omdøb ekstern boks “{{name}}”
 Indtast et nyt navn til denne eksterne boks.
 Administrer deling
 Bekræft sletning af boks
-Er du sikker på, at du vil slette denne eksterne boks?
+Er du sikker på, at du vil slette den eksterne boks “{{name}}”?
 Alle data på vores server, inklusive versionshistorik, slettes. Dine lokale filer forbliver intakte.
-Denne handling er permanent og irreversibel.
-{{name}} blev slettet.
-Obsidian Sync: Fjernboksen findes ikke længere.
+Denne handling er permanent og kan ikke fortrydes.
+“{{name}}” er blevet slettet.
+Obsidian Sync: Den tilknyttede eksterne boks findes ikke længere.
 Forbind
-Afbryd
+Afbryd forbindelse
 Synkronisering: {{status}}
 Du har ingen eksterne bokse.
 Du har ikke et aktivt Obsidian Sync-abonnement.
 Besøg venligst
-Kan ikke forhåndsvise {{type}} filer.
-Opret ny ekstern boks
+Kan ikke forhåndsvise {{type}}-filer.
+Opret ny boks
 Synkroniseringslog
 Alle
 Fejl
@@ -1839,50 +1889,50 @@ Kopiér synkroniseringslog
 Synkroniseringslog blev kopieret.
 Prøv igen
 Køb
-Konfliktende filsynkroniseringstjeneste fundet
+Konfliktende filsynkroniseringstjeneste registreret
 Advarsel: Din boks ser ud til at bruge {{service}} som en tredjepartssynkroniseringstjeneste. Hvis du bruger Obsidian Sync med denne boks, kan der opstå konflikter, filbeskadigelse eller datatab.
-Hvis du bruger iCloud Drive, synkroniseres dine mapper Documents og Desktop muligvis af iCloud. Det kan skabe konflikter med Obsidian Sync.
-Fjernboks
+Hvis du bruger iCloud Drive, synkroniseres mapperne Dokumenter og Skrivebord muligvis via iCloud. Det kan skabe konflikter med Obsidian Sync.
+Ekstern boks
 Vælg
 Administrer
-Har i øjeblikket forbindelse til den eksterne boks "{{name}}".
-Har i øjeblikket ingen forbindelse til nogen ekstern boks.
+I øjeblikket tilsluttet den eksterne boks “{{name}}”.
+I øjeblikket ikke tilsluttet nogen ekstern boks.
 Synkroniseringsstatus
-Obsidian Sync er sat på pause i øjeblikket.
-Obsidian Sync kører i øjeblikket.
+Obsidian Sync er sat på pause.
+Obsidian Sync kører.
 Enhedsnavn
-Dette navn vises i synkroniseringsloggen. Lad det være tomt for at bruge standardnavnet.
+Dette navn vises i aktivitetsloggen. Lad det være tomt for at bruge standardnavnet.
 Fortsæt
 Sæt på pause
 Slettede filer
 Vis og gendan slettede filer.
-Synkroniseringsaktivitet
+Aktivitetslog
 Se seneste synkroniseringsaktivitet til fejlfinding.
 Se
 Massegendannelse
 Gendan filer
-Gendanner {{count}} fil
-Gendanner {{count}} filer
+Gendan {{count}} fil
+Gendan {{count}} filer
 Gendanner...
-`Gendannelse fuldført: {{succeeded}} lykkedes og {{failed}} mislykkedes.`
-Boksstørrelse
+Gendannelse fuldført: {{succeeded}} lykkedes og {{failed}} mislykkedes.
+Brugt lagerplads
 Du bruger {{size}} ud af {{limit}}
 Kan ikke hente din boksstørrelse.
 Henter din boksstørrelse...
 Boksstørrelse overstiger grænsen
-Størrelsen på boksen nærmer sig grænsen
-Se største filer
-Disse er de eksterne filer, der optager mest plads. Efter sletning af vedhæftninger kan du bruge oprydningsknappen til at frigøre plads i den eksterne boks.
+Boksstørrelsen nærmer sig grænsen
+Vis de største filer
+Dette er de eksterne filer, der optager mest plads. Når du har slettet vedhæftninger, brug oprydningsknappen for at frigøre plads i den eksterne boks.
 Opgrader lagerplads
-Fjern
+Ryd op
 Skjul mine ændringer
 Fjern slettede vedhæftninger permanent fra den eksterne boks for at spare plads.
 Oprydning fuldført.
-Forhindr, at enheden går i dvale
-Forhindrer at enheden går i dvale, når der stadig er filer, der skal synkroniseres.
+Forhindr dvale
+Forhindrer, at enheden går i dvale, mens der stadig er filer, der skal synkroniseres.
 Selektiv synkronisering
 Ekskluderede mapper
-Forhindrer visse mapper i at blive synkroniseret.
+Forhindr visse mapper i at blive synkroniseret.
  Disse mapper er i øjeblikket ekskluderet:
 Administrer
 Synkroniser billeder
@@ -1897,108 +1947,112 @@ Synkroniser alle andre typer
 Synkroniser ikke-understøttede filtyper.
 Synkronisering af bokskonfiguration
 Indstillingernes versionshistorik
-Se og gendan versionhistorik for indstillingsfiler.
+Vis og gendan versionhistorik for indstillingsfiler.
 Hovedindstillinger
-Aktiver for at synkronisere editorindstillinger, fil- og linkindstillinger, brugerdefinerede genvejstaster osv.
+Aktivér for at synkronisere editorindstillinger, fil- og linkindstillinger osv.
 Indstillinger for udseende
-Synkroniser indstillinger for udseende som mørk tilstand, aktivt tema og aktiverede kodestykker.
-Temaer og kodestykker
-Synkroniser hentede temaer og kodestykker. Om de er aktiveret, afhænger af den tidligere indstilling.
+Synkroniser indstillinger for udseende såsom mørk tilstand, aktivt tema og aktiverede CSS-kodestykker.
+Temaer og CSS-kodestykker
+Synkroniser downloadede temaer og kodestykker. Om de er aktiveret, afhænger af den forrige indstilling.
 Genvejstaster
 Synkroniser brugerdefinerede genvejstaster.
 Liste over aktive kerneplugins
-Synkroniser, hvilke kerneplugins er aktiveret.
-Kerneplugin-indstillinger
-Synkroniser indstilling for kerneplugin.
+Synkroniser aktiverede kerneplugins.
+Kernepluginindstillinger
+Synkroniser indstillinger for kerneplugins.
 Liste over aktive fællesskabsplugins
-Synkroniser, hvilke fællesskabsplugins er aktiveret.
+Synkroniser aktiverede fællesskabsplugins.
 Installerede fællesskabsplugins
 Synkroniser installerede fællesskabsplugins (.js, .css og manifest.json-filer) og deres indstillinger.
-Sync arbejder stadig, så genopfrisk denne side senere.
-Obsidian Sync er Obsidians ekstra synkroniseringstjeneste med end-to-end-kryptering og versionshistorik.
-For at starte synkroniseringen skal du logge ind eller oprette en ny Obsidian-konto.
+Tillad synkroniserede plugins at køre på denne enhed?
+Obsidian Sync kan ikke verificere indholdet af plugins, der synkroniseres til denne enhed. De kan afvige fra de plugins, der er udgivet i fællesskabskataloget.
+Aktivér kun dette, hvis boksen og tilsluttede enheder er betroede.
+Ja, slå pluginsynkronisering til
+Sync arbejder stadig. Genindlæs denne side senere.
+Obsidian Sync er Obsidians betalte tillægstjeneste til synkronisering med end-to-end-kryptering og versionshistorik.
+Log ind eller opret en ny Obsidian-konto for at begynde synkronisering.
 Nuværende fil
-Synkroniserings ændringer
+Synkroniseringsændringer
 I dag
 I går
 Denne uge
 Ældre
 Sidste synkronisering
 {{count}} flere
-Tilmeld
+Tilmeld dig
 Log ind
 Administrer ekskluderede mapper
-{{folders}} er i øjeblikket ekskluderet fra synkronisering.
+Obsidian Sync ekskluderer i øjeblikket {{folders}}.
 Ekskluder en mappe
 Du kan ekskludere både eksisterende mapper og mapper, der ikke er oprettet endnu.
-Fjern fra eksklusionslisten
+Fjern fra ekskludering
 Opsæt forbindelse
 Forbinder...
 Der kunne ikke oprettes forbindelse
-Kunne ikke forbinde til fjernboksen.
-Du er nu forbundet til "{{name}}".
+Kunne ikke forbinde til den eksterne boks.
+Du er nu forbundet til “{{name}}”.
 Start synkronisering
 Bekræft fletning af boks
 Din lokale boks indeholder allerede nogle noter.
-Hvis du opretter forbindelse til den eksterne boks "{{name}}", flettes noter i din lokale boks med noter fra din eksterne boks. I tilfælde af konflikter bevares den seneste version af noten.
+Hvis du opretter forbindelse til den eksterne boks “{{name}}”, flettes noterne i din lokale boks med noterne i den eksterne boks. Ved konflikter bevares den nyeste version af noten.
 Opdater venligst denne indstilling, og genstart appen på alle de enheder, hvor den skal træde i kraft.
-Denne eksterne boks deles i øjeblikket med følgende personer.
+Denne eksterne boks deles i øjeblikket med følgende personer:
 Denne eksterne boks deles i øjeblikket ikke med nogen.
 Bokse delt med dig
 Stop samarbejde om denne boks
-Bekræft at stoppe samarbejde om denne boks
+Bekræft stop af bokssamarbejde
 Dette fjerner denne boks fra listen over bokse, der deles med dig. Denne handling kan ikke fortrydes.
 Kontakt venligst ejeren af boksen, hvis du ønsker at samarbejde om denne boks igen.
 Forlad
-Dinne ikke indlæse fjernbokse.
-Du skal have et Obsidian Sync-abonnement for at oprette forbindelse til denne boks.
+Kunne ikke indlæse eksterne bokse.
+Du skal have et Obsidian Sync-abonnement for at forbinde til denne boks.
 Kontakt support
-Hvis du oplever problemer med Obsidian Sync, bedes du kontakte os, så vi kan hjælpe dig! Du kan få fat i os på support@obsidian.md.
+Hvis du oplever problemer med Obsidian Sync, kontakt os, så vi kan hjælpe dig! Du kan få fat i os på support@obsidian.md.
 Kopiér fejlfindingsinfo
-E-mail support
-Sync er ikke forbundet med en fjernboks.
-Obsidian Sync lader dig oprette op til 5 eksterne bokse. For at oprette en ny ekstern boks skal du fjerne en eksisterende.
+E-mail-support
+Sync er ikke forbundet til en ekstern boks.
+Du har oprettet det maksimale antal eksterne bokse. Opgrader din konto, eller fjern en eksisterende ekstern boks for at oprette en ny.
 Opgrader boks
-Opgrader boks kryptering
-Der er en ny krypteringsversion klar for fjernbokse.
-Migrer fjernboks
-Fjernboks konfiguration
+Opgrader bokskryptering
+En ny krypteringsversion er tilgængelig for eksterne bokse.
+Migrer ekstern boks
+Konfiguration af ekstern boks
 Migrer
-Dette vil slette din fjernboks og genskabe den med den nyeste kryptering. Lokale filer vil ikke bliver rørt, men du vil miste din historik.
-Bekræft migrering af din boks
-For at opgradere din krypteringsmetode vil al data i boksen blive genuploaded til Obsidian Sync serverne med den nye krypteringsmetode. Denne proces vil slette al data krypteret med den gamle kryptering permanent, inklusiv versionshistorikken for boksen.
-Vigtigt: vi anbefaler stærkt, at der oprettes en backup af din boks for du fortsætter for at forhindre potentiel datatab.
-Når opgraderingen er færdig, skal du forbinde dine enheder igen til den opdaterede boks.
-Migrering af din boks kan tage et stykke tid. Du bliver nødt til at lade Obsidian være aktiv på denne enhed for at få gemt alle dine noter og vedhæftninger i fjernboksen igen. Det gøres bedst på din primære enhed.
-Vil du fortsætte?
-Boksen er ved at blive migreret.
-Boks-migrering fuldført.
+Dette sletter din eksterne boks og genskaber den med den nyeste kryptering. Dine lokale filer påvirkes ikke, men din versionshistorik går tabt.
+Bekræft boksmigrering
+For at opgradere din kryptering uploades alle data i boksen igen til Obsidian Sync-serverne med den nye krypteringsmetode. Denne proces sletter permanent alle data, der er krypteret med den gamle kryptering, inklusive boksens versionshistorik.
+Vigtigt: Vi anbefaler stærkt, at du sikkerhedskopierer din boks, før du fortsætter, for at forhindre eventuelt datatab.
+Når opgraderingen er færdig, skal du forbinde alle dine enheder igen til den opdaterede eksterne boks.
+Det kan tage noget tid at migrere din boks. Du skal holde Obsidian aktiv på denne enhed for at uploade alle dine noter og vedhæftninger igen. Det anbefales at gøre dette på din primære enhed.
+Ønsker du at fortsætte?
+Boksmigrering er i gang.
+Boksmigrering fuldført.
 Konfliktløsning
 Vælg, hvordan konflikter løses, når en note ændres uafhængigt på flere enheder.
 Flet automatisk
 Opret konfliktfil
 Filgenoprettelse
-Lader dig gendanne nylige snapshots for at genoprette efter utilsigtet datatab. Snapshots gemmes kun for Markdown-filer.
-Åbn gemte snapshots
+Gendan nylige snapshots for at genoprette efter utilsigtet datatab. Snapshots gemmes kun for Markdown-filer.
+Åbn lokal historik
 Snapshot-interval
 Minimumsinterval i minutter mellem to snapshots.
-Historiklængde
-Længde i dage snapshots gemmes i.
-Øjebliksbilleder
+Opbevaringsperiode
+Antal dage snapshots gemmes i.
+
 Se og gendan gemte snapshots.
 Se
 Ryd historik
 Slet alle snapshots.
 Ryd
-Er du sikker på, at du vil slette alle snapshots? Bemærk, at kun snapshots fjernes. Ingen filer i din boks påvirkes.
-Snapshots blev slettet.
-Ingen snapshots fundet.
+Er du sikker på, at du vil slette alle snapshots? Ingen filer i din boks påvirkes.
+Lokal historik blev slettet.
+Snapshots fundet.
 Vælg en fil...
 Vælg venligst en fil til venstre for at se snapshots.
 Notekomponist
-Flet, opdel og omstrukturer noter.
+Flet to noter eller del én note i to.
 Bekræft filfletning
-Spørg, inden to filer flettes.
+Spørg, før to filer flettes.
 Tekst efter udtrækning
 Hvad der vises i stedet for den valgte tekst efter udtrækning.
 Link til ny fil
@@ -2014,83 +2068,84 @@ for at flette
 for at oprette ny
 for at flette til toppen
 for at afvise
-Vælg filen at flette ind i...
+Vælg fil at flette ind i...
 Flet fil
-Er du sikker på, at du vil flette "{{file}}" til "{{destination}}"?  "{{file}}" slettes.
+Er du sikker på, at du vil flette “{{file}}” ind i “{{destination}}”? “{{file}}” slettes.
 Flet
 Udtræk nuværende markering...
 Udtræk denne overskrift...
 for at flytte til bunden
 for at flytte til toppen
-Kunne ikke hente skabelonfilen: "{{template}}" blev ikke fundet.
+Kunne ikke hente skabelonfilen: “{{template}}” blev ikke fundet.
 Kunne ikke finde overskrift
 Webfremviser
-Web historik
+Webhistorik
 Åbn eksterne links til websider i Obsidian.
 Åbn webfremviser
 Vis historik
-Skift læsningstilstand
-Kopier URL
+Læsningstilstand til/fra
+Kopiér URL
 Fjern fra historik
 Ryd historik
 Åbn link
 Åbn link i ny fane
 Åbn link til højre
 Åbn link i nyt vindue
-Kopier link i standardbrowser
-Åben link i webfremviser
-Kopier link adresse
+Åbn link i standardbrowser
+Åbn link i webfremviser
+Kopiér linkadresse
 Bogmærk link
 Søg efter “{{query}}”
 Udtræk markering til ny note
-Kopier
+Kopiér
 Klip
 Indsæt
 Slet
-Vælgt alt
+Vælg alt
 Gem til boks
 Gem billede til boks
-Kopier billede link
+Kopiér billedlink
 Tilbage
 Frem
 Genindlæs
 Bogmærk side
 Åbn i standardbrowser
-Sæt fokus på adresselinjen
+Fokusér på adresselinjen
 Søg på nettet
 Ryd data
 
 Kan logge dig ud af websteder.
 Cachelagrede data
 Historik
-Al webviser data
-Fjerner alt foroven såvel som alt lokalt og alle aktive sessioner.
+Alle data fra webfremviseren
+Fjerner alt det ovenstående samt lokalt gemte data og aktive sessioner.
 Ny webfremviser
-Kunne ikke indlæse dette websted.
-Sørg på at have den korrekte adresse.
+Kunne ikke indlæse websted.
+Kontrollér, at adressen er korrekt.
+Læsevisning
 Søg på nettet
-Webfremviser data
-Ryd webfremviser data
+Webfremviserdata
+Ryd webfremviserdata
 Åbn eksterne links
-Åbn links med Obsidian i stedet for med systemets standard.
+Åbn links i Obsidian frem for systemets standard.
 Hjemmeside
-Siden som skal åbnes, når en webfremviser åbnes
-Gemte sier mappe
-Websteder gemt som markdown vil blive placeret her.
+Den side, der vises, når en webfremviser åbnes
+Mappe til gemte sider
+Websteder gemt som Markdown placeres her.
 Søgemaskine
 Den anvendte søgemaskine, når der søges fra adresselinjen.
 Brugerdefineret søgemaskine
 Brug %s i stedet for forespørgslen.
 Brugerdefineret
-Aktiver annonceblokker
-Hvis aktiveret vil nedenstående filerliste blive anvendt for alle webfremviser faner.
-Regler for annonceblokker
-En annonceblokker URL per linje. Delt af alle bokse.
+Aktivér annonceblokering
+Hvis aktiveret, anvendes filterlisterne nedenfor på alle webfremviserfaner.
+Regler for annonceblokering
+Én URL til en annonceblokeringsliste pr. linje. Delt mellem alle bokse.
 Opdateringsfrekvens for annonceblokering
-Antal dage mellem hver opdatering af filerlister. 0 indikerer at den er nulstillet. Delt mellem alle bokse.
+Antal dage mellem opdatering af filterlister. 0 betyder deaktiveret. Delt mellem alle bokse.
 Ryd webfremviserdata
-Uventet fejl under udpakning af indhold.
-Kunne ikke finde noget indhold til udpakning.
+Uventet fejl under udtrækning af indhold.
+Kan ikke finde noget indhold at udtrække.
 Lærred
 Arranger og forbind noter på et uendeligt lærred.
 Tilføj note fra boks
@@ -2112,7 +2167,7 @@ Venstrejuster
 Centrer
 Højrejuster
 Juster øverst
-Juster midte
+Juster til midten
 Juster nederst
 Fordel vandret afstand
 Fordel lodret afstand
@@ -2129,68 +2184,68 @@ Udskift baggrund
 Fjern baggrund
 Ingen billeder fundet.
 Ingen medier fundet.
-Eksportér "{{title}}" som en PNG-fil med nedenstående indstillinger.
-Estimerede billeddimensioner: {{dimensioner}}
+Eksportér “{{title}}” som en PNG-fil med nedenstående indstillinger.
+Estimerede billeddimensioner: {{dimensions}}
 Fordel
-Fuldjuster
+Lige margener
 Arranger
 Altid
-Når musen holdes over
+Når markøren holdes over
 Aldrig
 Ingen sektion fundet
 Standardadfærd for musehjul
 Standardadfærd for {{key}}
 Vis menu
-Standardplacering for nye lærredfiler
-Hvor nye lærredsfiler placeres.
-Mappe at oprette nye lærredsfiler i
-Nyoprettede lærredsfiler vises under denne mappe.
-Vis kortetiket
-Snap til gitter
-Snap kort til baggrundsgitteret, når du flytter og ændrer størrelse.
-Snap til objekter
-Snap kort til nærliggende objekter, når du flytter og ændrer størrelse.
-Zoomtærskel for at skjule kortindhold
+Standardplacering for nye lærredsfiler
+Hvor nyoprettede lærredsfiler placeres.
+Mappe til nye lærredsfiler
+Nyoprettede lærredsfiler placeres i denne mappe.
+Vis kortnavne
+Fastgør til gitter
+Fastgør kort til baggrundsgitteret, når de flyttes eller ændrer størrelse.
+Fastgør til objekter
+Fastgør kort til nærliggende objekter, når de flyttes eller ændrer størrelse.
+Zoomniveau, hvor kortindhold skjules
 Lavere værdier øger ydeevnen, men skjuler kortindholdet hurtigere, når du zoomer ud.
 Vis logo
 Dette tilføjer et Obsidian-logo nederst til venstre.
 Privatlivstilstand
 Dette skjuler al tekst på dit lærred.
 
-En højere zoom giver et billede med højere opløsning.
+Jo højere zoomniveau, desto højere opløsning får billedet.
 Visningsområde
-Vælg at gengive hele lærredet eller kun den nuværende synlige visning.
+Vælg, om hele lærredet eller kun det aktuelle synlige område skal gengives.
 Hele lærredet
-Kun Visningsområde
-Omslag
+Kun visningsområde
+Udfyld
 Behold størrelsesforhold
 Gentag
 Nyt lærred
-Duplikér
+Dupliker
 Fjern
 Begræns til overskrift...
 Begræns til blok...
-Fastgør view...
+Fastgør visning...
 Byt fil...
-Skift URL...
-Zoom for at passe
+Ændr URL...
+Tilpas zoom
 Zoom til markering
-Gendindlæs side
+Genindlæs side
 Følg forbindelse
 Opret nyt lærred
 Konverter til fil...
 for at indlejre overskrift
 for at indlejre blok
 for at navigere til gruppe
-Indtast navn på overskrift
+Indtast for at finde fil, overskrift eller blok
 Indtast URL
-"{{linktext}}" kunne ikke findes.
+“{{linktext}}” kunne ikke findes.
 Tilføj tekst...
 Skriv for at søge...
 Lærredshjælp
 Lærredsindstillinger
 Vis hele filen
-Vis standard view
+Vis standardvisning
 Skrivebeskyttet
 Deaktiver skrivebeskyttelse
 Panorer
@@ -2199,86 +2254,86 @@ Panorer vandret
 Vælg alle
 Tilføj/fjern fra markering
 Klon kort
-Begræns kortets bevægelse til aksen
+Begræns kortbevægelse til aksen
 Deaktiver snapping, mens du trækker
 Fjern kort
 Træk nedefra eller dobbeltklik
 Tryk og hold for at tilføje / flytte / vælge
 Træk for at panorere
 Knib for at zoome
-Mellemrum + Træk for at panorere
+Mellemrum + træk for at panorere
 Rul for at zoome
 Unavngivet gruppe
 Linjeretning
-Ikke-retningsbestemt
+Uden retning
 Ensrettet
 Tovejs
 Billede
 Stil
 Ingen grupper fundet
 Kan ikke eksportere et tomt lærred
-Der er detekteret filnavnsændringer, som påvirker {{count}} lærred, opdaterer...
-Der er detekteret filnavnsændringer, som påvirker {{count}} lærreder, opdaterer...
-Lærredet blev opdateret med {{count}} indlejret kort
-Lærredet blev opdateret med {{count}} indlejrede kort
+Lærred har registreret filomdøbninger, der påvirker {{count}} lærredsfil. Opdaterer...
+Lærred har registreret filomdøbninger, der påvirker {{count}} lærredsfiler. Opdaterer...
+Lærred opdaterede {{count}} indlejret kort
+Lærred opdaterede {{count}} indlejrede kort
 Baser
-Opret baser ved at udføre forespørgsler på egenskaberne i dine noter.
+Opret brugerdefinerede visninger til at redigere, sortere og filtrere filer ud fra deres egenskaber.
 Ny base
-Tilføj egenskab
-Tilføj "{{name}}"-oversigt
+Tilføj “{{name}}”-egenskab
+Tilføj opsummering for “{{name}}”
 Tilføj formel
 Skjul alle
-Skift synlighed
+Vis/skjul
 Slet formel
 Standardvisning
-Dupliker view
-Slet view
-Slet oversigt
-Eksport CSV...
+Dupliker visning
+Slet visning
+Slet opsummering
+Eksportér CSV...
 Opret ny base
 Indsæt ny base
-Kopier tabel til udklipsholderen
-Skift view
-Tilføj view
+Kopiér tabel til udklipsholder
+Skift visning...
+Tilføj visning
 Tilføj element
-Tilføj view
+Tilføj visning
 Tilføj filter
-Tilføj filter gruppe
+Tilføj filtergruppe
 Vis alle
 Vis alle ({{count}})
-Tilføj oversigt
-Skjul oversigt
-Alle views
-Dette view
+Tilføj opsummering
+Skjul opsummering
+Alle visninger
+Denne visning
 Find eller opret...
 Beregnede egenskaber
 Egenskabstype
 Skjul egenskab
 Vis egenskab
 Rediger egenskab
-Rediger {{name}}
-Konfigurer view
+Rediger “{{name}}”
+Konfigurer visning
 
 Globale filtre
-View filtre
-View navn
+Visningsfiltre
+Visningsnavn
 Visning
 Tabel
-Vis navn
-Navn på oversigt
+Visningsnavn
+Navn på opsummering
 Formel
 Visninger
-Sorter
-
+Sortér
+Filtrér
 Søg
 Egenskaber
 Ny
 Viser {{count}}
-Ny element skabelon
-Ny element mappe
-Enhver af det følgende er sandt
-Alt det følgende er sandt
-Intet det følgende er sandt
+Skabelonfil til nye elementer
+Mappe til nye elementer
+Mindst én af følgende er sand
+Alle følgende er sande
+Ingen af følgende er sande
 hvor
 eller
 og
@@ -2286,13 +2341,13 @@ Egenskab
 Unavngivet
 fil
 filnavn
-base navn på fil
-fulde navn på fil
-sti
+basenavn på fil
+filens fulde navn
+filsti
 mappe
-ekstension
+filtype
 oprettelsestidspunkt
-Tidspunkt modificeret
+ændringstidspunkt
 filstørrelse
 filtilbagelinks
 fillinks
@@ -2304,42 +2359,42 @@ Sortér efter
 Begræns antallet af resultater
 A → Å
 Å → A
-Gamle til nye
-Nye til gamle
+Ældste først
+Nyeste først
 
 
-Viewnavnet kan ikke indeholde: 
-Viewnavnet findes allerede.
-Visningsnavnet må ikke være tomt.
-Dette filter kan ikke repræsenteres med det simple filterværktøj.
-Filteret kunne ikke analyseres. Det simple filterværktøj kan ikke anvendes.
+Visningsnavnet kan ikke indeholde: 
+Visningsnavnet findes allerede.
+Visningsnavnet kan ikke være tomt.
+Dette filter kan ikke vises i det enkle filterværktøj.
+Filteret kunne ikke fortolkes. Det enkle filterværktøj kan ikke bruges.
 Ugyldig egenskabskonfiguration.
-Ugyldig egenskabskonfigurationsfil for "{{ name }}".
-Kunne ikke tilføje det nye base view "{{ viewID }}". Et view med dette ID findes allerede.
-Kunne ikke analysere din basefil:
-Viewet "{{ view }}" kunne ikke findes
-Base er konfigureret med en ukendt view type: {{ viewtype }}
-Views skal være en sekvens
-Visningsværdier skal være tekststrenge. Værdierne for egenskab {{ key }} er ikke en tekststreng.
-"{{ key }}" skal være af typen {{ type }}
-"filtre" skal være en teksstreng eller et objekt
-"{{ conjunction }}" filter skal være en sekvens
-"filtre" må kun indeholde én "og", "eller", eller "ikke" operator.
-Kunne ikke analysere et filter: {{ message }}
-Formelværdier skal være tekststrenge. Værdien for egenskaben  {{ key }} er ikke en tekststreng.
-Kunne ikke beregne værdien af egenskaben "{{ key }}": {{ message }}
-Forespørgslen har et ugyldigt format. Det skal være et YAML objekt.
-"view" elementer skal være et YAML objekt, og elementet {{ index }} er ikke
-"Navnet" mangler eller er ugyldigt i view {{ index }}
-"{{ key }}" kræves i view "{{ viewName }}"
-"{{ key }}" skal være af type {{ type }} i view "{{ viewName }}"
-"{{ key }}" værdier skal alle være af type {{ type }} i view "{{ viewName }}"
-Kunne ikke læse filtre i view "{{ viewName }}": {{ message }}
-Uendelig løkke detekteret i formlen
+Ugyldig egenskabskonfiguration for “{{ name }}”.
+Kunne ikke tilføje den nye Bases-visning “{{ viewId }}”. Der findes allerede en visning med dette ID.
+Kunne ikke fortolke din basefil:
+Visningen “{{ view }}” blev ikke fundet
+Ukendt visningstype: {{ viewtype }}
+Visninger skal være et array
+Visningsværdier skal være strenge. Værdien for egenskaben {{ key }} er ikke en streng.
+“{{ key }}” skal være af typen {{ type }}
+“filters” skal være en streng eller et objekt
+“{{ conjunction }}”-filter skal være et array
+“filters” må kun indeholde én af nøglerne “and”, “or” eller “not”.
+Kunne ikke evaluere et filter: {{ message }}
+Formelværdier skal være strenge. Værdien for egenskaben {{ key }} er ikke en streng.
+Kunne ikke beregne værdien af egenskaben “{{ key }}”: {{ message }}
+Forespørgslen har et ugyldigt format. Den skal være et YAML-objekt.
+Elementer i “view” skal være YAML-objekter, men element {{ index }} er ikke et YAML-objekt.
+Manglende eller ugyldigt “name” i visning {{ index }}
+“{{ key }}” er påkrævet i visningen “{{ viewName }}”
+“{{ key }}” skal være af typen {{ type }} i visningen “{{ viewName }}”
+Alle værdier for “{{ key }}” skal være af typen {{ type }} i visningen “{{ viewName }}”
+Kunne ikke fortolke filtre i visningen “{{ viewName }}”: {{ message }}
+Uendelig løkke registreret i formel
 Ugyldig egenskab
-Denne note bliver filtreret fra, da den ikke matcher dine kriterier
+Denne note filtreres fra, da den ikke matcher dine kriterier
 Avanceret filter
-fx. 10
+fx 10
 Avanceret filter
 Simpelt filter
 Fjern filter
@@ -2349,55 +2404,58 @@ Markører
 Indryk egenskaber
 Egenskabsseparator
 Punkt
-Nummer
+Nummereret
 Ingen
 Kort
-Størrelse på kort
+Kortstørrelse
 Billedegenskab
 Billedtilpasning
-Omslag
-Indhold
-Billedformatforhold
+Udfyld
+Tilpas
+Billedformat
 Tabel
 Skjul kolonne
 Rediger egenskab...
 Rediger formel...
-Nulstil sortering
-Sorter A → Å
-Sorter Å → A
+Ryd sortering
+Sortér A → Å
+Sortér Å → A
 Rækkehøjde
-Kort
+Lille
 Mellem
 Høj
 Ekstra høj
-Sammenfat...
+Opsummer...
 Gruppér efter denne egenskab
+Tilpas kolonnestørrelse...
+Nulstil kolonnestørrelse
+Træk for at ændre størrelse
 Ryd værdier
-Sammenfatning
-Kunne ikke læse formlen "{{ formula }}"
-Kan ikke finde funktionen "{{ function }}"
-Kan ikke finde funktionen "{{ function }}" for type {{ type }}
-Kan ikke kalde funktionen "{{ function }}", der er ikke nok argumenter.
-Kan ikke kalde funktionen "{{ function }}", der er for mange argumenter.
-Skrivefejl i "{{ function }}", parameter "{{ parameter }}". Forventede {{ expected }}, fandt {{ given }}.
-Kan ikke tilgå indekset {{ index }} på en ikke-array værdi
-Kan ikke finde {{ index }} for type {{ type }}
+Opsummering
+Kunne ikke fortolke formlen “{{ formula }}”
+Kan ikke finde funktionen “{{ function }}”
+Kan ikke finde funktionen “{{ function }}” for typen {{ type }}
+Kan ikke kalde funktionen “{{ function }}”; ikke nok argumenter.
+Kan ikke kalde funktionen “{{ function }}”; for mange argumenter.
+Typefejl i “{{ function }}”, parameter “{{ parameter }}”. Forventede {{ expected }}, fik {{ given }}.
+Kan ikke tilgå indekset “{{ index }}” på en ikke-array værdi
+Kan ikke finde “{{ index }}” for typen {{ type }}
 Fremhæv alle
 Match diakritiske tegn
 Hele ord
 Miniaturebilleder
 Indholdsfortegnelse
-Vis side i indholdfortegnelsen
-Slå sidebjælke til/fra
+Vis side i indholdsfortegnelsen
+Vis/skjul sidepanel
 Forrige side
 Næste side
 Tilpas bredde
 Tilpas højde
 Gem nuværende position i dokument
-Kopiér annotation
+Kopiér annotering
 Kopiér som citat
 Kopiér link til markering
-Kopiér link til annotation
+Kopiér link til annotering
 Kopiér link til sektion
 Kopiér link til “{{title}}”
 Kopiér link til {{page}}
@@ -2409,11 +2467,11 @@ Ugyldig adgangskode
 Indtast adgangskoden nedenfor
 af {{count}}
 ({{current}} af {{count}})
-Enkeltsidet
-Dobbeltsidet (ulige)
-Dobbeltsidet (lige)
-Indstillinger for sidebjælke
-Indstillinger for visning
+Én side
+Tosidet (ulige)
+Tosidet (lige)
+Indstillinger for sidepanel
+Visningsindstillinger
 Tilpas til tema
 side {{page}}
 Side {{page}}
@@ -2430,37 +2488,37 @@ Mappe
 Fil
 Egenskab
 Dato
-Dato & tid
-Nummer
+Dato og tid
+Tal
 Afkrydsningsfelt
 Indtast [[
 for at linke note
 for at afvise
 Egenskabstype
 Sortér
-Egenskabsnavn må ikke være tomt.
+Egenskabsnavn kan ikke være tomt.
 Egenskab findes allerede
 Ugyldigt tagnavn
-Ugyldigt nummer
+Ugyldigt tal
 Kunne ikke læse egenskaber.
-Ingen værdi
+Tom
 Egenskaber
 Ugyldige egenskaber
 Vis kilde
 Syntaksfejl. Dit frontmatter er ugyldigt.
 Tilføj egenskab
-Type uoverensstemmelse; forventede {{type}}
-Type uoverensstemmelse
+Forkert type; forventede {{type}}
+Forkert type
 Vis som {{type}}?
-Din {{oldType}} data er ikke kompatible. Den vil blive tilpasset det nye format.
+Dine {{oldType}}-data er ikke kompatible. De tilpasses det nye format.
 Kolonne
 Række
-Tilføj række efter
-Tilføj kolonne efter
-Tilføj række før
+Tilføj række nedenfor
+Tilføj kolonne til højre
+Tilføj række ovenfor
 Flyt række op
 Flyt række ned
-Tilføj kolonne før
+Tilføj kolonne til venstre
 Flyt kolonne til venstre
 Flyt kolonne til højre
 Dupliker række
@@ -2472,10 +2530,10 @@ Centrer
 Højrejuster
 Slet celler
 Ryd celler
-Sorter kolonner (A to Å)
-Sorter kolonner (Å to A)
+Sortér efter kolonne (A til Å)
+Sortér efter kolonne (Å til A)
 Tabel: {{command}}
-Bobletype
+Callout-type
 
 Vigtigt
 
@@ -2485,8 +2543,8 @@ Advarsel
 Citat
 Eksempel
 Ingen
-Andre...
-Bobletype...
+Andet...
+Callout-type...
 
 {{count}} ord
 {{count}} ord
@@ -2506,12 +2564,33 @@ Bobletype...
 {{count}} faner
 {{count}} egenskab
 {{count}} egenskaber
-{{count}} webside
-{{count}} websider
+{{count}} side
+{{count}} sider
 
 
-{{count}} aktive
-{{count}} uddrag
-{{count}} uddrag
+{{count}} aktiv
+{{count}} kodestykke
+{{count}} kodestykker
 {{count}} tema
 {{count}} temaer
+Annuller
+
+Kopiér
+Åbn link
+Åbn denne fil
+Kør fil
+Åbn eksternt link?
+Dette link åbner en ekstern applikation uden for Obsidian. Fortsæt kun, hvis du har tillid til linkets kilde.
+Åbn altid {{scheme}}://-links
+Advarsel om fjernfil
+Denne fil er placeret på en fjernserver og kan være farlig.\nEr du sikker på, at du vil åbne den?
+Placering: {{location}}
+Adgang til netværksdrev
+Dette indhold anmoder om data fra et netværksdrev. Hvis du tillader det, kan dine loginoplysninger eller andre følsomme oplysninger blive eksponeret for den eksterne vært.
+Vært: {{host}}
+Tillad
+Kør programfil?
+Dette link peger på en programfil. Hvis du kører den, kan den skade din computer.
+Fil: {{path}}
+Boks ikke fundet.
+Kan ikke finde en boks for URL'en {{url}}

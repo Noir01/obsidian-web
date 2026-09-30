@@ -1,10 +1,19 @@
 Opcijas
 Spraudnis
 Pamatspraudņi
+Rādīt spraudņu sarakstā
 Spraudņu opcijas
 Piemērs: mape 1/mape 2
 Piemērs: mape/piezīme
+Nav atlasīts neviens fails
 Šīs opcijas maiņa prasa restartu, lai stātos spēkā.
+Nederīgs skaitlis
+Vērtībai jābūt vismaz {{min}}
+Vērtībai jābūt ne vairāk kā {{max}}
+Fails nav atrasts.
+Meklēt iestatījumos...
+Nav atrasti iestatījumi.
+Vēl {{count}}
 Redaktors
 Uzvedība
 Attēlošana
@@ -56,6 +65,8 @@ Cilnes izmērs
 Atstarpu skaits, kam cilne ir ekvivalenta.
 No labās uz kreiso (RTL)
 Iestata teksta virzienu piezīmēm no labās uz kreiso pusi.
+Rādīt Mermaid diagrammas piezīmēs
+Atveidot blokshēmas, secību diagrammas un citas diagrammas no “mermaid” koda blokiem.
 Automātiski pārveidot HTML
 Automātiski pārveido HTML uz Markdown, kopējot vai pārvietojot no tīmekļa lapām. Izmanto Ctrl/Cmd+Shift+V, lai ielīmētu bez konvertēšanas.
 Vim taustiņu saites
@@ -124,18 +135,26 @@ Apakšmapes nosaukums
 Ja jūsu fails ir zem "vault/folder", un jūs iestatāt apakšmapes nosaukumu uz "attachments", tad pielikumi tiks saglabāti "vault/folder/attachments".
 Izslēgtie faili
 Izslēgtie faili tiks vai nu paslēpti, vai mazāk pamanāmi dažādās vietās, piemēram, Ātrajā pārslēdzējā, saišu ieteikumos un Grafika skatā.
-Pašlaik nav piemērots neviens izslēgšanas filtrs. Pievienojiet vienu zemāk.
-Faili, kas atbilst šādiem filtriem, pašlaik ir izslēgti:
-Filtrs
+Pievienot izņēmumu...
+Izņēmumi nav pievienoti.
+{{count}} kārtula
+{{count}} kārtulas
+Pievienot izņēmumu
+Ievadiet ceļu vai regulāro izteiksmi, piemēram, /daily-.*/
 Filtrs nevar būt tukšs
-Ievadiet ceļu vai "/regex/"...
 Atļaut URI atzvanus
 Iespējot x-callback-url izmantošanu ar x-success vai x-error, apstrādājot Obsidian URI.
+
+Pārvaldiet uzticamās darbības un konfigurējiet URI uzvedību.
+Uzticamās darbības
+Vēl nav uzticamu darbību. Apstiprinātās URI darbības parādīsies šeit.
 Izskats
 Pamata tēma
 Izvēlies Obsidian noklusējuma krāsu shēmu.
+tumšs gaišs sistēma nakts režīms krāsu shēma
 Akcenta krāsa
 Izvēlies akcenta krāsu, kas tiek izmantota visā lietotnē.
+izcelšana zīmols primārā krāsa
 Tumša
 Gaiša
 Pielāgoties sistēmai
@@ -150,8 +169,8 @@ Teksta fonts
 Iestatīt fontu rediģēšanas un lasīšanas skatiem.
 Monospace fonts
 Iestatīt fontu, piemēram, koda blokiem un frontmatter.
- Pašlaik piemērotais fonts: 
- Pašlaik piemērotie fonti:
+{{count}} fonts
+{{count}} fonti
 Ievadi fonta nosaukumu...
 Pašlaik nav piemērots neviens pielāgots fonts. Pievieno to zemāk.
 Tiks piemērots pirmais fonts no šī saraksta, kas pieejams jūsu sistēmā.
@@ -163,24 +182,26 @@ Pārskati un izmanto lieliskās tēmas, ko izveidojusi kopiena.
 Pārlūkot
 Fonta izmērs
 Fonta izmērs pikseļos, kas ietekmē redaktoru un priekšskatījumu.
+teksta izmērs tālummaiņa
 Ātrā fonta izmēra pielāgošana
 Pielāgo fonta izmēru, izmantojot Ctrl + ritināšanu vai izmantojot skārienpaliktņa tuvināšanas žestu.
 Tēmas
 Pārvaldi instalētās tēmas un pārlūko kopienas tēmas.
+kopiena pārlūkot instalēt lejupielādēt
 Pārvaldīt
 Neviena
 Vietējās izvēlnes
 Izvēlnes visā lietotnē tiks pielāgotas operētājsistēmai. Tās netiks ietekmētas jūsu tēmas dēļ.
-Pārlādēt tēmas
-Pielāgotās CSS tēmas ir pārlādētas.
 Atvērt tēmu mapi
 CSS fragmenti
+Pārvaldiet savu CSS failu kolekciju lietotnes izskata pielāgošanai.
 CSS fragmenti netika atrasti fragmentu mapē.
-CSS fragmenti tiek glabāti "{{path}}".
+{{count}} iespējoti
+CSS fragmenti ļauj pielāgot Obsidian izskatu. Ievietojiet CSS failus mapē “{{path}}”, lai tie parādītos šeit.
 Pārlādēt fragmentus
 Atvērt fragmentu mapi
 CSS fragmenti ir pārlādēti.
-Pielietot CSS fragmentu "{{path}}".
+Meklēt fragmentus...
 Instalētās tēmas
 Ekrānuzņēmums nav pieejams
 Noklusējuma
@@ -222,19 +243,24 @@ Atjaunināt visas
 Pašreizējās kopienas tēmas
 Jums pašlaik ir instalēta {{count}} tēma.
 Jums pašlaik ir instalētas {{count}} tēmas.
+Atvērt iestatījumus jaunā logā
+Atvērt iestatījumus atsevišķā logā, nevis iegultus lietotnē.
+Saskarne
+Mobilais
+Papildu
 Karstie taustiņi
 Meklēt karstos taustiņus
 Parādīts {{count}} karstais taustiņš. 
 Parādīti {{count}} karstie taustiņi. 
-{{count}} komanda ar konfliktiem.
-{{count}} komandas ar konfliktiem.
 Filtrēt...
 Dzēst karsto taustiņu
 Nospiediet karsto taustiņu...
 Visi
+Konflikti ({{count}})
 Neuzdevumi
 Piešķirtie
 Piešķirts man
+Nav atrasts neviens rezultāts.
 Atjaunot noklusēto
 Pielāgot šo komandu
 Šis karstais taustiņš konfliktē ar "{{command}}"
@@ -352,28 +378,34 @@ Filtrēt spraudņus pēc nosaukuma vai apraksta.
 Meklēt spraudņus...
 Trešās puses spraudnis
 Ierobežotais režīms
-Ierobežotais režīms ir izslēgts. Ieslēdziet, lai atspējotu kopienas spraudņus.
+Ieslēdziet ierobežoto režīmu, lai lietotni izmantotu bez kopienas spraudņiem.
 Ieslēgt
 Automātiski pārbaudīt spraudņu atjauninājumus
 Periodiski pārbaudīt spraudņu atjauninājumus.
 Kopienas spraudņi
-Pārlūkojiet un instalējiet trešās puses spraudņus, kurus izstrādājusi mūsu brīnišķīgā kopiena.
+Pārlūkojiet un instalējiet kopienas spraudņus, kurus izstrādājusi kopiena.
 Pārlūkot
-Iziet no Ierobežotā režīma
+Iziet no ierobežotā režīma
 Kopienas spraudņi, līdzīgi jebkurai citai programmatūrai, kuru instalējat, var radīt datu integritātes un drošības problēmas.
 Spraudņu drošība mums ir svarīga. Lūk, ko mēs darām:
 Neskatoties uz mūsu pūlēm, joprojām pastāv neliels risks, ka kāds kopienas spraudnis varētu uzvesties nepareizi.
-Sākotnējā koda pārbaude
-Spraudņi tiek pakļauti sākotnējai koda pārbaudei no mūsu komandas puses, pirms tie parādās veikalā.
+Koda pārbaude
+Oficiālajā kopienas katalogā esošie spraudņi tiek automātiski pārbaudīti pēc katra atjauninājuma.
 Atvērtā pirmkoda
 Lielākā daļa spraudņu ir atvērtā pirmkoda GitHub platformā, tāpēc varat paši pārbaudīt kodu.
 Kopienas audits
 Mums ir liela izstrādātāju kopiena, kas rūpējas par drošību.
 Ziņošanas mehānisms
 Mēs reaģējam un izņemam kļūdainos spraudņus pēc lietotāju ziņojumiem.
-Vai vēlaties iziet no Ierobežotā režīma, lai iespējotu kopienas spraudņus? Mēs stingri iesakām veikt datu rezerves kopēšanu pirms tam.
 Uzziniet vairāk par spraudņu drošību
-Ieslēgt kopienas spraudņus
+Atļaut kopienas spraudņus
+Spraudņi var izpildīt patvaļīgu kodu jūsu ierīcē. Pirms to iespējošanas iesakām dublēt jūsu datus.
+Atkārtoti iespējot instalētos spraudņus
+Atjaunot {{count}} iepriekš instalētu spraudni.
+Atjaunot {{count}} iepriekš instalētus spraudņus.
+Rādīt spraudņa informāciju
+Iespējotie spraudņi
+Šie spraudņi tiks iespējoti, izejot no ierobežotā režīma.
 Vai uzticaties šīs krātuves autoram?
 Jūs pirmo reizi atverat šo krātuvi, un tai ir pievienoti daži spraudņi.
 Ja šo krātuvi saņēmāt no kāda cita, lūdzu, ņemiet vērā, ka nezināmas izcelsmes spraudņi var radīt drošības riskus.
@@ -387,6 +419,9 @@ Instalēt
 Iespējot
 Atspējot
 Kopēt koplietošanas saiti
+Skatīt detalizētu informāciju
+Atvērt kopienas lapu
+Iestatījumi
 Ziedot
 Rezultāti netika atrasti.
 Pēdējie faili netika atrasti. Rakstiet, lai meklētu...
@@ -426,6 +461,7 @@ Meklēt instalētos spraudņus
 Filtrēt instalētos spraudņus pēc nosaukuma vai apraksta.
 Meklēt instalētos spraudņus..
 Rādīt tikai instalētos
+Nav instalētu spraudņu.
 Ziedojiet, lai atbalstītu {{name}}
 Spraudņu izstrādātāji ir kopienas brīvprātīgie, kas rada apbrīnojamus risinājumus no aizrautības. Ja šis spraudnis jums ir noderīgs, apsveriet iespēju atbalstīt tā izstrādi.
 100% no jūsu ziedojuma nonāks pie spraudņa izstrādātāja; Obsidian nepatur nekādu daļu. Tomēr ziedojuma platforma var piemērot maksu.
@@ -526,6 +562,9 @@ Sakļaut
 Neizdevās saglabāt failu "{{filepath}}". {{message}}.
 Neizdevās ielādēt spraudni "{{plugin}}"
 Spraudnis “{{plugin}}” ielādējoties radās kļūda
+{{plugin}} netika ielādēts. Šis spraudnis nav saderīgs ar Obsidian v{{version}}.
+{{plugin}} vairs nedarbojas. Iesakām to atinstalēt.
+Neizdevās ielādēt spraudni {{plugin}} v{{version}}. Ir ziņots, ka šī versija rada problēmas. Lūdzu, pārbaudiet, vai nav pieejama jaunāka spraudņa versija.
 Neizdevās atvērt failu "{{filepath}}"
 Nevar atvērt atrašanās vietu "{{href}}"
 Nav faila
@@ -636,6 +675,7 @@ Saistīt ar cilni...
 Avota režīms
 Lasīšanas skats
 Pievienot faila īpašību
+Dzēst
 Dzēst failu
 Izveidot šo failu
 Atvērt saiti
@@ -983,6 +1023,10 @@ Vairs nejautāt
 Pašlaik ir {{count}} saite, kas norāda uz šo failu.
 Pašlaik ir {{count}} saites, kas norāda uz šo failu.
 Dzēst failu
+Vai palaist darbību no ārējas saites?
+Tiks palaista darbība “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
+Spraudnis “{{source}}” gatavojas palaist darbību “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
+Vairs nejautāt par “{{action}}”
 Lejupielādēt pielikumus
 Šajā piezīmē nav ārēju pielikumu.
 Lejupielādēts {{count}} pielikums.
@@ -997,6 +1041,9 @@ Pārvaldīt
 Skatīt
 Apstiprināt
 Atcelt
+Atļaut
+Atļaut vienreiz
+Vienmēr atļaut
 Izlaist
 Lejupielādēt
 Pabeigts
@@ -1224,6 +1271,7 @@ Rādīt failu pielikumus, piemēram, attēlus, video un PDF failus.
 Rādīt visus failu tipus
 Rādīt visus failus, ieskaitot tos, kurus Obsidian nevar atvērt. Fails tiks atvērts ar noklusējuma lietotni šim faila tipam.
 Grafu skats
+Lokālais grafs
 Skatīt grafu pārskatu par to, kuras piezīmes ir saistītas viena ar otru.
 Atvērt grafu skatu
 Atvērt lokālo grafu
@@ -1420,7 +1468,8 @@ navigēt
 lietot
 aizvērt
 Nav atrastas komandas.
-Ievadiet komandu...
+Pievienot komandu...
+Atlasiet komandu...
 Piespraustās komandas
 Markdown formāta importētājs
 Konvertēt Markdown no citām lietotnēm uz Obsidian formātu.
@@ -1507,6 +1556,8 @@ Virsraksti nav atrasti.
 Automātiski ritināt līdz pašreizējai sadaļai
 Vārdu skaits
 Parādīt vārdu skaitu statusjoslā.
+Vai rādīt Mermaid diagrammas šajā glabātuvē?
+Atļaujiet tikai tad, ja uzticaties šīs glabātuves saturam.
 Slaidi
 Prezentācija no Markdown. Izmantojiet "---" lai atdalītu slaidus.
 Sākt prezentāciju
@@ -1710,7 +1761,6 @@ Noņemt lietotāju
 Uzaicināt lietotāju
 Ievadiet viņu e-pastu...
 Lūdzu, ievadiet derīgu e-pastu, lai uzaicinātu kādu.
-Lūdzu, iespējojiet Publish Core spraudni sadaļā Iestatījumi -> Core spraudņi, lai apskatītu vietnes.
 Jūsu vietnes
 Vietnes, kas kopīgots ar jums
 Pārtraukt sadarbību šajā vietnē
@@ -1914,6 +1964,10 @@ Aktīvo kopienas spraudņu saraksts
 Sinhronizēt, kuri kopienas spraudņi ir ieslēgti.
 Uzstādītie kopienas spraudņi
 Sinhronizēt uzstādītos kopienas spraudņus (.js, .css un manifest.json faili) un to iestatījumus.
+Vai atļaut sinhronizētajiem spraudņiem darboties šajā ierīcē?
+Obsidian Sync nevar pārbaudīt uz šo ierīci sinhronizēto spraudņu saturu, un tie var atšķirties no kopienas katalogā publicētajiem spraudņiem.
+Iespējojiet to tikai tad, ja glabātuve un pievienotās ierīces ir uzticamas.
+Jā, ieslēgt spraudņu sinhronizāciju
 Sync joprojām ielādējas; lūdzu, atsvaidziniet šo lapu vēlāk.
 Obsidian Sync ir Obsidian papildu sinhronizācijas pakalpojums ar pilnīgu šifrēšanu un versiju vēsturi.
 Lai sāktu sinhronizāciju, lūdzu, piesakieties vai izveidojiet jaunu Obsidian kontu.
@@ -2068,6 +2122,7 @@ Noņem visu iepriekš minēto, kā arī vietējo atmiņu un aktīvās sesijas.
 Jauns tīmekļa skatītājs
 Neizdevās ielādēt šo vietni.
 Pārliecinieties, ka ievadījāt pareizo adresi.
+Lasītāja skats
 Meklēt tīmeklī
 Tīmekļa skatītāja dati
 Notīrīt tīmekļa skatītāja datus
@@ -2372,6 +2427,9 @@ Augsts
 Īpaši augsts
 Apkopot...
 Grupēt pēc šīs īpašības
+Mainīt kolonnas izmēru...
+Atiestatīt kolonnas izmēru
+Velciet, lai mainītu izmēru
 Notīrīt vērtības
 Kopsavilkums
 Neizdevās parsēt formulu "{{ formula }}"
@@ -2515,3 +2573,24 @@ Izsaukuma veids...
 {{count}} fragmenti
 {{count}} tēma
 {{count}} tēmas
+Atcelt
+
+Kopēt
+Atvērt saiti
+Atvērt šo failu
+Palaist failu
+Vai atvērt ārēju saiti?
+Šī saite atvērs ārēju lietotni ārpus Obsidian. Turpiniet tikai tad, ja uzticaties šīs saites avotam.
+Vienmēr atvērt {{scheme}}:// saites
+Brīdinājums par attālinātu failu
+Šis fails atrodas attālinātā serverī un var būt bīstams.\nVai tiešām vēlaties to atvērt?
+Atrašanās vieta: {{location}}
+Piekļuve tīkla diskam
+Šis saturs pieprasa datus no tīkla diska. Atļaujot to, attālinātajam resursdatoram var tikt atklāti jūsu pieteikšanās dati vai cita sensitīva informācija.
+Resursdators: {{host}}
+Atļaut
+Vai palaist izpildāmu failu?
+Šī saite norāda uz izpildāmu failu. Tā palaišana var kaitēt jūsu datoram.
+Fails: {{path}}
+Glabātuve nav atrasta.
+Neizdevās atrast glabātuvi URL adresei {{url}}

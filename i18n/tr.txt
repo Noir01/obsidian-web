@@ -1,10 +1,19 @@
 Seçenekler
 Eklenti
 Yerleşik Eklentiler
+Eklenti listesinde göster
 Eklenti seçenekleri
 Örnek: klasör 1/klasör 2
 Örnek: klasör/not
+Dosya seçilmedi
 Bu seçeneği değiştirdiğinizde etkisini görmek için yeniden başlatmanız gerekir.
+Geçersiz sayı
+Değer en az {{min}} olmalıdır
+Değer en fazla {{max}} olmalıdır
+Dosya bulunamadı.
+Ayarlarda ara...
+Ayar bulunamadı.
+{{count}} tane daha
 Editör
 Davranış
 Görünüm
@@ -29,13 +38,13 @@ Kaynak
 Parantezleri otomatik eşle
 Parantez ve tırnak işaretlerini otomatik eşle.
 Markdown işaretlerini otomatik eşle.
-Kalın ve italik sembollerini otomatik eşle.
+Kalın, italik, kod ve diğer biçimler için simgeleri otomatik olarak eşleştirin.
 Listeleri akıllıca içerle
 İçerleme ve liste işaretçilerini senin için halleder.
 Başlıkları katla
 Başlıklar altındaki herşeyi katlayabilmeni sağlar.
 İçerlemeleri katla
-Liste vb. çoklu içerliklerin yalnızca bir kısmını katlayabilmeni sağlar.
+Liste gibi çoklu içeriklerin yalnızca bir kısmını katlamanızı sağlar.
 Yeni sekmeler için varsayılan görünüm
 Yeni bir Markdown sekmesinin açıldığı varsayılan görünüm.
 Düzenleme görünümü
@@ -47,16 +56,18 @@ Yeni pencerenin varsayılan olarak başlayacağı düzenleme modu.
 Kaynak modu
 Canlı Önizleme
 Satır numaraları
-Satır numaralarını en altta göster.
+Satır numaralarını kenar boşluğunda göster.
 Girinti kılavuzları
 Görsel rehberlik için madde işaretleri arasındaki dikey ilişki çizgilerini gösterin.
-Boşluklar için tab kullan
+Girinti için tab kullan
 "Tab" tuşuyla içerleme yaparken tab karakterleri kullan. Boşluk karakterleri kullanmak için bunu kapat.
 Tab boyutu
 Bir Tab tuşunun kaç boşluğa eşit olacağını belirler.
 Sağdan sola (RTL)
 Notlarda metin yönünü sağdan sola şeklinde ayarlar.
-HTML'e otomatik olarak çevir
+Notlarda Mermaid diyagramlarını göster
+Akış şemalarını, sekans diyagramlarını ve diğer diyagramları “mermaid” kod bloklarından işle.
+Yapıştırılan HTML'i Markdown'a dönüştür
 İnternet sitelerinden yapıştırırken ya da sürekle bırak yapılırken otomatik olarak HTML'den Markdown'a dönüştür. Dönüştürmeden kullanmak için Ctrl/Cmd+Shift+V'ı kullan.
 Vim tuş ayarları
 Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar.
@@ -96,7 +107,7 @@ Günlük not
 Açılacak dosya
 Varsayılan olarak açılacak belirli bir dosya seçin.
 Bağlantıları hep güncelle
-Bir dosyanın adını değiştirdiğinzde gelen bağlantıları otomatik olarak güncelle.
+Bir dosyanın adını değiştirdiğinizde bağlantıları otomatik olarak günceller.
 Yeni notlar için varsayılan yer
 Yeni yaratılan notların kaydedileceği yer. Eklenti ayarları bu ayarı değiştirebilir.
 Kasa temeli
@@ -124,18 +135,26 @@ Altklasör adı
 Eğer dosyalarınız "kasa/klasör" klasöründeyse ve altklasör adını "eklentiler" seçerseniz, eklentileriniz "kasa/klasör/eklentiler" klasörüne kaydedilecek.
 Hariç tutulan dosyalar
 Hariç tutulan dosyalar Hızlı Değiştirici, bağlantı önerisi ve Grafik Görünümü gibi çeşitli yerlerde ya gizlenecek ya da daha az fark edilecektir.
-Şu anda hariç tutulan filtre uygulanmıyor. Aşağıya bir tane ekleyin.
-Aşağıdaki filtrelerle eşleşen dosyalar şu anda hariç tutulmaktadır:
-Filtre
+Hariç tutma ekle...
+Hariç tutma eklenmedi.
+{{count}} kural
+{{count}} kural
+Hariç tutma ekle
+Bir yol veya düzenli ifade girin, örn. /daily-.*/
 Filtre boş olamaz
-Yolu girin veya "/regex/"...
 URI geri çağrılarına izin ver
 Obsidian URI'larını işlerken x-success veya x-error üzerinden x-callback-url kullanımını etkinleştir.
+
+Güvenilen eylemleri yönetin ve URI davranışını yapılandırın.
+Güvenilen eylemler
+Henüz güvenilen eylem yok. Onaylanan URI eylemleri burada görünecek.
 Görünüm
 Temel tema
 Obsidian'ın varsayılan renk modunu seçin.
+koyu açık sistem gece modu renk şeması
 Vurgu rengi
 Uygulama boyunca kullanılan vurgu rengini seçin.
+vurgulama marka birincil renk
 Koyu
 Açık
 Sistem ayarını kullan
@@ -150,8 +169,8 @@ Metin yazı tipi
 Görünümleri düzenlemek ve okumak için yazı tipini ayarlayın.
 Tek aralıklı yazı tipi
 Kod blokları ve ön madde gibi yerler için yazı tipini ayarlayın.
-Şu anda uygulanan yazı tipi: 
-Şu anda aşağıdaki yazı tipleri uygulanmaktadır:
+{{count}} yazı tipi
+{{count}} yazı tipi
 Yazı tipi adını girin...
 Şu anda özel bir yazı tipi uygulanmıyor. Aşağıya bir tane ekleyin.
 Sisteminizde bulunan bu listeden ilk yazı tipi uygulanacaktır.
@@ -160,27 +179,29 @@ Bu yazı tipi sisteminizde algılandı.
 Yazı tipi adı
 Topluluk temalarını aç
 Topluluk tarafından yaratılmış harika temaları incele veya kullan.
-Tara
+Göz at
 Yazı tipi boyutu
 Editör ve önizleme modundaki fontların piksel olarak boyutunu belirler.
+metin boyutu yakınlaştırma
 Hızlı font boyutu ayarlama
 Yazı tipi boyutunu Ctrl + Kaydırma ile ya da trackpadin yaklaştırma hareketi ile ayarlayın.
 Temalar
 Kurulu temaları yönetin ve topluluk temalarını inceleyin.
+topluluk göz at yükle indir
 Yönet
 Hiçbiri
 Yerel menüler
 Uygulamadaki menüler işletim sistemiyle eşleşecektir. Temanızdan etkilenmeyeceklerdir.
-Temaları yeniden yükle
-Özel CSS temaları tekrar yüklendi.
 Tema klasörünü aç
 CSS kod parçaları
+Uygulamanın görünümünü özelleştirmek için CSS dosyaları koleksiyonunuzu yönetin.
 Kod parçaları klasöründe hiç CSS kod parçası bulunamadı.
-CSS Kod parçaları "{{path}}" klasöründe saklanmaktadır.
+{{count}} etkin
+CSS kod parçacıkları Obsidian'ın görünümünü özelleştirmenizi sağlar. Burada görünmeleri için CSS dosyalarını “{{path}}” konumuna yerleştirin.
 Kod parçalarını tekrar yükle
 Kod parçaları klasörünü aç
 CSS kod parçaları tekrar yüklendi.
-"{{path}}" konumundaki CSS kod parçalarını uygula.
+Kod parçacıklarında ara...
 Kurulu temalar
 Ekran görüntüsü mevcut değil.
 Varsayılan
@@ -190,17 +211,17 @@ Etkin
 Pencere çerçeve stili
 Obsidian pencerelerinin başlık çubuğunun stilini belirler. Etkili olması için yeniden başlatma gerektirir.
 Gizli (varsayılan)
-Obsidyen çerçeve
+Obsidian çerçevesi
 Yerel çerçeve
 Özel uygulama simgesi
 Uygulama için özel bir simge ayarla
 Özel simgeyi seç
-Şerit menüsü
+Şerit menüsü yapılandırması
 Bu gezinti çubuğundaki şerit menüsünde hangi komutların görüneceğini yapılandırın.
 Hızlı erişim şeridi öğesi
 Navigasyon menüsündeki şerit öğesine dokunulduğunda bu şerit öğesi etkinleşir. Dokunup basılı tutmak menüyü göstermeye devam edecektir.
 Şerit menüsünü aç
-Yapılandırma
+Yapılandır
 Şeridi göster
 Dikey araç çubuğunu pencerenin yan tarafında göster.
 Diğer şeritler
@@ -222,19 +243,24 @@ Tümünü güncelle
 Güncel topluluk temaları
 Şu anda yüklü {{count}} temanız var.
 Şu anda yüklü {{count}} temanız var.
+Ayarları yeni pencerede aç
+Ayarları uygulamanın içine gömmek yerine kendi penceresinde aç.
+Arayüz
+Mobil
+Gelişmiş
 Kısayollar
 Arama kısayol tuşları
 {{count}} kısayol tuşu gösteriliyor.
 {{count}} kısayol tuşları gösteriliyor. 
-Çakışma içeren {{count}} komut.
-Çakışma içeren {{count}} komut.
 Filtrele...
 Silme kısayolu
 Kısayol tuşu bekleniyor...
 Tümü
+Çakışmalar ({{count}})
 Atanmamış
 Atanmış
 Benim tarafımdan atandı
+Sonuç bulunamadı.
 Varsayılana geri dön
 Komutu kişiselleştir
 Bu komut "{{command}}" ile çakışıyor
@@ -301,8 +327,8 @@ Programın dilini değiştirir.
 Üye versiyonlarını kabul et.
 Üyelere özel versiyonları otomatik olarak kullan. Bu versiyonlar yeni özellikler ve güncellemeler içerir ancak normal versiyonlara göre daha fazla hata da içerir.
 Gelişmiş
-Donanım İvmelendirici
-Donanım İvmelendiriciyi aktifleştirir, bu sayede Obsidian GPU'yu kullanarak daha akıcı bir şekilde çalışır.
+Donanım hızlandırma
+Donanım hızlandırmayı aktifleştirir, bu sayede Obsidian GPU'yu kullanarak daha akıcı bir şekilde çalışır.
 Eğer bu özelliği kapatırsanız uygulamanın performansı ciddi bir şekilde etkilenecektir.
 Konfigürasyon dosyasını değiştir
 Varsayılan dışında bir konfigürasyon klasörü kullanın. Klasör ismi nokta ile başlamalıdır.
@@ -320,7 +346,7 @@ Uygulama
 Obsidian'a dilinizi nasıl ekleyeceğinizi görün.
 Hesap
 Hesabınız
-Şu anda {{isim}} ile giriş yaptınız ({{email}}).
+Şu anda {{name}} ile giriş yaptınız ({{email}}).
 Şu anda giriş yapmadınız. Bir hesap yalnızca Obsidian Sync, Obsidian Publish ve Catalyst insider derlemeleri için gereklidir.
 Yükselt
 Ticari lisans
@@ -338,7 +364,7 @@ Ad soyad
 Giriş
 E-posta boş olamaz.
 E-posta geçersiz
-Şifre boş bırakalımaz.
+Şifre boş bırakılamaz.
 Giriş başarısız, lütfen e-posta ve şifrenizi kontrol edin.
 Kaydolma başarısız oldu
 Hesabınız yok mu? 
@@ -350,30 +376,36 @@ Eklenti listesi
 Temel eklentiler içinde ara
 Eklentileri isim veya açıklamaya göre filtrele.
 Eklenti ara...
-Topluluk Eklentisi
+Topluluk Eklentileri
 Kısıtlı mod
-Kısıtlı Mod kapalı. Topluluk eklentilerini devre dışı bırakmak için açın.
-Açın
+Uygulamayı topluluk eklentileri olmadan kullanmak için kısıtlı modu açın.
+Aç ve yeniden yükle
 Eklenti güncellemelerini otomatik olarak denetle
 Eklenti güncellemelerini düzenli aralıklarla denetle.
 Topluluk Eklentileri
-Topluluğumuzun yaptığı eklentilere göz at ve Yükle.
-Ara
-Kısıtlı Moddan Çık
+Topluluk tarafından yapılan topluluk eklentilerine göz atın ve yükleyin.
+Göz at
+Kısıtlı moddan çık
 Topluluk eklentileri, yüklediğiniz diğer tüm yazılımlar gibi, potansiyel olarak veri bütünlüğü ve güvenlik sorunlarına neden olabilir.
 Eklenti güvenliği bizim için önemlidir. Yaptığımız şey şu:
 Çabalarımıza rağmen, bir topluluk eklentisinin hatalı davranma ihtimali hala küçük de olsa vardır.
-İlk kod incelemesi
-Eklentiler, mağazada görünmeden önce ekibimiz tarafından ilk kod incelemesinden geçirilir.
+Kod incelemesi
+Resmî topluluk dizinindeki eklentiler her güncellemeden sonra otomatik olarak incelenir.
 Açık kaynak
 Çoğu eklenti GitHub'da açık kaynak kodludur, böylece kodu kendiniz inceleyebilirsiniz.
 Eş denetim
 Birbirini kollayan geniş bir geliştirici topluluğumuz var.
 Rapor mekanizması
 Kullanıcı raporu üzerine hatalı eklentileri takip ediyor ve kaldırıyoruz.
-Topluluk eklentilerini etkinleştirmek için Kısıtlı Moddan çıkmak ister misiniz? Bunu yapmadan önce verilerinizi yedeklemenizi şiddetle tavsiye ederiz.
 Eklenti güvenliği hakkında daha fazla bilgi edinin
-Topluluk eklentilerini açın
+Topluluk eklentilerine izin ver
+Eklentiler cihazınızda rastgele kod çalıştırabilir. Etkinleştirmeden önce verilerinizi yedeklemenizi öneririz.
+Yüklü eklentileri yeniden etkinleştir
+Daha önce yüklenmiş {{count}} eklentiyi geri yükle.
+Daha önce yüklenmiş {{count}} eklentiyi geri yükle.
+Eklenti bilgilerini göster
+Etkin eklentiler
+Kısıtlı moddan çıkıldığında bu eklentiler etkinleştirilecek.
 Bu kasanın sahibine güveniyor musunuz?
 Bu kasayı ilk kez açıyorsunuz ve bazı eklentiler içeriyor.
 Bu kasayı başka bir kullanıcıdan aldıysanız, bilinmeyen kökenli eklentiler güvenlik riski oluşturabilir.
@@ -387,6 +419,9 @@ Topluluk eklentileri yüklenemedi.
 Etkinleştir
 Devre dışı bırak
 Paylaşma linkini kopyala
+Ayrıntıları görüntüle
+Topluluk sayfasını aç
+Ayarlar
 Bağış Yapın
 Sonuç Bulunamadı.
 Son dosyalar bulunamadı. Aramak için yazın...
@@ -406,19 +441,19 @@ Başarıyla yüklendi "{{name}}".
 “{{id}}” eklentisi kaldırılamadı.
 “{{id}}” eklentisi devre dışı bırakılamadı.
 Yüklü Eklentiler
-Eklentileri tekrardan yükle
+Eklentileri yeniden yükle
 Eklentiler tekrardan yüklendi
 Kaldır
 Eklentiyi kaldır
 Bu eklentiyi silmek istediğine emin misin? Bu işlem eklenti klasörünü de siler.
-Eklentiler Klasörünü aç Aç
-Güncellemeleri Denetle
-Hepsini Güncelle
+Eklentiler klasörünü aç
+Güncellemeleri denetle
+Hepsini güncelle
 Yüklü Eklentiler
 Güncellemeler denetleniyor...
 Yüklenmiş {{count}} eklentiniz var.
 Yüklenmiş {{count}} eklentiniz var.
-Eklenti Güncellemesi Bulunamadı.
+Eklenti güncellemesi bulunamadı.
 Güncellenecek {{count}} eklenti bulundu.
 Güncellenecek {{count}} eklenti bulundu.
 Güncelle {{version}}
@@ -426,6 +461,7 @@ Kurulu eklentiler içinde ara
 Kurulu eklentileri isim veya açıklamaya göre filtrele.
 Kurulu eklentiler içinde ara...
 Yalnızca kurulu olanları göster
+Yüklü eklenti yok.
 {{name}} desteklemek için bağış yapın
 Eklenti geliştiricileri, tutkularıyla harika şeyler yapan topluluk gönüllüleridir. Bu eklentiyi faydalı buluyorsanız, lütfen geliştirilmesine fon sağlamayı düşünün.
 Katkınızın %100'ü eklenti geliştiricisine gidecektir; Obsidian herhangi bir kesinti yapmayacaktır. Seçtikleri fonlama platformu bir ücret talep edebilir.
@@ -436,7 +472,7 @@ En çok indirilenler
 Yakın zamanda yayınlandı
 Yakın zamanda güncellendi
 Alfabetik
-{{time}} Güncellendi
+{{time}} önce güncellendi
 Mobil araç çubuğu
 Mobil Hızlı Eylemleri ayarla
 Yukarıdan aşağı çektiğinizde hangi eylemin gerçekleşeceğini belirleyin. Şu anda seçili olan eylem "{{command}}".
@@ -526,11 +562,14 @@ Sakla
 "{{filepath}}" dosyası kaydedilemedi. {{message}}.
 “{{plugin}}” eklentisi yüklenemedi
 “{{plugin}}” eklentisi yüklenirken bir hatayla karşılaştı
+{{plugin}} yüklenmedi. Bu eklenti, Obsidian v{{version}} ile uyumlu değil.
+{{plugin}} artık çalışmıyor. Eklentiyi kaldırmanızı öneririz.
+{{plugin}} v{{version}} eklentisi yüklenemedi. Bu sürümün sorunlara yol açtığı bildirildi. Lütfen eklentinin daha yeni bir sürümü olup olmadığını kontrol edin.
 “{{filepath}}” açılamadı
 “{{href}} konumu açılamıyor
 Dosya yok
 "{{file}}" başka bir yerde değiştirildi, değişiklikler otomatik olarak birleştiriliyor.
-Tresorları yönet...
+Kasaları yönet...
 Yardım
 Ayarlar
 Düzenlemek için sürükle
@@ -540,7 +579,7 @@ Bu özelliği kullanabilmek için lütfen web sitemizden yeni yükleyiciyi indir
 Yavaş başlatma süresi algılandı.
 Bu özellik yalnızca masaüstü uygulamasında kullanılabilir.
 Varsayılan ayarları geri yükle
-Kopyala
+Panoya Kopyala
 Kopyala
 Panonuza kopyalandı
 {{item}} kopyalandı
@@ -600,7 +639,7 @@ Son görüntülenen dosyalara git
 Kapat
 Tüm “{{id}}” sekmelerini kapat ({{count}})
 Eklenti artık aktif değil
-Bu pencereyi açan eklenti ({{type}}) mevcut değil
+Bu sekmeyi açan eklenti ({{type}}) mevcut değil.
 Sürüm Notları {{version}}
 {{version}} için sürüm notu yok.
 {{version}} için sürüm notları yüklenemedi.
@@ -636,6 +675,7 @@ Sekme ile bağlantı...
 Kaynak modu
 Okuma görünümü
 Dosya özelliği ekle
+Sil
 Dosyayı sil
 Bu dosyayı oluştur
 Linki aç
@@ -728,12 +768,12 @@ Mevcut kasamı kullan
 Notlarınıza diğer cihazlardan erişmek için senkronizasyon kurmanız gerekir.
 Obsidian notlarınızı cihazlarınızda depoladığı için, notlarınıza başka bir telefondan veya bilgisayardan erişmek istiyorsanız senkronizasyon kurmanız gerekir.\nSenkronizasyonu şimdi kurabilir veya yazmaya başlayıp daha sonra kurabilirsiniz.
 Senkronizasyonu ayarla
-Skip for now
+Senkronizasyon olmadan devam et
 Atla
-Choose a name for your vault.
+Yeni kasanızı yapılandırın.
 Kasa oluştur
 Sync kurulumu
-Create a synced vault on your Obsidian account so that you can access your data from other devices.
+Diğer cihazlardan verilerinize erişebilmek için Obsidian hesabınızda senkronize bir kasa oluşturun.
 Sync şifreleme
 Uçtan uca şifreleme
 En güçlü güvenliği sunar ancak şifreleme parolanızı güvenle saklamanızı gerektirir
@@ -750,7 +790,7 @@ Mevcut Sync kasalarınız var
 Yeni bir kasa oluşturmak mı yoksa mevcut senkronize bir kasaya bağlanmak mı istiyorsunuz?
 Yeni Sync kasası oluştur
 Mevcut bir kasa seç
-Log Out
+Çıkış yap
 Parolamı unuttum
 Kasa adı
 Kasa konumu
@@ -784,7 +824,7 @@ Varsayılan olarak şifrelenmez.
 Varsayılan olarak şifrelenmemiş olabilir.
 Obsidian Sync kullan
 iCloud kullan
-Use Third-party sync
+Üçüncü taraf senkronizasyon kullan
 Diğer eşitleme yöntemleri
 Desteklenen eşitleme yöntemlerini kullan
 Kasanız nerede bulunuyor?
@@ -814,7 +854,7 @@ Yeni onay e-postası gönderildi.
 E-posta yeniden gönderilemedi.
 Kasa konumu bir klasör olmalıdır.
 Hoş geldiniz
-İşte yeni *tresör*ünüz.\n\nBir not alın, [[bağlantı oluştur]], veya [İçe Aktarıcı'yı](https://help.obsidian.md/Plugins/Importer) deneyin!\n\nHazır olduğunuzda, bu notu silin ve tresörü kendinize göre düzenleyin.
+Bu senin yeni *kasandan*.\n\nBir şeyler not al, [[bir bağlantı oluştur]] ya da [Importer](https://help.obsidian.md/Plugins/Importer) aracını dene!\n\nHazır olduğunda bu notu sil ve kasayı kendine göre şekillendir.
 Linki buraya ekle
 Linkleri buraya ekle
 "{{folder}}" klasörüne taşı
@@ -983,6 +1023,10 @@ Bir daha sorma
 Şu anda bu dosyaya işaret eden {{count}} bağlantı var.
 Şu anda bu dosyaya işaret eden {{count}} bağlantı var.
 Dosyayı sil
+Harici bağlantıdan eylem çalıştırılsın mı?
+“{{action}}” eylemi çalıştırılmak üzere. Yalnızca bağlantının kaynağına güveniyorsanız devam edin.
+“{{source}}” eklentisi “{{action}}” eylemini çalıştırmak üzere. Yalnızca bağlantının kaynağına güveniyorsanız devam edin.
+“{{action}}” için tekrar sorma
 Ekleri indir
 Bu notta harici ek yok.
 {{count}} ek indirildi.
@@ -997,6 +1041,9 @@ Yönet
 Görüntüle
 Onayla
 İptal
+İzin ver
+Bir kez izin ver
+Her zaman izin ver
 Atla
 İndir
 Tamam
@@ -1097,7 +1144,7 @@ Yeni klasör
 Sıralamayı değiştir
 Dosya gezgininde dosyayı göster
 Dosya gezgininde aktif dosyayı göster 
-Geçerli dosyanın bir kopyasını oluşturuns
+Geçerli dosyanın bir kopyasını oluşturun
 Geçerli dosyayı çoğalt
 Dosyayı başka bir klasöre taşı
 Seçimle yeni klasör ({{count}} öğe)
@@ -1107,7 +1154,7 @@ Klasörü şuraya taşı...
 {{count}} öğeyi şuraya taşı...
 Bir klasör yazın
 Klasörler bulunamadı
-Yönlendirme
+Gezinmek için
 Taşıma
 oluşturmak için
 Reddet
@@ -1137,7 +1184,7 @@ Ara
 Bütün notlar içinde ara.
 Tüm notları ara
 Sonuçları gizle
-Harf boyutunu kullan
+Büyük/küçük harfe duyarlı eşleşme
 Aramayı anlat
 Daha fazla içerik göster
 {{count}} sonuç
@@ -1204,7 +1251,7 @@ Ara "{{keyword}}"
 Klasörde ara
 Hızlı Geçiş
 Klavyenizi bırakmadan hızlıca başka bir dosyaya geçin. Ctrl/Cmd+O ile kullanın.
-Geçici
+Geçiş
 Hızlı geçişi aç
 geçmek için
 açmak için
@@ -1224,6 +1271,7 @@ Resimler, videolar ve PDF'ler gibi ek dosyalarını gösterin.
 Tüm dosya tiplerini göster
 Obsidian'ın açamadığı dosyalar dahil tüm dosyaları göster. Dosya, o dosya türü için varsayılan uygulama ile açılacaktır.
 Grafik Görünümü
+Yerel graf
 Hangi notların hangi notlar ile bağlantılı olduğunu bir grafik üzerinden görüntüleyin.
 Grafik görünümünü aç
 Yerel grafiği aç
@@ -1266,7 +1314,7 @@ Grubu sil
 Yeni grup
 Rengi değiştirmek için tıkla\nGrubu yeniden düzenlemek için sürükle
 Hızlandırılmış animasyonunu başlat
-Hızlandırma nimasyonunu başlat
+Hızlandırma animasyonunu başlat
 Hareketlendirmek
 Geri Bağlantılar
 Durum çubuğunda geri bağlantı sayısını göster.
@@ -1373,7 +1421,7 @@ Dosya bozulmuş.
 İsimsiz grup
 İsimsiz Grafik
 Düzenle...
-Kaldırmak
+Kaldır
 Yeniden Adlandır
 Bu bloğu yer imi olarak işaretle
 Bu başlığı yer imlerine ekleyin...
@@ -1420,7 +1468,8 @@ Yönlendirmek
 Kullanmak
 Vazgeçmek
 Komut bulunamadı.
-Bir komut yazın...
+Komut ekle...
+Bir komut seç...
 Sabitlenmiş komutlar
 Markdown formatı içe aktarıcı
 Markdown'ı diğer uygulamalardan Obsidian formatına dönüştürün.
@@ -1432,7 +1481,7 @@ Roam Research vurgulayıcı düzeltici
 Roam Research TODO dönüştürücüsü
 "{{[[TODO]]}}" öğesini "[ ]" biçimine dönüştürür.
 Bear vurgu düzeltici
- "::highlight::" ifadesini "==highlight==" dönüştürür.
+“::vurgulama::” ifadesini “==vurgulama==” formatına dönüştürür.
 Zettelkasten bağlantı düzeltici
 "[[UID]]" bağlantılarını tamamen "[[UID Dosya Adı]]" biçimine dönüştürür.
 Zettelkasten bağlantı güzelleştirici
@@ -1507,6 +1556,8 @@ Başlık bulunamadı.
 Geçerli bölüme otomatik kaydır
 Kelime sayısı
 Durum barında kelime sayısını göster.
+Bu kasada Mermaid diyagramları gösterilsin mi?
+Yalnızca bu kasanın içeriğine güveniyorsanız izin verin.
 Slaytlar
 Markdown aracılığı ile sunum. Slaytları ayırmak için "---" kullanın.
 Sunuma başla
@@ -1710,7 +1761,6 @@ Kullanıcıyı kaldır
 Kullanıcı davet et
 E-postalarını girin...
 Birini davet etmek için lütfen geçerli bir e-posta girin.
-Siteleri görüntülemek için lütfen Ayarlar -> Çekirdek eklentiler bölümünden Yayınla çekirdek eklentisini etkinleştirin.
 Siteleriniz
 Sizinle paylaşılan siteler
 Bu sitede işbirliği yapmayı bırakın
@@ -1752,7 +1802,7 @@ Kaydet
 Yükle
 Düzeni sil
 Lütfen yeni düzen için bir ad girin.
-Düzen başarıyla kaydedildi.
+“{{name}}” düzeni başarıyla kaydedildi
 Kaydedilmiş düzen bulunamadı.
 Değiştirilme zamanı{{time}}
 Düzen adını yazın...
@@ -1771,12 +1821,12 @@ Bu sürüm zaten en son sürümdür.
 {{time}} tarihli sürüm başarıyla geri yüklendi
 Bu dosya silindi
 {{ device }} üzerinden silindi
-Bu dosya "{{filepath}}" adından yeniden adlandırıldı
+Bu dosya "{{from}}" adından yeniden adlandırıldı
 “{{from}}” öğesinden “{{to}}” olarak yeniden adlandırıldı
 “{{from}}” konumundan taşındı
 “{{from}}” konumundan “{{to}}” konumuna taşındı
-1 revizyon
-{{revisions}} revizyon
+{{count}} revizyon
+{{count}} revizyon
 {{device}} üzerinden
 Bu dosya için senkronizasyon geçmişi bulunmuyor.
 Boş
@@ -1794,8 +1844,8 @@ Kasa adı
 Bu kasanın ne için olduğunu hatırlamanıza yardımcı olur.
 Bölge
 Otomatik
-Size en yakın sunucu bölgesini seçerek uzak depoyu saklayın. Bu seçim ileride değiştirilemez.
-benim harika kasam
+Uzak kasayı depolamak için size en yakın sunucu bölgesini seçin. Bu seçim daha sonra değiştirilemez.
+Benim harika kasam
 Şifreleme
 Uçtan uca şifreleme en güçlü güvenliği sunar ancak şifreleme parolanızı güvenli bir şekilde saklamanızı gerektirir. Standart şifreleme, verilerinizi aktarım sırasında ve sunucularımızda korumak için Obsidian tarafından yönetilen bir anahtar kullanır.
 Bu seçenek daha sonra değiştirilemez.
@@ -1805,7 +1855,7 @@ Standart şifreleme
 Bu şifre daha sonra değiştirilemez.
 Bu parolayı unutursanız, herhangi bir uzak veri sonsuza kadar kullanılamaz kalacaktır.
 Bu, yerel verilerinizi etkilemez.
- Uzak depo “{{name}}” şu anda şifreli. Kilidini açmak için şifrenizi girin.
+“{{name}}” adlı uzak kasa şu anda şifrelenmiş durumda. Kilidi açmak için şifrenizi girin.
 Şifreniz
 Uzak depoyu kilitle
 Kasanın kilidini aç
@@ -1813,15 +1863,15 @@ Uzak kasalarınız
 {{time}} tarihinde oluşturuldu.
 Sil
 Yeniden Adlandır
-Uzak depoyu "{{name}}" olarak yeniden adlandır
-Bu uzak depo için yeni bir isim girin.
+Uzak kasayı "{{name}}" olarak yeniden adlandır
+Bu uzak kasa için yeni bir isim girin.
 Paylaşımı yönet
 Kasayı silme işlemini onayla
-Bu uzaktan erişim kasasını silmek istediğinizden emin misiniz?
+“{{name}}” adlı uzak kasayı silmek istediğinizden emin misiniz?
 Sürüm Geçmişi dahil olmak üzere sunucumuzdaki tüm veriler silinir. Yerel dosyalarınız bozulmadan kalacaktır.
 Bu işlem kalıcıdır ve geri alınamaz
 {{name}} silindi.
-Obsidian Sync: Bağlı uzak depo artık mevcut değil.
+Obsidian Sync: Bağlı uzak kasa artık mevcut değil.
 Bağlan
 Bağlantıyı kes
 
@@ -1875,7 +1925,7 @@ En büyük dosyaları görüntüle
 Bunlar en fazla yer kaplayan uzak dosyalardır. Ekleri sildikten sonra, uzak kasa alanını boşaltmak için temizleme düğmesini kullanın.
 Depolamayı yükselt
 Temizle
-Değiikliklerimi gizle
+Değişikliklerimi gizle
 Yer kazanmak için silinen ekleri uzak kasadan kalıcı olarak temizleyin.
 Temizleme tamamlandı.
 Cihaz uykusunu önleyin
@@ -1914,6 +1964,10 @@ Aktif topluluk eklenti listesi
 Hangi topluluk eklentilerinin etkinleştirildiğini senkronize edin.
 Yüklü topluluk eklentileri
 Yüklü topluluk eklentilerini (.js, .css ve manifest.json dosyaları) ve ayarlarını senkronize edin.
+Eşitlenen eklentilerin bu cihazda çalışmasına izin verilsin mi?
+Obsidian Sync, bu cihaza eşitlenen eklentilerin içeriğini doğrulayamaz ve bunlar topluluk dizininde yayımlanan eklentilerden farklı olabilir.
+Bunu yalnızca kasa ve bağlı cihazlara güveniyorsanız etkinleştirin.
+Evet, eklenti eşitlemesini aç
 Sync hâlâ yükleniyor, lütfen bu sayfayı daha sonra yenileyin.
 Obsidian Sync, Obsidian'ın uçtan uca şifreleme ve sürüm geçmişine sahip eklenti senkronizasyon hizmetidir.
 Senkronizasyonu başlatmak için lütfen giriş yapın veya yeni bir Obsidian hesabı oluşturun.
@@ -1947,16 +2001,16 @@ Bu uzak kasa şu anda kimseyle paylaşılmıyor.
 Sizinle paylaşılan kasalar
 Bu kasada işbirliği yapmayı bırak
 Kasa işbirliğini durdurmayı onayla
-Bu, bu kasa sizinle paylaşılan kasalar listesinden kaldıracaktır. Bu eylem geri alınamaz.
+Bu işlem, bu kasayı sizinle paylaşılan kasalar listesinden kaldıracaktır.
 Bu kasada tekrar işbirliği yapmak isterseniz lütfen kasanın sahibiyle iletişime geçin.
 Ayrıl
-Uzak depolar yüklenemedi.
+Uzak kasalar yüklenemedi.
 Bu kasaya bağlanmak için Obsidian Sync aboneliğine ihtiyacınız var.
 Destek ekibiyle iletişime geçin
 Obsidian Sync ile ilgili herhangi bir sorunla karşılaşırsanız, size yardımcı olabilmemiz için lütfen bizimle iletişime geçin! Bize şu adresten ulaşabilirsiniz support@obsidian.md.
 Hata ayıklama bilgisini kopyala
-E-posta desteği
-Sync uzak bir depoya bağlı değil.
+Destek ekibine e-posta gönder
+Sync uzak bir kasaya bağlı değil.
 Obsidian Sync 5 adede kadar uzak kasa oluşturmanıza izin verir. Yeni bir uzak kasa oluşturmak için lütfen mevcut bir kasayı kaldırın.
 Kasayı yükselt
 Kasa şifrelemesini yükselt
@@ -2010,7 +2064,7 @@ Geçerli dosyayı başka bir dosyayla birleştir...
 Dosyanın tamamını şununla birleştir...
 Dosya bulunamadı.
 Yönlendirme
-Birleştirme
+Birleştirmek için
 Yeni bir tane oluştur
 Üstte birleştir
 Vazgeç
@@ -2066,8 +2120,9 @@ Geçmiş
 Tüm web görüntüleyici verileri
 Yukarıdakilerin tümünü; ayrıca yerel depolamayı ve etkin oturumları kaldırır.
 Yeni web görüntüleyici
-Unable to load that site.
-Please make sure you have the correct address.
+Site yüklenemiyor.
+Adresin doğru olduğundan emin olun.
+Okuma görünümü
 Web'de ara
 Web görüntüleyici verileri
 Web görüntüleyici verilerini temizle
@@ -2089,7 +2144,7 @@ Her satıra bir reklam engelleme listesi URL'si. Tüm kasalar arasında paylaş�
 Reklam engelleme güncelleme sıklığı
 Filtre listelerinin güncellenmesi arasındaki gün sayısı. 0 devre dışı olduğunu belirtir. Tüm kasalar arasında paylaşılır.
 Web görüntüleyici verilerini temizle
-Unexected error extracting content.
+İçeriği çıkarırken beklenmedik bir hata oluştu.
 Çıkarılacak içerik bulunamadı.
 Tuval
 Sonsuz bir tuval üzerinde notları düzenleyin ve bağlayın.
@@ -2222,9 +2277,9 @@ Canvas, {{count}} tuval dosyasını etkileyen dosya yeniden adlandırmalarını 
 Canvas, {{count}} gömülü kartı güncelledi
 Canvas, {{count}} gömülü kartı güncelledi
 Tabanlar
-Create bases by querying note properties.
+Özelliklerini kullanarak dosyaları düzenlemenize, sıralamanıza ve filtrelemenize olanak tanıyan özel görünümler oluşturun.
 Yeni taban
-Add property
+"{{name}}" özelliğini ekle
 "{{name}}" özetini ekle
 Formül ekle
 Tümünü gizle
@@ -2238,7 +2293,7 @@ CSV dışa aktar...
 Yeni taban oluştur
 Yeni taban ekle
 Tabloyu panoya kopyala
-Change view
+Görünümü değiştir...
 Görünüm ekle
 Öğe ekle
 Görünüm ekle
@@ -2315,10 +2370,10 @@ Bu filtre basit filtre oluşturucu tarafından temsil edilemez.
 Filtre ayrıştırılamıyor. Temel filtre oluşturucu kullanılamaz.
 Geçersiz özellik yapılandırması.
 "{{ name }}" için geçersiz özellik yapılandırması.
-Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+"{{ viewId }}" adlı yeni Bases görünümü eklenemedi. Bu kimlik numarasına sahip bir görünüm zaten mevcut.
 Taban dosyanız ayrıştırılamıyor:
 "{{ view }}" görünümü bulunamadı
-Base configured with an unknown view type: {{ viewtype }}
+Bilinmeyen görünüm türü: {{ viewtype }}
 Görünümler bir dizi olmalıdır
 Görüntüleme değerleri string olmalıdır. Özellik {{ key }} için değer string değil.
 "{{ key }}" bir {{ type }} olmalıdır
@@ -2372,6 +2427,9 @@ Uzun
 Ekstra uzun
 Özetle...
 Bu özelliğe göre grupla
+Sütunu yeniden boyutlandır...
+Sütun boyutunu sıfırla
+Yeniden boyutlandırmak için sürükle
 Değerleri temizle
 Özet
 "{{ formula }}" formülü ayrıştırılamadı
@@ -2380,8 +2438,8 @@ Değerleri temizle
 "{{ function }}" işlevi çağrılamıyor, yeterli bağımsız değişken yok.
 "{{ function }}" işlevi çağrılamıyor, çok fazla bağımsız değişken var.
 "{{ function }}" içinde tür hatası, "{{ parameter }}" parametresi. Beklenen {{ expected }}, verilen {{ given }}.
-Cannot access index {{ index }} of non-array value
-Cannot find {{ index }} on type {{ type }}
+Dizi olmayan bir değerin “{{ index }}” dizinine erişilemiyor
+{{ type }} türünde "{{ index }}" bulunamıyor
 Hepsini vurgula
 Diyakritik işaretleri eşleştir
 Kelimenin tamamı
@@ -2397,7 +2455,7 @@ Mevcut konumu belgede kaydet
 Notu kopyala
 Alıntı olarak kopyala
 Seçimin linkini kopyala
-Etiketin linkini koptala
+Etiketin linkini kopyala
 Bölüme bağlantıyı kopyala
 “{{title}}” başlığına bağlantıyı kopyala
 {{page}} numaralı sayfaya bağlantıyı kopyala
@@ -2434,7 +2492,7 @@ Tarih ve zaman
 Sayı
 Onay kutusu
 Yazın [[
-notaya bağlantı oluşturmak için
+nota bağlantı oluşturmak için
 kapatmak için
 Özellik tipi
 Sırala
@@ -2515,3 +2573,24 @@ Callout türü...
 {{count}} parçacık
 {{count}} tema
 {{count}} tema
+İptal
+Tamam
+Kopyala
+Bağlantıyı aç
+Bu dosyayı aç
+Dosyayı çalıştır
+Harici bağlantı açılsın mı?
+Bu bağlantı, Obsidian dışında harici bir uygulama açacak. Yalnızca bu bağlantının kaynağına güveniyorsanız devam edin.
+{{scheme}}:// bağlantılarını her zaman aç
+Uzak dosya uyarısı
+Bu dosya uzak bir sunucuda bulunuyor ve tehlikeli olabilir.\nAçmak istediğinizden emin misiniz?
+Konum: {{location}}
+Ağ sürücüsü erişimi
+Bu içerik bir ağ sürücüsünden veri istiyor. Buna izin vermek, giriş kimlik bilgilerinizi veya diğer hassas bilgilerinizi uzak ana makineye ifşa edebilir.
+Ana makine: {{host}}
+İzin ver
+Yürütülebilir dosya çalıştırılsın mı?
+Bu bağlantı yürütülebilir bir dosyaya işaret ediyor. Çalıştırmak bilgisayarınıza zarar verebilir.
+Dosya: {{path}}
+Kasa bulunamadı.
+{{url}} URL'si için bir kasa bulunamadı

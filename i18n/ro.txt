@@ -1,10 +1,19 @@
 Opțiuni
 Modul
 Module integrate
+Afișează în lista de module
 Opțiunile modulului
 Exemplu: director 1/director 2
 Exemplu: director/însemnare
+Niciun fișier selectat
 Schimbarea acestei opțiuni necesită o repornire pentru a lua efect.
+Număr nevalid
+Valoarea trebuie să fie cel puțin {{min}}
+Valoarea trebuie să fie cel mult {{max}}
+Fișierul nu a fost găsit.
+Caută în setări...
+Nu s-au găsit setări.
+încă {{count}}
 
 Comportament
 Afișaj
@@ -56,6 +65,8 @@ Setați dimensiunea caracterului de tabulație
 Setați numărul de spații echivalente unui caracter de tabulație.
 Setați afișarea de la dreapta la stânga (RTL)
 Setați direcția textului în cadrul însemnărilor astfel încât acesta să fie afișat de la dreapta la stânga.
+Afișează diagrame Mermaid în însemnări
+Redă diagrame de flux, diagrame de secvență și alte diagrame din blocuri de cod „mermaid”.
 Permiteți conversia automată a conținutului HTML
 Permiteți conversia automată a conținutului din HTML în Markdown în procesele de copiere cât și tragere și plasare a conținutului preluat de pe paginile web. Utilizați Ctrl/Cmd+Shift+V pentru a lipi fără conversie.
 Activați modul Vim
@@ -124,18 +135,26 @@ Alegeți numele subdirectorului de atașamente
 Dacă însemnarea dvs. se află în „seif/director”, iar numele subdirectorului este setat să fie „atașamente”, atunci atașamentele vor fi salvate în „seif/director/atașamente”.
 Alegeți fișierele care să fie excluse
 Fișierele excluse vor fi ascunse sau mai puțin vizibile în diferite locuri, cum ar fi în comutatorul rapid, în sugestiile de legături cât și în afișajul grafic.
-Niciun filtru de excludere nu este aplicat în acest moment. Adăugați unul mai jos.
-Fișierele care corespund următoarelor filtre sunt în prezent excluse:
-Filtru
+Adaugă excludere...
+Nu au fost adăugate excluderi.
+{{count}} regulă
+{{count}} reguli
+Adaugă excludere
+Introdu o cale sau o expresie regulată, de ex. /daily-.*/
 Filtrul nu poate fi gol
-Introduceți calea sau „/expresia regulată/”...
 Permiteți callback-uri URI
 Activați utilizarea x-callback-url prin x-success sau x-error la gestionarea URI-urilor Obsidian.
+URI Obsidian
+Gestionează acțiunile de încredere și configurează comportamentul URI.
+Acțiuni de încredere
+Nu există încă acțiuni de încredere. Acțiunile URI aprobate vor apărea aici.
 Personalizare
 Alegeți schema de culoare implicită
 Alegeți schema de culoare implicită a aplicației Obsidian.
+întunecat luminos sistem mod nocturn schemă de culori
 Alegeți culoarea de accent
 Alegeți culoarea de accent utilizată în cadrul aplicației.
+evidențiere brand culoare primară
 Schema întunecată
 Schema luminoasă
 Schema implicită a sistemului
@@ -150,8 +169,8 @@ Alegeți fontul editorului
 Alegeți fontul pentru modurile de editare și citire.
 Alegeți fontul monospațiat
 Alegeți fontul utilizat atât pentru blocurile de cod cât și pentru proprietățile însemnărilor.
- Fontul aplicat în prezent este 
- Următoarele fonturi sunt aplicate în prezent:
+
+{{count}} fonturi
 Introduceți numele fontului...
 Nu ați aplicat un font personalizat până în acest moment. Adăugați unul mai jos.
 Primul font din această listă care este disponibil în sistemul dvs. va fi aplicat.
@@ -163,24 +182,26 @@ Previzualizați și folosiți fantasticele teme comunitare.
 Răsfoiți
 Alegeți dimensiunea fontului
 Alegeți dimensiunea fontului în pixeli. Această setare afectează editorul și previzualizarea.
+dimensiune text mărire
 Reglați rapid dimensiunea fontului
 Reglați dimensiunea fontului folosind fie Ctrl+Scroll, fie gestura de scroll a trackpad-ului dvs.
 Gestionați temele
 Gestionați temele instalate și răsfoiți temele comunitare.
+comunitate răsfoire instalare descărcare
 Gestionați
 Niciuna
 Utilizați meniurile native
 Meniurile din întreaga aplicație vor fi conforme sistemului de operare. Acestea nu vor fi afectate de tema aleasă de către dvs.
-Reîncărcați temele
-Temele CSS personalizate au fost reîncărcate.
 Deschide directorul cu teme
  Fragmente CSS
+Gestionează colecția de fișiere CSS pentru a ajusta aparența aplicației.
 Nu am găsit fragmente CSS în directorul cu fragmente.
-Fragmentele CSS se află în „{{path}}”.
+{{count}} activate
+Fragmentele CSS vă permit să personalizați aparența Obsidian. Plasați fișierele CSS în „{{path}}” pentru ca acestea să apară aici.
 Reîncarcă fragmentele
 Deschide directorul de fragmente
 Fragmentele CSS au fost reîncărcate.
-Aplică fragmentul CSS din „{{path}}”.
+Caută fragmente...
 Teme instalate
 Captură de ecran indisponibilă
 Implicită
@@ -222,19 +243,24 @@ Actualizați toate temele
 Teme comunitare actuale
 În prezent, aveți instalată {{count}} temă.
 În prezent, aveți instalate {{count}} teme.
+Deschide setările într-o fereastră nouă
+Deschide setările în propria fereastră, în loc să fie încorporate în aplicație.
+Interfață
+Mobil
+Avansat
 Combinații de taste
 Căutați prin combinațiile de taste
 Se afișează {{count}} combinație de taste. 
 Se afișează {{count}} combinații de taste. 
-{{count}} comenzi cu conflicte.
-{{count}} comenzi cu conflicte.
 Filtrați...
 Ștergeți combinația
 Apăsați o combinație de taste...
 Toate
+Conflicte ({{count}})
 Neatribuite
 Atribuite
 Atribuite manual
+Nu s-au găsit rezultate.
 Restaurați varianta implicită
 Modificați această comandă
 Această combinație de taste intră în conflict cu „{{command}}”
@@ -352,28 +378,34 @@ Filtrați modulele după nume sau descriere.
 Căutați prin modulele integrate...
 Module comunitare
 Modul restricționat
-Modul restricționat este dezactivat. Activați-l pentru a dezactiva modulele comunitare.
+Activați modul restricționat pentru a folosi aplicația fără module comunitare.
 Activați
 Verifică automat actualizările modulelor
 Verifică periodic actualizările modulelor.
 Module comunitare
-Previzualizați și folosiți fantasticele module comunitare.
+Răsfoiți și instalați module comunitare create de comunitate.
 Răsfoiți
 Ieșiți din modul restricționat
 Modulele comunitare, la fel ca orice alt pachet pe care îl instalați, au potențialul de a cauza probleme de integritate a datelor și de securitate.
 Securitatea modulelor este importantă pentru noi. Iată ce facem:
 În ciuda eforturilor noastre, încă există o mică șansă ca un modul comunitar să se comporte necorespunzător.
-Facem o revizuire inițială a codului
-Modulele sunt supuse unei revizuiri inițiale a codului de către echipa noastră înainte de a apărea în magazin.
+Revizuire a codului
+Modulele din directorul oficial al comunității sunt revizuite automat după fiecare actualizare.
 Publicăm codul cu sursă liberă
 Majoritatea modulelor sunt publicate cu sursă liberă pe platforma GitHub, astfel încât puteți inspecta codul chiar dvs.
 Supunem modulul evaluării colective
 Avem o comunitate mare de dezvoltatori care ne asistă în monitorizarea modulelor comunitare.
 Punem la dispoziție mecanisme de raportare
 Urmărim și eliminăm modulele defecte în urma rapoartelor utilizatorilor.
-Dorești să ieșiți din modul restricționat pentru a activa modulele comunitare? Recomandăm cu tărie să faceți copii de rezervă ale datelor înainte de a face acest lucru.
 Aflați mai multe despre securitatea modulelor
-Activați modulele comunitare
+Permite module comunitare
+Modulele pot executa cod arbitrar pe dispozitivul tău. Îți recomandăm să faci o copie de siguranță a datelor înainte de a le activa.
+Reactivează modulele instalate
+Restaurează {{count}} modul instalat anterior.
+Restaurează {{count}} module instalate anterior.
+Afișează informații despre module
+Module activate
+Aceste module vor fi activate la ieșirea din modul restricționat.
 Aveți încredere în autorul acestui seif?
 Deschideți acest seif pentru prima dată, iar acesta vine cu câteva module.
 Dacă ați obținut acest seif de la altcineva, vă rugăm să țineți cont că modulele de origine necunoscută ar putea prezenta riscuri de securitate.
@@ -387,6 +419,9 @@ Instalați
 Activați
 Dezactivați
 Copiați legătura de partajare
+Vezi detaliile
+Deschide pagina comunității
+Setări
 Donați
 Nu am găsit niciun rezultat.
 Nu s-au găsit fișiere recente. Tastați pentru a căuta...
@@ -426,6 +461,7 @@ Căutați prin modulele instalate
 Filtrați modulele instalate după nume sau descriere.
 Căutați prin modulele instalate...
 Afișați doar modulele instalate
+Nu există module instalate.
 Donați pentru a susține {{name}}
 Dezvoltatorii de module sunt voluntari ai comunității care creează lucruri uimitoare din pasiune. Dacă acest modul vi se pare util, vă rugăm să luați în considerare finanțarea dezvoltării sale.
 100% din contribuția dvs. va merge la dezvoltatorul modulului; Obsidian nu ia niciun comision. Platforma de finanțare pe care o alegeți s-ar putea să perceapă o taxă.
@@ -526,6 +562,9 @@ Restrângeți
 Nu s-a putut salva fișierul „{{filepath}}”. {{message}}.
 Încărcarea modulului “{{plugin}}” a eșuat
 Modulul “{{plugin}}” a întâmpinat o eroare la încărcare
+{{plugin}} nu a fost încărcat. Acest modul nu este compatibil cu Obsidian v{{version}}.
+{{plugin}} nu mai funcționează. Recomandăm dezinstalarea acestuia.
+Modulul {{plugin}} v{{version}} nu a putut fi încărcat. S-a raportat că această versiune cauzează probleme. Verifică dacă există o versiune mai nouă a modulului.
 Deschiderea “{{filepath}}” a eșuat
 Nu se poate deschide locația “{{href}}”
 Niciun fișier
@@ -636,6 +675,7 @@ Legați de filă...
 Modul sursă
 Modul de citire
 Adăugați o proprietate fișierului
+Șterge
 Ștergeți fișierul
 Creați acest fișier
 Deschideți legătura
@@ -983,6 +1023,10 @@ Nu mai întreba
 În prezent există {{count}} link care indică către acest fișier.
 În prezent există {{count}} linkuri care indică către acest fișier.
 Șterge fișier
+Rulezi acțiunea dintr-un link extern?
+Acțiunea „{{action}}” este pe cale să ruleze. Continuă doar dacă ai încredere în sursa linkului.
+Modulul „{{source}}” este pe cale să ruleze acțiunea „{{action}}”. Continuă doar dacă ai încredere în sursa linkului.
+Nu mai întreba pentru „{{action}}”
 Descarcă atașamentele
 Nu există atașamente externe în această însemnare.
 S-a descărcat {{count}} atașament.
@@ -997,6 +1041,9 @@ Gestionează
 Vizualizează
 Confirmă
 Anulează
+Permite
+Permite o dată
+Permite întotdeauna
 Sari
 Descarcă
 Gata
@@ -1224,6 +1271,7 @@ Afișează fișierele atașament, precum imagini, videoclipuri și PDF-uri.
 Afișează toate tipurile de fișiere
 Afișează toate fișierele, inclusiv pe cele pe care Obsidian nu le poate deschide. Fișierul va fi deschis cu aplicația implicită pentru acel tip de fișier.
 Afișaj grafic
+Grafic local
 Vezi un grafic cu prezentarea generală a legăturilor dintre note.
 Deschide graficul
 Deschide graficul local
@@ -1420,7 +1468,8 @@ pentru a naviga
 pentru a folosi
 pentru a respinge
 Nu au fost găsite comenzi.
-Scrie o comandă...
+Adaugă o comandă...
+Selectează o comandă...
 Comenzi fixate
 Importator din format Markdown
 Transformă fișiere Markdown din alte aplicații în formatul din Obsidian.
@@ -1507,6 +1556,8 @@ Nu au fost găsite titluri.
 Derulare automată la secțiunea curentă
 Număr de cuvinte
 Afișează numărul de cuvinte în bara de status.
+Afișezi diagrame Mermaid în acest seif?
+Permite doar dacă ai încredere în conținutul acestui seif.
 Prezentări
 Prezintă direct din Markdown. Folosește "---" pentru a separa paginile prezentării.
 Începe prezentarea
@@ -1710,7 +1761,6 @@ Elimină utilizatorul
 Invită utilizator
 Introdu e-mailul...
 Te rugăm să introduci un e-mail valid pentru a invita pe cineva.
-Te rugăm să activezi modulul integrat Publish în Setări -> Module integrate pentru a vedea site-urile.
 Site-urile tale
 Site-uri împărtășite cu tine
 Oprește colaborarea la acest site
@@ -1914,6 +1964,10 @@ Listă de module comunitare active
 Sincronizează ce module comunitare sunt activate.
 Module comunitare instalate
 Sincronizează modulele comunitare instalate (fișierele .js, .css și manifest.json) și setările acestora.
+Permite modulelor sincronizate să ruleze pe acest dispozitiv?
+Obsidian Sync nu poate verifica conținutul modulelor sincronizate pe acest dispozitiv, iar acestea pot diferi de modulele publicate în directorul comunității.
+Activează acest lucru doar dacă seiful și dispozitivele conectate sunt de încredere.
+Da, activează sincronizarea modulelor
 Sync încă se încarcă, vă rugăm să reîmprospătați această pagină mai târziu.
 Obsidian Sync este serviciul suplimentar de sincronizare al Obsidian, cu criptare end-to-end și istoric al versiunilor.
 Pentru a începe sincronizarea, vă rugăm să vă autentificați sau să creați un cont Obsidian nou.
@@ -2068,6 +2122,7 @@ Elimină toate cele de mai sus, precum și stocarea locală și sesiunile active
 Vizualizator web nou
 Unable to load that site.
 Please make sure you have the correct address.
+Mod cititor
 Caută pe web
 Datele vizualizatorului web
 Șterge datele vizualizatorului web
@@ -2372,6 +2427,9 @@ Mediu
 Extra înalt
 Rezumă...
 Grupează după această proprietate
+Redimensionează coloana...
+Resetează dimensiunea coloanei
+Trage pentru a redimensiona
 Golește valorile
 Rezumat
 Nu s-a putut analiza formula „{{ formula }}”
@@ -2515,3 +2573,24 @@ Tip de explicație...
 {{count}} fragmente
 {{count}} temă
 {{count}} teme
+Anulează
+
+Copiază
+Deschide legătura
+Deschide acest fișier
+Rulează fișierul
+Deschizi legătura externă?
+Această legătură va deschide o aplicație externă în afara Obsidian. Continuă doar dacă ai încredere în sursa acestei legături.
+Deschide întotdeauna legăturile {{scheme}}://
+Avertisment privind fișierul la distanță
+Acest fișier se află pe un server la distanță și poate fi periculos.\nSigur dorești să-l deschizi?
+Locație: {{location}}
+Acces la unitatea de rețea
+Acest conținut solicită date de pe o unitate de rețea. Permiterea acestui lucru poate expune datele tale de autentificare sau alte informații sensibile către gazda la distanță.
+Gazdă: {{host}}
+Permite
+Rulezi fișierul executabil?
+Această legătură indică un fișier executabil. Rularea acestuia îți poate afecta computerul.
+Fișier: {{path}}
+Seiful nu a fost găsit.
+Nu se poate găsi un seif pentru URL-ul {{url}}

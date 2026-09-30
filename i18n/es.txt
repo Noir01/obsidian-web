@@ -1,10 +1,19 @@
 Opciones
 Complemento
 Complementos principales
+Mostrar en la lista de complementos
 Opciones de complementos
 Ejemplo: carpeta1/carpeta2
 Ejemplo: carpeta/nota
+No hay ningún archivo seleccionado
 Al cambiar esta opción, es necesario reiniciar la aplicación para que surta efecto.
+Número no válido
+El valor debe ser al menos {{min}}
+El valor debe ser como máximo {{max}}
+Archivo no encontrado.
+Buscar ajustes...
+No se encontraron ajustes.
+{{count}} más
 
 Comportamiento
 Pantalla
@@ -56,6 +65,8 @@ Tamaño de la tabulación
 Número de espacios a los que equivale una tabulación.
 Derecha-a-izquierda (Modo RTL)
 Establece la dirección del texto de las notas para que se muestren de derecha a izquierda.
+Mostrar diagramas Mermaid en las notas
+Renderiza diagramas de flujo, diagramas de secuencia y otros diagramas a partir de bloques de código “mermaid”.
 Conversión automática de HTML
 Permite convertir automáticamente HTML a Markdown al pegar y arrastrar y soltar desde páginas web. Use Ctrl/Cmd+Shift+V para pegar sin convertir.
 Atajos de teclado de Vim
@@ -124,18 +135,26 @@ Nombre de la subcarpeta
 Si su archivo está en "bóveda/carpeta", y su nombre de la subcarpeta establecida en "adjuntos", los archivos adjuntos se guardarán en "bóveda/carpeta/adjuntos".
 Archivos excluidos
 Los archivos excluidos se ocultarán o se harán menos visibles en diferentes lugares como el Selector Rápido, la función de Sugerencia de Enlaces y la Vista Gráfica.
-No se está aplicando ningún filtro de exclusión. Añada uno debajo.
-Los archivos que cumplen los siguientes filtros están actualmente excluidos:
-Filtrar
+Añadir exclusión...
+No se han añadido exclusiones.
+{{count}} regla
+{{count}} reglas
+Añadir exclusión
+Introduce una ruta o una expresión regular, p. ej., /daily-.*/
 El filtro no se pudo aplicar
-Ingrese una ruta o un patrón "/regex/"...
 Permitir URI callbacks
 Habilitar el uso de x-callback-url a través de  x-success o x-error al manejar una URI de Obsidian.
+URI de Obsidian
+Gestiona las acciones de confianza y configura el comportamiento de los URI.
+Acciones de confianza
+Aún no hay acciones de confianza. Las acciones URI aprobadas aparecerán aquí.
 Apariencia
 Tema base
 Esquema de colores por defecto de Obsidian.
+oscuro claro sistema modo nocturno esquema de color
 Color acentuado
 Color acentuado en toda la aplicación.
+resaltado marca primario color
 Oscuro
 Claro
 Adaptar al sistema
@@ -150,8 +169,8 @@ Fuente del texto
 Configurar la fuente para las vistas de edición y lectura.
 Fuente monoespaciada
 Configurar la fuente para lugares como bloques de código e información preliminar.
-Fuente en uso actualmente: 
-Las siguientes fuentes están siendo usadas actualmente:
+{{count}} fuente
+{{count}} fuentes
 Introducir nombre de la fuente...
 No hay ninguna fuente personalizada en uso ahora mismo. Añada una abajo.
 Se aplicará la primera fuente de la lista que esté disponible en su sistema.
@@ -163,24 +182,26 @@ Previsualice y use temas increíbles creados por la comunidad.
 Explorar
 Tamaño de fuente
 Tamaño de fuente en píxeles que afecta al editor y la vista previa.
+tamaño del texto zoom
 Ajuste rápido del tamaño de fuente
 Ajuste el tamaño de la fuente usando Ctrl + Rueda del ratón, o usando el gesto de pellizcar y acercar del trackpad.
 Temas
 Administre los temas instalados y explore los temas de la comunidad.
+comunidad explorar instalar descargar
 Administrar
 Ninguno
 Menús nativos
 Los menús de toda la aplicación coincidirán con el sistema operativo. No se verán afectados por su tema.
-Recargar temas
-Se recargaron los temas CSS personalizados.
 Abrir carpeta de temas
 Fragmentos de CSS
+Gestiona tu colección de archivos CSS para personalizar la apariencia de la aplicación.
 No se encontraron fragmentos de CSS en la carpeta de fragmentos.
-Los fragmentos de CSS están almacenados en "{{path}}".
+{{count}} habilitados
+Los fragmentos de CSS permiten personalizar la apariencia de Obsidian. Coloca archivos CSS en “{{path}}” para que aparezcan aquí.
 Recargar fragmentos de CSS
 Abrir carpeta de fragmentos de CSS
 Recargar fragmentos de CSS.
-Aplicar fragmentos de CSS en "{{path}}".
+Buscar fragmentos...
 Temas instalados
 Captura de pantalla no disponible
 Por defecto
@@ -222,19 +243,24 @@ Actualizar todo
 Temas de la comunidad instalados
 Actualmente tiene {{count}} tema instalado.
 Actualmente tiene {{count}} temas instalados.
+Abrir ajustes en una ventana nueva
+Abre los ajustes en su propia ventana en lugar de integrarlos en la aplicación.
+Interfaz
+Móvil
+Avanzado
 Atajos de teclado
 Buscar atajos de teclado
 Mostrando {{count}} atajo. 
 Mostrando {{count}} atajos. 
-Se encontró {{count}} comando en conflicto.
-Se encontraron {{count}} comandos en conflicto.
 Filtrar...
 Eliminar atajo
 Presione las teclas...
 Todos
+Conflictos ({{count}})
 No asignados
 Asignados
 Asignados por mí
+No se encontraron resultados.
 Restaurar los valores por defecto
 Modificar este comando
 Este atajo está en conflicto con "{{command}}"
@@ -352,28 +378,34 @@ Filtra los complementos por nombre o descripción.
 Buscar complementos...
 Complementos comunitarios
 Modo restringido
-El modo restringido está apagado. Enciéndalo para desactivar los complementos creados por la comunidad.
+Activa el modo restringido para usar la aplicación sin plugins de la comunidad.
 Activar
 Comprobar automáticamente actualizaciones de complementos
 Comprobar periódicamente si hay actualizaciones de complementos.
 Complementos creados por la comunidad
-Busque e instala complementos creados por nuestra comunidad
+Busca e instala plugins de la comunidad creados por la comunidad.
 Buscar
 Salir del modo restringido
 Los complementos creados por la comunidad, tal como cualquier otro software que instale, podría potencialmente causar problemas de integridad y seguridad de datos.
 La seguridad de los complementos es importante para nosotros. Esto es lo que hacemos:
 A pesar de nuestros esfuerzos, existe una pequeña posibilidad de que un complemento de la comunidad pudiera comportarse incorrectamente.
-Revisión inicial de código
-Los complementos pasan una revisión inicial de código por nuestro equipo antes de aparecer en la tienda.
+Revisión de código
+Los complementos del directorio oficial de la comunidad se revisan automáticamente después de cada actualización.
 Código abierto
 La mayoría de los complementos son de código abierto en GitHub, para que usted mismo pueda inspeccionar el código.
 Auditoria de pares
 Tenemos una gran comunidad de desarrolladores que velan por cada otro.
 Mecanismo de reporte
 Seguimos y removemos los complementos defectuosos a partir del reporte de usuarios.
-¿Está seguro de que desea salir del Modo Restringido para activar complementos de la comunidad? Le recomendamos encarecidamente que respalde su información antes de hacerlo.
 Aprenda más acerca de la seguridad de los complementos
-Activar complementos creados por la comunidad
+Permitir plugins de la comunidad
+Los plugins pueden ejecutar código arbitrario en tu dispositivo. Recomendamos hacer una copia de seguridad de tus datos antes de habilitarlos.
+Volver a habilitar los complementos instalados
+Restaurar {{count}} complemento instalado previamente.
+Restaurar {{count}} complementos instalados previamente.
+Mostrar información del complemento
+Plugins habilitados
+Estos plugins se habilitarán al salir del modo restringido.
 ¿Confía en el autor de esta bóveda?
 Está abriendo esta bóveda por primera vez y trae algunos complementos.
 Si obtuvo esta bóveda de alguien más, tenga en cuenta que los complementos de origen desconocido podrían presentar riesgos de seguridad.
@@ -387,6 +419,9 @@ Instalar
 Activar
 Desactivar
 Copiar enlace para compartir
+Ver detalles
+Abrir la página de la comunidad
+Ajustes
 Donar
 Sin resultados.
 No se han encontrado archivos recientes. Escribe para buscar...
@@ -426,6 +461,7 @@ Buscar complementos instalados.
 Filtrar complementos instalados por nombre o descripción.
 Buscar complementos instalados...
 Mostrar solo los instalados
+No hay complementos instalados.
 Donar para apoyar a {{name}}
 Los desarrolladores de complementos son voluntarios de la comunidad que hacen cosas increíbles a partir de su pasión. Si encuentra útil este complemento, por favor considere donar para su desarrollo.
 100% de su contribución irá al desarrollador del complemento. Obsidian no se queda con nada. La plataforma de donación puede hacer un cargo de servicio.
@@ -526,6 +562,9 @@ Colapsar
 Error al guardar el archivo "{{filepath}}". {{message}}.
 No se pudo cargar el complemento “{{plugin}}”
 El complemento “{{plugin}}” encontró un error mientras cargaba
+{{plugin}} no se ha cargado. Este complemento no es compatible con Obsidian v{{version}}.
+{{plugin}} ya no funciona. Recomendamos desinstalarlo.
+No se ha podido cargar el complemento {{plugin}} v{{version}}. Se ha informado de que esta versión causa problemas. Comprueba si hay una versión más reciente del complemento.
 No se pudo abrir “{{filepath}}”
 No se encontró “{{href}}”
 Sin archivo
@@ -636,6 +675,7 @@ Vincular con pestaña...
 Modo fuente
 Modo lectura
 Añadir propiedad de archivo
+Eliminar
 Eliminar archivo
 Crear archivo
 Abrir enlace
@@ -983,6 +1023,10 @@ No preguntar de nuevo
 Actualmente hay {{count}} enlace que apunta a este archivo.
 Actualmente hay {{count}} enlaces que apuntan a este archivo.
 Eliminar archivo
+¿Ejecutar acción desde un enlace externo?
+La acción “{{action}}” está a punto de ejecutarse. Continúa solo si confías en la fuente del enlace.
+El plugin “{{source}}” está a punto de ejecutar la acción “{{action}}”. Continúa solo si confías en la fuente del enlace.
+No volver a preguntar por “{{action}}”
 Descargar adjuntos
 No hay adjuntos en esta nota.
 Descargado {{count}} adjunto.
@@ -997,6 +1041,9 @@ Administrar
 Ver
 Confirmar
 Cancelar
+Permitir
+Permitir una vez
+Permitir siempre
 Omitir
 Descargar
 Listo
@@ -1224,6 +1271,7 @@ Mostrar archivos adjuntos como imágenes, videos y PDFs.
 Mostrar todos los tipos
 Mostrar todos los archivos incluyendo aquellos que Obsidian no puede abrir. Estos serán abiertos con la app por defecto.
 Vista gráfica
+Gráfico local
 Vea un resumen gráfico de cuales notas están enlazadas con cuales.
 Abrir vista gráfica
 Abrir gráfico local
@@ -1420,7 +1468,8 @@ para navegar
 para usar
 para descartar
 No se encontraron comandos.
-Escribe un comando...
+Añadir un comando...
+Selecciona un comando...
 Comandos fijados
 Importador de formato Markdown
 Convertir el formato Markdown de otras apps al formato de Obsidian.
@@ -1507,6 +1556,8 @@ No se encontraron encabezados.
 Autodesplazar a la sección actual
 Conteo de palabras
 Muestra el número de palabras en la barra de estado.
+¿Mostrar diagramas Mermaid en esta bóveda?
+Permitir solo si confías en el contenido de esta bóveda.
 Diapositivas
 Cree presentaciones usando Markdown. Use "---" para separar diapositivas.
 Empezar presentación
@@ -1710,7 +1761,6 @@ Eliminar usuario
 Invitar usuario
 Ingrese su correo electrónico...
 Por favor, ingrese una dirección de correo electrónico correcta para invitar a alguien.
-Por favor, habilite el complemento Publish en Ajustes --> Complementos principales para ver sus páginas web.
 Sus páginas web
 Sitios compartidos con usted
 Dejar de colaborar en esta página web
@@ -1914,6 +1964,10 @@ Lista de complementos creados por la comunidad activados
 Sincronizar los complementos creados por la comunidad que están activados.
 Complementos creados por la comunidad instalados
 Sincronizar los complementos creados por la comunidad instalados (archivos .js, .css y manifest.json) y sus ajustes.
+¿Permitir que los complementos sincronizados se ejecuten en este dispositivo?
+Obsidian Sync no puede verificar el contenido de los complementos sincronizados con este dispositivo, y pueden diferir de los complementos publicados en el directorio de la comunidad.
+Activa esto solo si confías en la bóveda y en los dispositivos conectados.
+Sí, activar la sincronización de complementos
 La sincronización aún está cargando, por favor recargue esta página luego.
 Obsidian Sync es el servicio complementario de sincronización con encripción de extremo a extremo e historial de versiones.
 Para comenzar la sincronización, por favor inicie sesión o cree una nueva cuenta de Obsidian.
@@ -2068,6 +2122,7 @@ Elimina todo lo anterior así como el almacenamiento local y las sesiones activa
 Nuevo visor web
 Imposible cargar ese sitio.
 Asegúrese de que tiene la dirección correcta.
+Vista de lectura
 Buscar en la web
 Datos del visor web
 Limpiar los datos del visor web
@@ -2372,6 +2427,9 @@ Alta
 Extra alta
 Resumir...
 Agrupar por esta propiedad
+Cambiar tamaño de columna...
+Restablecer tamaño de columna
+Arrastra para cambiar el tamaño
 Borrar valores
 Resumen
 Imposible mostrar la fórmula "{{ formula }}"
@@ -2515,3 +2573,24 @@ Tipo de llamada de texto...
 {{count}} fragmentos
 {{count}} tema
 {{count}} temas
+Cancelar
+Aceptar
+Copiar
+Abrir enlace
+Abrir este archivo
+Ejecutar archivo
+¿Abrir enlace externo?
+Este enlace abrirá una aplicación externa fuera de Obsidian. Continúa solo si confías en la fuente de este enlace.
+Abrir siempre enlaces {{scheme}}://
+Advertencia de archivo remoto
+Este archivo se encuentra en un servidor remoto y puede ser peligroso.\n¿Seguro que quieres abrirlo?
+Ubicación: {{location}}
+Acceso a unidad de red
+Este contenido está solicitando datos de una unidad de red. Permitirlo puede exponer tus credenciales de inicio de sesión u otra información sensible al host remoto.
+
+Permitir
+¿Ejecutar archivo ejecutable?
+Este enlace apunta a un archivo ejecutable. Ejecutarlo podría dañar tu ordenador.
+Archivo: {{path}}
+Bóveda no encontrada.
+No se ha podido encontrar una bóveda para la URL {{url}}
