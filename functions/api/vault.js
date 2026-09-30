@@ -1,3 +1,5 @@
+import { objectPath } from "../../lib/vault-storage.mjs";
+
 const CORS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
@@ -17,13 +19,7 @@ export async function onRequestGet({ env }) {
       // Older objects may use URL-encoded keys. New writes mark their raw keys
       // so a literal "%20" in a filename remains distinct from a space.
       const isRaw = file.customMetadata?.pathEncoding === "raw-v1";
-      let key = obj.key;
-      if (!isRaw) {
-        key = key.split("/").map(part => {
-          try { return decodeURIComponent(part); }
-          catch { return part; }
-        }).join("/");
-      }
+      const key = objectPath(obj.key, file);
       return { path: "/" + key, content: await file.text(), rank: isRaw ? 2 : key === obj.key ? 1 : 0 };
     }));
     for (const file of files) {
